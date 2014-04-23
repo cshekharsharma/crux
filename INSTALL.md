@@ -13,7 +13,7 @@
                 Options +FollowSymLinks
                 Options -Indexes
                 RewriteEngine on
-#               RewriteCond %{REQUEST_FILENAME} !-d
+                #RewriteCond %{REQUEST_FILENAME} !-d
                 RewriteCond %{REQUEST_FILENAME} !-f
 
                 RewriteCond %{REQUEST_FILENAME} !/(css|js|library|fonts|ico|js|jpg|png|gif|ttf|jpeg)/

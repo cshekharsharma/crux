@@ -1,4 +1,4 @@
-codeme
-======
+Code Me
+=======
 
-A category base code manager tool
+A Code management tool written in PHP, which helps users in maintaining and exploring their code. User can categorize his code in various categories.

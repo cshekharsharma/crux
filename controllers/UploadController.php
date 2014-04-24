@@ -3,11 +3,11 @@
 class UploadController extends BaseController {
 
     const MODULE_KEY = "upload";
-    
+
     const FILE_UPLOAD_FILED_NAME = "uploadfile";
     const FILE_UPLOAD_ACTION_NAME = "file-upload-action-name";
     const FILE_UPLOAD_ACTION_VALUE = "fileupload_byajax_AXIFJSBDSSID";
-    
+
     private $allowedExts;
 
     public function __construct() {
@@ -52,7 +52,7 @@ class UploadController extends BaseController {
                 if (in_array($extension, $this->allowedExts)) {
                     $newFileName = md5(time() . rand(0, 1)) . '.' . $extension;
                     $uploadFileDir = Configuration::get("CODE_BASE_DIR").$language.'/'.$category;
-                    if (is_writable($uploadFileDir)) {
+                    if ($this->checkAndCreateDir($uploadFileDir)) {
                         $uploadFileLocation = $uploadFileDir.'/'.$newFileName;
                         if (!move_uploaded_file($_FILES[self::FILE_UPLOAD_FILED_NAME]["tmp_name"], $uploadFileLocation)) {
                             $this->logErrorAndRedirect("File could not be uploaded, retry", Error::ERR_TYPE_DISPLAY);
@@ -69,7 +69,7 @@ class UploadController extends BaseController {
                             }
                         }
                     } else {
-                        Logger::getLogger()->LogError("Directory Not Writable");
+                        Logger::getLogger()->LogError("Directory < $uploadFileDir > Doesn't Exist or Not Writable");
                         return ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
                     }
                 } else {
@@ -80,11 +80,24 @@ class UploadController extends BaseController {
         }
     }
 
+    private function checkAndCreateDir($dirPath) {
+        if (!is_dir($dirPath)) {
+            try {
+                return mkdir($dirPath, 0777, true);
+            } catch (Exception $e) {
+                Logger::getLogger()->LogFatal('Exception: ' . $e->getMessage());
+            }
+        } elseif (!is_writable($dirPath)) {
+            return false;
+        }
+        return true;
+    }
+
     private function insertProgramDescription($params) {
         $query = "INSERT INTO ".ProgramDetails_DBTable::DB_TABLE_NAME." VALUES('', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $bindParams = array(
             $params['program_title'], $params['language_id'], $params['category_id'], $params['actual_file_name'],
-            $params['stored_file_name'], $params['level'], $params['program_description'], $params['is_verified'], 
+            $params['stored_file_name'], $params['level'], $params['program_description'], $params['is_verified'],
             date("Y-m-d H:i:s"), $params['created_by'], 0);
         if (DBManager::executeQuery($query, $bindParams, false)) {
             return true;

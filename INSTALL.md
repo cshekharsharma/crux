@@ -13,9 +13,6 @@
                 Options +FollowSymLinks
                 Options -Indexes
                 RewriteEngine on
-                #RewriteCond %{REQUEST_FILENAME} !-d
-                RewriteCond %{REQUEST_FILENAME} !-f
-
                 RewriteCond %{REQUEST_FILENAME} !/(css|js|library|fonts|ico|js|jpg|png|gif|ttf|jpeg)/
                 RewriteRule ^(.*)$ index.php?__req=$1 [L,QSA]
                 # Enables .htaccess files for this site
@@ -37,7 +34,8 @@ mysql -u root -p <dbname> < codeme.sql
 ##################################################
 cd /path/to/apache/document/root/
 tar -xvzf code-me.tar.gz
-
+cd <code-me-base-dir>
+sudo chmod 777 -R .
 
 
 ##################################################

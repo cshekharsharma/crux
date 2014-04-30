@@ -15,7 +15,7 @@ class AutoLoader {
     const UI_DIR = "ui/";
     const LIBRARY_DIR = "library/";
     const INCLUDE_DIR = "includes/";
-    const DB_TABLE_DIR = "DBTables/";
+    const DB_TABLE_DIR = "dbtables/";
     const CONTROLLER_DIR = "controllers/";
 
     public function __construct() {

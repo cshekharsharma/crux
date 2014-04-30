@@ -50,7 +50,7 @@ class UploadController extends BaseController {
                 $nameParts = explode(".", $originalFileName);
                 $extension = end($nameParts);
                 if (in_array($extension, $this->allowedExts)) {
-                    $newFileName = md5(time() . rand(0, 1)) . '.' . $extension;
+                    $newFileName = Utils::getStoredFileName($originalFileName);
                     $uploadFileDir = Configuration::get("CODE_BASE_DIR").$language.'/'.$category;
                     if ($this->checkAndCreateDir($uploadFileDir)) {
                         $uploadFileLocation = $uploadFileDir.'/'.$newFileName;

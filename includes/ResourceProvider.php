@@ -33,7 +33,11 @@ class ResourceProvider {
                 );
             } elseif ($firstParam === Constants::EDITOR_URI_KEY) {
                 $resource->setKey(Constants::EDITOR_URI_KEY);
-                $resource->setParams(false);
+                $resource->setParams(
+                    array(
+                        EditorController::PID => $secondParam
+                    )
+                );
             } elseif ($firstParam === Constants::SEARCH_URI_KEY) {
                 $resource->setKey(Constants::SEARCH_URI_KEY);
                 $resource->setParams(RequestManager::getAllParams());

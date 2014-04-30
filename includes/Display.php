@@ -5,18 +5,18 @@ class Display {
     public static $smarty;
 
     private static $TEMPLATE_LIST = array(
-        'AUTH_LOGIN' => 'ui/Auth/tpls/login.tpl',
-        'INDEX' => 'ui/Index/tpls/Index.tpl',
-        'DISPLAY_SOURCE_CODE' => 'ui/Explorer/tpls/displayCode.tpl',
-        'UPLOAD_FILE' => 'ui/Upload/tpls/uploadFile.tpl',
-        'NO_ITEM_FOUND' => 'ui/Errors/tpls/noItemFound.tpl',
-        'EMPTY_CODEBASE' => 'ui/Errors/tpls/emptyCodebase.tpl',
-        'SEARCH' => 'ui/Search/tpls/searchResults.tpl',
-        'EDITOR' => 'ui/Editor/tpls/editor.tpl'
+        'AUTH_LOGIN' => 'ui/Auth/tpls/login.htpl',
+        'INDEX' => 'ui/Index/tpls/Index.htpl',
+        'DISPLAY_SOURCE_CODE' => 'ui/Explorer/tpls/displayCode.htpl',
+        'UPLOAD_FILE' => 'ui/Upload/tpls/uploadFile.htpl',
+        'NO_ITEM_FOUND' => 'ui/Errors/tpls/noItemFound.htpl',
+        'EMPTY_CODEBASE' => 'ui/Errors/tpls/emptyCodebase.htpl',
+        'SEARCH' => 'ui/Search/tpls/searchResults.htpl',
+        'EDITOR' => 'ui/Editor/tpls/editor.htpl'
     );
 
     private static $ERROR_TEMPLATE_LIST = array(
-        '404' => 'ui/Errors/tpls/noItemFound.tpl'
+        '404' => 'ui/Errors/tpls/noItemFound.htpl'
     );
 
     private static function getTemplatePath ($key) {

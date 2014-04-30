@@ -55,7 +55,8 @@ class ExplorerController extends BaseController {
     private function getProcessedTemplate($programDetails, $sourceCode) {
         $rawContents = Display::render(self::DISPLAY_SOURCE_CODE_TPL_KEY);
         $this->smarty->assign("PROGRAM_DETAILS", $programDetails);
-        $this->smarty->assign("LANGUAGE", ucfirst(strtolower($programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID])));
+        $this->smarty->assign("EDITOR_MODE", $this->getCodeEditorMode($programDetails));
+        $this->smarty->assign("EDITOR_THEME", Configuration::get('CODE_EDITOR_THEME'));
         $this->smarty->assign("SOURCE_CODE", htmlentities($sourceCode));
         $this->smarty->assign("SOURCE_STATS", $this->getSourceStats($sourceCode));
         return $this->smarty->fetch('string:'.$rawContents);
@@ -68,5 +69,16 @@ class ExplorerController extends BaseController {
             'charCount' => strlen($sourceCode),
             'fileSize' => round((strlen($sourceCode) / 1024), 3)
         );
+    }
+    
+    private function getCodeEditorMode($programDetails) {
+        $editorMode = '';
+        $cppArray = array('c', 'cpp');
+        if (in_array($programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID], $cppArray)) {
+            $editorMode = 'c_cpp';
+        } else {
+            $editorMode = $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID];
+        }
+        return $editorMode;
     }
 }

@@ -15,6 +15,16 @@ class Utils {
         return Display::$smarty;
     }
 
+    public static function getStoredFileName($actualFileName) {
+        $nameparts = explode(".", $actualFileName);
+        $extension = end($nameparts);
+        return md5(time() . rand(0, 1)) . '.' . $extension;
+    }
+    
+    public static function getCurrentDatetime() {
+        return date(Constants::DB_DATETIME_FORMAT, time());
+    }
+    
     public static function displayVariableValues($var) {
         echo "<pre>";
         print_r($var);

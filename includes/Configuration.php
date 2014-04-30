@@ -20,6 +20,7 @@ class Configuration {
         'LOGGER_FILE' => 'data/logs/access.log',
         'LOGGER_LEVEL' => 1,
         'CODE_BASE_DIR' => 'data/codes/',
+        'CODE_EDITOR_THEME' => 'chrome'
     );
 
     /**

@@ -1,0 +1,96 @@
+{include file="ui/Index/tpls/header.htpl"}
+  <head>
+    <title>Editor :: Code Me</title>
+    <link rel="stylesheet" href="/ui/Editor/css/editor.css" type="text/css">
+    <script type="text/javascript" src="/library/ace/noconflict-min/ace.js"></script> 
+  </head>
+  <body>
+    <div class="body-main"
+        style="background: #F9F9F9; border: 1px solid #AAA;">
+        <form method="post" name="editor-form" id="editor-form">
+            <table class="form-table">
+                <tr>
+                    <td  style="padding:10px;" colspan="2">
+                        <input type="hidden" id="isupdate" name="isupdate" value="{$IS_UPDATE_REQ}">
+                        <input type="hidden" id="prgoramid" name="programid" value="{$PROGRAM_CURRENT_ID}">
+                        <input type="hidden" id="{$EDIT_ACTION_NAME}" name="{$EDIT_ACTION_NAME}" value="{$EDIT_ACTION_VALUE}">
+                        <span>Program Title</span>&nbsp;&nbsp;
+                        <input type="text" class="titlebox" value="" id="programtitle" name="programtitle">
+                        
+                        <span>File Name</span>&nbsp;&nbsp;
+                        <input type="text" class="titlebox" value="" id="filename" name="filename">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        <pre id="code-editor"></pre>
+                    </td>
+                    <td class="td2">
+                        <table class="inner-table">
+                            <tr>
+                                <td>Language</td>
+                                <td>
+                                  <span class="selectbox-div">
+                                      <select class="selectbox" name="language_id" id="language_id">
+                                        {foreach from=$LANGUAGE_LIST item=language}
+                                          <option value="{$language.id}">{$language.name}</option>
+                                        {/foreach}
+                                      </select>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Category</td>
+                                <td>
+                                    <span class="selectbox-div">
+                                        <select class="selectbox" name="category_id" id="category_id">
+                                            {foreach from=$CATEGORY_LIST item=category}
+                                                <option value="{$category.id}">{$category.name}</option>
+                                            {/foreach}
+                                        </select>
+                                    </span>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>Level</td>
+                                <td>
+                                     <span class="selectbox-div">
+                                        <select class="selectbox" name="level" id="level">
+                                            <option value="Easy">Easy</option>
+                                            <option value="Average">Average</option>
+                                            <option value="Difficult">Difficult</option>
+                                        </select>
+                                     </span>  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Description
+                                </td>
+                                <td>
+                                    <textarea class="" id="description"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Verified</td>
+                                <td><input name="verified" id="verified" value="is_verified" type="checkbox"></td>
+    `                        </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="button" value="Submit Code" class="css-button" id="submit_code">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+         </form>
+    </div>
+    <script>
+        var editor = ace.edit("code-editor");
+        editor.setTheme("ace/theme/{$EDITOR_THEME}");
+        editor.getSession().setMode("ace/mode/c_cpp");
+    </script>
+    <script type="text/javascript" src="/ui/Editor/js/editor.js"></script>
+    {include file="ui/Index/tpls/footer.htpl"}
+  

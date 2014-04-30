@@ -12,6 +12,8 @@ class Constants {
     const APP_NAME = 'code.me';
     const APP_VERSION = '1.0.0';
     
+    const DB_DATETIME_FORMAT = 'Y-m-d H:i:s';
+    
     const UPLOAD_URI_KEY = 'upload';
     const INDEX_URI_KEY = 'index';
     const EXPLORER_URI_KEY = 'explorer';

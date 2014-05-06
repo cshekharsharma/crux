@@ -1,0 +1,6 @@
+/cache/template_c/*
+/data/codes/*
+/data/logs/*
+.settings
+.buildpath
+.project

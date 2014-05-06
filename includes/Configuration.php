@@ -10,7 +10,7 @@
 class Configuration {
 
     private function __construct() {}
-    
+
     private static $config = array(
         'DB_HOST' => 'localhost',
         'DB_USER' => 'root',

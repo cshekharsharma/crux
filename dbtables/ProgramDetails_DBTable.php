@@ -14,6 +14,7 @@ class ProgramDetails_DBTable extends AbstractDbTable {
     const DESCRIPTION = 'description';
     const IS_VERIFIED = 'is_verified';
     const CREATED_ON = 'created_on';
+    const UPDATED_ON = 'updated_on';
     const FK_CREATED_BY = 'fk_created_by';
     const IS_DELETED = 'is_deleted';
 }

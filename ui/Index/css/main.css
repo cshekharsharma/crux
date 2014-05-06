@@ -365,3 +365,11 @@ input[type="text"]:focus,input[type="password"]:focus {
 .upper-action-link:hover {
 	color:#5d9aff;
 }
+
+.ace_editor {
+	font-size:15px !important;
+}
+#msg-container {
+	display:none;
+	margin-bottom:10px;
+}

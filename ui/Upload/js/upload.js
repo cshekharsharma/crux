@@ -84,8 +84,3 @@ function validateUploadForm(formId) {
 
     return (!error);
 }
-
-function removeClass(el, className) {
-    className = " " + className.trim(); // must keep a space before class name
-    el.className = el.className.replace(className, "");
-}

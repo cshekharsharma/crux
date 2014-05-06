@@ -1,4 +1,10 @@
 var popupStatus = 0;
+
+var errorObject = {
+    isError : false,
+    errorMsg : ''
+};
+
 function getAjaxConnection() {
     var xmlhttp;
     if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -97,3 +103,7 @@ $("#searchbox").autocomplete({
     }
 });
 
+function removeClass(el, className) {
+    className = " " + className.trim(); // must keep a space before class name
+    el.className = el.className.replace(className, "");
+}

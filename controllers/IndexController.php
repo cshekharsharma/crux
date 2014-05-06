@@ -55,6 +55,12 @@ class IndexController extends BaseController {
 
     private function populateTemplateMarkup($programList) {
         if (!empty($programList)) {
+            foreach ($programList as $key => $programData) {
+                $descKey = ProgramDetails_DBTable::DESCRIPTION;
+                $desc = $programData[$descKey];
+                $parsedDesc = Utils::createLinks($desc);
+                $programList[$key][$descKey] = $parsedDesc;
+            }
             $this->smarty->assign("PROGRAM_LIST", $programList);
             $this->smarty->display("string:". Display::render("INDEX"));
         } else {

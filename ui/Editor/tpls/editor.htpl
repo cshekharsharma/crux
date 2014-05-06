@@ -12,13 +12,8 @@
                 <tr>
                     <td  style="padding:10px;" colspan="2">
                         <input type="hidden" id="isupdate" name="isupdate" value="{$IS_UPDATE_REQ}">
-                        <input type="hidden" id="prgoramid" name="programid" value="{$PROGRAM_CURRENT_ID}">
+                        <input type="hidden" id="programid" name="programid" value="{$PROGRAM_CURRENT_ID}">
                         <input type="hidden" id="{$EDIT_ACTION_NAME}" name="{$EDIT_ACTION_NAME}" value="{$EDIT_ACTION_VALUE}">
-                        <span>Program Title</span>&nbsp;&nbsp;
-                        <input type="text" class="titlebox" value="" id="programtitle" name="programtitle">
-                        
-                        <span>File Name</span>&nbsp;&nbsp;
-                        <input type="text" class="titlebox" value="" id="filename" name="filename">
                     </td>
                 </tr>
                 <tr>
@@ -28,34 +23,53 @@
                     <td class="td2">
                         <table class="inner-table">
                             <tr>
-                                <td>Language</td>
+                                <td>
+                                    <div id="msg-container"></div>
+                                </td>
+                            </tr>
+                                <td>
+                                    <input type="text" placeholder="Program Title" class="titlebox apply-validation" value="{SELECTED_TITLE}" id="programtitle" name="programtitle">
+                                </td>
+                           </tr>
+                           <tr>
+                                <td>
+                                    <input type="text" placeholder="File Name" class="titlebox apply-validation" value="{SELECTED_FILENAME}" id="filename" name="filename">
+                                </td>
+                             </tr>
+                            <tr>
                                 <td>
                                   <span class="selectbox-div">
-                                      <select class="selectbox" name="language_id" id="language_id">
+                                      <select class="selectbox apply-validation" name="language_id" id="language_id">
                                         {foreach from=$LANGUAGE_LIST item=language}
-                                          <option value="{$language.id}">{$language.name}</option>
+                                            {if $SELECTED_LANGUAGE eq $language.id}
+                                                <option value="{$language.id}" selected>{$language.name}</option>
+                                            {else}
+                                                <option value="{$language.id}">{$language.name}</option>
+                                            {/if}
                                         {/foreach}
                                       </select>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Category</td>
                                 <td>
                                     <span class="selectbox-div">
-                                        <select class="selectbox" name="category_id" id="category_id">
+                                        <select class="selectbox apply-validation" name="category_id" id="category_id">
                                             {foreach from=$CATEGORY_LIST item=category}
-                                                <option value="{$category.id}">{$category.name}</option>
+                                                {if $SELECTED_CATEGORY eq $category.id}
+                                                    <option value="{$category.id}" selected>{$category.name}</option>
+                                                {else}
+                                                    <option value="{$category.id}">{$category.name}</option>
+                                                {/if}
                                             {/foreach}
                                         </select>
                                     </span>
                                 </td>
                             </tr>
                              <tr>
-                                <td>Level</td>
                                 <td>
                                      <span class="selectbox-div">
-                                        <select class="selectbox" name="level" id="level">
+                                        <select class="selectbox apply-validation" name="level" id="level">
                                             <option value="Easy">Easy</option>
                                             <option value="Average">Average</option>
                                             <option value="Difficult">Difficult</option>
@@ -65,18 +79,17 @@
                             </tr>
                             <tr>
                                 <td>
-                                    Description
-                                </td>
-                                <td>
-                                    <textarea class="" id="description"></textarea>
+                                    <textarea placeholder="Description" class="apply-validation" id="description">{SELECTED_DESCRIPTION}</textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Verified</td>
-                                <td><input name="verified" id="verified" value="is_verified" type="checkbox"></td>
+                                <td>
+                                    <input class="apply-validation" name="verified" id="verified" value="is_verified" type="checkbox">
+                                    &nbsp;Verified
+                                </td>
     `                        </tr>
                             <tr>
-                                <td colspan="2">
+                                <td colspan="2" style="text-align:center">
                                     <input type="button" value="Submit Code" class="css-button" id="submit_code">
                                 </td>
                             </tr>
@@ -87,9 +100,7 @@
          </form>
     </div>
     <script>
-        var editor = ace.edit("code-editor");
-        editor.setTheme("ace/theme/{$EDITOR_THEME}");
-        editor.getSession().setMode("ace/mode/c_cpp");
+        var editorTheme = '{$EDITOR_THEME}';
     </script>
     <script type="text/javascript" src="/ui/Editor/js/editor.js"></script>
     {include file="ui/Index/tpls/footer.htpl"}

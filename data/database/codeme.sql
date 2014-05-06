@@ -84,7 +84,8 @@ CREATE TABLE `program_details` (
   `level` varchar(20) DEFAULT NULL,
   `description` text,
   `is_verified` tinyint(1) DEFAULT '0',
-  `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `created_on` datetime NOT NULL,
+  `updated_on` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `fk_created_by` int(11) DEFAULT NULL,
   `is_deleted` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`),
@@ -103,8 +104,35 @@ CREATE TABLE `program_details` (
 
 LOCK TABLES `program_details` WRITE;
 /*!40000 ALTER TABLE `program_details` DISABLE KEYS */;
-INSERT INTO `program_details` VALUES (1,'Remove duplicate characters from given string','c','strings','remove_duplicate_char_in_str.c','930270e304273239ce428460e10139e6.c','Easy','Remove duplicate chars using fixed size hash table which keeps frequency of each character.\r\nTime : O(n)\r\nSpace : Fixed',1,'2014-04-22 18:08:07',1,0);
+INSERT INTO `program_details` VALUES (1,'updation1_updated','c','basic','updation1_updated.c','4dee4cb818179e72a688f270c81728c4.c','Easy','updation1_updated',0,'2014-05-06 18:55:05','2014-05-06 13:28:50',1,0);
 /*!40000 ALTER TABLE `program_details` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_preferences`
+--
+
+DROP TABLE IF EXISTS `user_preferences`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `user_preferences` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `contents` text,
+  `created_on` datetime DEFAULT NULL,
+  `modified_on` datetime DEFAULT NULL,
+  `is_deleted` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_preferences`
+--
+
+LOCK TABLES `user_preferences` WRITE;
+/*!40000 ALTER TABLE `user_preferences` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user_preferences` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -136,7 +164,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'shekhar','882c45820c72fc317733a6fcdfd7fe258ebee7a4e9fb3cfa84232e58235b35aa','48k9aqql2d6hu0uv7gsva6gno3','127.0.0.1',1,'2014-04-22 23:19:49','2014-04-11 15:50:09',1,0),(2,'shubham','10f6d3ce9d854d1ebfc1ca7d1981fafc122a9970093382f2c5c72cfa6ab47572','','',0,'2014-04-16 18:45:55','2014-04-14 01:01:31',1,0);
+INSERT INTO `users` VALUES (1,'shekhar','882c45820c72fc317733a6fcdfd7fe258ebee7a4e9fb3cfa84232e58235b35aa','revqa1qout3jkc0rusabu13547','127.0.0.1',1,'2014-05-06 18:17:17','2014-04-11 15:50:09',1,0),(2,'shubham','10f6d3ce9d854d1ebfc1ca7d1981fafc122a9970093382f2c5c72cfa6ab47572','','',0,'2014-04-16 18:45:55','2014-04-14 01:01:31',1,0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -149,4 +177,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-04-22 23:51:28
+-- Dump completed on 2014-05-06 21:21:59

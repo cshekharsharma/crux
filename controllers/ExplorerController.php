@@ -5,14 +5,22 @@ class ExplorerController extends BaseController {
     const MODULE_KEY = 'explorer';
     const DISPLAY_SOURCE_CODE_TPL_KEY = "DISPLAY_SOURCE_CODE";
 
+    const DELETE_REQ_KEY = 'isdelete';
+    const DELETE_REQ_VAL = 'deleteCode_byajax_EJASSJSDSG';
+
     public function run(Resource $resource) {
         Logger::getLogger()->LogInfo("Serving Index Controller");
-        $inputParams = $resource->getParams();
-        $pid = $inputParams[RequestManager::INPUT_PARAM_PID];
-        $language = $inputParams[RequestManager::INPUT_PARAM_LANG];
-        $category = $inputParams[RequestManager::INPUT_PARAM_CATE];
-        $this->displaySourceCode($language, $category, $pid);
-        Display::render(strtoupper($resource->getKey()));
+        $uriParams = $resource->getParams();
+        $formParams = RequestManager::getAllParams();
+        $pid = $uriParams[Constants::INPUT_PARAM_PID];
+        if ($this->isDeleteRequest($uriParams, $formParams)) {
+            $this->deleteSource($pid);
+        } else {
+            $language = $uriParams[Constants::INPUT_PARAM_LANG];
+            $category = $uriParams[Constants::INPUT_PARAM_CATE];
+            $this->displaySourceCode($language, $category, $pid);
+            Display::render(strtoupper($resource->getKey()));
+        }
     }
 
     public function displaySourceCode($lang, $category, $pid) {
@@ -55,10 +63,12 @@ class ExplorerController extends BaseController {
     private function getProcessedTemplate($programDetails, $sourceCode) {
         $rawContents = Display::render(self::DISPLAY_SOURCE_CODE_TPL_KEY);
         $this->smarty->assign("PROGRAM_DETAILS", $programDetails);
-        $this->smarty->assign("EDITOR_MODE", $this->getCodeEditorMode($programDetails));
+        $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programDetails));
         $this->smarty->assign("EDITOR_THEME", Configuration::get('CODE_EDITOR_THEME'));
         $this->smarty->assign("SOURCE_CODE", htmlentities($sourceCode));
         $this->smarty->assign("SOURCE_STATS", $this->getSourceStats($sourceCode));
+        $this->smarty->assign("DELETE_REQ_KEY", self::DELETE_REQ_KEY);
+        $this->smarty->assign("DELETE_REQ_VAL", self::DELETE_REQ_VAL);
         return $this->smarty->fetch('string:'.$rawContents);
     }
 
@@ -70,15 +80,23 @@ class ExplorerController extends BaseController {
             'fileSize' => round((strlen($sourceCode) / 1024), 3)
         );
     }
-    
-    private function getCodeEditorMode($programDetails) {
-        $editorMode = '';
-        $cppArray = array('c', 'cpp');
-        if (in_array($programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID], $cppArray)) {
-            $editorMode = 'c_cpp';
-        } else {
-            $editorMode = $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID];
+
+    private function isDeleteRequest ($uriParams, $formParams) {
+        if ($formParams[self::DELETE_REQ_KEY] == self::DELETE_REQ_VAL) {
+            return !empty($uriParams[Constants::INPUT_PARAM_PID]);
         }
-        return $editorMode;
+        return false;
+    }
+
+    private function deleteSource($pid) {
+        $isDeleted = false;
+        $programController = new ProgramDetailsController();
+        if ($programController->deleteProgram($pid)) {
+            echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, 'File Successfully Deleted', '');
+            $isDeleted = true;
+        } else {
+            echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, 'File Deletion Failed, Retry!', '');
+        }
+        exit();
     }
 }

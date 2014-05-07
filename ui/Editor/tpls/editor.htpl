@@ -18,7 +18,7 @@
                 </tr>
                 <tr>
                     <td class="td1">
-                        <pre id="code-editor"></pre>
+                        <pre id="code-editor">{$SELECTED_SOURCE_CODE}</pre>
                     </td>
                     <td class="td2">
                         <table class="inner-table">
@@ -28,12 +28,12 @@
                                 </td>
                             </tr>
                                 <td>
-                                    <input type="text" placeholder="Program Title" class="titlebox apply-validation" value="{SELECTED_TITLE}" id="programtitle" name="programtitle">
+                                    <input type="text" placeholder="Program Title" class="titlebox apply-validation" value="{$SELECTED_TITLE}" id="programtitle" name="programtitle">
                                 </td>
                            </tr>
                            <tr>
                                 <td>
-                                    <input type="text" placeholder="File Name" class="titlebox apply-validation" value="{SELECTED_FILENAME}" id="filename" name="filename">
+                                    <input type="text" placeholder="File Name" class="titlebox apply-validation" value="{$SELECTED_FILENAME}" id="filename" name="filename">
                                 </td>
                              </tr>
                             <tr>
@@ -70,16 +70,20 @@
                                 <td>
                                      <span class="selectbox-div">
                                         <select class="selectbox apply-validation" name="level" id="level">
-                                            <option value="Easy">Easy</option>
-                                            <option value="Average">Average</option>
-                                            <option value="Difficult">Difficult</option>
+                                            {foreach from=$LEVEL_LIST item=level}
+                                                {if $SELECTED_LEVEL eq $level}
+                                                    <option value="{$level}" selected>{$level}</option>
+                                                {else}
+                                                    <option value="{$level}">{$level}</option>
+                                                {/if}
+                                            {/foreach}
                                         </select>
                                      </span>  
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea placeholder="Description" class="apply-validation" id="description">{SELECTED_DESCRIPTION}</textarea>
+                                    <textarea placeholder="Description" class="apply-validation" id="description">{$SELECTED_DESCRIPTION}</textarea>
                                 </td>
                             </tr>
                             <tr>
@@ -100,7 +104,8 @@
          </form>
     </div>
     <script>
-        var editorTheme = '{$EDITOR_THEME}';
+        var defaultEditorTheme = '{$EDITOR_THEME}';
+        var defaultEditorMode = '{$EDITOR_MODE}';
     </script>
     <script type="text/javascript" src="/ui/Editor/js/editor.js"></script>
     {include file="ui/Index/tpls/footer.htpl"}

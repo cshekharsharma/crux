@@ -9,10 +9,6 @@ class RequestManager {
     const THIRD_PARAM = "__q3";
     const FORTH_PARAM = "__q4";
     
-    const INPUT_PARAM_LANG = "__lang";
-    const INPUT_PARAM_CATE = "__cate";
-    const INPUT_PARAM_PID = "__pid";
-
     private static $PENDING_REQUEST_URI_KEY = false;
     
     public static function initRequest() {

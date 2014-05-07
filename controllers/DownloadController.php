@@ -6,7 +6,7 @@ class DownloadController extends BaseController {
     
     public function run(Resource $resource) {
         $inputParams = $resource->getParams();
-        $pid = $inputParams[RequestManager::INPUT_PARAM_PID];
+        $pid = $inputParams[Constants::INPUT_PARAM_PID];
         if (!empty($pid)) {
             $this->downloadFile($pid);
         } else {

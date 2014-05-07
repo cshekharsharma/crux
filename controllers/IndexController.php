@@ -14,8 +14,8 @@ class IndexController extends BaseController {
 
     public function displayProgramList($inputParams) {
         $programs = array();
-        $lang = $inputParams[RequestManager::INPUT_PARAM_LANG];
-        $category = $inputParams[RequestManager::INPUT_PARAM_CATE];
+        $lang = $inputParams[Constants::INPUT_PARAM_LANG];
+        $category = $inputParams[Constants::INPUT_PARAM_CATE];
         $programs = $this->getProgramList($lang, $category);
         $markup = $this->populateTemplateMarkup($programs);
     }

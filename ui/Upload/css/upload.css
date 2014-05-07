@@ -58,7 +58,6 @@ input[type="text"],input[type="password"] {
 }
 
 input[type="text"]:focus,input[type="password"]:focus {
-	background: #f5fcfe;
 	text-indent: 0;
 	z-index: 1;
 	outline:0 none;

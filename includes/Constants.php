@@ -20,6 +20,7 @@ class Constants {
     const DOWNLOAD_URI_KEY = 'download';
     const SEARCH_URI_KEY = 'search';
     const EDITOR_URI_KEY = 'editor';
+    const DELETE_URI_KEY = 'delete';
     
     const AUTH_URI_KEY = 'auth';
     const AUTH_LOGIN_URI_KEY = 'login';
@@ -28,6 +29,10 @@ class Constants {
 
     const SUCCESS_RESPONSE = 'success';
     const FAILURE_RESPONSE = 'error';
+    
+    const INPUT_PARAM_LANG = "__lang";
+    const INPUT_PARAM_CATE = "__cate";
+    const INPUT_PARAM_PID = "__pid";
 
     const PASSWORD_CHANGED_MSG = 'Password successfully changed';
     

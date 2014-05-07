@@ -4,13 +4,13 @@ var EDITOR_CONSTANTS = {
 };
 
 var editor = ace.edit("code-editor");
-editor.setTheme("ace/theme/" + editorTheme);
-editor.getSession().setMode("ace/mode/c_cpp");
+editor.setTheme("ace/theme/" + defaultEditorTheme);
+editor.getSession().setMode("ace/mode/" + defaultEditorMode);
 EDITOR_CONSTANTS.editor = editor;
 
 $('#language_id').change(function() {
     var editor = ace.edit("code-editor");
-    editor.setTheme("ace/theme/" + editorTheme);
+    editor.setTheme("ace/theme/" + defaultEditorTheme);
     editor.getSession().setMode("ace/mode/" + $(this).val());
     EDITOR_CONSTANTS.editor = editor;
 });
@@ -56,7 +56,7 @@ function validateForm(formElem) {
         isError : false,
         errorMsg : ''
     };
-    $('#'+EDITOR_CONSTANTS.msgContainerId).removeClass('error-field');
+    $('#' + EDITOR_CONSTANTS.msgContainerId).removeClass('error-field');
     var elems = $('.apply-validation');
     for ( var i = 0; i < elems.length; i++) {
         removeClass(elems[i], 'error-field');
@@ -98,9 +98,3 @@ function populateFormData(formElem) {
     formData.append('edit_action_name', $('#edit_action_name').val());
     return formData;
 };
-
-function getEditorValue() {
-    if (typeof EDITOR_CONSTANTS.editor === 'object') {
-
-    }
-}

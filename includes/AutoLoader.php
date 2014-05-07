@@ -46,6 +46,7 @@ class AutoLoader {
             'LanguageController' => self::CONTROLLER_DIR.'LanguageController.php',
             'DownloadController' => self::CONTROLLER_DIR.'DownloadController.php',
             'ExplorerController' => self::CONTROLLER_DIR.'ExplorerController.php',
+            'ProgramDetailsController' => self::CONTROLLER_DIR.'ProgramDetailsController.php',
 
             // DB tables
             'AbstractDbTable' => self::DB_TABLE_DIR.'AbstractDbTable.php',

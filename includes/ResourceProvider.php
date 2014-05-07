@@ -28,16 +28,30 @@ class ResourceProvider {
                 $resource->setKey(Constants::DOWNLOAD_URI_KEY);
                 $resource->setParams(
                     array(
-                        RequestManager::INPUT_PARAM_PID => $secondParam
+                        Constants::INPUT_PARAM_PID => $secondParam
                     )
                 );
             } elseif ($firstParam === Constants::EDITOR_URI_KEY) {
                 $resource->setKey(Constants::EDITOR_URI_KEY);
                 $resource->setParams(
                     array(
-                        EditorController::PID => $secondParam
+                        Constants::INPUT_PARAM_PID => $secondParam
                     )
                 );
+            } elseif ($firstParam === Constants::EXPLORER_URI_KEY) {
+                $isDelete = ($secondParam === Constants::DELETE_URI_KEY);
+                $hasPID = (is_numeric($thirdParam));
+                if ($isDelete && $hasPID) {
+                    $resource->setKey(Constants::EXPLORER_URI_KEY);
+                    $resource->setParams(
+                        array(
+                            Constants::INPUT_PARAM_PID => $thirdParam
+                        )
+                    );
+                } else {
+                    $resource->setKey(Constants::INDEX_URI_KEY);
+                    $resource->setParams(false);
+                }
             } elseif ($firstParam === Constants::SEARCH_URI_KEY) {
                 $resource->setKey(Constants::SEARCH_URI_KEY);
                 $resource->setParams(RequestManager::getAllParams());
@@ -45,18 +59,18 @@ class ResourceProvider {
                 $resource->setKey(Constants::EXPLORER_URI_KEY);
                 $resource->setParams(
                     array(
-                        RequestManager::INPUT_PARAM_LANG => $firstParam,
-                        RequestManager::INPUT_PARAM_CATE => $secondParam,
-                        RequestManager::INPUT_PARAM_PID => $thirdParam
+                        Constants::INPUT_PARAM_LANG => $firstParam,
+                        Constants::INPUT_PARAM_CATE => $secondParam,
+                        Constants::INPUT_PARAM_PID => $thirdParam
                     )
                 );
             } else {
                 $resource->setKey(Constants::INDEX_URI_KEY);
                 $resource->setParams(
                     array(
-                        RequestManager::INPUT_PARAM_LANG => $firstParam,
-                        RequestManager::INPUT_PARAM_CATE => $secondParam,
-                        RequestManager::INPUT_PARAM_PID => $thirdParam
+                        Constants::INPUT_PARAM_LANG => $firstParam,
+                        Constants::INPUT_PARAM_CATE => $secondParam,
+                        Constants::INPUT_PARAM_PID => $thirdParam
                     )
                 );
             }

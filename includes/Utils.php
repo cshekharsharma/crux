@@ -33,7 +33,7 @@ class Utils {
         return $string;
     }
 
-    public static function createNewFile($filePath, $contents, $permission = '755') {
+    public static function createNewFile($filePath, $contents, $permission = 777) {
         $fp = fopen($filePath, 'w+');
         if ($fp) {
             fwrite($fp, $contents);
@@ -43,6 +43,17 @@ class Utils {
             Logger::getLogger()->LogFatal("Could not open file ".$filePath);
             return false;
         }
+    }
+    
+    public static function getCodeEditorMode($programDetails = false) {
+        $editorMode = 'c_cpp';
+        if (!empty($programDetails)) {
+            $cppArray = array('c', 'cpp');
+            if (!in_array($programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID], $cppArray)) {
+                $editorMode = $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID];
+            }
+        }
+        return $editorMode;
     }
 
     public static function displayVariableValues($var) {

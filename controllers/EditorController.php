@@ -1,20 +1,19 @@
-<?php    
+<?php
 
 class EditorController extends BaseController {
 
     const MODULE_KEY = 'editor';
-    const PID = 'pid';
+
     const EDIT_ACTION_NAME = 'edit_action_name';
     const EDIT_ACTION_VALUE = 'editCode_byajax_WBNFLZCAN';
-
     const IS_UPDATE_VALUE = "isupdate";
 
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
         if (!$this->isAjaxRequest($formParams)) {
-            if (is_numeric($uriParams[self::PID])) {
-                $this->displayCodeEditor($formParams);
+            if (is_numeric($uriParams[Constants::INPUT_PARAM_PID])) {
+                $this->displayCodeEditor($uriParams[Constants::INPUT_PARAM_PID]);
             } else {
                 $this->displayCodeEditor();
             }
@@ -77,6 +76,13 @@ class EditorController extends BaseController {
         $fileContents = $formParams['editorContents'];
         $currentDatetime = Utils::getCurrentDatetime();
         $pid = $formParams['programid'];
+        $programController = new ProgramDetailsController();
+        $prevProgramInfo = $programController->getProgramListById($pid);
+        $fileToUnlink = Configuration::get('CODE_BASE_DIR') .
+        $prevProgramInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]."/".
+        $prevProgramInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]."/".
+        $prevProgramInfo[ProgramDetails_DBTable::STORED_FILE_NAME];
+        unlink($fileToUnlink);
         if ($this->saveFileOnDisk($fileDir, $storedFileName, $fileContents)) {
             $attribs = array(
                 $formParams[ProgramDetails_DBTable::TITLE],
@@ -124,19 +130,29 @@ class EditorController extends BaseController {
         $languageList = ResourceProvider::getControllerByResourceKey(LanguageController::MODULE_KEY)->getLanguageList();
         $this->smarty->assign("CATEGORY_LIST", $categoryList);
         $this->smarty->assign("LANGUAGE_LIST", $languageList);
+        $this->smarty->assign("LEVEL_LIST", array('Easy', 'Average', 'Difficult'));
         $this->smarty->assign("EDIT_ACTION_NAME", self::EDIT_ACTION_NAME);
         $this->smarty->assign("EDIT_ACTION_VALUE", self::EDIT_ACTION_VALUE);
         $this->smarty->assign("EDITOR_THEME", Configuration::get('CODE_EDITOR_THEME'));
+        $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode());
         if (!empty($pid)) {
-            $programInfo = null;
+            $programController = new ProgramDetailsController();
+            $programInfo = $programController->getProgramListById($pid);
+            $storedFileName = $programInfo[ProgramDetails_DBTable::STORED_FILE_NAME];
+            $category = $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID];
+            $language = $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID];
+            $srcFile = Configuration::get('CODE_BASE_DIR').$language.'/'.$category.'/'.$storedFileName;
+            $srcCode = file_get_contents($srcFile);
             $this->smarty->assign("SELECTED_CATEGORY", $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]);
             $this->smarty->assign("SELECTED_LANGUAGE", $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]);
             $this->smarty->assign("SELECTED_LEVEL", $programInfo[ProgramDetails_DBTable::LEVEL]);
             $this->smarty->assign("SELECTED_TITLE", $programInfo[ProgramDetails_DBTable::TITLE]);
             $this->smarty->assign("SELECTED_FILENAME", $programInfo[ProgramDetails_DBTable::ACTUAL_FILE_NAME]);
             $this->smarty->assign("SELECTED_DESCRIPTION", $programInfo[ProgramDetails_DBTable::DESCRIPTION]);
-            $this->smarty->assign("IS_UPDATE_REQ", $programInfo[self::IS_UPDATE_VALUE]);
+            $this->smarty->assign("SELECTED_SOURCE_CODE", htmlentities($srcCode));
+            $this->smarty->assign("IS_UPDATE_REQ", self::IS_UPDATE_VALUE);
             $this->smarty->assign("PROGRAM_CURRENT_ID", $programInfo[ProgramDetails_DBTable::PROGRAM_ID]);
+            $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programInfo));
         }
         $this->smarty->display('string: '. Display::render('EDITOR'));
     }

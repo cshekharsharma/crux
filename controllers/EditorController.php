@@ -32,7 +32,7 @@ class EditorController extends BaseController {
         $storedFileName = Utils::getStoredFileName($formParams[ProgramDetails_DBTable::ACTUAL_FILE_NAME]);
         $lang = $formParams[ProgramDetails_DBTable::FK_LANGUAGE_ID];
         $cate = $formParams[ProgramDetails_DBTable::FK_CATEGORY_ID];
-        $fileDir = Configuration::get('CODE_BASE_DIR').$lang."/".$cate;;
+        $fileDir = Configuration::get(Configuration::CODE_BASE_DIR).$lang."/".$cate;;
         $fileContents = $formParams['editorContents'];
         $currentDatetime = Utils::getCurrentDatetime();
         if ($this->saveFileOnDisk($fileDir, $storedFileName, $fileContents)) {
@@ -72,13 +72,13 @@ class EditorController extends BaseController {
         $storedFileName = Utils::getStoredFileName($formParams[ProgramDetails_DBTable::ACTUAL_FILE_NAME]);
         $lang = $formParams[ProgramDetails_DBTable::FK_LANGUAGE_ID];
         $cate = $formParams[ProgramDetails_DBTable::FK_CATEGORY_ID];
-        $fileDir = Configuration::get('CODE_BASE_DIR').$lang."/".$cate;;
+        $fileDir = Configuration::get(Configuration::CODE_BASE_DIR).$lang."/".$cate;;
         $fileContents = $formParams['editorContents'];
         $currentDatetime = Utils::getCurrentDatetime();
         $pid = $formParams['programid'];
         $programController = new ProgramDetailsController();
         $prevProgramInfo = $programController->getProgramListById($pid);
-        $fileToUnlink = Configuration::get('CODE_BASE_DIR') .
+        $fileToUnlink = Configuration::get(Configuration::CODE_BASE_DIR) .
         $prevProgramInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]."/".
         $prevProgramInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]."/".
         $prevProgramInfo[ProgramDetails_DBTable::STORED_FILE_NAME];
@@ -133,7 +133,7 @@ class EditorController extends BaseController {
         $this->smarty->assign("LEVEL_LIST", array('Easy', 'Average', 'Difficult'));
         $this->smarty->assign("EDIT_ACTION_NAME", self::EDIT_ACTION_NAME);
         $this->smarty->assign("EDIT_ACTION_VALUE", self::EDIT_ACTION_VALUE);
-        $this->smarty->assign("EDITOR_THEME", Configuration::get('CODE_EDITOR_THEME'));
+        $this->smarty->assign("EDITOR_THEME", Configuration::get(Configuration::CODE_EDITOR_THEME));
         $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode());
         if (!empty($pid)) {
             $programController = new ProgramDetailsController();
@@ -141,7 +141,7 @@ class EditorController extends BaseController {
             $storedFileName = $programInfo[ProgramDetails_DBTable::STORED_FILE_NAME];
             $category = $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID];
             $language = $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID];
-            $srcFile = Configuration::get('CODE_BASE_DIR').$language.'/'.$category.'/'.$storedFileName;
+            $srcFile = Configuration::get(Configuration::CODE_BASE_DIR).$language.'/'.$category.'/'.$storedFileName;
             $srcCode = file_get_contents($srcFile);
             $this->smarty->assign("SELECTED_CATEGORY", $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]);
             $this->smarty->assign("SELECTED_LANGUAGE", $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]);

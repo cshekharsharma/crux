@@ -23,7 +23,7 @@ class DownloadController extends BaseController {
     }
 
     private function getFileContents($fileInfo) {
-        $filePath = Configuration::get('CODE_BASE_DIR');
+        $filePath = Configuration::get(Configuration::CODE_BASE_DIR);
         $filePath .= $fileInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID].'/';
         $filePath .= $fileInfo[ProgramDetails_DBTable::FK_CATEGORY_ID].'/';
         $filePath .= $fileInfo[ProgramDetails_DBTable::STORED_FILE_NAME];

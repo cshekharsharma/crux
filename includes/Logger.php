@@ -35,8 +35,8 @@ class Logger
 
     public static function getLogger() {
         if (!self::$instance instanceof Logger) {
-            $filepath = Configuration::get('LOGGER_FILE');
-            $priority = Configuration::get('LOGGER_LEVEL');
+            $filepath = Configuration::get(Configuration::LOG_FILE);
+            $priority = Configuration::get(Configuration::LOG_LEVEL);
             self::$instance = new Logger($filepath, $priority);
         }
         return self::$instance;

@@ -23,7 +23,7 @@ class ProgramDetailsController extends BaseController {
         $query .= ProgramDetails_DBTable::PROGRAM_ID."='".$pid."' AND ";
         $query .= ProgramDetails_DBTable::IS_DELETED."= 0";
         if (DBManager::executeQuery($query)) {
-            $fileToUnlink = Configuration::get('CODE_BASE_DIR') .
+            $fileToUnlink = Configuration::get(Configuration::CODE_BASE_DIR) .
             $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]."/".
             $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]."/".
             $programInfo[ProgramDetails_DBTable::STORED_FILE_NAME];

@@ -9,18 +9,28 @@
  */
 class Configuration {
 
+    const DB_HOST = 'db_host';
+    const DB_USER = 'db_user';
+    const DB_PASS = 'db_pass';
+    const DB_NAME = 'db_name';
+    const MYSQL_DSN = 'mysql_dsn';
+    const LOG_FILE = 'log_file';
+    const LOG_LEVEL = 'log_level';
+    const CODE_BASE_DIR = 'code_base_dir';
+    const CODE_EDITOR_THEME = 'code_editor_theme';
+    
     private function __construct() {}
 
     private static $config = array(
-        'DB_HOST' => 'localhost',
-        'DB_USER' => 'root',
-        'DB_PASS' => 'cvbert',
-        'DB_NAME' => 'codeme',
-        'MYSQL_DSN' => 'mysql:host=localhost;dbname=codeme',
-        'LOGGER_FILE' => 'data/logs/access.log',
-        'LOGGER_LEVEL' => 1,
-        'CODE_BASE_DIR' => 'data/codes/',
-        'CODE_EDITOR_THEME' => 'chrome'
+        'db_host' => 'localhost',
+        'db_user' => 'root',
+        'db_pass' => 'cvbert',
+        'db_name' => 'codeme_test',
+        'mysql_dsn' => 'mysql:host=localhost;dbname=codeme',
+        'log_file' => 'data/logs/access.log',
+        'log_level' => 1,
+        'code_base_dir' => 'data/test_codes/',
+        'code_editor_theme' => 'chrome'
     );
 
     /**

@@ -15,11 +15,11 @@ class DBManager {
     
     public static function getInstance() {
         if (!self::$instance instanceof PDO) {
-            $dsn  = Configuration::get('MYSQL_DSN');
-            $host = Configuration::get('DB_HOST');
-            $user = Configuration::get('DB_USER');
-            $pass = Configuration::get('DB_PASS');
-            $name = Configuration::get('DB_NAME');
+            $dsn  = Configuration::get(Configuration::MYSQL_DSN);
+            $host = Configuration::get(Configuration::DB_HOST);
+            $user = Configuration::get(Configuration::DB_USER);
+            $pass = Configuration::get(Configuration::DB_PASS);
+            $name = Configuration::get(Configuration::DB_NAME);
             try {
                 self::$instance = new PDO($dsn, $user, $pass);
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE,

@@ -52,7 +52,7 @@ class ExplorerController extends BaseController {
     }
 
     private function getSourceCode($programDetails) {
-        $filePath = Configuration::get('CODE_BASE_DIR');
+        $filePath = Configuration::get(Configuration::CODE_BASE_DIR);
         $filePath .= $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID].'/';
         $filePath .= $programDetails[ProgramDetails_DBTable::FK_CATEGORY_ID].'/';
         $filePath .= $programDetails[ProgramDetails_DBTable::STORED_FILE_NAME];
@@ -64,7 +64,7 @@ class ExplorerController extends BaseController {
         $rawContents = Display::render(self::DISPLAY_SOURCE_CODE_TPL_KEY);
         $this->smarty->assign("PROGRAM_DETAILS", $programDetails);
         $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programDetails));
-        $this->smarty->assign("EDITOR_THEME", Configuration::get('CODE_EDITOR_THEME'));
+        $this->smarty->assign("EDITOR_THEME", Configuration::get(Configuration::CODE_EDITOR_THEME));
         $this->smarty->assign("SOURCE_CODE", htmlentities($sourceCode));
         $this->smarty->assign("SOURCE_STATS", $this->getSourceStats($sourceCode));
         $this->smarty->assign("DELETE_REQ_KEY", self::DELETE_REQ_KEY);
@@ -74,7 +74,7 @@ class ExplorerController extends BaseController {
 
     private function getSourceStats($sourceCode) {
         return array(
-            'lineCount' => substr_count($sourceCode, PHP_EOL),
+            'lineCount' => substr_count($sourceCode, PHP_EOL) + 1,
             'wordCount' => str_word_count($sourceCode),
             'charCount' => strlen($sourceCode),
             'fileSize' => round((strlen($sourceCode) / 1024), 3)

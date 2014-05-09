@@ -38,6 +38,7 @@ class AutoLoader {
             'BaseController' => self::CONTROLLER_DIR.'BaseController.php',
             'AuthController' => self::CONTROLLER_DIR.'AuthController.php',
             'UsersController' => self::CONTROLLER_DIR.'UsersController.php',
+            'StatsController' => self::CONTROLLER_DIR.'StatsController.php',
             'IndexController' => self::CONTROLLER_DIR.'IndexController.php',
             'SearchController' => self::CONTROLLER_DIR.'SearchController.php',
             'UploadController' => self::CONTROLLER_DIR.'UploadController.php',

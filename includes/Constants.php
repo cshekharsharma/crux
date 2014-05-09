@@ -21,6 +21,7 @@ class Constants {
     const SEARCH_URI_KEY = 'search';
     const EDITOR_URI_KEY = 'editor';
     const DELETE_URI_KEY = 'delete';
+    const STATS_URI_KEY = 'stats';
     
     const AUTH_URI_KEY = 'auth';
     const AUTH_LOGIN_URI_KEY = 'login';
@@ -33,6 +34,7 @@ class Constants {
     const INPUT_PARAM_LANG = "__lang";
     const INPUT_PARAM_CATE = "__cate";
     const INPUT_PARAM_PID = "__pid";
+    const INPUT_PARAM_USER = "__user";
 
     const PASSWORD_CHANGED_MSG = 'Password successfully changed';
     

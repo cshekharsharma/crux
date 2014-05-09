@@ -18,17 +18,17 @@ class ProgramDetailsController extends BaseController {
 
     public function deleteProgram($pid) {
         $programInfo = $this->getProgramListById($pid);
-        $fileToUnlink = Configuration::get('CODE_BASE_DIR') .
-        $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]."/".
-        $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]."/".
-        $programInfo[ProgramDetails_DBTable::STORED_FILE_NAME];
-        if (unlink($fileToUnlink)) {
-            $query = "UPDATE ".ProgramDetails_DBTable::DB_TABLE_NAME." SET ";
-            $query .= ProgramDetails_DBTable::IS_DELETED."= '1' WHERE ";
-            $query .= ProgramDetails_DBTable::PROGRAM_ID."='".$pid."' AND ";
-            $query .= ProgramDetails_DBTable::IS_DELETED."= 0";
-            $resultSet = DBManager::executeQuery($query);
-            return $resultSet;
+        $query = "UPDATE ".ProgramDetails_DBTable::DB_TABLE_NAME." SET ";
+        $query .= ProgramDetails_DBTable::IS_DELETED."= '1' WHERE ";
+        $query .= ProgramDetails_DBTable::PROGRAM_ID."='".$pid."' AND ";
+        $query .= ProgramDetails_DBTable::IS_DELETED."= 0";
+        if (DBManager::executeQuery($query)) {
+            $fileToUnlink = Configuration::get('CODE_BASE_DIR') .
+            $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]."/".
+            $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]."/".
+            $programInfo[ProgramDetails_DBTable::STORED_FILE_NAME];
+            unlink($fileToUnlink);
+            return true;
         } else {
             Logger::getLogger()->LogFatal("Unable to delete file => ".$fileToUnlink);
             return false;

@@ -5,7 +5,7 @@ body {
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	padding: 0px;
 	margin: 0px;
-	background: #F9F9F9;
+	background: #FFF !important;
 	margin-bottom: 25px;
 }
 
@@ -362,7 +362,7 @@ input[type="text"]:focus,input[type="password"]:focus {
     text-decoration: none;
 }
 .upper-action-link:hover {
-	color:#5d9aff;
+	color:#C1DAD7;
 }
 
 .ace_editor {

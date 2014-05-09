@@ -23,6 +23,7 @@
                 <td class="td3">
                     <a id="editor-link" class="upper-action-link" href="/editor">Editor</a>
                     <a id="editor-link" class="upper-action-link" href="/upload">Upload</a>
+                    <a id="editor-link" class="upper-action-link" href="/stats">Stats</a>
                     <a id="username-link" class="upper-action-link" href="#" onclick="getAccountDropdown()">{$smarty.session.loggedin_user_details.user_name}</a>
                 </td>
             </tr>

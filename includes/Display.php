@@ -12,7 +12,8 @@ class Display {
         'NO_ITEM_FOUND' => 'ui/Errors/tpls/noItemFound.htpl',
         'EMPTY_CODEBASE' => 'ui/Errors/tpls/emptyCodebase.htpl',
         'SEARCH' => 'ui/Search/tpls/searchResults.htpl',
-        'EDITOR' => 'ui/Editor/tpls/editor.htpl'
+        'EDITOR' => 'ui/Editor/tpls/editor.htpl',
+        'STATS' => 'ui/Stats/tpls/showStats.htpl'
     );
 
     private static $ERROR_TEMPLATE_LIST = array(

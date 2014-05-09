@@ -24,6 +24,17 @@ class ResourceProvider {
             } elseif ($firstParam === Constants::UPLOAD_URI_KEY) {
                 $resource->setKey(Constants::UPLOAD_URI_KEY);
                 $resource->setParams(false);
+            } elseif ($firstParam === Constants::STATS_URI_KEY) {
+                $resource->setKey(Constants::STATS_URI_KEY);
+                if (!empty($secondParam)) {
+                    $resource->setParams(
+                        array(
+                            Constants::INPUT_PARAM_USER => $secondParam
+                        )
+                    );
+                } else {
+                    $resource->setParams(false);
+                }
             } elseif ($firstParam === Constants::DOWNLOAD_URI_KEY) {
                 $resource->setKey(Constants::DOWNLOAD_URI_KEY);
                 $resource->setParams(

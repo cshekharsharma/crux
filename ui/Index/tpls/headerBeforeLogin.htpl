@@ -6,21 +6,22 @@
 <link rel="stylesheet" type="text/css" href="/ui/Index/css/main.css">
 
 <div class="header-div" >
-    <br>
-    <form name="searchform" class="searchform" action="/search" method="get">
-        <span class="header-left-div">
-            <span class="main-logo-text"><a href="/">{$APP_NAME}</a></span>
-        </span>
-    <!--    <span class="header-middle-div">
-            <input type="text" class="searchbox txtbox ui-widget" autocomplete="off" id="searchbox" name="q" placeholder="Search" value="{$SEARCH_KEY}">
-            <input type="button" class="upload-button" onclick="window.location.href='/upload';" value="Upload">
-        </span>
-        <span class="header-right-div">
-            <span class="side-main-link">
-                <a id="upper-logout-link" href="/auth/logout">Logout</a>
+    <div class="inner-header-div">
+        <form name="searchform" class="searchform" action="/search" method="get">
+            <span class="header-left-div">
+                <span class="main-logo-text"><a href="/">{$APP_NAME}</a></span>
             </span>
-        </span> -->
-    </form>
+        <!--    <span class="header-middle-div">
+                <input type="text" class="searchbox txtbox ui-widget" autocomplete="off" id="searchbox" name="q" placeholder="Search" value="{$SEARCH_KEY}">
+                <input type="button" class="upload-button" onclick="window.location.href='/upload';" value="Upload">
+            </span>
+            <span class="header-right-div">
+                <span class="side-main-link">
+                    <a id="upper-logout-link" href="/auth/logout">Logout</a>
+                </span>
+            </span> -->
+        </form>
+    </div>
 </div>
 <div id="jquery-autocomplete-results">
     

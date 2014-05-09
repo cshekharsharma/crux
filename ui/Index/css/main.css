@@ -136,6 +136,9 @@ body {
 	-webkit-border-radius: 4px;
 	color: #fff;
 	background-image: -webkit-linear-gradient(#5d9aff, #5d9aff 38%, #5891f0);
+	background-image: -moz-linear-gradient(#5d9aff, #5d9aff 38%, #5891f0);
+	background-image: -o-linear-gradient(#5d9aff, #5d9aff 38%, #5891f0);
+	background-image: linear-gradient(#5d9aff, #5d9aff 38%, #5891f0);
 	border: 1px solid rgba(45, 102, 195, 1);
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), inset 0 1px 2px
@@ -352,7 +355,6 @@ input[type="text"]:focus,input[type="password"]:focus {
 	margin-right:15px;
 }
 
-
 .upper-action-link {
     vertical-align: middle;
     font-size: 15px;
@@ -371,4 +373,7 @@ input[type="text"]:focus,input[type="password"]:focus {
 #msg-container {
 	display:none;
 	margin-bottom:10px;
+}
+.inner-header-div {
+	padding:14px 0px 14px 0px;
 }

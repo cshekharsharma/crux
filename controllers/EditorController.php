@@ -154,7 +154,7 @@ class EditorController extends BaseController {
             $this->smarty->assign("PROGRAM_CURRENT_ID", $programInfo[ProgramDetails_DBTable::PROGRAM_ID]);
             $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programInfo));
         }
-        $this->smarty->display('string: '. Display::render('EDITOR'));
+        $this->smarty->display('string: '. Display::render(self::MODULE_KEY));
     }
 
     private function isAjaxRequest($formParams) {

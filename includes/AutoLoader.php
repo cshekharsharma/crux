@@ -12,54 +12,49 @@ class AutoLoader {
     private $classPathMap;
     private $libraryClassPaths;
 
-    const UI_DIR = "ui/";
-    const LIBRARY_DIR = "library/";
-    const INCLUDE_DIR = "includes/";
-    const DB_TABLE_DIR = "dbtables/";
-    const CONTROLLER_DIR = "controllers/";
-
     public function __construct() {
+        require_once 'includes/Constants.php';
         $this->classPathMap = array(
             // Include classes
-            'Error' => self::INCLUDE_DIR.'Error.php',
-            'Utils' => self::INCLUDE_DIR.'Utils.php',
-            'Logger' => self::INCLUDE_DIR.'Logger.php',
-            'Session' => self::INCLUDE_DIR.'Session.php',
-            'Display' => self::INCLUDE_DIR.'Display.php',
-            'Resource' => self::INCLUDE_DIR.'Resource.php',
-            'Constants' => self::INCLUDE_DIR.'Constants.php',
-            'DBManager' => self::INCLUDE_DIR.'DBManager.php',
-            'Configuration' => self::INCLUDE_DIR.'Configuration.php',
-            'RequestManager' => self::INCLUDE_DIR.'RequestManager.php',
-            'ServiceResponse' => self::INCLUDE_DIR.'ServiceResponse.php',
-            'ResourceProvider' => self::INCLUDE_DIR.'ResourceProvider.php',
+            'Error' => Constants::INCLUDE_DIR.'Error.php',
+            'Utils' => Constants::INCLUDE_DIR.'Utils.php',
+            'Logger' => Constants::INCLUDE_DIR.'Logger.php',
+            'Session' => Constants::INCLUDE_DIR.'Session.php',
+            'Display' => Constants::INCLUDE_DIR.'Display.php',
+            'Resource' => Constants::INCLUDE_DIR.'Resource.php',
+            'Constants' => Constants::INCLUDE_DIR.'Constants.php',
+            'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
+            'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',
+            'RequestManager' => Constants::INCLUDE_DIR.'RequestManager.php',
+            'ServiceResponse' => Constants::INCLUDE_DIR.'ServiceResponse.php',
+            'ResourceProvider' => Constants::INCLUDE_DIR.'ResourceProvider.php',
 
             // Controller Classes
-            'BaseController' => self::CONTROLLER_DIR.'BaseController.php',
-            'AuthController' => self::CONTROLLER_DIR.'AuthController.php',
-            'UsersController' => self::CONTROLLER_DIR.'UsersController.php',
-            'StatsController' => self::CONTROLLER_DIR.'StatsController.php',
-            'IndexController' => self::CONTROLLER_DIR.'IndexController.php',
-            'SearchController' => self::CONTROLLER_DIR.'SearchController.php',
-            'UploadController' => self::CONTROLLER_DIR.'UploadController.php',
-            'EditorController' => self::CONTROLLER_DIR.'EditorController.php',
-            'CategoryController' => self::CONTROLLER_DIR.'CategoryController.php',
-            'LanguageController' => self::CONTROLLER_DIR.'LanguageController.php',
-            'DownloadController' => self::CONTROLLER_DIR.'DownloadController.php',
-            'ExplorerController' => self::CONTROLLER_DIR.'ExplorerController.php',
-            'ProgramDetailsController' => self::CONTROLLER_DIR.'ProgramDetailsController.php',
+            'BaseController' => Constants::CONTROLLER_DIR.'BaseController.php',
+            'AuthController' => Constants::CONTROLLER_DIR.'AuthController.php',
+            'UsersController' => Constants::CONTROLLER_DIR.'UsersController.php',
+            'StatsController' => Constants::CONTROLLER_DIR.'StatsController.php',
+            'IndexController' => Constants::CONTROLLER_DIR.'IndexController.php',
+            'SearchController' => Constants::CONTROLLER_DIR.'SearchController.php',
+            'UploadController' => Constants::CONTROLLER_DIR.'UploadController.php',
+            'EditorController' => Constants::CONTROLLER_DIR.'EditorController.php',
+            'CategoryController' => Constants::CONTROLLER_DIR.'CategoryController.php',
+            'LanguageController' => Constants::CONTROLLER_DIR.'LanguageController.php',
+            'DownloadController' => Constants::CONTROLLER_DIR.'DownloadController.php',
+            'ExplorerController' => Constants::CONTROLLER_DIR.'ExplorerController.php',
+            'ProgramDetailsController' => Constants::CONTROLLER_DIR.'ProgramDetailsController.php',
 
             // DB tables
-            'AbstractDbTable' => self::DB_TABLE_DIR.'AbstractDbTable.php',
-            'Users_DBTable' => self::DB_TABLE_DIR.'Users_DBTable.php',
-            'Language_DBTable' => self::DB_TABLE_DIR.'Language_DBTable.php',
-            'Category_DBTable' => self::DB_TABLE_DIR.'Category_DBTable.php',
-            'ProgramDetails_DBTable' => self::DB_TABLE_DIR.'ProgramDetails_DBTable.php',
+            'AbstractDbTable' => Constants::DB_TABLE_DIR.'AbstractDbTable.php',
+            'Users_DBTable' => Constants::DB_TABLE_DIR.'Users_DBTable.php',
+            'Language_DBTable' => Constants::DB_TABLE_DIR.'Language_DBTable.php',
+            'Category_DBTable' => Constants::DB_TABLE_DIR.'Category_DBTable.php',
+            'ProgramDetails_DBTable' => Constants::DB_TABLE_DIR.'ProgramDetails_DBTable.php',
         );
 
         $this->libraryClassPaths = array(
-            'smartyBase' => self::LIBRARY_DIR.'smarty/libs/',
-            'smartySysplugins' => self::LIBRARY_DIR.'smarty/libs/sysplugins/',
+            'smartyBase' => Constants::LIBRARY_DIR.'smarty/libs/',
+            'smartySysplugins' => Constants::LIBRARY_DIR.'smarty/libs/sysplugins/',
         );
     }
 

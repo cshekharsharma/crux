@@ -5,23 +5,23 @@ class Display {
     public static $smarty;
 
     private static $TEMPLATE_LIST = array(
-        'AUTH_LOGIN' => 'ui/Auth/tpls/login.htpl',
-        'INDEX' => 'ui/Index/tpls/Index.htpl',
-        'DISPLAY_SOURCE_CODE' => 'ui/Explorer/tpls/displayCode.htpl',
-        'UPLOAD_FILE' => 'ui/Upload/tpls/uploadFile.htpl',
-        'NO_ITEM_FOUND' => 'ui/Errors/tpls/noItemFound.htpl',
-        'EMPTY_CODEBASE' => 'ui/Errors/tpls/emptyCodebase.htpl',
-        'SEARCH' => 'ui/Search/tpls/searchResults.htpl',
-        'EDITOR' => 'ui/Editor/tpls/editor.htpl',
-        'STATS' => 'ui/Stats/tpls/showStats.htpl'
+        'INDEX' => 'Index/tpls/Index.htpl',
+        'UPLOAD' => 'Upload/tpls/uploadFile.htpl',
+        'SEARCH' => 'Search/tpls/searchResults.htpl',
+        'EDITOR' => 'Editor/tpls/editor.htpl',
+        'STATS' => 'Stats/tpls/showStats.htpl',
+        'EXPLORER' => 'Explorer/tpls/displayCode.htpl',
+        'AUTH_LOGIN' => 'Auth/tpls/login.htpl',
+        'NO_ITEM_FOUND' => 'Errors/tpls/noItemFound.htpl',
+        'EMPTY_CODEBASE' => 'Errors/tpls/emptyCodebase.htpl',
     );
 
     private static $ERROR_TEMPLATE_LIST = array(
-        '404' => 'ui/Errors/tpls/noItemFound.htpl'
+        '404' => 'Errors/tpls/noItemFound.htpl'
     );
 
     private static function getTemplatePath ($key) {
-        return self::$TEMPLATE_LIST[$key];
+        return Constants::VIEW_DIR . self::$TEMPLATE_LIST[$key];
     }
 
     private static function getTemplateMarkup($templatePath) {
@@ -45,7 +45,7 @@ class Display {
     }
 
     private static function getErrorTemaplateMarkup($errorCode) {
-        return file_get_contents(self::$ERROR_TEMPLATE_LIST[$errorCode]);
+        return file_get_contents(Constants::VIEW_DIR . self::$ERROR_TEMPLATE_LIST[$errorCode]);
     }
 
     private static function prepareDisplay() {

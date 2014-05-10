@@ -62,7 +62,7 @@ class IndexController extends BaseController {
                 $programList[$key][$descKey] = $parsedDesc;
             }
             $this->smarty->assign("PROGRAM_LIST", $programList);
-            $this->smarty->display("string:". Display::render("INDEX"));
+            $this->smarty->display("string:". Display::render(self::MODULE_KEY));
         } else {
             if ($this->isHomePage) {
                 $this->smarty->display("string:". Display::render("EMPTY_CODEBASE"));

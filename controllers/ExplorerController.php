@@ -3,7 +3,6 @@
 class ExplorerController extends BaseController {
 
     const MODULE_KEY = 'explorer';
-    const DISPLAY_SOURCE_CODE_TPL_KEY = "DISPLAY_SOURCE_CODE";
 
     const DELETE_REQ_KEY = 'isdelete';
     const DELETE_REQ_VAL = 'deleteCode_byajax_EJASSJSDSG';
@@ -61,7 +60,7 @@ class ExplorerController extends BaseController {
     }
 
     private function getProcessedTemplate($programDetails, $sourceCode) {
-        $rawContents = Display::render(self::DISPLAY_SOURCE_CODE_TPL_KEY);
+        $rawContents = Display::render(self::MODULE_KEY);
         $this->smarty->assign("PROGRAM_DETAILS", $programDetails);
         $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programDetails));
         $this->smarty->assign("EDITOR_THEME", Configuration::get(Configuration::CODE_EDITOR_THEME));

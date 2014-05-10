@@ -36,7 +36,7 @@ class UploadController extends BaseController {
         $this->smarty->assign("CATEGORY_LIST", $categoryList);
         $this->smarty->assign("LANGUAGE_LIST", $languageList);
         $this->smarty->assign("FILE_UPLOAD_ACTION_VALUE", self::FILE_UPLOAD_ACTION_VALUE);
-        echo $this->smarty->fetch("string:".Display::render("UPLOAD_FILE"));
+        echo $this->smarty->fetch("string:".Display::render(self::MODULE_KEY));
     }
 
     public function uploadFile($formParams) {

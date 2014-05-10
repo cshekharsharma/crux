@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+.error-msg-holder {
+	margin-top:140px;
+	margin-left:150px;
+	margin-right:150px;
+	background:#F1F1F1;
+	padding:30px;
+	color:#555;
+	font-size:28;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Verdana, Arial;
+	border:1px solid #D5D5D8;
+	text-align:center;
+	-moz-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
+}
+
+.error-msg-holder .bigoops {
+	font-size:55px;
+	color:#CCC;
+	font-family:courier;
+}

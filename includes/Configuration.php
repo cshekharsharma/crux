@@ -25,11 +25,11 @@ class Configuration {
         'db_host' => 'localhost',
         'db_user' => 'root',
         'db_pass' => 'cvbert',
-        'db_name' => 'codeme_test',
+        'db_name' => 'codeme',
         'mysql_dsn' => 'mysql:host=localhost;dbname=codeme',
         'log_file' => 'data/logs/access.log',
         'log_level' => 1,
-        'code_base_dir' => 'data/test_codes/',
+        'code_base_dir' => 'data/codes/',
         'code_editor_theme' => 'chrome'
     );
 

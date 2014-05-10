@@ -39,6 +39,13 @@ function submitCode(formElem) {
                 }
                 $('#' + EDITOR_CONSTANTS.msgContainerId).show();
                 $('#' + EDITOR_CONSTANTS.msgContainerId).html(response.msg);
+                setIntervalObject = setInterval(function() {
+                    $('#' + EDITOR_CONSTANTS.msgContainerId).hide('drop', {
+                        direction: 'up',
+                    }, 'slow');
+                    clearInterval(setIntervalObject);
+                }, 3000);
+
             }
         };
 

@@ -13,8 +13,8 @@
             {/if}
             <input type="hidden" name="{$DELETE_REQ_KEY}" id="{$DELETE_REQ_KEY}" value="{$DELETE_REQ_VAL}">
             <span class="top-side-buttons file-download-link"><a onclick="deleteProgram('{$PROGRAM_DETAILS.id}')" href="#">Delete</a></span>
-            <span class="top-side-buttons file-download-link"><a target="_blank" href="/download/{$PROGRAM_DETAILS.id}">Download</a></span>
-            <span class="top-side-buttons file-download-link"><a target="_blank" href="/editor/{$PROGRAM_DETAILS.id}">Update</a></span>
+            <span class="top-side-buttons file-download-link"><a href="/download/{$PROGRAM_DETAILS.id}">Download</a></span>
+            <span class="top-side-buttons file-download-link"><a href="/editor/{$PROGRAM_DETAILS.id}">Update</a></span>
             <span class="top-side-links">
                 <a href="/{$PROGRAM_DETAILS.fk_language}">{$PROGRAM_DETAILS.language_name}</a> / 
                 <a target="_blank" href="/{$PROGRAM_DETAILS.fk_language}/{$PROGRAM_DETAILS.fk_category}">{$PROGRAM_DETAILS.category_name}</a>

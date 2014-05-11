@@ -58,19 +58,19 @@ class AuthController extends BaseController {
                 if ($passwordInDB === $passwordHash) {
                     if ($this->createUserSession($userDetail, $formParams['remember'])) {
                         Logger::getLogger()->LogInfo("Auth Success for userid: ".$formParams['username']);
-                        echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', '');
+                        echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', '');
                     }
                 } else {
                     Logger::getLogger()->LogWarn("Auth Failed [Invalid password] for userid: ".$formParams['username']);
-                    echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_PASSWORD, '');
+                    echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_PASSWORD, '');
                 }
             } else {
                 Logger::getLogger()->LogWarn("Auth Failed [User Inactive] for userid: ".$formParams['username']);
-                echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, Error::AUTH_USER_INACTIVE, '');
+                echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::AUTH_USER_INACTIVE, '');
             }
         } else {
             Logger::getLogger()->LogWarn("Auth Failed [Invalid Username] for userid: ".$formParams['username']);
-            echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_USER_NAME, '');
+            echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_USER_NAME, '');
         }
         exit;
     }
@@ -164,13 +164,13 @@ class AuthController extends BaseController {
                     Users_DBTable::USER_HASH." = '".$newPasswordHash."' WHERE ".
                     Users_DBTable::USER_ID." = '".$userDetails[Users_DBTable::USER_ID]."'";
                 if (DBManager::executeQuery($query)) {
-                    echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, Constants::PASSWORD_CHANGED_MSG, '');
+                    echo Response::createResponse(Constants::SUCCESS_RESPONSE, Constants::PASSWORD_CHANGED_MSG, '');
                 }
             } else {
-                echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, Error::ERR_WRONG_PASSWORD, '');
+                echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::ERR_WRONG_PASSWORD, '');
             }
         } else {
-            echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, Error::ERR_USER_NOT_LOGGED_IN, '');
+            echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::ERR_USER_NOT_LOGGED_IN, '');
         }
         exit;
     }

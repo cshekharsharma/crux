@@ -91,10 +91,10 @@ class ExplorerController extends BaseController {
         $isDeleted = false;
         $programController = new ProgramDetailsController();
         if ($programController->deleteProgram($pid)) {
-            echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, 'File Successfully Deleted', '');
+            echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'File Successfully Deleted', '');
             $isDeleted = true;
         } else {
-            echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, 'File Deletion Failed, Retry!', '');
+            echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'File Deletion Failed, Retry!', '');
         }
         exit();
     }

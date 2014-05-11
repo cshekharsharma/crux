@@ -26,7 +26,7 @@ class AutoLoader {
             'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
             'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',
             'RequestManager' => Constants::INCLUDE_DIR.'RequestManager.php',
-            'ServiceResponse' => Constants::INCLUDE_DIR.'ServiceResponse.php',
+            'Response' => Constants::INCLUDE_DIR.'Response.php',
             'ResourceProvider' => Constants::INCLUDE_DIR.'ResourceProvider.php',
 
             // Controller Classes
@@ -75,6 +75,11 @@ class AutoLoader {
         return false;
     }
 
+    /**
+     * Find class path for given class and loads it by including class file.
+     * 
+     * @param string $className
+     */
     public function loadClass($className) {
         $classPath = $this->getClassPath($className);
         try {
@@ -102,4 +107,5 @@ class AutoLoader {
 
 $autoloader = new AutoLoader();
 
+// Registering autoloader function for app
 spl_autoload_register(array($autoloader, 'loadClass'));

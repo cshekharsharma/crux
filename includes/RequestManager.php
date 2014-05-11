@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Request Manager class for handling and preprocessing http requests
+ * 
+ * @author Chandra Shekhar <shekahrsharma705@gmail.com>
+ * @since May 11, 2014
+ */
 class RequestManager {
 
     const PRIMITIVE_PARAM = "__req";

@@ -13,6 +13,12 @@ class DBManager {
     
     private static $instance;
     
+    /**
+     * Gives PDO database instance. Singleton implementation
+     * 
+     * @throws PDOException
+     * @return PDO
+     */
     public static function getInstance() {
         if (!self::$instance instanceof PDO) {
             $dsn  = Configuration::get(Configuration::MYSQL_DSN);
@@ -21,6 +27,7 @@ class DBManager {
             $pass = Configuration::get(Configuration::DB_PASS);
             $name = Configuration::get(Configuration::DB_NAME);
             try {
+                Logger::getLogger()->LogDebug('New DB Instance created');
                 self::$instance = new PDO($dsn, $user, $pass);
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE,
                     PDO::ERRMODE_EXCEPTION);
@@ -31,6 +38,15 @@ class DBManager {
         return self::$instance;
     }
 
+    /**
+     * Executes given query using PDO prepared statements.
+     * returns query output if shouldReturn is true
+     * 
+     * @param string $query
+     * @param array|false $bindParams
+     * @param boolean $shouldReturn
+     * @return boolean
+     */
     public static function executeQuery($query, $bindParams = false, $shouldReturn = false) {
         try {
             $instance = self::getInstance();

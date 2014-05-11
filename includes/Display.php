@@ -1,15 +1,20 @@
 <?php
-
+/**
+ * Class for maanaging views, template rendering and display
+ * 
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @since May 11, 2014
+ */
 class Display {
 
     public static $smarty;
 
     private static $TEMPLATE_LIST = array(
+        'STATS' => 'Stats/tpls/showStats.htpl',
         'INDEX' => 'Index/tpls/Index.htpl',
         'UPLOAD' => 'Upload/tpls/uploadFile.htpl',
         'SEARCH' => 'Search/tpls/searchResults.htpl',
         'EDITOR' => 'Editor/tpls/editor.htpl',
-        'STATS' => 'Stats/tpls/showStats.htpl',
         'EXPLORER' => 'Explorer/tpls/displayCode.htpl',
         'AUTH_LOGIN' => 'Auth/tpls/login.htpl',
         'NO_ITEM_FOUND' => 'Errors/tpls/noItemFound.htpl',
@@ -32,6 +37,12 @@ class Display {
         return (!empty(self::$TEMPLATE_LIST[$templateKey]));
     }
 
+    /**
+     * Fetches appropriate template by given template key and returns its content
+     * 
+     * @param string $templateKey
+     * @return string
+     */
     public static function render($templateKey) {
         self::prepareDisplay();
         $templateKey = strtoupper($templateKey);
@@ -48,6 +59,9 @@ class Display {
         return file_get_contents(Constants::VIEW_DIR . self::$ERROR_TEMPLATE_LIST[$errorCode]);
     }
 
+    /**
+     * Method for executing all the pre-display activities
+     */
     private static function prepareDisplay() {
         $smarty = Utils::getSmarty();
         $searchSuggestions = Session::get(Session::SESS_SEARCH_SUGGESTIONS);

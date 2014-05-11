@@ -63,18 +63,18 @@ class UploadController extends BaseController {
                             $formParams['stored_file_name'] = $newFileName;
                             $formParams['created_by'] = $authUserId;
                             if ($this->insertProgramDescription($formParams)) {
-                                return ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, 'Upload Successful', '');
+                                return Response::createResponse(Constants::SUCCESS_RESPONSE, 'Upload Successful', '');
                             } else {
-                                return ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
+                                return Response::createResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
                             }
                         }
                     } else {
                         Logger::getLogger()->LogError("Directory < $uploadFileDir > Doesn't Exist or Not Writable");
-                        return ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
+                        return Response::createResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
                     }
                 } else {
                     Logger::getLogger()->LogError(Error::UPLOAD_INVALID_FILE_TYPE);
-                    return ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, Error::UPLOAD_INVALID_FILE_TYPE, '');
+                    return Response::createResponse(Constants::FAILURE_RESPONSE, Error::UPLOAD_INVALID_FILE_TYPE, '');
                 }
             }
         }

@@ -57,12 +57,12 @@ class EditorController extends BaseController {
                     'isUpdate' => self::IS_UPDATE_VALUE,
                     'programId' => $this->getLastInsertedRecord($loggedInUser[Users_DBTable::USER_ID], $currentDatetime, $storedFileName)
                 );
-                echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, "Code Submitted", $detailArray);
+                echo Response::createResponse(Constants::SUCCESS_RESPONSE, "Code Submitted", $detailArray);
             } else {
-                echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry!", '');
+                echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry!", '');
             }
         } else {
-            echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry", '');
+            echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry", '');
         }
         exit();
     }
@@ -115,12 +115,12 @@ class EditorController extends BaseController {
                     'isUpdate' => self::IS_UPDATE_VALUE,
                     'programId' => $pid
                 );
-                echo ServiceResponse::createServiceResponse(Constants::SUCCESS_RESPONSE, "Code Successfully Updated", $detailArray);
+                echo Response::createResponse(Constants::SUCCESS_RESPONSE, "Code Successfully Updated", $detailArray);
             } else {
-                echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry!", '');
+                echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry!", '');
             }
         } else {
-            echo ServiceResponse::createServiceResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry", '');
+            echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry", '');
         }
         exit();
     }

@@ -11306,3 +11306,111 @@ test
 2014-05-11 0:43:09 - INFO  --> Application Init() 
 2014-05-11 0:43:09 - INFO  --> Serving INIT Request 
 2014-05-11 0:43:09 - INFO  --> Serving Index Controller 
+2014-05-11 0:47:33 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 0:47:33 - INFO  --> Application Init() 
+2014-05-11 0:47:33 - INFO  --> Serving INIT Request 
+2014-05-11 0:47:33 - INFO  --> Serving Index Controller 
+2014-05-11 0:47:34 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 0:47:34 - INFO  --> Application Init() 
+2014-05-11 0:47:34 - INFO  --> Serving INIT Request 
+2014-05-11 0:47:34 - INFO  --> Serving Index Controller 
+2014-05-11 0:47:48 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 0:47:48 - INFO  --> Application Init() 
+2014-05-11 0:47:48 - INFO  --> Serving INIT Request 
+2014-05-11 0:47:48 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 0:47:48 - INFO  --> Application Init() 
+2014-05-11 0:47:48 - INFO  --> Serving INIT Request 
+2014-05-11 0:47:48 - INFO  --> Serving Index Controller 
+2014-05-11 14:17:14 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 14:17:14 - INFO  --> Application Init() 
+2014-05-11 14:17:14 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 14:17:14 - INFO  --> Application Init() 
+2014-05-11 14:17:14 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-11 14:17:14 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-11 14:17:14 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 14:17:14 - INFO  --> Application Init() 
+2014-05-11 14:17:14 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 14:17:14 - INFO  --> Application Init() 
+2014-05-11 14:17:14 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:18 - DEBUG --> Session Started / Resumed with ID : 3sg5gk5iscbfesgdvb8o8rfad7 
+2014-05-11 14:17:18 - INFO  --> Application Init() 
+2014-05-11 14:17:18 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 14:17:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 14:17:18 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:18 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-11 14:17:18 - INFO  --> Auth Success for userid: shekhar 
+2014-05-11 14:17:18 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:18 - INFO  --> Application Init() 
+2014-05-11 14:17:18 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:18 - INFO  --> Serving Index Controller 
+2014-05-11 14:17:18 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:18 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:18 - INFO  --> Application Init() 
+2014-05-11 14:17:18 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:18 - INFO  --> Serving Index Controller 
+2014-05-11 14:17:18 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:20 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:20 - INFO  --> Application Init() 
+2014-05-11 14:17:20 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:20 - INFO  --> Serving Index Controller 
+2014-05-11 14:17:20 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:27 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:27 - INFO  --> Application Init() 
+2014-05-11 14:17:27 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:27 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:30 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:30 - INFO  --> Application Init() 
+2014-05-11 14:17:30 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:30 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:31 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:31 - INFO  --> Application Init() 
+2014-05-11 14:17:31 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:31 - WARN  --> Attempting to get invalid item from Session with key : empty_lang_category_matrix 
+2014-05-11 14:17:31 - WARN  --> Attempting to get invalid item from Session with key : id_name_translation_map 
+2014-05-11 14:17:31 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:32 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:32 - INFO  --> Application Init() 
+2014-05-11 14:17:32 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:32 - INFO  --> Serving Index Controller 
+2014-05-11 14:17:32 - DEBUG --> New DB Instance created 
+2014-05-11 14:17:41 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:17:41 - INFO  --> Application Init() 
+2014-05-11 14:17:41 - INFO  --> Serving INIT Request 
+2014-05-11 14:17:41 - INFO  --> Serving Index Controller 
+2014-05-11 14:17:41 - DEBUG --> New DB Instance created 
+2014-05-11 14:29:05 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:29:05 - INFO  --> Application Init() 
+2014-05-11 14:29:05 - INFO  --> Serving INIT Request 
+2014-05-11 14:29:05 - DEBUG --> New DB Instance created 
+2014-05-11 14:29:05 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:29:05 - INFO  --> Application Init() 
+2014-05-11 14:29:05 - INFO  --> Serving INIT Request 
+2014-05-11 14:29:05 - INFO  --> Serving Index Controller 
+2014-05-11 14:29:05 - DEBUG --> New DB Instance created 
+2014-05-11 14:30:25 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 14:30:25 - INFO  --> Application Init() 
+2014-05-11 14:30:25 - INFO  --> Serving INIT Request 
+2014-05-11 14:30:25 - DEBUG --> New DB Instance created 

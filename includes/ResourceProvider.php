@@ -1,7 +1,19 @@
 <?php
 
+/**
+ * Request Router class for the application
+ * Redirects requests to appropriate controller along with appropriate params
+ *
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @since May 11, 2014
+ */
 class ResourceProvider {
 
+    /**
+     * Routes the request to appropriate controller and returns resource params
+     *
+     * @return Resource $resource
+     */
     public static function getResource() {
         $resource = new Resource();
         $firstParam = RequestManager::getParam(RequestManager::FIRST_PARAM);
@@ -100,11 +112,20 @@ class ResourceProvider {
         return $resource;
     }
 
+    /**
+     * Get requested controller object
+     *
+     * @param string $key
+     * @return BaseController|NULL
+     */
     public static function getControllerByResourceKey($key) {
         $controllerClass = ucfirst(strtolower(($key))) . 'Controller';
-        $controller = new $controllerClass();
-        return $controller;
+        if (class_exists($controllerClass)) {
+            $controller = new $controllerClass();
+            if ($controller instanceof BaseController) {
+                return $controller;
+            }
+        }
+        return null;
     }
-
-
 }

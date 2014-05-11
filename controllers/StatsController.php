@@ -28,9 +28,9 @@ class StatsController extends BaseController {
                 $lang = $row[ProgramDetails_DBTable::FK_LANGUAGE_ID];
                 $cate = $row[ProgramDetails_DBTable::FK_CATEGORY_ID];
                 $matrix[$cate][$lang] = $row['count'];
-                ++$matrix[$cate][self::TOTAL];
-                ++$matrix[self::TOTAL][$lang];
-                ++$this->grandTotal;
+                $matrix[$cate][self::TOTAL] += $row['count'];
+                $matrix[self::TOTAL][$lang] += $row['count'];
+                $this->grandTotal += $row['count'];
             }
         }
         return $matrix;

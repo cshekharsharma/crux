@@ -8,7 +8,6 @@ class ExplorerController extends BaseController {
     const DELETE_REQ_VAL = 'deleteCode_byajax_EJASSJSDSG';
 
     public function run(Resource $resource) {
-        Logger::getLogger()->LogInfo("Serving Index Controller");
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
         $pid = $uriParams[Constants::INPUT_PARAM_PID];

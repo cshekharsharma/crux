@@ -11419,3 +11419,2067 @@ test
 2014-05-11 14:55:35 - INFO  --> Serving INIT Request 
 2014-05-11 14:55:35 - INFO  --> Serving Index Controller 
 2014-05-11 14:55:35 - DEBUG --> New DB Instance created 
+2014-05-11 15:25:59 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 15:25:59 - INFO  --> Application Init() 
+2014-05-11 15:25:59 - INFO  --> Serving INIT Request 
+2014-05-11 15:25:59 - INFO  --> Serving Index Controller 
+2014-05-11 15:25:59 - DEBUG --> New DB Instance created 
+2014-05-11 15:26:07 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 15:26:07 - INFO  --> Application Init() 
+2014-05-11 15:26:07 - INFO  --> Serving INIT Request 
+2014-05-11 15:26:07 - INFO  --> Serving Index Controller 
+2014-05-11 15:26:07 - DEBUG --> New DB Instance created 
+2014-05-11 16:33:42 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:33:42 - INFO  --> Application Init() 
+2014-05-11 16:33:42 - INFO  --> Serving INIT Request 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:42 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:33:42 - INFO  --> Application Init() 
+2014-05-11 16:33:42 - INFO  --> Serving INIT Request 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-11 16:33:42 - DEBUG --> New DB Instance created 
+2014-05-11 16:33:42 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-11 16:33:43 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:33:43 - INFO  --> Application Init() 
+2014-05-11 16:33:43 - INFO  --> Serving INIT Request 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:43 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:33:43 - INFO  --> Application Init() 
+2014-05-11 16:33:43 - INFO  --> Serving INIT Request 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:47 - INFO  --> Application Init() 
+2014-05-11 16:35:47 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:47 - INFO  --> Application Init() 
+2014-05-11 16:35:47 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:47 - INFO  --> Application Init() 
+2014-05-11 16:35:47 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:47 - INFO  --> Application Init() 
+2014-05-11 16:35:47 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:49 - INFO  --> Application Init() 
+2014-05-11 16:35:49 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:49 - INFO  --> Application Init() 
+2014-05-11 16:35:49 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:49 - INFO  --> Application Init() 
+2014-05-11 16:35:49 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:49 - INFO  --> Application Init() 
+2014-05-11 16:35:49 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:50 - INFO  --> Application Init() 
+2014-05-11 16:35:50 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:50 - INFO  --> Application Init() 
+2014-05-11 16:35:50 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:50 - INFO  --> Application Init() 
+2014-05-11 16:35:50 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:50 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:51 - INFO  --> Application Init() 
+2014-05-11 16:35:51 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:51 - INFO  --> Application Init() 
+2014-05-11 16:35:51 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:51 - INFO  --> Application Init() 
+2014-05-11 16:35:51 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:51 - INFO  --> Application Init() 
+2014-05-11 16:35:51 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:57 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:57 - INFO  --> Application Init() 
+2014-05-11 16:35:57 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:58 - INFO  --> Application Init() 
+2014-05-11 16:35:58 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:58 - INFO  --> Application Init() 
+2014-05-11 16:35:58 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:58 - INFO  --> Application Init() 
+2014-05-11 16:35:58 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:35:58 - INFO  --> Application Init() 
+2014-05-11 16:35:58 - INFO  --> Serving INIT Request 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:35:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:08 - INFO  --> Application Init() 
+2014-05-11 16:36:08 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:08 - INFO  --> Application Init() 
+2014-05-11 16:36:08 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:08 - INFO  --> Application Init() 
+2014-05-11 16:36:08 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:08 - INFO  --> Application Init() 
+2014-05-11 16:36:08 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:08 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:08 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:08 - INFO  --> Application Init() 
+2014-05-11 16:36:08 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:09 - INFO  --> Application Init() 
+2014-05-11 16:36:09 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:10 - INFO  --> Application Init() 
+2014-05-11 16:36:10 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:10 - INFO  --> Application Init() 
+2014-05-11 16:36:10 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:10 - INFO  --> Application Init() 
+2014-05-11 16:36:10 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:10 - INFO  --> Application Init() 
+2014-05-11 16:36:10 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:11 - INFO  --> Application Init() 
+2014-05-11 16:36:11 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:12 - INFO  --> Application Init() 
+2014-05-11 16:36:12 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:12 - INFO  --> Application Init() 
+2014-05-11 16:36:12 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:12 - INFO  --> Application Init() 
+2014-05-11 16:36:12 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:36:12 - INFO  --> Application Init() 
+2014-05-11 16:36:12 - INFO  --> Serving INIT Request 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:36:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:37:19 - DEBUG --> Session Started / Resumed with ID : 9917be6fajnt5n5o3c6j1nrqb5 
+2014-05-11 16:37:19 - INFO  --> Application Init() 
+2014-05-11 16:37:19 - INFO  --> Serving INIT Request 
+2014-05-11 16:37:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:37:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:37:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 16:37:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 16:37:19 - DEBUG --> New DB Instance created 
+2014-05-11 16:37:19 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-11 16:37:19 - INFO  --> Auth Success for userid: shekhar 
+2014-05-11 16:37:19 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 16:37:19 - INFO  --> Application Init() 
+2014-05-11 16:37:19 - INFO  --> Serving INIT Request 
+2014-05-11 16:37:19 - INFO  --> Serving Index Controller 
+2014-05-11 16:37:19 - DEBUG --> New DB Instance created 
+2014-05-11 16:37:24 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 16:37:24 - INFO  --> Application Init() 
+2014-05-11 16:37:24 - INFO  --> Serving INIT Request 
+2014-05-11 16:37:24 - DEBUG --> New DB Instance created 
+2014-05-11 16:37:26 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 16:37:26 - INFO  --> Application Init() 
+2014-05-11 16:37:26 - INFO  --> Serving INIT Request 
+2014-05-11 16:37:26 - DEBUG --> New DB Instance created 
+2014-05-11 21:11:31 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:31 - INFO  --> Application Init() 
+2014-05-11 21:11:31 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:31 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:31 - INFO  --> Application Init() 
+2014-05-11 21:11:31 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-11 21:11:31 - DEBUG --> New DB Instance created 
+2014-05-11 21:11:31 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-11 21:11:33 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:33 - INFO  --> Application Init() 
+2014-05-11 21:11:33 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:33 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:33 - INFO  --> Application Init() 
+2014-05-11 21:11:33 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:36 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:36 - INFO  --> Application Init() 
+2014-05-11 21:11:36 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:36 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:36 - INFO  --> Application Init() 
+2014-05-11 21:11:36 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:57 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:57 - INFO  --> Application Init() 
+2014-05-11 21:11:57 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:57 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:11:57 - INFO  --> Application Init() 
+2014-05-11 21:11:57 - INFO  --> Serving INIT Request 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:11:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:06 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:12:06 - INFO  --> Application Init() 
+2014-05-11 21:12:06 - INFO  --> Serving INIT Request 
+2014-05-11 21:12:06 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:06 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:06 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:06 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:06 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:06 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:07 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:12:07 - INFO  --> Application Init() 
+2014-05-11 21:12:07 - INFO  --> Serving INIT Request 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:07 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:12:07 - INFO  --> Application Init() 
+2014-05-11 21:12:07 - INFO  --> Serving INIT Request 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:16 - DEBUG --> Session Started / Resumed with ID : thtqotmekrtj5o7r1tqek292b1 
+2014-05-11 21:12:16 - INFO  --> Application Init() 
+2014-05-11 21:12:16 - INFO  --> Serving INIT Request 
+2014-05-11 21:12:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-11 21:12:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-11 21:12:16 - DEBUG --> New DB Instance created 
+2014-05-11 21:12:16 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-11 21:12:16 - INFO  --> Auth Success for userid: shekhar 
+2014-05-11 21:12:16 - DEBUG --> Session Started / Resumed with ID : nn5791ttvqg809mf51m4atkm77 
+2014-05-11 21:12:16 - INFO  --> Application Init() 
+2014-05-11 21:12:16 - INFO  --> Serving INIT Request 
+2014-05-11 21:12:16 - INFO  --> Serving Index Controller 
+2014-05-11 21:12:16 - DEBUG --> New DB Instance created 
+2014-05-11 21:12:16 - DEBUG --> Session Started / Resumed with ID : nn5791ttvqg809mf51m4atkm77 
+2014-05-11 21:12:16 - INFO  --> Application Init() 
+2014-05-11 21:12:16 - INFO  --> Serving INIT Request 
+2014-05-11 21:12:16 - DEBUG --> New DB Instance created 
+2014-05-12 0:19:16 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 0:19:16 - INFO  --> Application Init() 
+2014-05-12 0:19:16 - INFO  --> Serving INIT Request 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:16 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 0:19:16 - INFO  --> Application Init() 
+2014-05-12 0:19:16 - INFO  --> Serving INIT Request 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 0:19:16 - DEBUG --> New DB Instance created 
+2014-05-12 0:19:16 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 0:19:17 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 0:19:17 - INFO  --> Application Init() 
+2014-05-12 0:19:17 - INFO  --> Serving INIT Request 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:17 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 0:19:17 - INFO  --> Application Init() 
+2014-05-12 0:19:17 - INFO  --> Serving INIT Request 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 0:19:17 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:36 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 8:21:36 - INFO  --> Application Init() 
+2014-05-12 8:21:36 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:37 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 8:21:37 - INFO  --> Application Init() 
+2014-05-12 8:21:37 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 8:21:37 - DEBUG --> New DB Instance created 
+2014-05-12 8:21:37 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 8:21:38 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 8:21:38 - INFO  --> Application Init() 
+2014-05-12 8:21:38 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:38 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 8:21:38 - INFO  --> Application Init() 
+2014-05-12 8:21:38 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:44 - DEBUG --> Session Started / Resumed with ID : 6kjv4clvd9ki0kjnu4r0u8ac84 
+2014-05-12 8:21:44 - INFO  --> Application Init() 
+2014-05-12 8:21:44 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 8:21:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 8:21:44 - DEBUG --> New DB Instance created 
+2014-05-12 8:21:44 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-12 8:21:44 - INFO  --> Auth Success for userid: shekhar 
+2014-05-12 8:21:44 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 8:21:44 - INFO  --> Application Init() 
+2014-05-12 8:21:44 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:44 - INFO  --> Serving Index Controller 
+2014-05-12 8:21:44 - DEBUG --> New DB Instance created 
+2014-05-12 8:21:45 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 8:21:45 - INFO  --> Application Init() 
+2014-05-12 8:21:45 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:45 - DEBUG --> New DB Instance created 
+2014-05-12 8:21:51 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 8:21:51 - INFO  --> Application Init() 
+2014-05-12 8:21:51 - INFO  --> Serving INIT Request 
+2014-05-12 8:21:51 - INFO  --> Serving Index Controller 
+2014-05-12 8:21:51 - DEBUG --> New DB Instance created 
+2014-05-12 11:24:36 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 11:24:36 - INFO  --> Application Init() 
+2014-05-12 11:24:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 11:24:36 - INFO  --> Application Init() 
+2014-05-12 11:24:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 11:24:36 - DEBUG --> New DB Instance created 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 11:24:36 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 11:24:36 - INFO  --> Application Init() 
+2014-05-12 11:24:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 11:24:36 - INFO  --> Application Init() 
+2014-05-12 11:24:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:42 - DEBUG --> Session Started / Resumed with ID : 2dvsjeb1350h28p2dp7fkst9v4 
+2014-05-12 11:24:42 - INFO  --> Application Init() 
+2014-05-12 11:24:42 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:24:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:24:42 - DEBUG --> New DB Instance created 
+2014-05-12 11:24:42 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-12 11:24:42 - INFO  --> Auth Success for userid: shekhar 
+2014-05-12 11:24:42 - DEBUG --> Session Started / Resumed with ID : dssi2i847l8nd5g5aa1g3jjrf5 
+2014-05-12 11:24:42 - INFO  --> Application Init() 
+2014-05-12 11:24:42 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:42 - INFO  --> Serving Index Controller 
+2014-05-12 11:24:42 - DEBUG --> New DB Instance created 
+2014-05-12 11:24:42 - DEBUG --> Session Started / Resumed with ID : dssi2i847l8nd5g5aa1g3jjrf5 
+2014-05-12 11:24:42 - INFO  --> Application Init() 
+2014-05-12 11:24:42 - INFO  --> Serving INIT Request 
+2014-05-12 11:24:42 - DEBUG --> New DB Instance created 
+2014-05-12 11:56:26 - DEBUG --> Session Started / Resumed with ID : dssi2i847l8nd5g5aa1g3jjrf5 
+2014-05-12 11:56:26 - INFO  --> Application Init() 
+2014-05-12 11:56:26 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:26 - DEBUG --> New DB Instance created 
+2014-05-12 11:56:32 - DEBUG --> Session Started / Resumed with ID : dssi2i847l8nd5g5aa1g3jjrf5 
+2014-05-12 11:56:32 - INFO  --> Application Init() 
+2014-05-12 11:56:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:56:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:56:32 - DEBUG --> Session Started / Resumed with ID : dssi2i847l8nd5g5aa1g3jjrf5 
+2014-05-12 11:56:32 - INFO  --> Application Init() 
+2014-05-12 11:56:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:56:36 - DEBUG --> Session Started / Resumed with ID : dssi2i847l8nd5g5aa1g3jjrf5 
+2014-05-12 11:56:36 - INFO  --> Application Init() 
+2014-05-12 11:56:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:36 - DEBUG --> New DB Instance created 
+2014-05-12 11:56:36 - DEBUG --> Session with ID : is closing 
+2014-05-12 11:56:36 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:36 - INFO  --> Application Init() 
+2014-05-12 11:56:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:36 - INFO  --> Application Init() 
+2014-05-12 11:56:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 11:56:36 - DEBUG --> New DB Instance created 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 11:56:36 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:36 - INFO  --> Application Init() 
+2014-05-12 11:56:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:36 - INFO  --> Application Init() 
+2014-05-12 11:56:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:40 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:40 - INFO  --> Application Init() 
+2014-05-12 11:56:40 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:40 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:40 - INFO  --> Application Init() 
+2014-05-12 11:56:40 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:54 - INFO  --> Application Init() 
+2014-05-12 11:56:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:54 - INFO  --> Application Init() 
+2014-05-12 11:56:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:54 - INFO  --> Application Init() 
+2014-05-12 11:56:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:54 - INFO  --> Application Init() 
+2014-05-12 11:56:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:54 - INFO  --> Application Init() 
+2014-05-12 11:56:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:56:54 - INFO  --> Application Init() 
+2014-05-12 11:56:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:56:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:12 - DEBUG --> Session Started / Resumed with ID : cbrdbcrob5ljfvm26l5j62od74 
+2014-05-12 11:57:12 - INFO  --> Application Init() 
+2014-05-12 11:57:12 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:12 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:12 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-12 11:57:12 - INFO  --> Auth Success for userid: shekhar 
+2014-05-12 11:57:12 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:12 - INFO  --> Application Init() 
+2014-05-12 11:57:12 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:12 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:12 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:12 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:12 - INFO  --> Application Init() 
+2014-05-12 11:57:12 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:12 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:30 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:30 - INFO  --> Application Init() 
+2014-05-12 11:57:30 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:30 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:30 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:31 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:31 - INFO  --> Application Init() 
+2014-05-12 11:57:31 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:31 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - INFO  --> Serving Index Controller 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:32 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:32 - INFO  --> Application Init() 
+2014-05-12 11:57:32 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:32 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:33 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:33 - INFO  --> Application Init() 
+2014-05-12 11:57:33 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:33 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:39 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:39 - INFO  --> Application Init() 
+2014-05-12 11:57:39 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:39 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : 6fnauavrfv7pqgfrbdmu0ug013 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:44 - DEBUG --> Session with ID : is closing 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 11:57:44 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:44 - INFO  --> Application Init() 
+2014-05-12 11:57:44 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:54 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:54 - INFO  --> Application Init() 
+2014-05-12 11:57:54 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:54 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:54 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:54 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:54 - WARN  --> Auth Failed [Invalid password] for userid: shekhar 
+2014-05-12 11:57:56 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:56 - INFO  --> Application Init() 
+2014-05-12 11:57:56 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:56 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:56 - WARN  --> Auth Failed [Invalid password] for userid: shekhar 
+2014-05-12 11:57:57 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:57:57 - INFO  --> Application Init() 
+2014-05-12 11:57:57 - INFO  --> Serving INIT Request 
+2014-05-12 11:57:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:57:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:57:57 - DEBUG --> New DB Instance created 
+2014-05-12 11:57:57 - WARN  --> Auth Failed [Invalid password] for userid: shekhar 
+2014-05-12 11:58:00 - DEBUG --> Session Started / Resumed with ID : mhc0715l3tqart6as8jopnnqe7 
+2014-05-12 11:58:00 - INFO  --> Application Init() 
+2014-05-12 11:58:00 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:00 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:00 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:00 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:00 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:00 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:00 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-12 11:58:00 - INFO  --> Auth Success for userid: shekhar 
+2014-05-12 11:58:25 - DEBUG --> Session Started / Resumed with ID : i5jt7rphtcraea70i6etiab5r1 
+2014-05-12 11:58:25 - INFO  --> Application Init() 
+2014-05-12 11:58:25 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:25 - INFO  --> Serving Index Controller 
+2014-05-12 11:58:25 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:25 - DEBUG --> Session Started / Resumed with ID : i5jt7rphtcraea70i6etiab5r1 
+2014-05-12 11:58:25 - INFO  --> Application Init() 
+2014-05-12 11:58:25 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:25 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:28 - DEBUG --> Session Started / Resumed with ID : i5jt7rphtcraea70i6etiab5r1 
+2014-05-12 11:58:28 - INFO  --> Application Init() 
+2014-05-12 11:58:28 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:28 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:35 - DEBUG --> Session Started / Resumed with ID : i5jt7rphtcraea70i6etiab5r1 
+2014-05-12 11:58:35 - INFO  --> Application Init() 
+2014-05-12 11:58:35 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:35 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:35 - DEBUG --> Session with ID : is closing 
+2014-05-12 11:58:35 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:35 - INFO  --> Application Init() 
+2014-05-12 11:58:35 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:35 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:35 - INFO  --> Application Init() 
+2014-05-12 11:58:35 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 11:58:35 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:35 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 11:58:36 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:36 - INFO  --> Application Init() 
+2014-05-12 11:58:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:36 - INFO  --> Application Init() 
+2014-05-12 11:58:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:36 - INFO  --> Application Init() 
+2014-05-12 11:58:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:36 - INFO  --> Application Init() 
+2014-05-12 11:58:36 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:41 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:41 - INFO  --> Application Init() 
+2014-05-12 11:58:41 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:41 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:41 - INFO  --> Application Init() 
+2014-05-12 11:58:41 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:45 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:45 - INFO  --> Application Init() 
+2014-05-12 11:58:45 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:45 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:46 - INFO  --> Application Init() 
+2014-05-12 11:58:46 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:46 - INFO  --> Application Init() 
+2014-05-12 11:58:46 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:46 - INFO  --> Application Init() 
+2014-05-12 11:58:46 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:46 - INFO  --> Application Init() 
+2014-05-12 11:58:46 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:46 - INFO  --> Application Init() 
+2014-05-12 11:58:46 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:56 - DEBUG --> Session Started / Resumed with ID : 9svu9ttlad7d62o0kpbn4o9oc1 
+2014-05-12 11:58:56 - INFO  --> Application Init() 
+2014-05-12 11:58:56 - INFO  --> Serving INIT Request 
+2014-05-12 11:58:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 11:58:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 11:58:56 - DEBUG --> New DB Instance created 
+2014-05-12 11:58:56 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-12 11:58:56 - INFO  --> Auth Success for userid: shekhar 
+2014-05-12 12:12:45 - DEBUG --> Session Started / Resumed with ID : 4uf2dg6uo2u29shogp61hma301 
+2014-05-12 12:12:46 - INFO  --> Application Init() 
+2014-05-12 12:12:46 - INFO  --> Serving INIT Request 
+2014-05-12 12:12:46 - INFO  --> Serving Index Controller 
+2014-05-12 12:12:46 - DEBUG --> New DB Instance created 
+2014-05-12 12:12:46 - DEBUG --> Session Started / Resumed with ID : 4uf2dg6uo2u29shogp61hma301 
+2014-05-12 12:12:46 - INFO  --> Application Init() 
+2014-05-12 12:12:46 - INFO  --> Serving INIT Request 
+2014-05-12 12:12:46 - DEBUG --> New DB Instance created 
+2014-05-12 12:12:48 - DEBUG --> Session Started / Resumed with ID : 4uf2dg6uo2u29shogp61hma301 
+2014-05-12 12:12:48 - INFO  --> Application Init() 
+2014-05-12 12:12:48 - INFO  --> Serving INIT Request 
+2014-05-12 12:12:48 - DEBUG --> New DB Instance created 
+2014-05-12 12:13:06 - DEBUG --> Session Started / Resumed with ID : 4uf2dg6uo2u29shogp61hma301 
+2014-05-12 12:13:06 - INFO  --> Application Init() 
+2014-05-12 12:13:06 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:06 - DEBUG --> New DB Instance created 
+2014-05-12 12:13:06 - DEBUG --> Session with ID : is closing 
+2014-05-12 12:13:06 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:06 - INFO  --> Application Init() 
+2014-05-12 12:13:06 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - DEBUG --> Setting pending Req:  
+2014-05-12 12:13:07 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:07 - INFO  --> Application Init() 
+2014-05-12 12:13:07 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 12:13:07 - DEBUG --> New DB Instance created 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 12:13:07 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:07 - INFO  --> Application Init() 
+2014-05-12 12:13:07 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - DEBUG --> Setting pending Req: favicon.ico 
+2014-05-12 12:13:07 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:07 - INFO  --> Application Init() 
+2014-05-12 12:13:07 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:18 - INFO  --> Application Init() 
+2014-05-12 12:13:18 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - DEBUG --> Setting pending Req: c/arrays/1 
+2014-05-12 12:13:18 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:18 - INFO  --> Application Init() 
+2014-05-12 12:13:18 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:18 - INFO  --> Application Init() 
+2014-05-12 12:13:18 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - DEBUG --> Setting pending Req: favicon.ico 
+2014-05-12 12:13:18 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:13:18 - INFO  --> Application Init() 
+2014-05-12 12:13:18 - INFO  --> Serving INIT Request 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:13:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:07 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:15:07 - INFO  --> Application Init() 
+2014-05-12 12:15:07 - INFO  --> Serving INIT Request 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:07 - DEBUG --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-12 12:15:07 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:15:07 - INFO  --> Application Init() 
+2014-05-12 12:15:07 - INFO  --> Serving INIT Request 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:07 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:21 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:15:21 - INFO  --> Application Init() 
+2014-05-12 12:15:21 - INFO  --> Serving INIT Request 
+2014-05-12 12:15:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:21 - DEBUG --> New DB Instance created 
+2014-05-12 12:15:21 - WARN  --> Auth Failed [Invalid password] for userid: shekhar 
+2014-05-12 12:15:24 - DEBUG --> Session Started / Resumed with ID : cbrl0e52lq0i4quaciap21bfq1 
+2014-05-12 12:15:24 - INFO  --> Application Init() 
+2014-05-12 12:15:24 - INFO  --> Serving INIT Request 
+2014-05-12 12:15:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:15:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:15:24 - DEBUG --> New DB Instance created 
+2014-05-12 12:15:24 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-05-12 12:15:24 - DEBUG --> Resuming Pending URL: / 
+2014-05-12 12:15:24 - INFO  --> Auth Success for userid: shekhar 
+2014-05-12 12:21:34 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:34 - INFO  --> Application Init() 
+2014-05-12 12:21:34 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:34 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:34 - INFO  --> Application Init() 
+2014-05-12 12:21:34 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:34 - INFO  --> Serving Index Controller 
+2014-05-12 12:21:34 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:34 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:34 - INFO  --> Application Init() 
+2014-05-12 12:21:34 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:34 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:42 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:42 - INFO  --> Application Init() 
+2014-05-12 12:21:42 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:42 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:42 - INFO  --> Application Init() 
+2014-05-12 12:21:42 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:42 - INFO  --> Serving Index Controller 
+2014-05-12 12:21:42 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:42 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:42 - INFO  --> Application Init() 
+2014-05-12 12:21:42 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:42 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:47 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:47 - INFO  --> Application Init() 
+2014-05-12 12:21:47 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:47 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : fnouvhea4jr8ticut8jlvtsk07 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:53 - DEBUG --> Session with ID : is closing 
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - DEBUG --> Setting pending Req:  
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-05-12 12:21:53 - DEBUG --> New DB Instance created 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - DEBUG --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - DEBUG --> Setting pending Req: favicon.ico 
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:21:53 - INFO  --> Application Init() 
+2014-05-12 12:21:53 - INFO  --> Serving INIT Request 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:21:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:01 - INFO  --> Application Init() 
+2014-05-12 12:22:01 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - DEBUG --> Setting pending Req: c/arrays/1 
+2014-05-12 12:22:01 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:01 - INFO  --> Application Init() 
+2014-05-12 12:22:01 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:01 - INFO  --> Application Init() 
+2014-05-12 12:22:01 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - DEBUG --> Setting pending Req: favicon.ico 
+2014-05-12 12:22:01 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:01 - INFO  --> Application Init() 
+2014-05-12 12:22:01 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:20 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:20 - INFO  --> Application Init() 
+2014-05-12 12:22:20 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:20 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:20 - INFO  --> Application Init() 
+2014-05-12 12:22:20 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:20 - DEBUG --> Setting pending Req: favicon.ico 
+2014-05-12 12:22:20 - DEBUG --> Session Started / Resumed with ID : olmq3opvs70n9hillg45q5jna1 
+2014-05-12 12:22:21 - INFO  --> Application Init() 
+2014-05-12 12:22:21 - INFO  --> Serving INIT Request 
+2014-05-12 12:22:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:22:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-05-12 12:22:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-05-12 12:23:21 - FATAL --> Resuming Pending URL: favicon.ico 
+2014-05-12 12:23:33 - FATAL --> Setting pending Req:  
+2014-05-12 12:23:33 - FATAL --> Setting pending Req: favicon.ico 
+2014-05-12 12:23:44 - FATAL --> Setting pending Req: c/arrays/1 
+2014-05-12 12:23:44 - FATAL --> Setting pending Req: favicon.ico 
+2014-05-12 12:24:06 - FATAL --> Resuming Pending URL: favicon.ico 
+2014-05-12 12:45:35 - FATAL --> Setting pending Req:  
+2014-05-12 12:45:35 - FATAL --> Setting pending Req: favicon.ico 
+2014-05-12 12:45:51 - FATAL --> Setting pending Req: favicon.ico 
+2014-05-12 12:48:07 - FATAL --> Resuming Pending URL: / 
+2014-05-12 21:48:27 - FATAL --> Resuming Pending URL: / 
+2014-05-13 1:04:12 - FATAL --> Resuming Pending URL: / 
+2014-05-15 18:28:36 - FATAL --> Resuming Pending URL: / 
+2014-05-15 19:53:18 - FATAL --> Setting pending Req: search 
+2014-05-15 19:53:18 - FATAL --> Setting pending Req: search 
+2014-05-15 19:53:18 - FATAL --> Setting pending Req: search 
+2014-05-15 22:48:14 - FATAL --> Resuming Pending URL: / 
+2014-05-15 22:50:19 - FATAL --> Setting pending Req: stats 
+2014-05-15 22:50:21 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 22:50:21 - FATAL --> Setting pending Req: auth 
+2014-05-15 22:50:30 - FATAL --> Setting pending Req: stats 
+2014-05-15 22:50:30 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 22:50:30 - FATAL --> Setting pending Req: auth 
+2014-05-15 22:50:42 - FATAL --> Setting pending Req: stats 
+2014-05-15 22:50:42 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 22:50:42 - FATAL --> Setting pending Req: auth 
+2014-05-15 22:52:24 - FATAL --> Setting pending Req: stats 
+2014-05-15 22:52:24 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 22:52:24 - FATAL --> Setting pending Req: auth 
+2014-05-15 22:53:04 - FATAL --> Setting pending Req: stats 
+2014-05-15 22:53:04 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 22:53:05 - FATAL --> Setting pending Req: auth 
+2014-05-15 22:53:33 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 22:53:35 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 22:53:35 - FATAL --> Resuming Pending URL: / 
+2014-05-15 23:03:03 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 23:03:03 - FATAL --> Setting pending Req: auth 
+2014-05-15 23:03:08 - FATAL --> Setting pending Req: stats 
+2014-05-15 23:03:08 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 23:03:08 - FATAL --> Setting pending Req: auth 
+2014-05-15 23:03:15 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 23:03:15 - FATAL --> Resuming Pending URL: / 
+2014-05-15 23:03:27 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 23:03:27 - FATAL --> Setting pending Req: auth 
+2014-05-15 23:03:35 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 23:03:38 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 23:03:43 - FATAL --> Setting pending Req: stats 
+2014-05-15 23:03:43 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 23:03:43 - FATAL --> Setting pending Req: auth 
+2014-05-15 23:04:16 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 23:04:16 - FATAL --> Resuming Pending URL: / 
+2014-05-15 23:06:05 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 23:06:05 - FATAL --> Setting pending Req: auth 
+2014-05-15 23:06:08 - FATAL --> Setting pending Req: stats 
+2014-05-15 23:06:08 - FATAL --> Setting pending Req: library/jquery/js/jquery-1.10.1.min.map 
+2014-05-15 23:06:08 - FATAL --> Setting pending Req: auth 
+2014-05-15 23:06:17 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 23:06:20 - FATAL --> Setting pending Req: auth/login 
+2014-05-15 23:06:20 - FATAL --> Resuming Pending URL: auth/login 
+2014-05-15 23:10:24 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-15 23:10:24 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth
+    [__q1] => auth
+)
+ 
+2014-05-15 23:10:34 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-15 23:10:34 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-15 23:10:34 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth
+    [__q1] => auth
+)
+ 
+2014-05-15 23:31:52 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-15 23:31:52 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-15 23:31:52 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth
+    [__q1] => auth
+)
+ 
+2014-05-15 23:32:02 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-15 23:32:04 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-15 23:32:04 - FATAL --> Getting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-15 23:32:04 - FATAL --> Resuming Pending URL: auth/login 
+2014-05-16 0:02:35 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:02:37 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stas
+    [__q1] => stas
+)
+ 
+2014-05-16 0:02:37 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:02:44 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:02:44 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:02:59 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:02:59 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:03:18 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:18 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:03:18 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:18 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:03:19 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:19 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:19 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:03:23 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:23 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:03:23 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:23 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:03:23 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:03:23 - FATAL --> Setting pending Req: Array
+(
+    [__req] => library/jquery/js/jquery-1.10.1.min.map
+    [__q1] => library
+    [__q2] => jquery
+    [__q3] => js
+    [__q4] => jquery-1.10.1.min.map
+)
+ 
+2014-05-16 0:11:01 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:11:19 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-16 0:11:19 - FATAL --> Getting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-16 0:11:19 - FATAL --> Resuming Pending URL: auth/login 
+2014-05-16 0:14:14 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-16 0:14:19 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth
+    [__q1] => auth
+)
+ 
+2014-05-16 0:14:24 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth/dfd
+    [__q1] => auth
+    [__q2] => dfd
+)
+ 
+2014-05-16 0:18:06 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth/dfd
+    [__q1] => auth
+    [__q2] => dfd
+)
+ 
+2014-05-16 0:18:06 - FATAL --> Setting pending Req: Array
+(
+    [__req] => auth
+    [__q1] => auth
+)
+ 
+2014-05-16 0:18:50 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:28:00 - FATAL --> Getting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-16 0:28:00 - FATAL --> Resuming Pending URL: / 
+2014-05-16 0:30:55 - FATAL --> Setting pending Req: Array
+(
+    [__req] => stats
+    [__q1] => stats
+)
+ 
+2014-05-16 0:31:05 - FATAL --> Getting pending Req: Array
+(
+    [__req] => auth/login
+    [__q1] => auth
+    [__q2] => login
+)
+ 
+2014-05-16 0:31:05 - FATAL --> Resuming Pending URL: / 
+2014-05-16 0:34:08 - FATAL --> Setting pending Req: stats 
+2014-05-16 0:35:31 - FATAL --> Getting pending Req:  
+2014-05-16 0:35:31 - FATAL --> Resuming Pending URL: / 
+2014-05-16 0:37:14 - FATAL --> Setting pending Req: stats 
+2014-05-16 0:37:29 - FATAL --> Getting pending Req:  
+2014-05-16 0:37:29 - FATAL --> Resuming Pending URL: / 
+2014-05-16 0:38:14 - FATAL --> Setting pending Req: stats 
+2014-05-16 0:39:09 - FATAL --> INTO INDEX PAGE 
+2014-05-16 0:39:47 - FATAL --> Getting pending Req:  
+2014-05-16 0:39:47 - FATAL --> INTO INDEX PAGE: 
+2014-05-16 0:39:59 - FATAL --> Getting pending Req:  
+2014-05-16 0:39:59 - FATAL --> INTO INDEX PAGE: 
+2014-05-16 0:39:59 - FATAL --> Setting pending Req: stats 
+2014-05-16 0:39:59 - FATAL --> Getting pending Req:  
+2014-05-16 0:39:59 - FATAL --> INTO INDEX PAGE: 
+2014-05-16 0:41:46 - FATAL --> Getting pending Req:  
+2014-05-16 0:41:46 - FATAL --> INTO INDEX PAGE: 
+2014-05-16 0:41:46 - FATAL --> Setting pending Req: stats 
+2014-05-16 0:41:46 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:41:46 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:03 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:03 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:03 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:03 - FATAL --> Resuming Pending URL: stats 
+2014-05-16 0:42:28 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:28 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:48 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:48 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:48 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:48 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:48 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:48 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:54 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:54 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:42:54 - FATAL --> Setting pending Req: stats 
+2014-05-16 0:42:54 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:42:54 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:01 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:01 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:01 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:01 - FATAL --> Resuming Pending URL: stats 
+2014-05-16 0:43:01 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:01 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:08 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:08 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:08 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:08 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:08 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:08 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:31 - FATAL --> Getting pending Req: stats 
+2014-05-16 0:43:31 - FATAL --> INTO INDEX PAGE:stats 
+2014-05-16 0:43:31 - FATAL --> Setting pending Req: upload 
+2014-05-16 0:43:31 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:31 - FATAL --> INTO INDEX PAGE:upload 
+2014-05-16 0:43:39 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:39 - FATAL --> INTO INDEX PAGE:upload 
+2014-05-16 0:43:39 - FATAL --> Setting pending Req: upload 
+2014-05-16 0:43:39 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:39 - FATAL --> INTO INDEX PAGE:upload 
+2014-05-16 0:43:47 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:47 - FATAL --> INTO INDEX PAGE:upload 
+2014-05-16 0:43:53 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:53 - FATAL --> INTO INDEX PAGE:upload 
+2014-05-16 0:43:53 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:53 - FATAL --> Resuming Pending URL: upload 
+2014-05-16 0:43:53 - FATAL --> Getting pending Req: upload 
+2014-05-16 0:43:53 - FATAL --> INTO INDEX PAGE:upload 
+2014-05-16 0:50:14 - FATAL --> Resuming Pending URL: libarary 
+2014-05-16 2:22:23 - FATAL --> YES 
+2014-05-16 2:23:16 - FATAL --> YES 
+2014-05-16 2:24:12 - FATAL --> YES 
+2014-05-16 2:24:12 - FATAL --> YES 
+2014-05-16 2:24:53 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:19 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:19 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:43 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:43 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:50 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:53 - FATAL --> LOGGEDIN 
+2014-05-16 2:25:53 - FATAL --> LOGGEDIN 
+2014-05-16 2:26:23 - FATAL --> LOGGEDIN 
+2014-05-16 2:26:23 - FATAL --> LOGGEDIN 
+2014-05-16 2:26:56 - FATAL --> LOGGEDIN 
+2014-05-16 2:27:09 - FATAL --> LOGGEDIN 
+2014-05-16 2:27:10 - FATAL --> LOGGEDIN 
+2014-05-16 2:27:23 - FATAL --> LOGGEDIN 
+2014-05-16 2:27:23 - FATAL --> LOGGEDIN 
+2014-05-16 2:28:13 - FATAL --> LOGGEDIN 
+2014-05-16 2:28:24 - FATAL --> LOGGEDIN 
+2014-05-16 2:29:46 - FATAL --> AJAX 
+2014-05-16 2:29:46 - FATAL --> VALID KEY 
+2014-05-16 2:29:46 - FATAL --> LOGGEDIN 
+2014-05-16 2:30:56 - FATAL --> AJAX 
+2014-05-16 2:30:56 - FATAL --> VALID KEY 
+2014-05-16 2:30:56 - FATAL --> LOGGEDIN 
+2014-05-16 2:39:10 - FATAL --> Array
+(
+    [REDIRECT_STATUS] => 200
+    [HTTP_HOST] => code.me
+    [HTTP_CONNECTION] => keep-alive
+    [CONTENT_LENGTH] => 476
+    [HTTP_HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [HTTP_ORIGIN] => http://code.me
+    [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+    [CONTENT_TYPE] => multipart/form-data; boundary=----WebKitFormBoundaryh2nS2AhNIxkU05nl
+    [HTTP_ACCEPT] => */*
+    [HTTP_REFERER] => http://code.me/
+    [HTTP_ACCEPT_ENCODING] => gzip,deflate,sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8
+    [HTTP_COOKIE] => nexturl=upload; pending_request_uri=logout; PHPSESSID=2rmchpa4o7bgfg1862gjp8gii1
+    [PATH] => /usr/local/bin:/usr/bin:/bin
+    [SERVER_SIGNATURE] => <address>Apache/2.2.22 (Ubuntu) Server at code.me Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.22 (Ubuntu)
+    [SERVER_NAME] => code.me
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => /home/shekhar/workspace/php/code.me
+    [SERVER_ADMIN] => [no address given]
+    [SCRIPT_FILENAME] => /home/shekhar/workspace/php/code.me/index.php
+    [REMOTE_PORT] => 42680
+    [REDIRECT_QUERY_STRING] => __req=auth/login
+    [REDIRECT_URL] => /auth/login
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => POST
+    [QUERY_STRING] => __req=auth/login
+    [REQUEST_URI] => /auth/login
+    [SCRIPT_NAME] => /index.php
+    [PHP_SELF] => /index.php
+    [REQUEST_TIME_FLOAT] => 1400188150.157
+    [REQUEST_TIME] => 1400188150
+)
+ 
+2014-05-16 2:39:50 - FATAL --> Array
+(
+    [REDIRECT_STATUS] => 200
+    [HTTP_HOST] => code.me
+    [HTTP_CONNECTION] => keep-alive
+    [CONTENT_LENGTH] => 476
+    [HTTP_HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [HTTP_ORIGIN] => http://code.me
+    [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+    [CONTENT_TYPE] => multipart/form-data; boundary=----WebKitFormBoundaryXHuMNEiePwJQoOjk
+    [HTTP_ACCEPT] => */*
+    [HTTP_REFERER] => http://code.me/
+    [HTTP_ACCEPT_ENCODING] => gzip,deflate,sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8
+    [HTTP_COOKIE] => nexturl=upload; pending_request_uri=logout; PHPSESSID=2rmchpa4o7bgfg1862gjp8gii1
+    [PATH] => /usr/local/bin:/usr/bin:/bin
+    [SERVER_SIGNATURE] => <address>Apache/2.2.22 (Ubuntu) Server at code.me Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.22 (Ubuntu)
+    [SERVER_NAME] => code.me
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => /home/shekhar/workspace/php/code.me
+    [SERVER_ADMIN] => [no address given]
+    [SCRIPT_FILENAME] => /home/shekhar/workspace/php/code.me/index.php
+    [REMOTE_PORT] => 42687
+    [REDIRECT_QUERY_STRING] => __req=auth/login
+    [REDIRECT_URL] => /auth/login
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => POST
+    [QUERY_STRING] => __req=auth/login
+    [REQUEST_URI] => /auth/login
+    [SCRIPT_NAME] => /index.php
+    [PHP_SELF] => /index.php
+    [REQUEST_TIME_FLOAT] => 1400188190.596
+    [REQUEST_TIME] => 1400188190
+)
+ 
+2014-05-16 2:40:07 - FATAL --> Array
+(
+    [REDIRECT_STATUS] => 200
+    [HTTP_HOST] => code.me
+    [HTTP_CONNECTION] => keep-alive
+    [CONTENT_LENGTH] => 476
+    [HTTP_ORIGIN] => http://code.me
+    [HTTP_X_REQUESTED_WITH] => XMLHttpRequest
+    [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+    [CONTENT_TYPE] => multipart/form-data; boundary=----WebKitFormBoundaryxCC7sVyQx4wmDmny
+    [HTTP_ACCEPT] => */*
+    [HTTP_REFERER] => http://code.me/
+    [HTTP_ACCEPT_ENCODING] => gzip,deflate,sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8
+    [HTTP_COOKIE] => nexturl=upload; pending_request_uri=logout; PHPSESSID=2rmchpa4o7bgfg1862gjp8gii1
+    [PATH] => /usr/local/bin:/usr/bin:/bin
+    [SERVER_SIGNATURE] => <address>Apache/2.2.22 (Ubuntu) Server at code.me Port 80</address>
+
+    [SERVER_SOFTWARE] => Apache/2.2.22 (Ubuntu)
+    [SERVER_NAME] => code.me
+    [SERVER_ADDR] => 127.0.0.1
+    [SERVER_PORT] => 80
+    [REMOTE_ADDR] => 127.0.0.1
+    [DOCUMENT_ROOT] => /home/shekhar/workspace/php/code.me
+    [SERVER_ADMIN] => [no address given]
+    [SCRIPT_FILENAME] => /home/shekhar/workspace/php/code.me/index.php
+    [REMOTE_PORT] => 42701
+    [REDIRECT_QUERY_STRING] => __req=auth/login
+    [REDIRECT_URL] => /auth/login
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [REQUEST_METHOD] => POST
+    [QUERY_STRING] => __req=auth/login
+    [REQUEST_URI] => /auth/login
+    [SCRIPT_NAME] => /index.php
+    [PHP_SELF] => /index.php
+    [REQUEST_TIME_FLOAT] => 1400188207.369
+    [REQUEST_TIME] => 1400188207
+)
+ 

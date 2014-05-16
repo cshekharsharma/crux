@@ -45,7 +45,7 @@ function doLogin(formId) {
                 if (response.code == AUTH_CONSTANTS.SUCCESS_CODE) {
                     msgContainer.className = "success-msg-div";
                     document.getElementById(formId).reset();
-                    window.location.href = "/";
+                    window.location.reload();
                 } else if (response.code == AUTH_CONSTANTS.ERROR_CODE) {
                     msgContainer.className = "error-msg-div";
                 }
@@ -54,6 +54,7 @@ function doLogin(formId) {
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authLoginPath);
+        AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     }
 }
@@ -82,6 +83,7 @@ function changePassword(formId) {
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authChangePwdPath);
+        AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     }
 }

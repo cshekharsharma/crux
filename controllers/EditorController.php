@@ -149,6 +149,7 @@ class EditorController extends BaseController {
             $this->smarty->assign("SELECTED_TITLE", $programInfo[ProgramDetails_DBTable::TITLE]);
             $this->smarty->assign("SELECTED_FILENAME", $programInfo[ProgramDetails_DBTable::ACTUAL_FILE_NAME]);
             $this->smarty->assign("SELECTED_DESCRIPTION", $programInfo[ProgramDetails_DBTable::DESCRIPTION]);
+            $this->smarty->assign("SELECTED_VERIFIED", $programInfo[ProgramDetails_DBTable::IS_VERIFIED]);
             $this->smarty->assign("SELECTED_SOURCE_CODE", htmlentities($srcCode));
             $this->smarty->assign("IS_UPDATE_REQ", self::IS_UPDATE_VALUE);
             $this->smarty->assign("PROGRAM_CURRENT_ID", $programInfo[ProgramDetails_DBTable::PROGRAM_ID]);

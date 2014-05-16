@@ -11,6 +11,7 @@ class Session {
     const SESS_AUTH_USER_KEY = 'auth_user_id';
     const SESS_SEARCH_SUGGESTIONS = 'search_suggestions';
     const SESS_SMARTY_INSTANCE = 'smarty_instance';
+    const SESS_PENDING_REQ_URI = 'pending_request_uri';
     const SESS_EMPTY_STATS_MATRIX = 'empty_lang_category_matrix';
     const SESS_ID_NAME_TRANSLATION_MAP = 'id_name_translation_map';
     

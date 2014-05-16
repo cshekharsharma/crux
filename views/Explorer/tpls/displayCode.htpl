@@ -9,7 +9,7 @@
         <div class="program-title-div">
             <b>{$PROGRAM_DETAILS.title}</b>
             {if $PROGRAM_DETAILS.is_verified eq '1'}
-                <img class="verified-image" src="/views/Explorer/imgs/verified.png">
+                <img title="Verified Code" class="verified-image" src="/views/Explorer/imgs/verified.png">
             {/if}
             <input type="hidden" name="{$DELETE_REQ_KEY}" id="{$DELETE_REQ_KEY}" value="{$DELETE_REQ_VAL}">
             <span class="top-side-buttons file-download-link"><a onclick="deleteProgram('{$PROGRAM_DETAILS.id}')" href="#">Delete</a></span>

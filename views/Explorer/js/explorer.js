@@ -25,6 +25,7 @@ function deleteProgram(pid) {
             };
 
             AJAX.open("POST", EXPLORER_CONSTANTS.baseURI + 'delete/' + pid);
+            AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
             AJAX.send(formData);
         }
     }

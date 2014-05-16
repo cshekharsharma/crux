@@ -6,16 +6,16 @@
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package includes
- * 
+ *
  */
 class Logger
 {
-    const DEBUG 	= 1;	// Most Verbose
-    const INFO 		= 2;	// ...
-    const WARN 		= 3;	// ...
-    const ERROR 	= 4;	// ...
-    const FATAL 	= 5;	// Least Verbose
-    const OFF 		= 6;	// Nothing at all.
+    const DEBUG    = 1;	// Most Verbose
+    const INFO     = 2;	// ...
+    const WARN     = 3;	// ...
+    const ERROR    = 4;	// ...
+    const FATAL    = 5;	// Least Verbose
+    const OFF      = 6;	// Nothing at all.
 
     const LOG_OPEN 		= 1;
     const OPEN_FAILED 	= 2;

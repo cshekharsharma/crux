@@ -196,7 +196,7 @@ class SearchController extends BaseController {
             $this->smarty->assign(self::NO_RESULT_FOUND, self::NO_RESULT_FOUND);
         }
         $this->smarty->assign("totalResults", $totalResults);
-        $this->smarty->assign("SEARCH_KEY", $query);
+        $this->smarty->assign("SEARCH_KEY", htmlentities($query, ENT_QUOTES));
         $this->smarty->display("string:" . Display::render(self::MODULE_KEY));
     }
 

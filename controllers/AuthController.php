@@ -10,7 +10,7 @@ class AuthController extends BaseController {
     const LOGIN_ACTION_VALUE = "login_byajax_AXZFJTBDSSID";
     const CHPWD_ACTION_NAME = "chpwd-action-name";
     const CHPWD_ACTION_VALUE = "chpwd-byajax_LKNSBNSJDXXD";
-    
+
     const SESSION_COOKIE_LIFETIME = 1209600; // 2 Weeks
 
     private static $AUTH_USER_ID_IDENTIFIER = "auth_user_id";
@@ -26,7 +26,8 @@ class AuthController extends BaseController {
         $authAction = $uriParams[self::AUTH_ACTION];
         if (empty($authAction) || $authAction === Constants::AUTH_LOGIN_URI_KEY) {
             $formKey = $formParams[self::LOGIN_ACTION_NAME];
-            if (!self::isLoggedIn() && ($formKey === self::LOGIN_ACTION_VALUE)) {
+            $isValidKey = ($formKey === self::LOGIN_ACTION_VALUE);
+            if (!self::isLoggedIn() && $isValidKey && Utils::isAjaxRequest()) {
                 $this->authenticate($formParams);
             } else {
                 $this->displayLoginForm();
@@ -50,6 +51,7 @@ class AuthController extends BaseController {
     }
 
     private function authenticate($formParams) {
+        $nextURL = '';
         $userDetail = $this->getUserDetailsByName($formParams['username']);
         if (!empty($userDetail)) {
             if ($userDetail[Users_DBTable::IS_ACTIVE] == '1') {
@@ -57,8 +59,8 @@ class AuthController extends BaseController {
                 $passwordHash = $this->getPasswordHash($formParams['password']);
                 if ($passwordInDB === $passwordHash) {
                     if ($this->createUserSession($userDetail, $formParams['remember'])) {
+                        echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', $nextURL);
                         Logger::getLogger()->LogInfo("Auth Success for userid: ".$formParams['username']);
-                        echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', '');
                     }
                 } else {
                     Logger::getLogger()->LogWarn("Auth Failed [Invalid password] for userid: ".$formParams['username']);
@@ -84,9 +86,9 @@ class AuthController extends BaseController {
             Session::setCookieParams(self::SESSION_COOKIE_LIFETIME, '/');
         }
         if (Session::isExist()) {
-           Session::regenerateId(true);
+            Session::regenerateId(true);
         } else {
-           Session::start();
+            Session::start();
         }
         $userDetails[Users_DBTable::IP_ADDRESS] = $_SERVER['REMOTE_ADDR'];
         if ($this->updateUserLogin($userDetails)) {

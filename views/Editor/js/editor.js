@@ -50,6 +50,7 @@ function submitCode(formElem) {
         };
 
         AJAX.open("POST", EDITOR_CONSTANTS.requestPath);
+        AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     } else {
         $('#' + EDITOR_CONSTANTS.msgContainerId).addClass('error-field');

@@ -98,15 +98,14 @@ class ResourceProvider {
                 );
             }
         } else {
-            if ($firstParam === Constants::AUTH_URI_KEY) {
-                $resource->setKey(Constants::AUTH_URI_KEY);
-                $resource->setParams(
-                    array(
-                        AuthController::AUTH_ACTION => $secondParam
-                    )
-                );
-            } else {
-                RequestManager::redirect(Constants::AUTH_URI_KEY);
+            $resource->setKey(Constants::AUTH_URI_KEY);
+            $resource->setParams(
+                array(
+                    AuthController::AUTH_ACTION => $secondParam
+                )
+            );
+            if ($firstParam !== Constants::AUTH_URI_KEY) {
+                RequestManager::setPendingRequestURI();
             }
         }
         return $resource;
@@ -124,6 +123,8 @@ class ResourceProvider {
             $controller = new $controllerClass();
             if ($controller instanceof BaseController) {
                 return $controller;
+            } else {
+                return null;
             }
         }
         return null;

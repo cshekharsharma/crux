@@ -88,7 +88,12 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input class="apply-validation" name="verified" id="verified" value="is_verified" type="checkbox">
+                                    {if $SELECTED_VERIFIED eq 1}
+                                        {assign var=isChecked value='checked'}
+                                    {else}
+                                        {assign var=isChecked value=''}
+                                    {/if}
+                                    <input class="apply-validation" name="verified" id="verified" value="is_verified" type="checkbox" {$isChecked}>
                                     &nbsp;Verified
                                 </td>
     `                        </tr>

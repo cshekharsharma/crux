@@ -2,7 +2,7 @@
 /**
  * Class containing utility methods
  *
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package includes
  */
 class Utils {
@@ -94,6 +94,17 @@ class Utils {
         return $editorMode;
     }
 
+    /**
+     * Tells if request is an AJAX request, by checking appropriate header
+     * 
+     * @return boolean
+     */
+    public static function isAjaxRequest() {
+        $hasHeader = isset($_SERVER['HTTP_X_REQUESTED_WITH']);
+        $isAjaxHeader = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
+        return $hasHeader && $isAjaxHeader;
+    }
+    
     /**
      * Prints variable formatted structure and value of variable
      * 

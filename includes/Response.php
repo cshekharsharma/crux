@@ -11,7 +11,7 @@ class Response {
     private function __construct() {}
 
     /**
-     * Create generic response from provided data
+     * Creates generic JSON response from provided data
      * 
      * @param string $code
      * @param string $msg
@@ -25,6 +25,7 @@ class Response {
             'detail' => $detail
         );
         
+        header('content-type: application/json; charset=utf-8');
         return json_encode($response);
     }
 }

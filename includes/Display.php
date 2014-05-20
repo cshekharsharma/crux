@@ -19,7 +19,7 @@ class Display {
         'AUTH_LOGIN' => 'Auth/tpls/login.htpl',
         'CMS_CHPWD' => 'Content/tpls/changePassword.htpl',
         'NO_ITEM_FOUND' => 'Errors/tpls/noItemFound.htpl',
-        'CMS_USERPREF' => 'Content/tpls/userPreference.tpl',
+        'CMS_USERPREF' => 'Content/tpls/userPreference.htpl',
         'EMPTY_CODEBASE' => 'Errors/tpls/emptyCodebase.htpl',
     );
 

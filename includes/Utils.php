@@ -9,7 +9,7 @@ class Utils {
 
     /**
      * Get smarty object for templating. Uses Singleton pattern
-     * 
+     *
      * @return Smarty
      */
     public static function getSmarty() {
@@ -22,7 +22,7 @@ class Utils {
 
     /**
      * Get hashed file name which is stored on disk
-     * 
+     *
      * @param string $actualFileName
      * @return string
      */
@@ -34,7 +34,7 @@ class Utils {
 
     /**
      * Get current datetime in standard format
-     * 
+     *
      * @return string
      */
     public static function getCurrentDatetime() {
@@ -42,9 +42,9 @@ class Utils {
     }
 
     /**
-     * Parse given string and checks if it contains any valid URL, altered string 
+     * Parse given string and checks if it contains any valid URL, altered string
      * is returned with links for those URLs
-     * 
+     *
      * @param string $string
      * @return mixed
      */
@@ -58,7 +58,7 @@ class Utils {
 
     /**
      * Utility function for creating new file and write provided contents
-     * 
+     *
      * @param string $filePath
      * @param string $contents
      * @param integer $permission
@@ -75,11 +75,11 @@ class Utils {
             return false;
         }
     }
-    
+
     /**
-     * Returns appropriate editor mode for code syntax highlighting according to 
+     * Returns appropriate editor mode for code syntax highlighting according to
      * language name. Returns default editor for C/C++ if no details provided
-     * 
+     *
      * @param array|false $programDetails
      * @return string $editorMode
      */
@@ -96,7 +96,7 @@ class Utils {
 
     /**
      * Tells if request is an AJAX request, by checking appropriate header
-     * 
+     *
      * @return boolean
      */
     public static function isAjaxRequest() {
@@ -104,10 +104,48 @@ class Utils {
         $isAjaxHeader = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
         return $hasHeader && $isAjaxHeader;
     }
-    
+
+    public static function getAceEditorThemes() {
+        return array(
+            'ambiance' => 'Ambiance',
+            'chaos' => 'Chaos',
+            'chrome' => 'Chrome',
+            'clouds' => 'Clouds',
+            'clouds_midnight' => 'Clouds Midnight',
+            'cobalt' => 'Cobalt',
+            'crimson_editor' => 'Crimson',
+            'dawn' => 'Dawn',
+            'dreamweaver' => 'DreamWeaver',
+            'eclipse' => 'Eclipse',
+            'github' => 'GitHub',
+            'idle_fingers' => 'Idle Fingers',
+            'katzenmilch' => 'Katzenmilch',
+            'kr' => 'KR',
+            'kuroir' => 'Kuroir',
+            'merbivore' => 'Merbivore',
+            'merbivore_soft' => 'Merbivore Soft',
+            'mono_industrial' => 'Mono Industrial',
+            'monokai' => 'Monokai',
+            'pastel_on_dark' => 'Pastel On Dark',
+            'solarized_dark' => 'Solarized Dark',
+            'solarized_light' => 'Solarized Light',
+            'terminal' => 'Terminal',
+            'textmate' => 'TextMate',
+            'tomorrow' => 'Tomorrow',
+            'tomorrow_night' => 'Tomorrow Night',
+            'tomorrow_night_blue' => 'Tomorrow Night Blue',
+            'tomorrow_night_bright' => 'Tomorrow Night Bright',
+            'tomorrow_night_eighties' => 'Tomorrow Night Eighties',
+            'twilight' => 'Twilight',
+            'vibrant_ink' => 'Vibrant Ink',
+            'xcode' => 'XCode'
+        );
+    }
+
+
     /**
      * Prints variable formatted structure and value of variable
-     * 
+     *
      * @param mixed $var
      */
     public static function displayVariableValues($var, $exit = false) {

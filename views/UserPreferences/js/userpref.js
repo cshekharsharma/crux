@@ -1,5 +1,5 @@
 var USER_PREF_CONSTANTS = {
-    getUserPrefUIPath : '/content/userpref',
+    getUserPrefUIPath : '/content/userPreference',
     userPrefPopupFlag : 'userPref'
 };
 
@@ -24,7 +24,7 @@ function getUserPreferenceUI() {
         if (AJAX.readyState == 4 && AJAX.status == 200) {
             var response = JSON.parse(AJAX.responseText);
             if (response.code == APP_CONSTANTS.SUCCESS_CODE) {
-                $(cssSelectors.chpwdContainer).html(response.detail);
+                $(UpCssSelectors.userPrefContainer).html(response.detail);
             } else if (response.code == APP_CONSTANTS.ERROR_CODE) {
                 // msgContainer.className = "error-msg-div";
             }

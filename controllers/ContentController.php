@@ -46,7 +46,7 @@ class ContentController extends BaseController {
     }
     
     public function getUserPreferenceUI() {
-        //$this->smarty->assign('CHPWD_ACTION_VALUE', AuthController::CHPWD_ACTION_VALUE);
+        $this->smarty->assign('EDITOR_THEME_LIST', Utils::getAceEditorThemes());
         $content = $this->smarty->fetch('string:'.Display::render('CMS_USERPREF'));
         return Response::createResponse(Constants::SUCCESS_RESPONSE, '', $content);
     }

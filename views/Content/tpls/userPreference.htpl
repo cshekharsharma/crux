@@ -1,0 +1,21 @@
+<div id="wrapper2" class="popup-inner-div">
+    <div class="form-header-span">User Preferences</div>
+    <form name="userpref-form" id="userpref-form" class="auth-form" method="post">
+    <div class="innerdiv">
+        <input type="hidden" name="userpref-action-name" id="userpref-action-name" value="{$USER_PREF_ACTION_VALUE}">
+        <div id="auth-msg-container" class="msg-container">
+        </div><br>
+             <div class="fieldset">   
+                <div>
+                    <select>
+                        <option value="chrome">Chrome</option>
+                        <option value="github">GitHub</option>
+                    </select>
+                </div>
+                <div>
+                </div>
+                <input type="button" class="btns" value="Submit" onclick="changeUserpref('userpref-form');">
+            </div> 
+        </div>   
+    </form>
+</div>

@@ -11,6 +11,7 @@ class Error {
     
     const ERR_WRONG_PASSWORD = 'Wrong password provided';
     const ERR_USER_NOT_LOGGED_IN = 'Please login before the action';
+    const ERR_SOMETHING_WRONG = 'Oops! Something went wrong! Please refresh the page and try again!';
     
     const ERR_RESOURCE_NOT_FOUND = 404;
     

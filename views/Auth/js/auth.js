@@ -1,14 +1,22 @@
 AUTH_CONSTANTS = {
     loginFormId : 'login-form',
     changePwdFormId : 'changepassword-form',
+    changePwdPopupFlag : 'chpwd',
     authLoginPath : '/auth/login',
     authChangePwdPath : '/auth/changePassword',
+    chpwdContentPath : '/content/changePassword',
     SUCCESS_CODE : 'success',
     ERROR_CODE : 'error',
     msgContaineId : 'auth-msg-container',
     emptyCredentials : "Username / Password can't be left empty",
     invalidUserName : "Only alphbates and '_' are allowed in User Name",
     emptyPasswords : "Password fields can't be left empty"
+};
+
+var cssSelectors = {
+    popupBg : '.popup-opacity-background',
+    chpwdContainer : '#chpwd-container',
+    chpwdLink : '.change-password-link'
 };
 
 addEvent(window, 'load', function() {
@@ -23,7 +31,7 @@ addEvent(window, 'load', function() {
                         if (form.id == AUTH_CONSTANTS.loginFormId) {
                             doLogin(form.id);
                         } else if (form.id == AUTH_CONSTANTS.changePwdFormId) {
-                            changePassword(form.id);    
+                            changePassword(form.id);
                         }
                     }
                 });
@@ -129,7 +137,27 @@ function resetErrors(credential) {
     }
 }
 
-function removeClass(el, className) {
-    className = " " + className.trim(); // must keep a space before class name
-    el.className = el.className.replace(className, "");
+$(cssSelectors.chpwdLink).click(
+        function() {
+            attachPopupEvents(cssSelectors.popupBg,
+                    cssSelectors.chpwdContainer,
+                    AUTH_CONSTANTS.changePwdPopupFlag, getChangePasswordUI);
+        });
+
+function getChangePasswordUI() {
+    formData = new FormData();
+    formData.append('time', 100000);
+    AJAX.onreadystatechange = function() {
+        if (AJAX.readyState == 4 && AJAX.status == 200) {
+            var response = JSON.parse(AJAX.responseText);
+            if (response.code == AUTH_CONSTANTS.SUCCESS_CODE) {
+                $(cssSelectors.chpwdContainer).html(response.detail);
+            } else if (response.code == AUTH_CONSTANTS.ERROR_CODE) {
+                // msgContainer.className = "error-msg-div";
+            }
+        }
+    };
+    AJAX.open("POST", AUTH_CONSTANTS.chpwdContentPath);
+    AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+    AJAX.send(formData);
 }

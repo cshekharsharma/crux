@@ -54,6 +54,14 @@ class ResourceProvider {
                         Constants::INPUT_PARAM_PID => $secondParam
                     )
                 );
+
+            } elseif ($firstParam === Constants::CONTENT_URI_KEY) {
+                $resource->setKey(Constants::CONTENT_URI_KEY);
+                $resource->setParams(
+                    array(
+                        ContentController::CONTENT_KEY => $secondParam
+                    )
+                );
             } elseif ($firstParam === Constants::EDITOR_URI_KEY) {
                 $resource->setKey(Constants::EDITOR_URI_KEY);
                 $resource->setParams(
@@ -123,8 +131,6 @@ class ResourceProvider {
             $controller = new $controllerClass();
             if ($controller instanceof BaseController) {
                 return $controller;
-            } else {
-                return null;
             }
         }
         return null;

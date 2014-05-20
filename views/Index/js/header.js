@@ -1,4 +1,12 @@
-var popupStatus = 0;
+APP_CONSTANTS = {
+    SUCCESS_CODE : 'success',
+    FAILURE_CODE : 'error'
+};
+
+var popupFlags = {
+    chpwd : 0,
+    userPref : 0
+};
 
 var errorObject = {
     isError : false,
@@ -30,55 +38,57 @@ addEvent(window, 'keydown', function(e) {
     }
 });
 
-addEvent(window, 'keydown', function(e) {
-    if (e.keyCode === 27 && popupStatus === 1) {
-        e.preventDefault();
-        $("#popup-opacity-background").fadeOut("slow");
-        $("#popupDiv").fadeOut("slow");
-        popupStatus = 0;
-    }
-});
-
 AJAX = getAjaxConnection();
-$(".change-password-link").click(function() {
-    // Aligning our box in the middle
+
+function attachPopupEvents(bg, container, flagKey, callback) {
+    // Aligning box in the middle
     var windowWidth = document.documentElement.clientWidth;
     var windowHeight = document.documentElement.clientHeight;
-    var popupHeight = $("#popupDiv").height();
-    var popupWidth = $("#popupDiv").width();
+    var popupHeight = $(container).height();
+    var popupWidth = $(container).width();
     // centering
-    $("#popupDiv").css({
+    $(container).css({
         "position" : "absolute",
         "top" : windowHeight / 2 - popupHeight / 2,
         "left" : windowWidth / 2 - popupWidth / 2
     });
 
-    // aligning our full bg
-    $("#popup-opacity-background").css({
+    // aligning full bg
+    $(bg).css({
         "height" : windowHeight
     });
 
     // Pop up the div and Bg
-    if (popupStatus == 0) {
-        $("#popup-opacity-background").css({
+    if (popupFlags[flagKey] == 0) {
+        $(bg).css({
             "opacity" : "0.7"
         });
-        $("#popup-opacity-background").fadeIn("slow");
-        $("#popupDiv").fadeIn("slow");
-        popupStatus = 1;
+        $(bg).fadeIn("slow");
+        $(container).fadeIn("slow");
+        popupFlags[flagKey] = 1;
     }
 
-});
+    addEvent(window, 'keydown', function(e) {
+        if (e.keyCode === 27 && popupFlags[flagKey] === 1) {
+            e.preventDefault();
+            $(bg).fadeOut("slow");
+            $(container).fadeOut("slow");
+            popupFlags[flagKey] = 0;
+        }
+    });
+
+    callback();
+}
 
 // Close Them
 $("#popupClose").click(function() {
     closePopup();
 });
 
-function closePopup() {
+function closePopup(bg, container) {
     if (popupStatus == 1) {
-        $("#popup-opacity-background").fadeOut("slow");
-        $("#popupDiv").fadeOut("slow");
+        $(bg).fadeOut("slow");
+        $(container).fadeOut("slow");
         popupStatus = 0;
     }
 }

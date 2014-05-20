@@ -163,7 +163,7 @@ body {
 	width: 100%;
 }
 
-#popup-opacity-background {
+.popup-opacity-background {
 	display: none;
 	position: fixed;
 	_position: absolute; /* hack for internet explorer 6*/
@@ -176,7 +176,7 @@ body {
 	z-index: 105;
 }
 
-#popupDiv {
+.popupDiv {
 	display: none;
 	position: fixed;
 	_position: absolute; /* hack for internet explorer 6*/

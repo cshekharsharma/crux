@@ -28,6 +28,7 @@ class Constants {
     const EDITOR_URI_KEY = 'editor';
     const DELETE_URI_KEY = 'delete';
     const UPLOAD_URI_KEY = 'upload';
+    const CONTENT_URI_KEY = 'content';
     const EXPLORER_URI_KEY = 'explorer';
     const DOWNLOAD_URI_KEY = 'download';
 

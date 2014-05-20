@@ -9,7 +9,7 @@
     <link type="text/css" rel="stylesheet" href="/library/jquery/css/jqueryui.css">
     <link rel="stylesheet" type="text/css" href="/views/Index/css/main.css">
 </head>
-<div id="popup-opacity-background"></div>
+<div class="popup-opacity-background"></div>
 <div class="header-div" >
     <form name="searchform" class="searchform" action="/search" method="get">
         <table class="header-item-table">
@@ -38,40 +38,20 @@
 <script>
     {literal}
     var searchDataSource = '{/literal}{$SEARCH_SUGGESTIONS}{literal}';
-    
-  
     {/literal}
 </script>
 
 <div class="account-dropdown">
     <ul>
+        <li class="user-preference-link popup-link"><a href="#">User Preference</a></li>
         <li class="change-password-link popup-link"><a href="#">Change Password</a></li>
         <li onclick="window.location.href='/auth/logout/'">Logout</li>
     </ul>
 </div>
 
-<div id="popupDiv">
-    <div id="wrapper2">
-        <div class="form-header-span">Change Password</div>
-        <form name="changepassword-form" id="changepassword-form" class="auth-form" method="post">
-        <div class="innerdiv">
-            <input type="hidden" name="chpwd-action-name" id="chpwd-action-name" value="{$CHPWD_ACTION_VALUE}">
-            <div id="auth-msg-container">
-            </div><br>
-                 <div class="fieldset">   
-                    <div>
-                        <input type="password" name="currentpassword" id="currentpassword" placeholder="Current Password"/>
-                    </div>
-                    <div>
-                        <input type="password" name="newpassword" id="newpassword" placeholder="New Password"/>
-                    </div>
-
-                    <input type="button" class="btns" value="Submit" onclick="changePassword('changepassword-form');">
-                </div> 
-            </div>   
-        </form>
-    </div>
-</div>
+<div id="chpwd-container" class="popupDiv"></div>
+<div id="userpref-container" class="popupDiv"></div>
 
 <script type="text/javascript" src="/views/Index/js/header.js"></script>
-<script type="text/javascript" src="/views/Auth/js/auth.js"></script>
+<script type="text/javascript" async src="/views/Auth/js/auth.js"></script>
+<script type="text/javascript" async src="/views/UserPreferences/js/userpref.js"></script>

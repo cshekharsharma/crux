@@ -38,6 +38,7 @@ class AutoLoader {
             'SearchController' => Constants::CONTROLLER_DIR.'SearchController.php',
             'UploadController' => Constants::CONTROLLER_DIR.'UploadController.php',
             'EditorController' => Constants::CONTROLLER_DIR.'EditorController.php',
+            'ContentController' => Constants::CONTROLLER_DIR.'ContentController.php',
             'CategoryController' => Constants::CONTROLLER_DIR.'CategoryController.php',
             'LanguageController' => Constants::CONTROLLER_DIR.'LanguageController.php',
             'DownloadController' => Constants::CONTROLLER_DIR.'DownloadController.php',

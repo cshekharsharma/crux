@@ -11,7 +11,7 @@ class UploadController extends BaseController {
     private $allowedExts;
 
     public function __construct() {
-        $this->smarty = Utils::getSmarty();
+        parent::__construct();
         $this->allowedExts = array(
             'c', 'cpp', 'java', 'py', 'php', 'cs', 'js', 'xml', 'json', 'rb', 'scala'
         );

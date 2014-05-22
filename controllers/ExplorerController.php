@@ -62,7 +62,7 @@ class ExplorerController extends BaseController {
         $rawContents = Display::render(self::MODULE_KEY);
         $this->smarty->assign("PROGRAM_DETAILS", $programDetails);
         $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programDetails));
-        $this->smarty->assign("EDITOR_THEME", Configuration::get(Configuration::CODE_EDITOR_THEME));
+        $this->smarty->assign("EDITOR_THEME", Utils::getCodeEditorTheme());
         $this->smarty->assign("SOURCE_CODE", htmlentities($sourceCode));
         $this->smarty->assign("SOURCE_STATS", $this->getSourceStats($sourceCode));
         $this->smarty->assign("DELETE_REQ_KEY", self::DELETE_REQ_KEY);

@@ -91,10 +91,12 @@ class AuthController extends BaseController {
             Session::start();
         }
         $userDetails[Users_DBTable::IP_ADDRESS] = $_SERVER['REMOTE_ADDR'];
+        $uc = new UserPreferencesController();
         if ($this->updateUserLogin($userDetails)) {
             Session::set(self::$SESSION_SITE_IDENTIFIER, self::getEncryptedSiteIdentifier());
             Session::set(self::$AUTH_USER_ID_IDENTIFIER, $userDetails[Users_DBTable::USER_NAME]);
             Session::set(Session::SESS_USER_DETAILS, $userDetails);
+            Session::set(Session::SESS_USER_PREF_KEY, $uc->getUserPreference($userDetails[Users_DBTable::USER_ID]));
             return true;
         } else {
             return false;

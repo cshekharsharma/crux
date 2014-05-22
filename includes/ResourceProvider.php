@@ -69,6 +69,13 @@ class ResourceProvider {
                         Constants::INPUT_PARAM_PID => $secondParam
                     )
                 );
+            } elseif ($firstParam === Constants::USER_PREF_URI_KEY) {
+                $resource->setKey(Constants::USER_PREF_URI_KEY);
+                $resource->setParams(
+                    array(
+                        UserPreferencesController::PREF_ACTION => $secondParam
+                    )
+                );
             } elseif ($firstParam === Constants::EXPLORER_URI_KEY) {
                 $isDelete = ($secondParam === Constants::DELETE_URI_KEY);
                 $hasPID = (is_numeric($thirdParam));

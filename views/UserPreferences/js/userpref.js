@@ -1,5 +1,6 @@
 var USER_PREF_CONSTANTS = {
-    getUserPrefUIPath : '/content/userPreference',
+    saveUserPrefPath : 'userPreferences/save',
+    getUserPrefUIPath : '/content/userPreferences',
     userPrefPopupFlag : 'userPref'
 };
 
@@ -7,6 +8,26 @@ var UpCssSelectors = {
     userprefLink : '.user-preference-link',
     userPrefContainer : '#userpref-container'
 };
+
+function saveUserPreference(formId) {
+    var formElem = document.getElementById(formId);
+    var formData = new FormData();
+    selectedIndex = 
+    formData.append('code_editor_theme', 'github');
+    AJAX.onreadystatechange = function() {
+        if (AJAX.readyState == 4 && AJAX.status == 200) {
+            var response = JSON.parse(AJAX.responseText);
+            if (response.code == APP_CONSTANTS.SUCCESS_CODE) {
+                //msgContainer.className = "success-msg-div";
+            } else if (response.code == APP_CONSTANTS.ERROR_CODE) {
+                //msgContainer.className = "error-msg-div";
+            }
+        }
+    };
+    AJAX.open("POST", USER_PREF_CONSTANTS.saveUserPrefPath);
+    AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+    AJAX.send(formData);
+}
 
 $(UpCssSelectors.userprefLink)
         .click(

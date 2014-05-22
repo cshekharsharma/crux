@@ -3,7 +3,7 @@
 .body-main {
 	font-family: helvetica;
 	padding: 10px;
-    font-size:17px;
+	font-size: 17px;
 }
 
 .program-stats {
@@ -31,6 +31,7 @@
 	-webkit-border-radius: 4px;
 	padding: 5px 10px 5px 10px;
 }
+
 .top-side-buttons:hover {
 	background: #333;
 }
@@ -41,8 +42,8 @@
 }
 
 .file-download-link {
-	font-weight:bold;
-	margin-right:10px;
+	font-weight: bold;
+	margin-right: 10px;
 }
 
 .file-download-link a {
@@ -53,26 +54,28 @@
 .top-side-links {
 	float: right;
 	margin-right: 15px;
-    font-size:15px;
+	font-size: 15px;
 }
 
 .top-side-links a {
-	text-decoration:none;
-	color:#1f3136; 
+	text-decoration: none;
+	color: #1f3136;
 }
+
 .top-side-links a:hover {
-    text-decoration:underline;	
+	text-decoration: underline;
 }
+
 .verified-image {
-	margin-bottom:-4px;
-	height:24px;
-	width:24px;
-	border:0px;
+	margin-bottom: -4px;
+	height: 24px;
+	width: 24px;
+	border: 0px;
 }
 
 #code-editor {
-	margin:0;
-	width:100%;
-	height:450px;
-	border:1px solid #F0F0F0;
+	margin: 0;
+	width: 100%;
+	height: 450px;
+	border: 1px solid #F0F0F0;
 }

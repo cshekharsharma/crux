@@ -9,12 +9,13 @@ class Session {
 
     const SESS_USER_DETAILS = 'loggedin_user_details';
     const SESS_AUTH_USER_KEY = 'auth_user_id';
+    const SESS_USER_PREF_KEY = 'user_pref_data';
     const SESS_SEARCH_SUGGESTIONS = 'search_suggestions';
     const SESS_SMARTY_INSTANCE = 'smarty_instance';
     const SESS_PENDING_REQ_URI = 'pending_request_uri';
     const SESS_EMPTY_STATS_MATRIX = 'empty_lang_category_matrix';
     const SESS_ID_NAME_TRANSLATION_MAP = 'id_name_translation_map';
-    
+
     private static $_isSessionRunning = false;
 
     public static function get($key) {
@@ -25,6 +26,12 @@ class Session {
             Logger::getLogger()->LogWarn("Attempting to get invalid item from Session with key : ".$key);
         }
         return $sessionValue;
+    }
+    
+    public static function remove($key) {
+        if (!is_null(Session::get($key))) {
+            unset($_SESSION[$key]);
+        }
     }
 
     public static function getSessionId($id = null) {

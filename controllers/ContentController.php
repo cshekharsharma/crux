@@ -9,7 +9,7 @@ class ContentController extends BaseController {
 
     private $actionMapping = array(
         'changePassword' => 'getChangePasswordUI',
-        'userPreference' => 'getUserPreferenceUI'
+        'userPreferences' => 'getUserPreferenceUI'
     );
 
     public function run(Resource $resource) {

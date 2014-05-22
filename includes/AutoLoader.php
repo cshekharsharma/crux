@@ -22,11 +22,12 @@ class AutoLoader {
             'Session' => Constants::INCLUDE_DIR.'Session.php',
             'Display' => Constants::INCLUDE_DIR.'Display.php',
             'Resource' => Constants::INCLUDE_DIR.'Resource.php',
+            'Response' => Constants::INCLUDE_DIR.'Response.php',
             'Constants' => Constants::INCLUDE_DIR.'Constants.php',
             'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
             'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',
             'RequestManager' => Constants::INCLUDE_DIR.'RequestManager.php',
-            'Response' => Constants::INCLUDE_DIR.'Response.php',
+            'PreferenceKeys' => Constants::INCLUDE_DIR.'PreferenceKeys.php',
             'ResourceProvider' => Constants::INCLUDE_DIR.'ResourceProvider.php',
 
             // Controller Classes
@@ -44,6 +45,7 @@ class AutoLoader {
             'DownloadController' => Constants::CONTROLLER_DIR.'DownloadController.php',
             'ExplorerController' => Constants::CONTROLLER_DIR.'ExplorerController.php',
             'ProgramDetailsController' => Constants::CONTROLLER_DIR.'ProgramDetailsController.php',
+            'UserPreferencesController' => Constants::CONTROLLER_DIR.'UserPreferencesController.php',
 
             // DB tables
             'AbstractDbTable' => Constants::DB_TABLE_DIR.'AbstractDbTable.php',
@@ -51,6 +53,7 @@ class AutoLoader {
             'Language_DBTable' => Constants::DB_TABLE_DIR.'Language_DBTable.php',
             'Category_DBTable' => Constants::DB_TABLE_DIR.'Category_DBTable.php',
             'ProgramDetails_DBTable' => Constants::DB_TABLE_DIR.'ProgramDetails_DBTable.php',
+            'UserPreferences_DBTable' => Constants::DB_TABLE_DIR.'UserPreferences_DBTable.php',
         );
 
         $this->libraryClassPaths = array(
@@ -78,7 +81,7 @@ class AutoLoader {
 
     /**
      * Find class path for given class and loads it by including class file.
-     * 
+     *
      * @param string $className
      */
     public function loadClass($className) {

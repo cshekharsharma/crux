@@ -34,7 +34,7 @@
 </div>
 <script>
     var editor = ace.edit("code-editor");
-    editor.setTheme("ace/theme/{$EDITOR_THEME}");
+    editor.setTheme("ace/theme/{$EDITOR_THEME.id}");
     editor.getSession().setMode("ace/mode/{$EDITOR_MODE}");
     editor.setReadOnly(true);
 </script>

@@ -95,6 +95,24 @@ class Utils {
     }
 
     /**
+     * Returns appropriate editor theme for logged in user.
+     * Try to get theme from user preferences, if not found then returns default.
+     *
+     * @return string $themeInfo
+     */
+    public static function getCodeEditorTheme() {
+        $themeInfo = array();
+        $userPref = Session::get(Session::SESS_USER_PREF_KEY);
+        if (!empty($userPref[PreferenceKeys::CODE_EDITOR_THEME])) {
+            $themeInfo['id'] = $userPref[PreferenceKeys::CODE_EDITOR_THEME];
+        } else {
+            $themeInfo['id'] = Configuration::get(Configuration::CODE_EDITOR_THEME);
+        }
+        $themeInfo['name'] = self::getAceEditorThemes($themeInfo['id']);
+        return $themeInfo;
+    }
+
+    /**
      * Tells if request is an AJAX request, by checking appropriate header
      *
      * @return boolean
@@ -105,6 +123,11 @@ class Utils {
         return $hasHeader && $isAjaxHeader;
     }
 
+    /**
+     * Returns list of all Ace editor theme names
+     *
+     * @return array
+     */
     public static function getAceEditorThemes() {
         return array(
             'ambiance' => 'Ambiance',
@@ -140,6 +163,17 @@ class Utils {
             'vibrant_ink' => 'Vibrant Ink',
             'xcode' => 'XCode'
         );
+    }
+
+    /**
+     * Returns currently logged in user's id
+     *
+     * @return string
+     */
+    public static function getLoggedInUserId() {
+        $loggedInUserDetails = Session::get(Session::SESS_USER_DETAILS);
+        $loggedInUserId = $loggedInUserDetails[Users_DBTable::USER_ID];
+        return $loggedInUserId;
     }
 
 

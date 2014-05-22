@@ -109,7 +109,7 @@
          </form>
     </div>
     <script>
-        var defaultEditorTheme = '{$EDITOR_THEME}';
+        var defaultEditorTheme = '{$EDITOR_THEME.id}';
         var defaultEditorMode = '{$EDITOR_MODE}';
     </script>
     <script type="text/javascript" src="/views/Editor/js/editor.js"></script>

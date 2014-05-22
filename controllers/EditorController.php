@@ -133,7 +133,7 @@ class EditorController extends BaseController {
         $this->smarty->assign("LEVEL_LIST", array('Easy', 'Average', 'Difficult'));
         $this->smarty->assign("EDIT_ACTION_NAME", self::EDIT_ACTION_NAME);
         $this->smarty->assign("EDIT_ACTION_VALUE", self::EDIT_ACTION_VALUE);
-        $this->smarty->assign("EDITOR_THEME", Configuration::get(Configuration::CODE_EDITOR_THEME));
+        $this->smarty->assign("EDITOR_THEME", Utils::getCodeEditorTheme());
         $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode());
         if (!empty($pid)) {
             $programController = new ProgramDetailsController();
@@ -153,7 +153,6 @@ class EditorController extends BaseController {
             $this->smarty->assign("SELECTED_SOURCE_CODE", htmlentities($srcCode));
             $this->smarty->assign("IS_UPDATE_REQ", self::IS_UPDATE_VALUE);
             $this->smarty->assign("PROGRAM_CURRENT_ID", $programInfo[ProgramDetails_DBTable::PROGRAM_ID]);
-            $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programInfo));
         }
         $this->smarty->display('string: '. Display::render(self::MODULE_KEY));
     }

@@ -10,7 +10,7 @@
                     <tr>
                         <td>Editor Theme</td>
                         <td>
-                            <select>
+                            <select name="code_editor_theme" id="code_editor_theme"> 
                                 {foreach from=$EDITOR_THEME_LIST key=$themeId item=themeName}
                                     <option value="{$themeId}">{$themeName}</option>
                                 {/foreach}
@@ -22,7 +22,7 @@
                         <td><br></td>
                     </tr>
                 </table>   
-                <input type="button" class="btns" value="Submit" onclick="changeUserpref('userpref-form');">
+                <input type="button" class="btns" value="Submit" onclick="saveUserPreference('userpref-form');">
             </div> 
         </div>   
     </form>

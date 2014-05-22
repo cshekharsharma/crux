@@ -31,6 +31,7 @@ class Constants {
     const CONTENT_URI_KEY = 'content';
     const EXPLORER_URI_KEY = 'explorer';
     const DOWNLOAD_URI_KEY = 'download';
+    const USER_PREF_URI_KEY = 'userPreferences';
 
     const AUTH_URI_KEY = 'auth';
     const AUTH_LOGIN_URI_KEY = 'login';

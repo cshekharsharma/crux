@@ -11,7 +11,7 @@
                         <td>Editor Theme</td>
                         <td>
                             <select name="code_editor_theme" id="code_editor_theme"> 
-                                {foreach from=$EDITOR_THEME_LIST key=$themeId item=themeName}
+                                {foreach from=$EDITOR_THEME_LIST key=themeId item=themeName}
                                     <option value="{$themeId}">{$themeName}</option>
                                 {/foreach}
                             </select>

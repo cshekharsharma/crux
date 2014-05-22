@@ -10,18 +10,18 @@ var UpCssSelectors = {
 };
 
 function saveUserPreference(formId) {
-    var formElem = document.getElementById(formId);
     var formData = new FormData();
-    selectedIndex = 
-    formData.append('code_editor_theme', 'github');
+    formData.append('code_editor_theme', $('#code_editor_theme').val());
     AJAX.onreadystatechange = function() {
         if (AJAX.readyState == 4 && AJAX.status == 200) {
+            var msgContainer = $('.msg-container');
             var response = JSON.parse(AJAX.responseText);
             if (response.code == APP_CONSTANTS.SUCCESS_CODE) {
-                //msgContainer.className = "success-msg-div";
+                msgContainer[0].className = "success-msg-div";
             } else if (response.code == APP_CONSTANTS.ERROR_CODE) {
-                //msgContainer.className = "error-msg-div";
+                msgContainer[0].className = "error-msg-div";
             }
+            msgContainer.html(response.msg);
         }
     };
     AJAX.open("POST", USER_PREF_CONSTANTS.saveUserPrefPath);

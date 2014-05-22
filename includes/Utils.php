@@ -128,8 +128,8 @@ class Utils {
      *
      * @return array
      */
-    public static function getAceEditorThemes() {
-        return array(
+    public static function getAceEditorThemes($themeId = false) {
+        $themes = array(
             'ambiance' => 'Ambiance',
             'chaos' => 'Chaos',
             'chrome' => 'Chrome',
@@ -163,6 +163,8 @@ class Utils {
             'vibrant_ink' => 'Vibrant Ink',
             'xcode' => 'XCode'
         );
+        
+        return (empty($themeId)) ? $themes : $themes[$themeId];
     }
 
     /**

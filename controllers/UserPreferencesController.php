@@ -10,7 +10,6 @@ class UserPreferencesController extends BaseController {
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
-//         Utils::displayVariableValues($)
         if (strtolower($uriParams[self::PREF_ACTION]) === 'save') {
             if ($this->saveUserPreference($formParams)) {
                 die(Response::createResponse(Constants::SUCCESS_RESPONSE, 'Successfully Updated!', ''));
@@ -29,16 +28,31 @@ class UserPreferencesController extends BaseController {
         $query = 'INSERT INTO '.UserPreferences_DBTable::DB_TABLE_NAME;
         $query .= ' VALUES("", ?, ?, NOW(), NOW(), 0);';
         if (DBManager::executeQuery($query, array($userID, $content))) {
-            Session::get(Session::SESS_USER_PREF_KEY, $preferenceArr);
+            Session::set(Session::SESS_USER_PREF_KEY, $preferenceArr);
             return true;
         }
         return false;
     }
     
-    public function getUserPreference($userId) {
+    public static function get($key) {
+        $allPreferences = Session::get(Session::SESS_USER_PREF_KEY);
+        if (!empty($allPreferences[$key])) {
+            return $allPreferences[$key];
+        } else {
+            return null;
+        }
+    }
+    
+    public function getUserPreferenceFromDB($userId) {
         $query = 'SELECT * FROM '.UserPreferences_DBTable::DB_TABLE_NAME.' WHERE ';
         $query .= UserPreferences_DBTable::USER_ID.' =? AND '.UserPreferences_DBTable::IS_DELETED.'=0';
-        return DBManager::executeQuery($query, array($userId), true);
+        return current(DBManager::executeQuery($query, array($userId), true));
+    }
+    
+    public function getUserPreference($userId) {
+        $userPref = $this->getUserPreferenceFromDB($userId);
+        $preferenceArr = $this->decodeContents($userPref[UserPreferences_DBTable::CONTENTS]);
+        return $preferenceArr;
     }
 
     private function flushAll($userId) {
@@ -51,5 +65,9 @@ class UserPreferencesController extends BaseController {
 
     private function encodeContents(array $contentArray) {
         return base64_encode(json_encode($contentArray));
+    }
+    
+    private function decodeContents($content) {
+        return json_decode(base64_decode($content), true);
     }
 }

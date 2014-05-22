@@ -38,6 +38,15 @@ addEvent(window, 'keydown', function(e) {
     }
 });
 
+addEvent(window, 'keydown', function(e) {
+    if (e.keyCode === 27) {
+        e.preventDefault();
+        if (!$('.account-dropdown').is(':hidden')) {
+            $('.account-dropdown').slideToggle();
+        }
+    }
+});
+
 AJAX = getAjaxConnection();
 
 function attachPopupEvents(bg, container, flagKey, callback) {

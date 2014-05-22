@@ -8,6 +8,15 @@ editor.setTheme("ace/theme/" + defaultEditorTheme);
 editor.getSession().setMode("ace/mode/" + defaultEditorMode);
 EDITOR_CONSTANTS.editor = editor;
 
+//Enabling ctl+S to be used for Save action
+addEvent(window, 'keydown', function(e) {
+    if (e.ctrlKey && e.keyCode === 83) {
+        e.preventDefault();
+        submitCode($('#editor-form')[0]);
+    }
+});
+
+
 $('#language_id').change(function() {
     var editor = ace.edit("code-editor");
     editor.setTheme("ace/theme/" + defaultEditorTheme);

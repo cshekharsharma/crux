@@ -15,19 +15,22 @@ class AutoLoader {
     public function __construct() {
         require_once 'includes/Constants.php';
         $this->classPathMap = array(
+
+            // Helper classes
+            'Resource' => Constants::HELPER_DIR.'Resource.php',
+            'Response' => Constants::HELPER_DIR.'Response.php',
+            'PreferenceKeys' => Constants::HELPER_DIR.'PreferenceKeys.php',
+
             // Include classes
             'Error' => Constants::INCLUDE_DIR.'Error.php',
             'Utils' => Constants::INCLUDE_DIR.'Utils.php',
             'Logger' => Constants::INCLUDE_DIR.'Logger.php',
             'Session' => Constants::INCLUDE_DIR.'Session.php',
             'Display' => Constants::INCLUDE_DIR.'Display.php',
-            'Resource' => Constants::INCLUDE_DIR.'Resource.php',
-            'Response' => Constants::INCLUDE_DIR.'Response.php',
             'Constants' => Constants::INCLUDE_DIR.'Constants.php',
             'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
             'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',
             'RequestManager' => Constants::INCLUDE_DIR.'RequestManager.php',
-            'PreferenceKeys' => Constants::INCLUDE_DIR.'PreferenceKeys.php',
             'ResourceProvider' => Constants::INCLUDE_DIR.'ResourceProvider.php',
 
             // Controller Classes

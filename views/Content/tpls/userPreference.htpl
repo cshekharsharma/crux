@@ -3,7 +3,7 @@
     <form name="userpref-form" id="userpref-form" class="auth-form" method="post">
     <div class="innerdiv">
         <input type="hidden" name="userpref-action-name" id="userpref-action-name" value="{$USER_PREF_ACTION_VALUE}">
-        <div id="msg-container" class="msg-container">
+        <div id="auth-msg-container" class="msg-container">
         </div><br>
              <div class="fieldset">
                 <table>

@@ -153,7 +153,7 @@ function getChangePasswordUI() {
             if (response.code == AUTH_CONSTANTS.SUCCESS_CODE) {
                 $(cssSelectors.chpwdContainer).html(response.detail);
             } else if (response.code == AUTH_CONSTANTS.ERROR_CODE) {
-                $(cssSelectors.chpwdContainer).html(response.msg);
+                // msgContainer.className = "error-msg-div";
             }
         }
     };

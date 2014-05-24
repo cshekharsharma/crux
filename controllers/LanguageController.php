@@ -1,6 +1,6 @@
 <?php
 
-class LanguageController extends BaseController {
+class LanguageController extends AbstractController {
     
     const MODULE_KEY = 'language';
     

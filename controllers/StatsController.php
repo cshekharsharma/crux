@@ -1,6 +1,6 @@
 <?php
 
-class StatsController extends BaseController {
+class StatsController extends AbstractController {
 
     const MODULE_KEY = 'stats';
     const TOTAL = 'Total';

@@ -130,13 +130,13 @@ class ResourceProvider {
      * Get requested controller object
      *
      * @param string $key
-     * @return BaseController|NULL
+     * @return AbstractController|NULL
      */
     public static function getControllerByResourceKey($key) {
         $controllerClass = ucfirst(strtolower(($key))) . 'Controller';
         if (class_exists($controllerClass)) {
             $controller = new $controllerClass();
-            if ($controller instanceof BaseController) {
+            if ($controller instanceof AbstractController) {
                 return $controller;
             }
         }

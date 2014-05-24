@@ -1,6 +1,6 @@
 <?php
 
-class SearchController extends BaseController {
+class SearchController extends AbstractController {
 
     const MODULE_KEY = 'search';
     const SEARCH_QUERY_PARAM = "q";

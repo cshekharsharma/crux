@@ -34,7 +34,7 @@ class AutoLoader {
             'ResourceProvider' => Constants::INCLUDE_DIR.'ResourceProvider.php',
 
             // Controller Classes
-            'BaseController' => Constants::CONTROLLER_DIR.'BaseController.php',
+            'AbstractController' => Constants::CONTROLLER_DIR.'AbstractController.php',
             'AuthController' => Constants::CONTROLLER_DIR.'AuthController.php',
             'UsersController' => Constants::CONTROLLER_DIR.'UsersController.php',
             'StatsController' => Constants::CONTROLLER_DIR.'StatsController.php',

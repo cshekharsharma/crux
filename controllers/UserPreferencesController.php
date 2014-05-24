@@ -1,6 +1,6 @@
 <?php
 
-class UserPreferencesController extends BaseController {
+class UserPreferencesController extends AbstractController {
 
     const MODULE_KEY = 'userPreferences';
     const PREF_ACTION = 'pref_action';
@@ -12,9 +12,9 @@ class UserPreferencesController extends BaseController {
         $formParams = RequestManager::getAllParams();
         if (strtolower($uriParams[self::PREF_ACTION]) === 'save') {
             if ($this->saveUserPreference($formParams)) {
-                die(Response::createResponse(Constants::SUCCESS_RESPONSE, 'Successfully Updated!', ''));
+                Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Successfully Updated!', '');
             } else {
-                die(Response::createResponse(Constants::SUCCESS_RESPONSE, 'Operation failed!', ''));
+                Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Operation failed!', '');
             }
         }
     }

@@ -49,9 +49,10 @@ class RequestManager {
     }
 
     public static function serveRequest() {
+        self::requireCoreFiles();
         $resource = ResourceProvider::getResource();
         $controller = ResourceProvider::getControllerByResourceKey($resource->getKey());
-        if (!empty($controller) && $controller instanceof BaseController) {
+        if (!empty($controller) && $controller instanceof AbstractController) {
             $controller->run($resource);
         } else {
             Logger::getLogger()->LogFatal("Invalid controller requested, Exiting");
@@ -75,5 +76,15 @@ class RequestManager {
         if (!empty($uri) && strtolower($uri) != 'favicon.ico') {
             setcookie(Session::SESS_PENDING_REQ_URI, $uri);
         }
+    }
+    
+    public static function requireCoreFiles() {
+        require_once 'library/smarty/libs/Smarty.class.php';
+    }
+    
+    public static function handleException(Exception $e) {
+        Logger::getLogger()->LogError('Exception: '.$e->getMessage());
+        Logger::getLogger()->LogError('Exception: '.$e->getTraceAsString());
+        self::redirect();
     }
 }

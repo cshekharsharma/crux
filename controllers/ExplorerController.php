@@ -1,6 +1,6 @@
 <?php
 
-class ExplorerController extends BaseController {
+class ExplorerController extends AbstractController {
 
     const MODULE_KEY = 'explorer';
 
@@ -90,11 +90,10 @@ class ExplorerController extends BaseController {
         $isDeleted = false;
         $programController = new ProgramDetailsController();
         if ($programController->deleteProgram($pid)) {
-            echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'File Successfully Deleted', '');
+            Response::sendResponse(Constants::SUCCESS_RESPONSE, 'File Successfully Deleted');
             $isDeleted = true;
         } else {
-            echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'File Deletion Failed, Retry!', '');
+            Response::sendResponse(Constants::SUCCESS_RESPONSE, 'File Deletion Failed, Retry!');
         }
-        exit();
     }
 }

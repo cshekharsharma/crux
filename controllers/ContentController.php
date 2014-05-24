@@ -1,6 +1,6 @@
 <?php
 
-class ContentController extends BaseController {
+class ContentController extends AbstractController {
 
     const MODULE_KEY = "content";
     const CONTENT_KEY = 'content_key';
@@ -17,37 +17,38 @@ class ContentController extends BaseController {
         $uriParams = $resource->getParams();
         $contentKey = $uriParams[self::CONTENT_KEY];
         if (!empty($contentKey)) {
-            $content = $this->getMarkup($contentKey);
+            $this->callContentAction($contentKey);
         }
-        echo (!empty($content)) ? $content : $this->getErrorMsg();
+        $this->getErrorMsg();
     }
 
-    private function getMarkup($contentKey) {
+    private function callContentAction($contentKey) {
         $content = '';
         if (!empty($contentKey)) {
             $actionName = $this->actionMapping[$contentKey];
             if (method_exists($this, $actionName)) {
-                $content = $this->$actionName();
+                $this->$actionName();
+            } else {
+                return false;
             }
         }
-
-        return $content;
+        return false;
     }
 
     private function getErrorMsg() {
         Logger::getLogger()->LogError('ContentController: No content key provided');
-        return Response::createResponse(Constants::FAILURE_RESPONSE, Error::ERR_SOMETHING_WRONG, '');
+        Response::sendResponse(Constants::FAILURE_RESPONSE, Error::ERR_SOMETHING_WRONG);
     }
 
     public function getChangePasswordUI() {
         $this->smarty->assign('CHPWD_ACTION_VALUE', AuthController::CHPWD_ACTION_VALUE);
         $content = $this->smarty->fetch('string:'.Display::render('CMS_CHPWD'));
-        return Response::createResponse(Constants::SUCCESS_RESPONSE, '', $content);
+        Response::sendResponse(Constants::SUCCESS_RESPONSE, '', $content);
     }
     
     public function getUserPreferenceUI() {
         $this->smarty->assign('EDITOR_THEME_LIST', Utils::getAceEditorThemes());
         $content = $this->smarty->fetch('string:'.Display::render('CMS_USERPREF'));
-        return Response::createResponse(Constants::SUCCESS_RESPONSE, '', $content);
+        Response::sendResponse(Constants::SUCCESS_RESPONSE, '', $content);
     }
 }

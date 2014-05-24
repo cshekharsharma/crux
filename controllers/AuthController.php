@@ -1,6 +1,6 @@
 <?php
 
-class AuthController extends BaseController {
+class AuthController extends AbstractController {
 
     const MODULE_KEY = 'auth';
 
@@ -59,22 +59,21 @@ class AuthController extends BaseController {
                 $passwordHash = $this->getPasswordHash($formParams['password']);
                 if ($passwordInDB === $passwordHash) {
                     if ($this->createUserSession($userDetail, $formParams['remember'])) {
-                        echo Response::createResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', $nextURL);
+                        echo Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', $nextURL);
                         Logger::getLogger()->LogInfo("Auth Success for userid: ".$formParams['username']);
                     }
                 } else {
                     Logger::getLogger()->LogWarn("Auth Failed [Invalid password] for userid: ".$formParams['username']);
-                    echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_PASSWORD, '');
+                    Response::sendResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_PASSWORD);
                 }
             } else {
                 Logger::getLogger()->LogWarn("Auth Failed [User Inactive] for userid: ".$formParams['username']);
-                echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::AUTH_USER_INACTIVE, '');
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Error::AUTH_USER_INACTIVE);
             }
         } else {
             Logger::getLogger()->LogWarn("Auth Failed [Invalid Username] for userid: ".$formParams['username']);
-            echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_USER_NAME, '');
+            Response::sendResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_USER_NAME);
         }
-        exit;
     }
 
     private function getPasswordHash($password) {
@@ -168,14 +167,13 @@ class AuthController extends BaseController {
                     Users_DBTable::USER_HASH." = '".$newPasswordHash."' WHERE ".
                     Users_DBTable::USER_ID." = '".$userDetails[Users_DBTable::USER_ID]."'";
                 if (DBManager::executeQuery($query)) {
-                    echo Response::createResponse(Constants::SUCCESS_RESPONSE, Constants::PASSWORD_CHANGED_MSG, '');
+                    Response::sendResponse(Constants::SUCCESS_RESPONSE, Constants::PASSWORD_CHANGED_MSG);
                 }
             } else {
-                echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::ERR_WRONG_PASSWORD, '');
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Error::ERR_WRONG_PASSWORD);
             }
         } else {
-            echo Response::createResponse(Constants::FAILURE_RESPONSE, Error::ERR_USER_NOT_LOGGED_IN, '');
+            Response::sendResponse(Constants::FAILURE_RESPONSE, Error::ERR_USER_NOT_LOGGED_IN);
         }
-        exit;
     }
 }

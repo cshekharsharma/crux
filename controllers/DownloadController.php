@@ -1,6 +1,6 @@
 <?php
 
-class DownloadController extends BaseController {
+class DownloadController extends AbstractController {
 
     const MODULE_KEY = 'download';
     

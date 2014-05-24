@@ -17,6 +17,7 @@ class Constants {
     const DATA_DIR = 'data/';
     const VIEW_DIR = 'views/';
     const CACHE_DIR = 'cache/';
+    const HELPER_DIR = 'helpers/';
     const LIBRARY_DIR = 'library/';
     const INCLUDE_DIR = 'includes/';
     const DB_TABLE_DIR = 'dbtables/';

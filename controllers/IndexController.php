@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends BaseController {
+class IndexController extends AbstractController {
 
     const MODULE_KEY = 'index';
 

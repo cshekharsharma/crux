@@ -1,6 +1,6 @@
 <?php
 
-class UploadController extends BaseController {
+class UploadController extends AbstractController {
 
     const MODULE_KEY = "upload";
 
@@ -22,7 +22,7 @@ class UploadController extends BaseController {
         $formParams = RequestManager::getAllParams();
         if (!empty($formParams[self::FILE_UPLOAD_ACTION_NAME]) &&
             $formParams[self::FILE_UPLOAD_ACTION_NAME] == self::FILE_UPLOAD_ACTION_VALUE) {
-            echo $this->uploadFile($formParams);
+            $this->uploadFile($formParams);
         } else {
             $this->displayUploadInterface();
         }
@@ -63,18 +63,18 @@ class UploadController extends BaseController {
                             $formParams['stored_file_name'] = $newFileName;
                             $formParams['created_by'] = $authUserId;
                             if ($this->insertProgramDescription($formParams)) {
-                                return Response::createResponse(Constants::SUCCESS_RESPONSE, 'Upload Successful', '');
+                                Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Upload Successful');
                             } else {
-                                return Response::createResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
+                                Response::sendResponse(Constants::FAILURE_RESPONSE, 'Upload Failed');
                             }
                         }
                     } else {
                         Logger::getLogger()->LogError("Directory < $uploadFileDir > Doesn't Exist or Not Writable");
-                        return Response::createResponse(Constants::FAILURE_RESPONSE, 'Upload Failed', '');
+                        Response::sendResponse(Constants::FAILURE_RESPONSE, 'Upload Failed');
                     }
                 } else {
                     Logger::getLogger()->LogError(Error::UPLOAD_INVALID_FILE_TYPE);
-                    return Response::createResponse(Constants::FAILURE_RESPONSE, Error::UPLOAD_INVALID_FILE_TYPE, '');
+                    Response::sendResponse(Constants::FAILURE_RESPONSE, Error::UPLOAD_INVALID_FILE_TYPE);
                 }
             }
         }

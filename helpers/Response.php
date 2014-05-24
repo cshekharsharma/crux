@@ -18,7 +18,7 @@ class Response {
      * @param string $detail
      * @return string $response
      */
-    public static function createResponse($code, $msg, $detail = '') {
+    public static function sendResponse($code, $msg, $detail = '') {
         $response = array(
             'code' => $code,
             'msg' => $msg,
@@ -27,5 +27,6 @@ class Response {
         
         header('content-type: application/json; charset=utf-8');
         echo json_encode($response);
+        exit();
     }
 }

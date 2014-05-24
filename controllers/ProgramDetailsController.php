@@ -1,6 +1,6 @@
 <?php
 
-class ProgramDetailsController extends BaseController {
+class ProgramDetailsController extends AbstractController {
 
     const MODULE_KEY = "programDetails";
 

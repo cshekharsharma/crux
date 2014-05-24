@@ -1,6 +1,6 @@
 <?php
 
-class EditorController extends BaseController {
+class EditorController extends AbstractController {
 
     const MODULE_KEY = 'editor';
 
@@ -57,14 +57,13 @@ class EditorController extends BaseController {
                     'isUpdate' => self::IS_UPDATE_VALUE,
                     'programId' => $this->getLastInsertedRecord($loggedInUser[Users_DBTable::USER_ID], $currentDatetime, $storedFileName)
                 );
-                echo Response::createResponse(Constants::SUCCESS_RESPONSE, "Code Submitted", $detailArray);
+                Response::sendResponse(Constants::SUCCESS_RESPONSE, "Code Submitted", $detailArray);
             } else {
-                echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry!", '');
+                Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry!");
             }
         } else {
-            echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry", '');
+            Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry");
         }
-        exit();
     }
 
     private function updateCode($formParams) {
@@ -115,12 +114,12 @@ class EditorController extends BaseController {
                     'isUpdate' => self::IS_UPDATE_VALUE,
                     'programId' => $pid
                 );
-                echo Response::createResponse(Constants::SUCCESS_RESPONSE, "Code Successfully Updated", $detailArray);
+                echo Response::sendResponse(Constants::SUCCESS_RESPONSE, "Code Successfully Updated", $detailArray);
             } else {
-                echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry!", '');
+                echo Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry!", '');
             }
         } else {
-            echo Response::createResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry", '');
+            echo Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry", '');
         }
         exit();
     }

@@ -1,6 +1,6 @@
 <?php
 
-class ErrorController extends BaseController {
+class ErrorController extends AbstractController {
     
     const MODULE_KEY = 'error';
     

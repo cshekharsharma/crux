@@ -1,6 +1,6 @@
 <?php
 
-class CategoryController extends BaseController {
+class CategoryController extends AbstractController {
     
     const MODULE_KEY = 'category';
     

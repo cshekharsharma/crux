@@ -1,6 +1,6 @@
 <?php
 /**
- * Base Controller, meant to be extended by all controllers in app
+ * Abstract Controller, meant to be extended by all controllers in app
  * 
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @since May 11, 2014

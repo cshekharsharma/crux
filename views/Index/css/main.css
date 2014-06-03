@@ -154,6 +154,7 @@ body {
 
 #jquery-autocomplete-results {
 	position: absolute;
+	z-index:200;
 	top: 48px;
 	left: 262px;
 	width: 50%;

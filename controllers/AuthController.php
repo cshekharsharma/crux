@@ -120,21 +120,27 @@ class AuthController extends AbstractController {
         return DBManager::executeQuery($query);
     }
 
-    private function updateUserLogout() {
-        $userDetail = Session::get(Session::SESS_USER_DETAILS);
+    private function updateUserLogout($userId = null) {
+        if (empty($userId)) {
+            $userDetail = Session::get(Session::SESS_USER_DETAILS);
+            $userId = $userDetail[Users_DBTable::USER_ID];
+        }
         $query = "UPDATE ".Users_DBTable::DB_TABLE_NAME." SET ";
         $query .= Users_DBTable::SESSION_ID. "='', ";
         $query .= Users_DBTable::IP_ADDRESS. "='', ";
         $query .= Users_DBTable::IS_LOGGED_IN." = '0' WHERE ";
-        $query .= Users_DBTable::USER_ID." = '".$userDetail[Users_DBTable::USER_ID]."'";
+        $query .= Users_DBTable::USER_ID." = '".$userId."'";
         return DBManager::executeQuery($query);
     }
 
-    private function logout() {
-        if ($this->updateUserLogout()) {
+    private function logout($userId = null, $redirect = true) {
+        if ($this->updateUserLogout($userId)) {
             Session::destroy(true);
         }
-        RequestManager::redirect();
+        
+        if ($redirect) {
+            RequestManager::redirect();
+        }
     }
 
     private function displayLoginForm() {

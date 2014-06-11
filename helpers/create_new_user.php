@@ -9,7 +9,7 @@
 chdir('../');
 require_once 'includes/AutoLoader.php';
 
-if (php_sapi_name() === 'cli') {
+if (Utils::isRunningFromCLI()) {
     $cmdArgs = $argv;
 
     foreach ($cmdArgs as $arg) {
@@ -23,13 +23,15 @@ if (php_sapi_name() === 'cli') {
     }
 
     // input validations
-    if (empty($userName)) exit('No UserName provided, Exiting'.PHP_EOL);
-    if (empty($password)) exit('No Password provided, Exiting'.PHP_EOL);
-    if (strlen($password) < 3) exit('Password too short, Must have atleast 3 characters'.PHP_EOL);
+    if (empty($userName)) Utils::printCLIMessages('No UserName provided, Utils::printCLIMessagesing');
+    if (empty($password)) Utils::printCLIMessages('No Password provided, Utils::printCLIMessagesing');
+    if (strlen($password) < 3) Utils::printCLIMessages('Password too short, Must have atleast 3 characters');
 
     $user = new UsersController();
     $response = json_decode($user->createUser($userName, $password), true);
-    exit(ucfirst($response['code']).'!! '.$response['msg'].PHP_EOL);
+    Utils::printCLIMessages(ucfirst($response['code']).'!! '.$response['msg']);
 } else {
-    exit('Invalid Access! File is meant to be run from only command line.'.PHP_EOL);
+    Utils::printCLIMessages('Invalid Access! File is meant to be run from only command line.');
 }
+
+exit();

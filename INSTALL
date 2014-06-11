@@ -1,5 +1,5 @@
 ##################################################
-1: Create a virtual host
+#  1: Create a virtual host
 ##################################################
 <VirtualHost *:80>
         # The name to respond to
@@ -13,6 +13,7 @@
                 Options +FollowSymLinks
                 Options -Indexes
                 RewriteEngine on
+                RewriteCond %{REQUEST_FILENAME} !-f
                 RewriteCond %{REQUEST_FILENAME} !/(css|js|library|fonts|ico|js|jpg|png|gif|ttf|jpeg)/
                 RewriteRule ^(.*)$ index.php?__req=$1 [L,QSA]
                 # Enables .htaccess files for this site
@@ -24,13 +25,12 @@
 
 
 ##################################################
-2: Restore database
+# 2: Restore database
 ##################################################
-mysql -u root -p <dbname> < codeme.sql
-
+mysql -u root -p <dbname> < data/database/dbschema-<datetime>.sql
 
 ##################################################
-3: Extract code files in apache document root -
+# 3: Extract code files in apache document root -
 ##################################################
 cd /path/to/apache/document/root/
 tar -xvzf code-me.tar.gz
@@ -39,7 +39,7 @@ sudo chmod 777 -R .
 
 
 ##################################################
-4: Setup Configurations
+# 4: Setup Configurations
 ##################################################
 
 Enter database related config in /includes/Configuration.php file

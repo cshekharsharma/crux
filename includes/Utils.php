@@ -178,7 +178,22 @@ class Utils {
         return $loggedInUserId;
     }
 
-
+    public static function isRunningFromCLI() {
+        return (php_sapi_name() === 'cli');
+    }
+    
+    /**
+     * Prints formatted msg on CLI
+     * 
+     * @param string $msg
+     */
+    public static function printCLIMessages($msg) {
+        $border = str_repeat("#", strlen($msg) + 3);
+        echo $border.PHP_EOL.'#'.PHP_EOL;
+        echo "#  ".$msg.PHP_EOL.'#'.PHP_EOL;
+        echo $border.PHP_EOL;
+    }
+    
     /**
      * Prints variable formatted structure and value of variable
      *

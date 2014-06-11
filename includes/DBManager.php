@@ -52,6 +52,7 @@ class DBManager {
         try {
             $instance = self::getInstance();
             $instance->beginTransaction();
+            Logger::getLogger()->LogDebug('Executing Query: '.$query);
             $stmt = $instance->prepare($query);
             $querySuccess = false;
             if (!empty($bindParams)) {

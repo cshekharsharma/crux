@@ -9,6 +9,8 @@ class Error {
     const AUTH_INVALID_PASSWORD = 'Username and password do not match!';
     const AUTH_USER_INACTIVE = 'User account is inactive, please contact administrator!';
     
+    const USER_ALREADY_EXISTS = 'User with this name already exists, Retry with another name';
+    
     const ERR_WRONG_PASSWORD = 'Wrong password provided';
     const ERR_USER_NOT_LOGGED_IN = 'Please login before the action';
     const ERR_SOMETHING_WRONG = 'Oops! Something went wrong! Please refresh the page and try again!';

@@ -76,7 +76,7 @@ class AuthController extends AbstractController {
         }
     }
 
-    private function getPasswordHash($password) {
+    public function getPasswordHash($password) {
         return hash("sha256", $password);
     }
 

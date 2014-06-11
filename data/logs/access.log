@@ -7,3 +7,363 @@
 2014-05-21 1:30:57 - FATAL --> Invalid controller requested, Exiting 
 2014-05-21 1:31:18 - FATAL --> Invalid controller requested, Exiting 
 2014-05-21 1:31:37 - FATAL --> Invalid controller requested, Exiting 
+2014-06-11 14:22:02 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:22:48 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:25:01 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:25:48 - DEBUG --> New DB Instance created 
+2014-06-11 14:25:48 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:25:48 - DEBUG --> Executing Query: INSERT INTO users VALUES(?,?,?,?,?,?,?,NOW(),?,?); 
+2014-06-11 14:25:48 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:26:53 - DEBUG --> New DB Instance created 
+2014-06-11 14:26:53 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:27:52 - DEBUG --> New DB Instance created 
+2014-06-11 14:27:52 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:28:33 - DEBUG --> New DB Instance created 
+2014-06-11 14:28:33 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:29:21 - DEBUG --> New DB Instance created 
+2014-06-11 14:29:21 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:29:33 - DEBUG --> New DB Instance created 
+2014-06-11 14:29:33 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:29:39 - DEBUG --> New DB Instance created 
+2014-06-11 14:29:39 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:29:46 - DEBUG --> New DB Instance created 
+2014-06-11 14:29:46 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:29:57 - DEBUG --> New DB Instance created 
+2014-06-11 14:29:57 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:30:01 - DEBUG --> New DB Instance created 
+2014-06-11 14:30:01 - DEBUG --> Executing Query: SELECT COUNT(*) FROM users WHERE user_name = ?  
+2014-06-11 14:30:49 - DEBUG --> New DB Instance created 
+2014-06-11 14:30:49 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:30:54 - DEBUG --> New DB Instance created 
+2014-06-11 14:30:54 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:32:34 - DEBUG --> New DB Instance created 
+2014-06-11 14:32:34 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:32:37 - DEBUG --> New DB Instance created 
+2014-06-11 14:32:37 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:33:07 - DEBUG --> New DB Instance created 
+2014-06-11 14:33:07 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:34:53 - DEBUG --> New DB Instance created 
+2014-06-11 14:34:53 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:35:16 - DEBUG --> New DB Instance created 
+2014-06-11 14:35:16 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:36:02 - DEBUG --> New DB Instance created 
+2014-06-11 14:36:02 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:36:14 - DEBUG --> New DB Instance created 
+2014-06-11 14:36:14 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:36:14 - DEBUG --> Executing Query: INSERT INTO users VALUES(?,?,?,?,?,?,?,NOW(),?,?); 
+2014-06-11 14:36:14 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:39:08 - DEBUG --> New DB Instance created 
+2014-06-11 14:39:08 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:39:08 - DEBUG --> Executing Query: INSERT INTO users VALUES(?,?,?,?,?,?,NOW(),NOW(),?,?); 
+2014-06-11 14:39:08 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:40:34 - DEBUG --> New DB Instance created 
+2014-06-11 14:40:34 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:40:34 - DEBUG --> Executing Query: INSERT INTO users VALUES(?,?,?,?,?,NOW(),NOW(),?,?); 
+2014-06-11 14:40:34 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:42:21 - DEBUG --> New DB Instance created 
+2014-06-11 14:42:21 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:42:21 - DEBUG --> Executing Query: INSERT INTO users VALUES('', ?,?,'','',0,NOW(),NOW(),1,0); 
+2014-06-11 14:42:21 - FATAL --> SQLSTATE[HY093]: Invalid parameter number: no parameters were bound 
+2014-06-11 14:44:02 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:02 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:44:02 - DEBUG --> Executing Query: INSERT INTO users VALUES('',?,?,'','',0,NOW(),NOW(),1,0); 
+2014-06-11 14:44:18 - DEBUG --> Session Started / Resumed with ID : 45kkdo15i257e5k929s5rf1es0 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:44:18 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:18 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:44:18 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:44:18 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:44:18 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:44:18 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:44:19 - DEBUG --> Session Started / Resumed with ID : 45kkdo15i257e5k929s5rf1es0 
+2014-06-11 14:44:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:27 - DEBUG --> Session Started / Resumed with ID : 45kkdo15i257e5k929s5rf1es0 
+2014-06-11 14:44:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:27 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:27 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-11 14:44:27 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-11 14:44:27 - DEBUG --> Executing Query: UPDATE users SET session_id='j8bhi30ki1qfba9s8u7vckavk6', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-11 14:44:27' WHERE id = '3' 
+2014-06-11 14:44:27 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:44:29 - DEBUG --> Session Started / Resumed with ID : j8bhi30ki1qfba9s8u7vckavk6 
+2014-06-11 14:44:29 - DEBUG --> Session Started / Resumed with ID : j8bhi30ki1qfba9s8u7vckavk6 
+2014-06-11 14:44:29 - INFO  --> Serving Index Controller 
+2014-06-11 14:44:29 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:29 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:44:29 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:44:51 - DEBUG --> Session Started / Resumed with ID : j8bhi30ki1qfba9s8u7vckavk6 
+2014-06-11 14:44:51 - INFO  --> Serving Index Controller 
+2014-06-11 14:44:51 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:51 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:44:51 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:44:51 - DEBUG --> Session Started / Resumed with ID : j8bhi30ki1qfba9s8u7vckavk6 
+2014-06-11 14:44:51 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:51 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-11 14:44:56 - DEBUG --> Session Started / Resumed with ID : j8bhi30ki1qfba9s8u7vckavk6 
+2014-06-11 14:44:56 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:56 - DEBUG --> Executing Query: UPDATE users SET session_id='', ip_address='', is_loggedin = '0' WHERE id = '3' 
+2014-06-11 14:44:56 - DEBUG --> Session with ID : is closing 
+2014-06-11 14:44:56 - DEBUG --> Session Started / Resumed with ID : aov9pnq48t6rt2hqus65ma7310 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:44:56 - DEBUG --> New DB Instance created 
+2014-06-11 14:44:56 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:44:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:44:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:44:56 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:44:56 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:44:57 - DEBUG --> Session Started / Resumed with ID : aov9pnq48t6rt2hqus65ma7310 
+2014-06-11 14:44:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:44:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:44:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:10 - DEBUG --> Session Started / Resumed with ID : aov9pnq48t6rt2hqus65ma7310 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:10 - DEBUG --> Session Started / Resumed with ID : aov9pnq48t6rt2hqus65ma7310 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:19 - DEBUG --> Session Started / Resumed with ID : aov9pnq48t6rt2hqus65ma7310 
+2014-06-11 14:45:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:19 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:45:19 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:45:19 - DEBUG --> New DB Instance created 
+2014-06-11 14:45:19 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-11 14:45:19 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-11 14:45:19 - DEBUG --> Executing Query: UPDATE users SET session_id='kbr4qur94is7udrrfimkoav184', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-11 14:45:19' WHERE id = '1' 
+2014-06-11 14:45:19 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:46:57 - DEBUG --> Session Started / Resumed with ID : kbr4qur94is7udrrfimkoav184 
+2014-06-11 14:46:57 - DEBUG --> Session Started / Resumed with ID : kbr4qur94is7udrrfimkoav184 
+2014-06-11 14:46:57 - INFO  --> Serving Index Controller 
+2014-06-11 14:46:57 - DEBUG --> New DB Instance created 
+2014-06-11 14:46:57 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:46:57 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:47:17 - DEBUG --> Session Started / Resumed with ID : kbr4qur94is7udrrfimkoav184 
+2014-06-11 14:47:18 - INFO  --> Serving Index Controller 
+2014-06-11 14:47:18 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:18 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:47:18 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:47:23 - DEBUG --> Session Started / Resumed with ID : kbr4qur94is7udrrfimkoav184 
+2014-06-11 14:47:23 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:23 - DEBUG --> Executing Query: UPDATE users SET session_id='', ip_address='', is_loggedin = '0' WHERE id = '1' 
+2014-06-11 14:47:23 - DEBUG --> Session with ID : is closing 
+2014-06-11 14:47:23 - DEBUG --> Session Started / Resumed with ID : kvl1917ht0fo5lqo0eb0uepat0 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:47:23 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:23 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:47:23 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:47:23 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:47:23 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:47:23 - DEBUG --> Session Started / Resumed with ID : kvl1917ht0fo5lqo0eb0uepat0 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:23 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:30 - DEBUG --> Session Started / Resumed with ID : kvl1917ht0fo5lqo0eb0uepat0 
+2014-06-11 14:47:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:30 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:30 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-11 14:47:30 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-11 14:47:30 - DEBUG --> Executing Query: UPDATE users SET session_id='qtnv3dcmk2c8v9hjuf4ogikla6', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-11 14:47:30' WHERE id = '1' 
+2014-06-11 14:47:30 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:47:30 - DEBUG --> Session Started / Resumed with ID : qtnv3dcmk2c8v9hjuf4ogikla6 
+2014-06-11 14:47:30 - INFO  --> Serving Index Controller 
+2014-06-11 14:47:30 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:30 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:47:30 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:47:34 - DEBUG --> Session Started / Resumed with ID : qtnv3dcmk2c8v9hjuf4ogikla6 
+2014-06-11 14:47:34 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:34 - DEBUG --> Executing Query: UPDATE users SET session_id='', ip_address='', is_loggedin = '0' WHERE id = '1' 
+2014-06-11 14:47:34 - DEBUG --> Session with ID : is closing 
+2014-06-11 14:47:34 - DEBUG --> Session Started / Resumed with ID : u3rs0br97llu15k5drbm8j7lb2 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:47:34 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:34 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:47:34 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:47:34 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:47:34 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:47:34 - DEBUG --> Session Started / Resumed with ID : u3rs0br97llu15k5drbm8j7lb2 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:43 - DEBUG --> Session Started / Resumed with ID : u3rs0br97llu15k5drbm8j7lb2 
+2014-06-11 14:47:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:47:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:47:43 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:43 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-11 14:47:43 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-11 14:47:43 - DEBUG --> Executing Query: UPDATE users SET session_id='80flmdpcspqvsjfkivou5883v4', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-11 14:47:43' WHERE id = '3' 
+2014-06-11 14:47:43 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:47:43 - DEBUG --> Session Started / Resumed with ID : 80flmdpcspqvsjfkivou5883v4 
+2014-06-11 14:47:43 - INFO  --> Serving Index Controller 
+2014-06-11 14:47:43 - DEBUG --> New DB Instance created 
+2014-06-11 14:47:43 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:47:43 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:48:04 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:04 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:48:08 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:08 - DEBUG --> Executing Query: SELECT COUNT(*) C FROM users WHERE user_name = ?  
+2014-06-11 14:48:08 - DEBUG --> Executing Query: INSERT INTO users VALUES('',?,?,'','',0,NOW(),NOW(),1,0); 
+2014-06-11 14:48:15 - DEBUG --> Session Started / Resumed with ID : 80flmdpcspqvsjfkivou5883v4 
+2014-06-11 14:48:15 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:15 - DEBUG --> Executing Query: UPDATE users SET session_id='', ip_address='', is_loggedin = '0' WHERE id = '3' 
+2014-06-11 14:48:15 - DEBUG --> Session with ID : is closing 
+2014-06-11 14:48:15 - DEBUG --> Session Started / Resumed with ID : 71b7nj2kgsneuf1ciaj9pamh57 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:48:15 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:15 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:48:15 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:48:15 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:48:15 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:48:15 - DEBUG --> Session Started / Resumed with ID : 71b7nj2kgsneuf1ciaj9pamh57 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:32 - DEBUG --> Session Started / Resumed with ID : 71b7nj2kgsneuf1ciaj9pamh57 
+2014-06-11 14:48:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:32 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:32 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-11 14:48:32 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-11 14:48:32 - DEBUG --> Executing Query: UPDATE users SET session_id='enhoroa7i6tgq5dobjbkk2co84', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-11 14:48:32' WHERE id = '4' 
+2014-06-11 14:48:32 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:48:32 - DEBUG --> Session Started / Resumed with ID : enhoroa7i6tgq5dobjbkk2co84 
+2014-06-11 14:48:32 - INFO  --> Serving Index Controller 
+2014-06-11 14:48:32 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:32 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:48:32 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:48:53 - DEBUG --> Session Started / Resumed with ID : enhoroa7i6tgq5dobjbkk2co84 
+2014-06-11 14:48:53 - INFO  --> Serving Index Controller 
+2014-06-11 14:48:53 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:53 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:48:53 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:48:59 - DEBUG --> Session Started / Resumed with ID : enhoroa7i6tgq5dobjbkk2co84 
+2014-06-11 14:48:59 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:59 - DEBUG --> Executing Query: UPDATE users SET session_id='', ip_address='', is_loggedin = '0' WHERE id = '4' 
+2014-06-11 14:48:59 - DEBUG --> Session with ID : is closing 
+2014-06-11 14:48:59 - DEBUG --> Session Started / Resumed with ID : skhinropgfa6vi3gr7ljjtduf7 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:48:59 - DEBUG --> New DB Instance created 
+2014-06-11 14:48:59 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:48:59 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:48:59 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:48:59 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:48:59 - DEBUG --> Session Started / Resumed with ID : skhinropgfa6vi3gr7ljjtduf7 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:48:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:09 - DEBUG --> Session Started / Resumed with ID : skhinropgfa6vi3gr7ljjtduf7 
+2014-06-11 14:49:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:09 - DEBUG --> New DB Instance created 
+2014-06-11 14:49:09 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-11 14:49:09 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-11 14:49:09 - DEBUG --> Executing Query: UPDATE users SET session_id='thk6ah18i37k2tt6c6quima7v2', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-11 14:49:09' WHERE id = '2' 
+2014-06-11 14:49:09 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:49:09 - DEBUG --> Session Started / Resumed with ID : thk6ah18i37k2tt6c6quima7v2 
+2014-06-11 14:49:09 - INFO  --> Serving Index Controller 
+2014-06-11 14:49:09 - DEBUG --> New DB Instance created 
+2014-06-11 14:49:09 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-11 14:49:09 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-11 14:49:12 - DEBUG --> Session Started / Resumed with ID : thk6ah18i37k2tt6c6quima7v2 
+2014-06-11 14:49:12 - DEBUG --> New DB Instance created 
+2014-06-11 14:49:12 - DEBUG --> Executing Query: UPDATE users SET session_id='', ip_address='', is_loggedin = '0' WHERE id = '2' 
+2014-06-11 14:49:12 - DEBUG --> Session with ID : is closing 
+2014-06-11 14:49:12 - DEBUG --> Session Started / Resumed with ID : i9jiogf0l05ebl6nvv3a727p17 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-11 14:49:12 - DEBUG --> New DB Instance created 
+2014-06-11 14:49:12 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-11 14:49:12 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:49:12 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-11 14:49:12 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-11 14:49:12 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-11 14:49:13 - DEBUG --> Session Started / Resumed with ID : i9jiogf0l05ebl6nvv3a727p17 
+2014-06-11 14:49:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-11 14:49:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-11 14:49:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 

@@ -33,4 +33,11 @@ class AuthModel extends AbstractModel {
         $query .= Users_DBTable::USER_ID." = '".$userDetails[Users_DBTable::USER_ID]."'";
         return DBManager::executeQuery($query);
     }
+    
+    public function getUserDetailsByName($username) {
+        $query = "SELECT * FROM ".Users_DBTable::DB_TABLE_NAME. " WHERE ";
+        $query .= Users_DBTable::USER_NAME." = ? AND ".Users_DBTable::IS_DELETED." = 0";
+        $userData = DBManager::executeQuery($query, array($username), true);
+        return current($userData);
+    }
 }

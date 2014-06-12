@@ -57,7 +57,7 @@ class AuthController extends AbstractController {
 
     private function authenticate($formParams) {
         $nextURL = '';
-        $userDetail = $this->getUserDetailsByName($formParams['username']);
+        $userDetail = $this->getModel()->getUserDetailsByName($formParams['username']);
         if (!empty($userDetail)) {
             if ($userDetail[Users_DBTable::IS_ACTIVE] == '1') {
                 $passwordInDB = $userDetail[Users_DBTable::USER_HASH];
@@ -105,13 +105,6 @@ class AuthController extends AbstractController {
         } else {
             return false;
         }
-    }
-
-    private function getUserDetailsByName($username) {
-        $query = "SELECT * FROM ".Users_DBTable::DB_TABLE_NAME. " WHERE ";
-        $query .= Users_DBTable::USER_NAME." = ? AND ".Users_DBTable::IS_DELETED." = 0";
-        $userData = DBManager::executeQuery($query, array($username), true);
-        return current($userData);
     }
 
     private function logout($userId = null, $redirect = true) {

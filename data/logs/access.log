@@ -1,1 +1,1138 @@
 LOGS
+2014-06-12 15:41:51 - DEBUG --> Session Started / Resumed with ID : m8pmms2j1gj4eet2agtvddsb74 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-12 15:41:51 - DEBUG --> New DB Instance created 
+2014-06-12 15:41:51 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-12 15:41:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 15:41:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-12 15:41:51 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-12 15:41:51 - DEBUG --> Session Started / Resumed with ID : m8pmms2j1gj4eet2agtvddsb74 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:51 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:55 - DEBUG --> Session Started / Resumed with ID : m8pmms2j1gj4eet2agtvddsb74 
+2014-06-12 15:41:55 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:55 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:55 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:55 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:55 - DEBUG --> New DB Instance created 
+2014-06-12 15:41:55 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-12 15:41:55 - WARN  --> Auth Failed [Invalid password] for userid: shekhar 
+2014-06-12 15:41:57 - DEBUG --> Session Started / Resumed with ID : m8pmms2j1gj4eet2agtvddsb74 
+2014-06-12 15:41:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-12 15:41:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-12 15:41:57 - DEBUG --> New DB Instance created 
+2014-06-12 15:41:57 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-12 15:41:57 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-12 15:41:57 - DEBUG --> Executing Query: UPDATE users SET session_id='33rbf26k2l5g03a7crmb0fook1', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-12 15:41:57' WHERE id = '1' 
+2014-06-12 15:41:57 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:41:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:41:57 - INFO  --> Serving Index Controller 
+2014-06-12 15:41:57 - DEBUG --> New DB Instance created 
+2014-06-12 15:41:57 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:41:57 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 15:41:59 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:41:59 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:41:59 - INFO  --> Serving Index Controller 
+2014-06-12 15:41:59 - DEBUG --> New DB Instance created 
+2014-06-12 15:41:59 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:41:59 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 15:44:01 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:44:01 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:44:01 - INFO  --> Serving Index Controller 
+2014-06-12 15:44:01 - DEBUG --> New DB Instance created 
+2014-06-12 15:44:01 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:44:01 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 15:44:40 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:44:40 - DEBUG --> New DB Instance created 
+2014-06-12 15:44:40 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 15:44:40 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 15:45:21 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:45:21 - DEBUG --> New DB Instance created 
+2014-06-12 15:45:21 - DEBUG --> Executing Query: INSERT INTO program_details VALUES('', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2014-06-12 15:45:23 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:45:23 - INFO  --> Serving Index Controller 
+2014-06-12 15:45:23 - DEBUG --> New DB Instance created 
+2014-06-12 15:45:23 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:45:23 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 15:45:26 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:45:26 - DEBUG --> New DB Instance created 
+2014-06-12 15:45:26 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:46:01 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:46:01 - DEBUG --> New DB Instance created 
+2014-06-12 15:46:01 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='16' AND is_deleted= 0 
+2014-06-12 15:46:01 - DEBUG --> Executing Query: UPDATE program_details SET is_deleted= '1' WHERE id='16' AND is_deleted= 0 
+2014-06-12 15:46:03 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:46:03 - INFO  --> Serving Index Controller 
+2014-06-12 15:46:03 - DEBUG --> New DB Instance created 
+2014-06-12 15:46:03 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:46:03 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 15:49:36 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:49:36 - DEBUG --> New DB Instance created 
+2014-06-12 15:49:36 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:49:38 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:49:38 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:49:38 - INFO  --> Serving Index Controller 
+2014-06-12 15:49:38 - DEBUG --> New DB Instance created 
+2014-06-12 15:49:38 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:49:38 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 15:50:02 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:50:02 - DEBUG --> New DB Instance created 
+2014-06-12 15:50:02 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id=? AND is_deleted='0' 
+2014-06-12 15:50:17 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:50:17 - DEBUG --> New DB Instance created 
+2014-06-12 15:50:17 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:50:22 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:50:22 - DEBUG --> New DB Instance created 
+2014-06-12 15:50:22 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id=? AND is_deleted='0' 
+2014-06-12 15:53:18 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:53:18 - DEBUG --> New DB Instance created 
+2014-06-12 15:53:18 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:53:21 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:53:21 - DEBUG --> New DB Instance created 
+2014-06-12 15:53:21 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:05 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:05 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:05 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:06 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:06 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:06 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - INFO  --> Serving Index Controller 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:07 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:07 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:09 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:09 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:09 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 15:56:09 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 15:56:09 - DEBUG --> New DB Instance created 
+2014-06-12 15:56:09 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 16:33:00 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:33:00 - DEBUG --> New DB Instance created 
+2014-06-12 16:33:00 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 16:33:07 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:33:07 - DEBUG --> New DB Instance created 
+2014-06-12 16:33:07 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:33:07 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:33:07 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='9' AND is_deleted= 0 
+2014-06-12 16:33:15 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:33:15 - DEBUG --> New DB Instance created 
+2014-06-12 16:33:15 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='9' AND is_deleted= 0 
+2014-06-12 16:38:25 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:25 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:25 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:25 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:25 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='9' AND is_deleted= 0 
+2014-06-12 16:38:38 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:38 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:38 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:38 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:41 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:41 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:41 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:41 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:41 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 16:38:42 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:42 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:42 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:42 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:42 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 16:38:44 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:44 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:44 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:47 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:47 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:47 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:47 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:47 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:50 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:50 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:50 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:50 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:50 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:51 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:51 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:51 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:52 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:52 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:52 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:53 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:53 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:53 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:55 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:55 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:56 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:56 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:56 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - INFO  --> Serving Index Controller 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:38:58 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:38:58 - DEBUG --> New DB Instance created 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:38:58 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:39:09 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:39:09 - DEBUG --> New DB Instance created 
+2014-06-12 16:39:09 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:39:29 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:39:29 - DEBUG --> New DB Instance created 
+2014-06-12 16:39:29 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:39:29 - DEBUG --> Executing Query: UPDATE program_details SET title=?,fk_language=?,fk_category=?,actual_file_name=?,stored_file_name=?,level=?,description=?,is_verified=?,updated_on=?,fk_created_by=?,is_deleted=? WHERE id='1' 
+2014-06-12 16:44:04 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:04 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:04 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:44:04 - DEBUG --> Executing Query: UPDATE program_details SET title=?,fk_language=?,fk_category=?,actual_file_name=?,stored_file_name=?,level=?,description=?,is_verified=?,updated_on=?,fk_created_by=?,is_deleted=? WHERE id='1' 
+2014-06-12 16:44:13 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:13 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:13 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:44:13 - DEBUG --> Executing Query: UPDATE program_details SET title=?,fk_language=?,fk_category=?,actual_file_name=?,stored_file_name=?,level=?,description=?,is_verified=?,updated_on=?,fk_created_by=?,is_deleted=? WHERE id='1' 
+2014-06-12 16:44:15 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:15 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:15 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:15 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:15 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='1' AND is_deleted= 0 
+2014-06-12 16:44:22 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:22 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:22 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:22 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:44 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:44 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:44 - DEBUG --> Executing Query: INSERT INTO program_details VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?); 
+2014-06-12 16:44:44 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE stored_file_name = 'a1bf444ac94b8ab30b0c059604a96618.c' AND created_on = '2014-06-12 16:44:44' AND fk_created_by = '1' AND is_deleted = 0 LIMIT 1 
+2014-06-12 16:44:48 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:48 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:48 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:48 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:54 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:54 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:54 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:54 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:54 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='14' AND is_deleted= 0 
+2014-06-12 16:44:57 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:44:57 - DEBUG --> New DB Instance created 
+2014-06-12 16:44:57 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:57 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 16:44:57 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='17' AND is_deleted= 0 
+2014-06-12 16:45:00 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:45:00 - INFO  --> Serving Index Controller 
+2014-06-12 16:45:00 - DEBUG --> New DB Instance created 
+2014-06-12 16:45:00 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:45:00 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 16:45:08 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:45:08 - DEBUG --> New DB Instance created 
+2014-06-12 16:45:08 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 16:45:14 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:45:14 - DEBUG --> New DB Instance created 
+2014-06-12 16:45:14 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='17' AND is_deleted= 0 
+2014-06-12 16:45:14 - DEBUG --> Executing Query: UPDATE program_details SET is_deleted= '1' WHERE id='17' AND is_deleted= 0 
+2014-06-12 16:45:15 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:45:15 - INFO  --> Serving Index Controller 
+2014-06-12 16:45:15 - DEBUG --> New DB Instance created 
+2014-06-12 16:45:15 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:45:15 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 16:45:17 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 16:45:17 - INFO  --> Serving Index Controller 
+2014-06-12 16:45:17 - DEBUG --> New DB Instance created 
+2014-06-12 16:45:17 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 16:45:17 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 17:14:23 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:14:24 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:14:24 - INFO  --> Serving Index Controller 
+2014-06-12 17:14:24 - DEBUG --> New DB Instance created 
+2014-06-12 17:14:24 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 17:14:24 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.is_deleted= '0' 
+2014-06-12 17:14:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:14:55 - WARN  --> Attempting to get invalid item from Session with key : empty_lang_category_matrix 
+2014-06-12 17:14:55 - WARN  --> Attempting to get invalid item from Session with key : id_name_translation_map 
+2014-06-12 17:14:55 - DEBUG --> New DB Instance created 
+2014-06-12 17:14:55 - DEBUG --> Executing Query: SELECT * FROM language WHERE is_deleted = '0' 
+2014-06-12 17:14:55 - DEBUG --> Executing Query: SELECT * FROM category WHERE is_deleted = '0' 
+2014-06-12 17:14:55 - DEBUG --> Executing Query: SELECT fk_language,fk_category, COUNT(*) AS count FROM program_details WHERE is_deleted = "0" GROUP BY fk_language,fk_category 
+2014-06-12 17:14:55 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:14:55 - DEBUG --> New DB Instance created 
+2014-06-12 17:14:55 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 17:15:00 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:15:00 - INFO  --> Serving Index Controller 
+2014-06-12 17:15:00 - DEBUG --> New DB Instance created 
+2014-06-12 17:15:00 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 17:15:00 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 17:15:15 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:15:15 - INFO  --> Serving Index Controller 
+2014-06-12 17:15:15 - DEBUG --> New DB Instance created 
+2014-06-12 17:15:15 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 17:15:15 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-12 17:20:09 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:20:09 - DEBUG --> New DB Instance created 
+2014-06-12 17:20:09 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 17:20:09 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 17:20:10 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:20:10 - DEBUG --> New DB Instance created 
+2014-06-12 17:20:10 - DEBUG --> Executing Query: SELECT fk_language,fk_category, COUNT(*) AS count FROM program_details WHERE is_deleted = "0" GROUP BY fk_language,fk_category 
+2014-06-12 17:20:10 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:20:10 - DEBUG --> New DB Instance created 
+2014-06-12 17:20:10 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-12 17:20:14 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:20:14 - DEBUG --> New DB Instance created 
+2014-06-12 17:20:14 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 17:20:14 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-12 17:20:16 - DEBUG --> Session Started / Resumed with ID : 33rbf26k2l5g03a7crmb0fook1 
+2014-06-12 17:20:16 - INFO  --> Serving Index Controller 
+2014-06-12 17:20:16 - DEBUG --> New DB Instance created 
+2014-06-12 17:20:16 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-12 17:20:16 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 

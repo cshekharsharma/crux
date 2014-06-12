@@ -8,6 +8,11 @@ class StatsController extends AbstractController {
     private $grandTotal = 0;
     private $translationMap = array();
 
+    public function __construct() {
+        parent::__construct();
+        $this->model = new StatsModel();
+    }
+    
     public function run(Resource $resource) {
         $filteredStats = $this->getFilteredStats();
         $this->displayStats($filteredStats);
@@ -22,7 +27,7 @@ class StatsController extends AbstractController {
             Session::set(Session::SESS_ID_NAME_TRANSLATION_MAP, $this->translationMap);
         }
 
-        $rawStats = $this->getAllStats();
+        $rawStats = $this->getModel()->getAllStats();
         if ($rawStats) {
             foreach ($rawStats as $key => $row) {
                 $lang = $row[ProgramDetails_DBTable::FK_LANGUAGE_ID];
@@ -36,16 +41,6 @@ class StatsController extends AbstractController {
         return $matrix;
     }
 
-    private function getAllStats() {
-        $query = 'SELECT '.ProgramDetails_DBTable::FK_LANGUAGE_ID.',';
-        $query .= ProgramDetails_DBTable::FK_CATEGORY_ID.', COUNT(*) AS count FROM ';
-        $query .= ProgramDetails_DBTable::DB_TABLE_NAME.' WHERE ';
-        $query .= ProgramDetails_DBTable::IS_DELETED.' = "0" GROUP BY ';
-        $query .= ProgramDetails_DBTable::FK_LANGUAGE_ID.',';
-        $query .= ProgramDetails_DBTable::FK_CATEGORY_ID;
-        return DBManager::executeQuery($query, array(), true);
-    }
-
     private function getEmptyStatsMatrix() {
         $queries = array();
         $output = array();
@@ -56,8 +51,7 @@ class StatsController extends AbstractController {
             Category_DBTable::DB_TABLE_NAME => Category_DBTable::IS_DELETED
         );
         foreach ($queryParam as $tableName => $columnName) {
-            $query = "SELECT * FROM $tableName WHERE $columnName = '0'";
-            $output[$tableName] = DBManager::executeQuery($query, array(), true);
+            $output[$tableName] = $this->getModel()->getColumnValue($tableName, $columnName);
         }
 
         $matrix = array();

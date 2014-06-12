@@ -12,6 +12,7 @@ class UploadController extends AbstractController {
 
     public function __construct() {
         parent::__construct();
+        $this->model = new UploadModel();
         $this->allowedExts = array(
             'c', 'cpp', 'java', 'py', 'php', 'cs', 'js', 'xml', 'json', 'rb', 'scala'
         );
@@ -62,7 +63,7 @@ class UploadController extends AbstractController {
                             $formParams['actual_file_name'] = $originalFileName;
                             $formParams['stored_file_name'] = $newFileName;
                             $formParams['created_by'] = $authUserId;
-                            if ($this->insertProgramDescription($formParams)) {
+                            if ($this->getModel()->insertProgramDescription($formParams)) {
                                 Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Upload Successful');
                             } else {
                                 Response::sendResponse(Constants::FAILURE_RESPONSE, 'Upload Failed');
@@ -91,19 +92,6 @@ class UploadController extends AbstractController {
             return false;
         }
         return true;
-    }
-
-    private function insertProgramDescription($params) {
-        $query = "INSERT INTO ".ProgramDetails_DBTable::DB_TABLE_NAME." VALUES('', ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        $bindParams = array(
-            $params['program_title'], $params['language_id'], $params['category_id'], $params['actual_file_name'],
-            $params['stored_file_name'], $params['level'], $params['program_description'], $params['is_verified'],
-            Utils::getCurrentDatetime(), Utils::getCurrentDatetime(), $params['created_by'], 0);
-        if (DBManager::executeQuery($query, $bindParams, false)) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
     private function logErrorAndRedirect($msg, $type) {

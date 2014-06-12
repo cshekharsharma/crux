@@ -4,6 +4,11 @@ class DownloadController extends AbstractController {
 
     const MODULE_KEY = 'download';
     
+    public function __construct() {
+        parent::__construct();
+        $this->model = new DownloadModel();
+    }
+    
     public function run(Resource $resource) {
         $inputParams = $resource->getParams();
         $pid = $inputParams[Constants::INPUT_PARAM_PID];
@@ -15,7 +20,7 @@ class DownloadController extends AbstractController {
     }
 
     private function downloadFile($pid) {
-        $fileInfo = $this->getFileInfoFromDB($pid);
+        $fileInfo = $this->getModel()->getFileInfoFromDB($pid);
         $fileContents = $this->getFileContents($fileInfo);
         $fileName = $fileInfo[ProgramDetails_DBTable::ACTUAL_FILE_NAME];
         $this->sendDownloadHeaders($fileName, $fileContents);
@@ -31,19 +36,6 @@ class DownloadController extends AbstractController {
         return $fileContents;
     }
 
-    private function getFileInfoFromDB($pid) {
-        $fileInfo = array();
-        $query = "SELECT * FROM ";
-        $query .= ProgramDetails_DBTable::DB_TABLE_NAME." WHERE ";
-        $query .= ProgramDetails_DBTable::PROGRAM_ID."=? AND ";
-        $query .= ProgramDetails_DBTable::IS_DELETED."='0'";
-        $resultSet = DBManager::executeQuery($query, array($pid), true);
-        if (!empty($resultSet)) {
-            $fileInfo = current($resultSet);
-        }
-        return $fileInfo;
-    }
-    
     private function sendDownloadHeaders($fileName, $fileContents) {
         header("Pragma: public", true);
         header("Expires: 0"); // set expiration time

@@ -54,7 +54,12 @@ class AutoLoader {
             'AbstractModel' => Constants::MODEL_DIR.'AbstractModel.php',
             'AuthModel' => Constants::MODEL_DIR.'AuthModel.php',
             'IndexModel' => Constants::MODEL_DIR.'IndexModel.php',
+            'StatsModel' => Constants::MODEL_DIR.'StatsModel.php',
             'SearchModel' => Constants::MODEL_DIR.'SearchModel.php',
+            'EditorModel' => Constants::MODEL_DIR.'EditorModel.php',
+            'UploadModel' => Constants::MODEL_DIR.'UploadModel.php',
+            'DownloadModel' => Constants::MODEL_DIR.'DownloadModel.php',
+            'ExplorerModel' => Constants::MODEL_DIR.'ExplorerModel.php',
 
             // DB tables
             'AbstractDbTable' => Constants::DB_TABLE_DIR.'AbstractDbTable.php',

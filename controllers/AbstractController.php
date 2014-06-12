@@ -11,8 +11,6 @@ abstract class AbstractController {
 
     /**
      * Instance of model class
-     * 
-     * @var AbstractModel
      */
     protected $model;
 

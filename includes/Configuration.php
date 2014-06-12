@@ -29,7 +29,7 @@ class Configuration {
         self::DB_NAME => 'codeme',
         self::MYSQL_DSN => 'mysql:host=localhost;dbname=codeme',
         self::LOG_FILE => 'data/logs/access.log',
-        self::LOG_LEVEL => 4,
+        self::LOG_LEVEL => 1,
         self::CODE_BASE_DIR => 'data/codes/',
         self::CODE_EDITOR_THEME => 'chrome'
     );

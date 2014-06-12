@@ -8,7 +8,7 @@
     <div class="error-msg-holder">
        <span class="bigoops">Ahhh! </span><br>
          Probably you haven't started yet with CODING !<br>
-         Lets get your hands dirty...
+         Lets get our hands dirty <a href="/editor">HERE</a>...
     </div>
       {include file="views/Index/tpls/footer.htpl"}
  </body>

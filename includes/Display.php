@@ -68,7 +68,8 @@ class Display {
         $smarty = Utils::getSmarty();
         $searchSuggestions = Session::get(Session::SESS_SEARCH_SUGGESTIONS);
         if (empty($searchSuggestions)) {
-            $searchSuggestions = SearchController::getSearchSuggestions();
+            $search = new SearchController();
+            $searchSuggestions = $search->getSearchSuggestions();
             Session::set(Session::SESS_SEARCH_SUGGESTIONS, $searchSuggestions);
         }
         $smarty->assign('APP_NAME', Constants::APP_NAME);

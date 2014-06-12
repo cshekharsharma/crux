@@ -9,6 +9,11 @@ class SearchController extends AbstractController {
 
     private static $SEARCH_TAGS = array('category', 'language', 'users');
 
+    public function __construct() {
+        parent::__construct();
+        $this->model = new SearchModel();
+    }
+    
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         if (!empty($uriParams[self::SEARCH_QUERY_PARAM])) {
@@ -39,7 +44,7 @@ class SearchController extends AbstractController {
     private function performSimpleSearch($searchStr) {
         $keywords = explode(" ", $searchStr);
         $keywords = array_unique($keywords);
-        $dataset = $this->getMatchedDataset($keywords);
+        $dataset = $this->getModel()->getMatchedDataset($keywords);
         if (!empty($dataset)) {
             foreach ($dataset as $key => $row) {
                 $relevenceScore = 0;
@@ -89,75 +94,6 @@ class SearchController extends AbstractController {
         return $resultSet;
     }
 
-    private function getMatchedDataset(array $keywords) {
-        $query = "SELECT program_details.*, users.user_name, category.name AS category_name, language.name AS language_name
-            FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN
-            language ON language.id = program_details.fk_language INNER JOIN users ON users.id = program_details.fk_created_by
-            WHERE program_details.is_deleted = 0 AND (";
-        $whereClause = array();
-        $bindParam = array();
-        foreach ($keywords as $key => $keyword) {
-            $whereClause[] = " program_details.title LIKE :searchQuery$key OR program_details.description LIKE :searchQuery$key ";
-            $bindParam['searchQuery'.$key] = '%'.$keyword.'%';
-        }
-        $query .= implode(" OR ", $whereClause) .');';
-        $resultSet = DBManager::executeQuery($query, $bindParam, true);
-        return $resultSet;
-    }
-
-    private function getCategoryWiseMatchingDataset($searchString) {
-        $keywords = explode(" ", $searchString);
-        $query = "SELECT program_details.*, category.name AS category_name, language.name AS language_name, users.user_name
-            FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN
-            language ON language.id = program_details.fk_language INNER JOIN users ON users.id=program_details.fk_created_by
-            WHERE program_details.is_deleted = 0 AND (";
-        $whereClause = array();
-        $bindParam = array();
-        foreach ($keywords as $key => $keyword) {
-            $whereClause[] = " program_details.fk_category LIKE :searchQuery$key OR category.name LIKE :searchQuery$key ";
-            $bindParam['searchQuery'.$key] = '%'.trim($keyword).'%';
-        }
-        $query .= implode(" OR ", $whereClause) .');';
-        $resultSet = DBManager::executeQuery($query, $bindParam, true);
-        return $resultSet;
-    }
-
-
-    private function getUsersWiseMatchingDataset($searchString) {
-        $keywords = explode(" ", $searchString);
-        $query = "SELECT program_details.*, category.name AS category_name, language.name AS language_name, users.user_name
-            FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN
-            language ON language.id = program_details.fk_language INNER JOIN users ON users.id=program_details.fk_created_by
-            WHERE program_details.is_deleted = 0 AND (";
-        $whereClause = array();
-        $bindParam = array();
-        foreach ($keywords as $key => $keyword) {
-            $whereClause[] = " program_details.fk_created_by LIKE :searchQuery$key OR users.user_name LIKE :searchQuery$key ";
-            $bindParam['searchQuery'.$key] = '%'.trim($keyword).'%';
-        }
-        $query .= implode(" OR ", $whereClause) .');';
-        $resultSet = DBManager::executeQuery($query, $bindParam, true);
-        return $resultSet;
-    }
-
-    private function getLanguageWiseMatchingDataset($searchString) {
-        $keywords = explode(" ", $searchString);
-        $query = "SELECT program_details.*, category.name AS category_name, language.name AS language_name, users.user_name
-            FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN
-            language ON language.id = program_details.fk_language INNER JOIN users ON users.id=program_details.fk_created_by
-            WHERE program_details.is_deleted = 0 AND (";
-        $whereClause = array();
-        $bindParam = array();
-        foreach ($keywords as $key => $keyword) {
-            $whereClause[] = " program_details.fk_language LIKE :searchQuery$key OR language.name LIKE :searchQuery$key ";
-            $bindParam['searchQuery'.$key] = '%'.trim($keyword).'%';
-        }
-        $query .= implode(" OR ", $whereClause) .');';
-        $resultSet = DBManager::executeQuery($query, $bindParam, true);
-        return $resultSet;
-    }
-
-
     private function formatSearchResults($results, $keywords) {
         foreach ($results as $key => $row) {
             $titleCol = ProgramDetails_DBTable::TITLE;
@@ -181,11 +117,10 @@ class SearchController extends AbstractController {
 
     private function getTagBasedSearchResult($tag, $searchString) {
         $methodName = 'get' . ucfirst($tag) . 'WiseMatchingDataset';
-        if (method_exists($this, $methodName)) {
-            return $this->$methodName($searchString);
-        } else {
-            return false;
-        }
+        if (method_exists($this->getModel(), $methodName)) {
+            return $this->getModel()->$methodName($searchString);
+        } 
+        return false;
     }
 
     private function displaySearchResults($query, $resultSet) {
@@ -200,18 +135,12 @@ class SearchController extends AbstractController {
         $this->smarty->display("string:" . Display::render(self::MODULE_KEY));
     }
 
-    private static function getTextualSuggestions() {
-        $userDetails = Session::get(Session::SESS_USER_DETAILS);
-        $query = "SELECT title AS name FROM program_details WHERE is_deleted = 0";
-        return DBManager::executeQuery($query, array(), true);
-    }
-
-    public static function getSearchSuggestions() {
+    public function getSearchSuggestions() {
         $searchSuggestions = array();
         $userList = ResourceProvider::getControllerByResourceKey(UsersController::MODULE_KEY)->getUserList();
         $languageList = ResourceProvider::getControllerByResourceKey(LanguageController::MODULE_KEY)->getLanguageList();
         $categoryList = ResourceProvider::getControllerByResourceKey(CategoryController::MODULE_KEY)->getCategoryList();
-        $textSuggestions = self::getTextualSuggestions();
+        $textSuggestions = $this->getModel()->getTextualSuggestions();
         $suggestions = array(
             UsersController::MODULE_KEY => $userList,
             LanguageController::MODULE_KEY => $languageList,

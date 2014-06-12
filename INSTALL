@@ -1,5 +1,6 @@
 ##################################################
 #  1: Create a virtual host
+#  Append these lines to your Apache Config File (httpd.conf / apache2.conf / default-sitename
 ##################################################
 <VirtualHost *:80>
         # The name to respond to
@@ -24,22 +25,36 @@
 </VirtualHost>
 
 
-##################################################
-# 2: Restore database
-##################################################
-mysql -u root -p <dbname> < data/database/dbschema-<datetime>.sql
-
-##################################################
-# 3: Extract code files in apache document root -
-##################################################
-cd /path/to/apache/document/root/
-tar -xvzf code-me.tar.gz
-cd <code-me-base-dir>
-sudo chmod 777 -R .
+###################################################
+# 2: Register that virtual host on system
+# Append these lines to /etc/hosts file
+###################################################
+127.0.0.1 code.me
 
 
 ##################################################
-# 4: Setup Configurations
+# 3: Setup application source code
+##################################################
+
+        # method 1 : From tar archive, Extract code files in apache document root 
+        cd /path/to/apache/document/root/
+        tar -xvzf code-me.tar.gz
+        cd <code-me-base-dir>
+        sudo chmod 777 -R .
+
+        # method 2 : Clone the project from GitHub
+        git clone http://github.com/cshekharsharma/codeme.git
+
+
+
+##################################################
+# 4: Restore database
+# Go to project room DIR,  and run this command on console
+##################################################
+mysql -u root -p <dbname> < data/database/dbschema-latest.sql
+
+##################################################
+# 5: Setup Configurations
 ##################################################
 
 Enter database related config in /includes/Configuration.php file

@@ -16,6 +16,11 @@ class AuthController extends AbstractController {
     private static $AUTH_USER_ID_IDENTIFIER = "auth_user_id";
     private static $SESSION_SITE_IDENTIFIER = "codeMe_session_identifier";
 
+    public function __construct() {
+        parent::__construct();
+        $this->model = new AuthModel();
+    }
+
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
@@ -91,7 +96,7 @@ class AuthController extends AbstractController {
         }
         $userDetails[Users_DBTable::IP_ADDRESS] = $_SERVER['REMOTE_ADDR'];
         $uc = new UserPreferencesController();
-        if ($this->updateUserLogin($userDetails)) {
+        if ($this->getModel()->updateUserLogin($userDetails)) {
             Session::set(self::$SESSION_SITE_IDENTIFIER, self::getEncryptedSiteIdentifier());
             Session::set(self::$AUTH_USER_ID_IDENTIFIER, $userDetails[Users_DBTable::USER_NAME]);
             Session::set(Session::SESS_USER_DETAILS, $userDetails);
@@ -109,35 +114,11 @@ class AuthController extends AbstractController {
         return current($userData);
     }
 
-    private function updateUserLogin($userDetails) {
-        $sessionId = Session::getSessionId();
-        $query = "UPDATE ".Users_DBTable::DB_TABLE_NAME." SET ";
-        $query .= Users_DBTable::SESSION_ID. "='" . $sessionId . "', ";
-        $query .= Users_DBTable::IP_ADDRESS. "='".$userDetails[Users_DBTable::IP_ADDRESS]."', ";
-        $query .= Users_DBTable::IS_LOGGED_IN." = '1', ";
-        $query .= Users_DBTable::LAST_LOGIN." = '".date('Y-m-d H:i:s')."' WHERE ";
-        $query .= Users_DBTable::USER_ID." = '".$userDetails[Users_DBTable::USER_ID]."'";
-        return DBManager::executeQuery($query);
-    }
-
-    private function updateUserLogout($userId = null) {
-        if (empty($userId)) {
-            $userDetail = Session::get(Session::SESS_USER_DETAILS);
-            $userId = $userDetail[Users_DBTable::USER_ID];
-        }
-        $query = "UPDATE ".Users_DBTable::DB_TABLE_NAME." SET ";
-        $query .= Users_DBTable::SESSION_ID. "='', ";
-        $query .= Users_DBTable::IP_ADDRESS. "='', ";
-        $query .= Users_DBTable::IS_LOGGED_IN." = '0' WHERE ";
-        $query .= Users_DBTable::USER_ID." = '".$userId."'";
-        return DBManager::executeQuery($query);
-    }
-
     private function logout($userId = null, $redirect = true) {
-        if ($this->updateUserLogout($userId)) {
+        if ($this->getModel()->updateUserLogout($userId)) {
             Session::destroy(true);
         }
-        
+
         if ($redirect) {
             RequestManager::redirect();
         }
@@ -169,10 +150,7 @@ class AuthController extends AbstractController {
             $userDetails = Session::get(Session::SESS_USER_DETAILS);
             if ($this->getPasswordHash($currentPass) === $userDetails[Users_DBTable::USER_HASH]) {
                 $newPasswordHash = $this->getPasswordHash($newPassword);
-                $query = "UPDATE ".Users_DBTable::DB_TABLE_NAME." SET ".
-                    Users_DBTable::USER_HASH." = '".$newPasswordHash."' WHERE ".
-                    Users_DBTable::USER_ID." = '".$userDetails[Users_DBTable::USER_ID]."'";
-                if (DBManager::executeQuery($query)) {
+                if ($this->getModel()->updateUserPassword($userDetails, $newPasswordHash)) {
                     Response::sendResponse(Constants::SUCCESS_RESPONSE, Constants::PASSWORD_CHANGED_MSG);
                 }
             } else {

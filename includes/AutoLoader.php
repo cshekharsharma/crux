@@ -17,9 +17,9 @@ class AutoLoader {
         $this->classPathMap = array(
 
             // Helper classes
-            'Resource' => Constants::HELPER_DIR.'Resource.php',
-            'Response' => Constants::HELPER_DIR.'Response.php',
-            'PreferenceKeys' => Constants::HELPER_DIR.'PreferenceKeys.php',
+            'Resource' => Constants::HELPER_CLASSES_DIR.'Resource.php',
+            'Response' => Constants::HELPER_CLASSES_DIR.'Response.php',
+            'PreferenceKeys' => Constants::HELPER_CLASSES_DIR.'PreferenceKeys.php',
 
             // Include classes
             'Error' => Constants::INCLUDE_DIR.'Error.php',
@@ -49,6 +49,10 @@ class AutoLoader {
             'ExplorerController' => Constants::CONTROLLER_DIR.'ExplorerController.php',
             'ProgramDetailsController' => Constants::CONTROLLER_DIR.'ProgramDetailsController.php',
             'UserPreferencesController' => Constants::CONTROLLER_DIR.'UserPreferencesController.php',
+
+            // Model Classes
+            'AbstractModel' => Constants::MODEL_DIR.'AbstractModel.php',
+            'AuthModel' => Constants::MODEL_DIR.'AuthModel.php',
 
             // DB tables
             'AbstractDbTable' => Constants::DB_TABLE_DIR.'AbstractDbTable.php',

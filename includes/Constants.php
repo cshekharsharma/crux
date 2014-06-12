@@ -17,11 +17,14 @@ class Constants {
     const DATA_DIR = 'data/';
     const VIEW_DIR = 'views/';
     const CACHE_DIR = 'cache/';
+    const MODEL_DIR = 'models/';
     const HELPER_DIR = 'helpers/';
     const LIBRARY_DIR = 'library/';
     const INCLUDE_DIR = 'includes/';
     const DB_TABLE_DIR = 'dbtables/';
     const CONTROLLER_DIR = 'controllers/';
+    const HELPER_CLASSES_DIR = 'helpers/classes/';
+    const HELPER_SCRIPTS_DIR = 'helpers/scripts/';
 
     const STATS_URI_KEY = 'stats';
     const INDEX_URI_KEY = 'index';

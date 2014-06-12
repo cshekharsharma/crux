@@ -9,11 +9,10 @@ chdir('../');
 require_once 'includes/AutoLoader.php';
 
 if (Utils::isRunningFromCLI()) {
-    $dateTime = date('Y-m-d_h-i-s');
+    
     $schemaDumpPath = Constants::DATA_DIR.'database/schema-dump.sql';
     $dataDumpPath = Constants::DATA_DIR.'database/data-dump.sql';
-    $finalDumpPath = Constants::DATA_DIR.'database/dbschema-'.$dateTime.'.sql';
-
+    $finalDumpPath = Constants::DATA_DIR.'database/dbschema-latest.sql';
 
     $schemaOnly = array('program_details', 'users', 'user_preferences');
     $dataNschema = array('category', 'language');
@@ -36,6 +35,10 @@ if (Utils::isRunningFromCLI()) {
     if (!empty($contents)) {
         unlink($schemaDumpPath);
         unlink($dataDumpPath);
+        if (file_exists($finalDumpPath)) {
+            unlink($finalDumpPath);
+        }
+        
         if (file_put_contents($finalDumpPath, $contents)) {
             Utils::printCLIMessages('Backup successfully saved in '.$finalDumpPath);
         } else {

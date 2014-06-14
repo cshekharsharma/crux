@@ -4,6 +4,8 @@
  * Generic response type for AJAX requests and API calls
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @package helpers
+ * @subpackage classes
  * @since May 11, 2014
  */
 class Response {

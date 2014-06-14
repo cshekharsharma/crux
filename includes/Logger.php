@@ -1,12 +1,11 @@
 <?php
 
-
 /**
  * Short-Hand Logger class for various level based logging
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package includes
- *
+ * @since 01 May, 2014
  */
 class Logger
 {

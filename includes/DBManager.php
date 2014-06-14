@@ -9,8 +9,7 @@
  */
 class DBManager {
 
-    private function __construct() {
-    }
+    private function __construct() {}
 
     private static $instance;
 
@@ -22,7 +21,7 @@ class DBManager {
      */
     public static function getInstance() {
         if (!self::$instance instanceof PDO) {
-            $dsn  = Configuration::get(Configuration::MYSQL_DSN);
+            $dsn  = self::getMysqlDSN();
             $host = Configuration::get(Configuration::DB_HOST);
             $user = Configuration::get(Configuration::DB_USER);
             $pass = Configuration::get(Configuration::DB_PASS);
@@ -38,6 +37,19 @@ class DBManager {
         }
         return self::$instance;
     }
+    
+    /**
+     * Database connection string provider
+     * 
+     * @return string
+     */
+    private static function getMysqlDSN() {
+        $DSN = 'mysql:host='.
+        Configuration::get(Configuration::DB_HOST) . ';dbname=' .
+        Configuration::get(Configuration::DB_NAME);
+        return $DSN;
+    }
+    
 
     /**
      * Executes given query using PDO prepared statements.
@@ -86,7 +98,7 @@ class DBManager {
     /**
      * Wrapper method for DB update operation
      *
-     * @param stirng $table
+     * @param string $table
      * @param array $columns
      * @param array $bind
      * @param array $where [Optional]
@@ -106,6 +118,21 @@ class DBManager {
             }
             $query .= implode(' AND ', $set);
         }
+        return DBManager::executeQuery($query, $bind);
+    }
+    
+    /**
+     * Wrapper method for DB insert operation
+     *
+     * @param string $table
+     * @param array $columns
+     * @param array $bind [Optional]
+     * @return boolean
+     */
+    public static function insert($table, array $columns, array $bind = array()) {
+        $keyStr = implode(',', array_keys($columns));
+        $valStr = implode("','", $columns);
+        $query = "INSERT INTO `$table` ($keyStr) VALUE($valStr);";
         return DBManager::executeQuery($query, $bind);
     }
 }

@@ -5,6 +5,7 @@
  * Redirects requests to appropriate controller along with appropriate params
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @package includes
  * @since May 11, 2014
  */
 class ResourceProvider {
@@ -45,6 +46,13 @@ class ResourceProvider {
         return $resource;
     }
 
+    /**
+     * Set appropriate parameter for given resource
+     * 
+     * @param Resource $resource
+     * @param array $set
+     * @return resource
+     */
     private static function setCorrectParams(Resource $resource, array $set) {
         $params = array();
         $altkeys = array(

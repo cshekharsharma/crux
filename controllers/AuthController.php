@@ -113,6 +113,12 @@ class AuthController extends AbstractController {
         }
     }
 
+    /**
+     * Action: User logout
+     * 
+     * @param string $userId
+     * @param string $redirect
+     */
     private function logout($userId = null, $redirect = true) {
         if ($this->getModel()->updateUserLogout($userId)) {
             Session::destroy(true);
@@ -123,6 +129,9 @@ class AuthController extends AbstractController {
         }
     }
 
+    /**
+     * Display login form
+     */
     private function displayLoginForm() {
         if (!self::isLoggedIn()) {
             $this->smarty->assign('LOGIN_ACTION_VALUE', self::LOGIN_ACTION_VALUE);
@@ -132,6 +141,11 @@ class AuthController extends AbstractController {
         }
     }
 
+    /**
+     * Checks if user is logged in or not
+     * 
+     * @return boolean
+     */
     public static function isLoggedIn() {
         $ssid = self::getEncryptedSiteIdentifier();
         $ssidInSession = Session::get(self::$SESSION_SITE_IDENTIFIER);
@@ -142,7 +156,12 @@ class AuthController extends AbstractController {
         return false;
     }
 
-    public function changePassword($formInputs) {
+    /**
+     * Action: Change password
+     * 
+     * @param array $formInputs
+     */
+    public function changePassword(array $formInputs) {
         if (self::isLoggedIn()) {
             $currentPass = $formInputs['currentpassword'];
             $newPassword = $formInputs['newpassword'];
@@ -150,13 +169,13 @@ class AuthController extends AbstractController {
             if ($this->getPasswordHash($currentPass) === $userDetails[Users_DBTable::USER_HASH]) {
                 $newPasswordHash = $this->getPasswordHash($newPassword);
                 if ($this->getModel()->updateUserPassword($userDetails, $newPasswordHash)) {
-                    Response::sendResponse(Constants::SUCCESS_RESPONSE, Constants::PASSWORD_CHANGED_MSG);
+                    Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_PASSWORD_CHANGED);
                 }
             } else {
-                Response::sendResponse(Constants::FAILURE_RESPONSE, Error::ERR_WRONG_PASSWORD);
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_WRONG_PASSWORD);
             }
         } else {
-            Response::sendResponse(Constants::FAILURE_RESPONSE, Error::ERR_USER_NOT_LOGGED_IN);
+            Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
         }
     }
 }

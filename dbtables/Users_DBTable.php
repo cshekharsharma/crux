@@ -1,6 +1,12 @@
 <?php
-
-class Users_DBTable extends AbstractDbTable {
+/**
+ * DBTable for User module
+ * 
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @package dbtables
+ * @since Jun 14, 2014
+ */
+class Users_DBTable extends AbstractDBTable {
 
     const DB_TABLE_NAME = 'users';
 

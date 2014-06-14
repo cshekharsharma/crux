@@ -7,6 +7,11 @@
  */
 class Display {
 
+    /**
+     * Smarty instance
+     * 
+     * @var Smarty
+     */
     public static $smarty;
 
     private static $TEMPLATE_LIST = array(
@@ -17,6 +22,7 @@ class Display {
         'EDITOR' => 'Editor/tpls/editor.htpl',
         'EXPLORER' => 'Explorer/tpls/displayCode.htpl',
         'AUTH_LOGIN' => 'Auth/tpls/login.htpl',
+        'DEBUG_MSG' => 'Errors/tpls/debugTrace.htpl',
         'CMS_CHPWD' => 'Content/tpls/changePassword.htpl',
         'NO_ITEM_FOUND' => 'Errors/tpls/noItemFound.htpl',
         'CMS_USERPREF' => 'Content/tpls/userPreference.htpl',

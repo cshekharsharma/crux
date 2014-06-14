@@ -195,14 +195,35 @@ class Utils {
     }
     
     /**
+     * Get datatype of given variable
+     * 
+     * @param mixed $object
+     * @return string
+     */
+    public function getObjectType($object) {
+        if (strtolower(gettype($object)) == 'object') {
+            return get_class($object);
+        } else {
+            return ucfirst(gettype($object));
+        }
+    }
+    
+    /**
      * Prints variable formatted structure and value of variable
      *
      * @param mixed $var
      */
-    public static function displayVariableValues($var, $exit = false) {
-        echo "<pre>";
-        print_r($var);
-        echo "</pre>";
-        die;
+    public static function debugVariable($var, $exit = false, $displayTrace = true) {
+        $debugTrace = end(debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT));
+        $debugVar = print_r($var, true);
+        $smarty = self::getSmarty();
+        $smarty->assign('DEBUG_VAR', $debugVar);
+        if ($displayTrace) {
+            $smarty->assign('STACK_TRACE', $debugTrace);
+        }
+        $smarty->display('string:'. file_get_contents('views/Errors/tpls/debugTrace.htpl'));
+        if ($exit) {
+            exit();
+        }
     }
 }

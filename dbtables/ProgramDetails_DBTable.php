@@ -1,6 +1,12 @@
 <?php
-
-class ProgramDetails_DBTable extends AbstractDbTable {
+/**
+ * DBTable for Program Details
+ * 
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @package dbtables
+ * @since Jun 14, 2014
+ */
+class ProgramDetails_DBTable extends AbstractDBTable {
 
     const DB_TABLE_NAME = 'program_details';
 

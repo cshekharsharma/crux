@@ -1,13 +1,13 @@
 <?php
 
-
 /**
  * Application Constant Class
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package includes
+ * @since 07 may, 2014
  */
-class Constants {
+final class Constants {
 
     const APP_NAME = 'code.me';
     const APP_VERSION = '1.0.0';
@@ -52,7 +52,5 @@ class Constants {
     const INPUT_PARAM_MODULE = '__module';
     const INPUT_PARAM_ACTION = '__action';
     const INPUT_PARAM_SUBACTION = '__subaction';
-    
-    const PASSWORD_CHANGED_MSG = 'Password successfully changed';
 
 }

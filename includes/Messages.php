@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Cetralized message store for the app.
+ * 
+ * @author Chandra Shekhar <shekharsharma@gmail.com>
+ * @since Jun 14, 2014
+ */
 final class Messages {
 
     const SUCCESS_PASSWORD_CHANGED = 'Password successfully changed.';

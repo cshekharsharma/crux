@@ -1,11 +1,12 @@
 <?php
 
-
 /**
- * Custom Runtime AutoLoader class for APP
+ * Custom Runtime AutoLoader class for APP.
+ * It contains path-map of all classes for loading when needed
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package includes
+ * @since 11 May, 2014
  */
 class AutoLoader {
 
@@ -63,7 +64,7 @@ class AutoLoader {
             'ExplorerModel' => Constants::MODEL_DIR.'ExplorerModel.php',
 
             // DB tables
-            'AbstractDbTable' => Constants::DB_TABLE_DIR.'AbstractDbTable.php',
+            'AbstractDBTable' => Constants::DB_TABLE_DIR.'AbstractDBTable.php',
             'Users_DBTable' => Constants::DB_TABLE_DIR.'Users_DBTable.php',
             'Language_DBTable' => Constants::DB_TABLE_DIR.'Language_DBTable.php',
             'Category_DBTable' => Constants::DB_TABLE_DIR.'Category_DBTable.php',
@@ -77,6 +78,12 @@ class AutoLoader {
         );
     }
 
+    /**
+     * Finds all library class paths, which are not registered with autoloader
+     * 
+     * @param string $className
+     * @return string|boolean
+     */
     private function getLibraryClassPath($className) {
         $className = $this->getSmartyClassPath($className);
         if (!empty($className)) return $className;
@@ -84,6 +91,12 @@ class AutoLoader {
         return false;
     }
 
+    /**
+     * Get class path for given smarty class
+     * 
+     * @param unknown $className
+     * @return string|boolean
+     */
     private function getSmartyClassPath($className) {
         $classFile = $this->libraryClassPaths['smartyBase'].$className.'.class.php';
         if (file_exists($classFile)) return $classFile;

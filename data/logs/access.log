@@ -3225,3 +3225,1606 @@ LOGS
 2014-06-14 17:27:10 - DEBUG --> New DB Instance created 
 2014-06-14 17:27:10 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
 2014-06-14 17:27:10 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-14 18:04:28 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 18:04:28 - DEBUG --> New DB Instance created 
+2014-06-14 18:04:28 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 18:04:37 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 18:04:37 - INFO  --> Serving Index Controller 
+2014-06-14 18:04:37 - DEBUG --> New DB Instance created 
+2014-06-14 18:04:37 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-14 18:04:37 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-14 19:39:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-14 19:39:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:39:43 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-14 19:41:28 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-14 19:41:28 - DEBUG --> New DB Instance created 
+2014-06-14 19:41:28 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-14 19:41:28 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-14 19:41:28 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-14 19:41:28 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-14 19:41:28 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:41:28 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:43:23 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:43:23 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:43:36 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:43:36 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:44:30 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:44:30 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:45:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:45:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:45:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:37 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:49:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:49:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:49:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:49:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:37 - DEBUG --> New DB Instance created 
+2014-06-14 19:49:38 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:49:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:49:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:49:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:49:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:49:38 - DEBUG --> New DB Instance created 
+2014-06-14 19:50:14 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:50:14 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:50:14 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:51:18 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:51:18 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 19:51:18 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:00 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:05:00 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:00 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:00 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:00 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:00 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:00 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:00 - DEBUG --> New DB Instance created 
+2014-06-14 20:05:01 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:05:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:01 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:01 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:01 - DEBUG --> New DB Instance created 
+2014-06-14 20:05:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:46 - DEBUG --> New DB Instance created 
+2014-06-14 20:05:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:05:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:05:46 - DEBUG --> New DB Instance created 
+2014-06-14 20:07:02 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:07:02 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:07:02 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:09:10 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:09:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:09:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:09:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:09:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:09:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:09:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:09:10 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:09:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:09:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:09:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:09:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:09:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:09:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:14 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:15 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:15 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:36 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:36 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:36 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:59 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:59 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:12:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:21 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:21 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:29 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:29 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:29 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:34 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:34 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:34 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:45 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:46 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:47 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:14:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:14:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:14:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:20 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:20 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:20 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:42 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:15:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:42 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:42 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:15:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:15:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:15:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:35 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:35 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:35 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:52 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:57 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:58 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:17:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:17:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:17:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:09 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:09 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:09 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:12 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:12 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:18:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:27:44 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:27:44 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:27:44 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:27:44 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:43 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:43 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:28:49 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:28:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:28:49 - ERROR --> Exception: Unable to load template file 'Errors/tpls/debugTrace.htpl' 
+2014-06-14 20:28:49 - ERROR --> Exception: #0 /home/shekhar/workspace/php/code.me/library/smarty/libs/sysplugins/smarty_internal_templatebase.php(377): Smarty_Internal_TemplateBase->fetch('Errors/tpls/deb...', NULL, NULL, NULL, true)
+#1 /home/shekhar/workspace/php/code.me/includes/Utils.php(224): Smarty_Internal_TemplateBase->display('Errors/tpls/deb...')
+#2 /home/shekhar/workspace/php/code.me/index.php(22): Utils::debugVariable(Object(stdClass))
+#3 /home/shekhar/workspace/php/code.me/index.php(15): sayHello()
+#4 {main} 
+2014-06-14 20:29:59 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:29:59 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:29:59 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:30:27 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:30:27 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:30:27 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:33:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:33:43 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:33:43 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:10 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:34:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:11 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:34:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:11 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:11 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:12 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:12 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:12 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:57 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:34:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:57 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:57 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:58 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:34:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:34:58 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:34:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:21 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:21 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:21 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:33 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:33 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:33 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:41 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:41 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:35:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:16 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:16 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:16 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:32 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:32 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:36:32 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:37:37 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:37:37 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:37:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:40 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:41 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:41 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:41 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:47 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:48 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:38:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:38:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:38:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:13 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:13 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:13 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:24 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:24 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:39:24 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:45 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:45 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:45 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:53 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:53 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:40:53 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:04 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:04 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:04 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:37 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:37 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:37 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 

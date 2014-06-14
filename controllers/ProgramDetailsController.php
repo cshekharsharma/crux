@@ -2,7 +2,7 @@
 
 class ProgramDetailsController extends AbstractController {
 
-    const MODULE_KEY = "programDetails";
+    const MODULE_KEY = 'programDetails';
 
     public function run(Resource $resource) {
 

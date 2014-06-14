@@ -55,8 +55,7 @@ class RequestManager {
         if (!empty($controller) && $controller instanceof AbstractController) {
             $controller->run($resource);
         } else {
-            Logger::getLogger()->LogFatal("Invalid controller requested, Exiting");
-            self::redirect();
+            throw new Exception("Invalid controller requested, Exiting");
         }
     }
 

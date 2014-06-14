@@ -19,110 +19,53 @@ class ResourceProvider {
         $firstParam = RequestManager::getParam(RequestManager::FIRST_PARAM);
         $secondParam = RequestManager::getParam(RequestManager::SECOND_PARAM);
         $thirdParam = RequestManager::getParam(RequestManager::THIRD_PARAM);
-
         if (AuthController::isLoggedIn()) {
-
-            if (($firstParam === Constants::INDEX_URI_KEY) ||
-                (empty($firstParam) && empty($secondParam) && empty($thirdParam))) {
+            if (empty($firstParam) && empty($secondParam) && empty($thirdParam)) {
                 $resource->setKey(Constants::INDEX_URI_KEY);
-                $resource->setParams(false);
-            } elseif ($firstParam === Constants::AUTH_URI_KEY) {
-                $resource->setKey(Constants::AUTH_URI_KEY);
-                $resource->setParams(
-                    array(
-                        AuthController::AUTH_ACTION => $secondParam
-                    )
-                );
-            } elseif ($firstParam === Constants::UPLOAD_URI_KEY) {
-                $resource->setKey(Constants::UPLOAD_URI_KEY);
-                $resource->setParams(false);
-            } elseif ($firstParam === Constants::STATS_URI_KEY) {
-                $resource->setKey(Constants::STATS_URI_KEY);
-                if (!empty($secondParam)) {
-                    $resource->setParams(
-                        array(
-                            Constants::INPUT_PARAM_USER => $secondParam
-                        )
-                    );
-                } else {
-                    $resource->setParams(false);
-                }
-            } elseif ($firstParam === Constants::DOWNLOAD_URI_KEY) {
-                $resource->setKey(Constants::DOWNLOAD_URI_KEY);
-                $resource->setParams(
-                    array(
-                        Constants::INPUT_PARAM_PID => $secondParam
-                    )
-                );
-
-            } elseif ($firstParam === Constants::CONTENT_URI_KEY) {
-                $resource->setKey(Constants::CONTENT_URI_KEY);
-                $resource->setParams(
-                    array(
-                        ContentController::CONTENT_KEY => $secondParam
-                    )
-                );
-            } elseif ($firstParam === Constants::EDITOR_URI_KEY) {
-                $resource->setKey(Constants::EDITOR_URI_KEY);
-                $resource->setParams(
-                    array(
-                        Constants::INPUT_PARAM_PID => $secondParam
-                    )
-                );
-            } elseif ($firstParam === Constants::USER_PREF_URI_KEY) {
-                $resource->setKey(Constants::USER_PREF_URI_KEY);
-                $resource->setParams(
-                    array(
-                        UserPreferencesController::PREF_ACTION => $secondParam
-                    )
-                );
-            } elseif ($firstParam === Constants::EXPLORER_URI_KEY) {
-                $isDelete = ($secondParam === Constants::DELETE_URI_KEY);
-                $hasPID = (is_numeric($thirdParam));
-                if ($isDelete && $hasPID) {
-                    $resource->setKey(Constants::EXPLORER_URI_KEY);
-                    $resource->setParams(
-                        array(
-                            Constants::INPUT_PARAM_PID => $thirdParam
-                        )
-                    );
-                } else {
-                    $resource->setKey(Constants::INDEX_URI_KEY);
-                    $resource->setParams(false);
-                }
-            } elseif ($firstParam === Constants::SEARCH_URI_KEY) {
-                $resource->setKey(Constants::SEARCH_URI_KEY);
-                $resource->setParams(RequestManager::getAllParams());
-            } elseif (!empty($firstParam) && !empty($secondParam) && !empty($thirdParam)) {
-                $resource->setKey(Constants::EXPLORER_URI_KEY);
-                $resource->setParams(
-                    array(
-                        Constants::INPUT_PARAM_LANG => $firstParam,
-                        Constants::INPUT_PARAM_CATE => $secondParam,
-                        Constants::INPUT_PARAM_PID => $thirdParam
-                    )
-                );
             } else {
-                $resource->setKey(Constants::INDEX_URI_KEY);
-                $resource->setParams(
-                    array(
-                        Constants::INPUT_PARAM_LANG => $firstParam,
-                        Constants::INPUT_PARAM_CATE => $secondParam,
-                        Constants::INPUT_PARAM_PID => $thirdParam
-                    )
-                );
+                $className = ucfirst($firstParam) . 'Controller';
+                if (class_exists($className) && is_subclass_of(new $className, 'AbstractController')) {
+                    $resource->setKey($className::MODULE_KEY);
+                } else {
+                    if (!empty($firstParam) && !empty($secondParam) && !empty($thirdParam)) {
+                        $resource->setKey(Constants::EXPLORER_URI_KEY);
+                    } else {
+                        $resource->setKey(Constants::INDEX_URI_KEY);
+                    }
+                }
             }
         } else {
             $resource->setKey(Constants::AUTH_URI_KEY);
-            $resource->setParams(
-                array(
-                    AuthController::AUTH_ACTION => $secondParam
-                )
-            );
             if ($firstParam !== Constants::AUTH_URI_KEY) {
                 RequestManager::setPendingRequestURI();
             }
         }
+
+        $resource = self::setCorrectParams($resource, array($firstParam, $secondParam, $thirdParam));
+        return $resource;
+    }
+
+    private static function setCorrectParams(Resource $resource, array $set) {
+        $params = array();
+        $altkeys = array(
+            Constants::INDEX_URI_KEY,
+            Constants::EXPLORER_URI_KEY
+        );
+
+        if (in_array($resource->getKey(), $altkeys)) {
+            $params = array(
+                Constants::INPUT_PARAM_LANG => $set[0],
+                Constants::INPUT_PARAM_CATE => $set[1],
+                Constants::INPUT_PARAM_PID  => $set[2]
+            );
+        } else {
+            $params = array(
+                Constants::INPUT_PARAM_MODULE    => $set[0],
+                Constants::INPUT_PARAM_ACTION    => $set[1],
+                Constants::INPUT_PARAM_SUBACTION => $set[2]
+            );
+        }
+        $resource->setParams($params);
         return $resource;
     }
 

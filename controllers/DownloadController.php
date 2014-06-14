@@ -11,7 +11,7 @@ class DownloadController extends AbstractController {
     
     public function run(Resource $resource) {
         $inputParams = $resource->getParams();
-        $pid = $inputParams[Constants::INPUT_PARAM_PID];
+        $pid = $inputParams[Constants::INPUT_PARAM_ACTION];
         if (!empty($pid)) {
             $this->downloadFile($pid);
         } else {

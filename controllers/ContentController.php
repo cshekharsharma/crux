@@ -3,7 +3,6 @@
 class ContentController extends AbstractController {
 
     const MODULE_KEY = "content";
-    const CONTENT_KEY = 'content_key';
 
     const CMS_CHPWD = 'CMS_CHPWD';
 
@@ -15,7 +14,7 @@ class ContentController extends AbstractController {
     public function run(Resource $resource) {
         $content = '';
         $uriParams = $resource->getParams();
-        $contentKey = $uriParams[self::CONTENT_KEY];
+        $contentKey = $uriParams[Constants::INPUT_PARAM_ACTION];
         if (!empty($contentKey)) {
             $this->callContentAction($contentKey);
         }
@@ -37,7 +36,7 @@ class ContentController extends AbstractController {
 
     private function getErrorMsg() {
         Logger::getLogger()->LogError('ContentController: No content key provided');
-        Response::sendResponse(Constants::FAILURE_RESPONSE, Error::ERR_SOMETHING_WRONG);
+        Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_SOMETHING_WRONG);
     }
 
     public function getChangePasswordUI() {

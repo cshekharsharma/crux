@@ -27,6 +27,7 @@ class AutoLoader {
             'Logger' => Constants::INCLUDE_DIR.'Logger.php',
             'Session' => Constants::INCLUDE_DIR.'Session.php',
             'Display' => Constants::INCLUDE_DIR.'Display.php',
+            'Messages' => Constants::INCLUDE_DIR.'Messages.php',
             'Constants' => Constants::INCLUDE_DIR.'Constants.php',
             'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
             'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',

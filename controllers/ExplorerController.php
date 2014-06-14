@@ -11,14 +11,17 @@ class ExplorerController extends AbstractController {
         parent::__construct();
         $this->model = new ExplorerModel();
     }
-    
+
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
-        $pid = $uriParams[Constants::INPUT_PARAM_PID];
         if ($this->isDeleteRequest($uriParams, $formParams)) {
-            $this->deleteSource($pid);
+            $pid = $uriParams[Constants::INPUT_PARAM_PID];
+            if (!empty($pid) && is_numeric($pid)) {
+                $this->deleteSource($pid);
+            }
         } else {
+            $pid = $uriParams[Constants::INPUT_PARAM_PID];
             $language = $uriParams[Constants::INPUT_PARAM_LANG];
             $category = $uriParams[Constants::INPUT_PARAM_CATE];
             $this->displaySourceCode($language, $category, $pid);
@@ -68,7 +71,7 @@ class ExplorerController extends AbstractController {
 
     private function isDeleteRequest ($uriParams, $formParams) {
         if ($formParams[self::DELETE_REQ_KEY] == self::DELETE_REQ_VAL) {
-            return !empty($uriParams[Constants::INPUT_PARAM_PID]);
+            return ($uriParams[Constants::INPUT_PARAM_CATE] === 'delete');
         }
         return false;
     }
@@ -77,10 +80,10 @@ class ExplorerController extends AbstractController {
         $isDeleted = false;
         $programController = new ProgramDetailsController();
         if ($programController->deleteProgram($pid)) {
-            Response::sendResponse(Constants::SUCCESS_RESPONSE, 'File Successfully Deleted');
+            Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_FILE_DELETION);
             $isDeleted = true;
         } else {
-            Response::sendResponse(Constants::SUCCESS_RESPONSE, 'File Deletion Failed, Retry!');
+            Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::ERROR_FILE_DELETION);
         }
     }
 }

@@ -15,9 +15,8 @@ class SearchController extends AbstractController {
     }
     
     public function run(Resource $resource) {
-        $uriParams = $resource->getParams();
-        if (!empty($uriParams[self::SEARCH_QUERY_PARAM])) {
-            $searchQuery = $uriParams[self::SEARCH_QUERY_PARAM];
+        $searchQuery = RequestManager::getParam(self::SEARCH_QUERY_PARAM);
+        if (!empty($searchQuery)) {
             $results = $this->search($searchQuery);
             $this->displaySearchResults($searchQuery, $results);
         } else {

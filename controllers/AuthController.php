@@ -1,9 +1,15 @@
 <?php
-
+/**
+ * Authentication Controller
+ * 
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @package controllers
+ * @since May 14, 2014
+ */
 class AuthController extends AbstractController {
 
     const MODULE_KEY = 'auth';
-
+    
     const AUTH_ACTION = "AUTH_ACTION";
     const AUTH_LOGIN_KEY = "AUTH_LOGIN";
     const LOGIN_ACTION_NAME = "login-action-name";
@@ -28,7 +34,7 @@ class AuthController extends AbstractController {
     }
 
     private function redirectAuthRequest ($uriParams, $formParams) {
-        $authAction = $uriParams[self::AUTH_ACTION];
+        $authAction = $uriParams[Constants::INPUT_PARAM_ACTION];
         if (empty($authAction) || $authAction === Constants::AUTH_LOGIN_URI_KEY) {
             $formKey = $formParams[self::LOGIN_ACTION_NAME];
             $isValidKey = ($formKey === self::LOGIN_ACTION_VALUE);
@@ -64,20 +70,20 @@ class AuthController extends AbstractController {
                 $passwordHash = $this->getPasswordHash($formParams['password']);
                 if ($passwordInDB === $passwordHash) {
                     if ($this->createUserSession($userDetail, $formParams['remember'])) {
-                        echo Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Login Successful', $nextURL);
+                        Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_LOGIN, $nextURL);
                         Logger::getLogger()->LogInfo("Auth Success for userid: ".$formParams['username']);
                     }
                 } else {
                     Logger::getLogger()->LogWarn("Auth Failed [Invalid password] for userid: ".$formParams['username']);
-                    Response::sendResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_PASSWORD);
+                    Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_AUTH_INVALID_PASSWORD);
                 }
             } else {
                 Logger::getLogger()->LogWarn("Auth Failed [User Inactive] for userid: ".$formParams['username']);
-                Response::sendResponse(Constants::FAILURE_RESPONSE, Error::AUTH_USER_INACTIVE);
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_AUTH_USER_INACTIVE);
             }
         } else {
             Logger::getLogger()->LogWarn("Auth Failed [Invalid Username] for userid: ".$formParams['username']);
-            Response::sendResponse(Constants::FAILURE_RESPONSE, Error::AUTH_INVALID_USER_NAME);
+            Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_AUTH_INVALID_USER_NAME);
         }
     }
 

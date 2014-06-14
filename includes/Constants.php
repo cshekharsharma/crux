@@ -49,7 +49,10 @@ class Constants {
     const INPUT_PARAM_CATE = '__cate';
     const INPUT_PARAM_PID = '__pid';
     const INPUT_PARAM_USER = '__user';
-
+    const INPUT_PARAM_MODULE = '__module';
+    const INPUT_PARAM_ACTION = '__action';
+    const INPUT_PARAM_SUBACTION = '__subaction';
+    
     const PASSWORD_CHANGED_MSG = 'Password successfully changed';
 
 }

@@ -3,18 +3,17 @@
 class UserPreferencesController extends AbstractController {
 
     const MODULE_KEY = 'userPreferences';
-    const PREF_ACTION = 'pref_action';
 
     private $userPreferenceKeys;
 
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
-        if (strtolower($uriParams[self::PREF_ACTION]) === 'save') {
+        if (strtolower($uriParams[Constants::INPUT_PARAM_ACTION]) === 'save') {
             if ($this->saveUserPreference($formParams)) {
-                Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Successfully Updated!', '');
+                Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_UPDATE);
             } else {
-                Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Operation failed!', '');
+                Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::ERROR_OPERATION_FAILED);
             }
         }
     }

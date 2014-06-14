@@ -51,12 +51,12 @@ class EditorModel extends AbstractModel {
                     'isUpdate' => EditorController::IS_UPDATE_VALUE,
                     'programId' => $pid
                 );
-                echo Response::sendResponse(Constants::SUCCESS_RESPONSE, "Code Successfully Updated", $detailArray);
+                echo Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_CODE_UPDATED, $detailArray);
             } else {
-                echo Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry!", '');
+                echo Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_CODE_UPDATION_FAILED);
             }
         } else {
-            echo Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Updation failed, Retry", '');
+            echo Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_CODE_UPDATION_FAILED);
         }
         exit();
     }
@@ -94,12 +94,12 @@ class EditorModel extends AbstractModel {
                     'isUpdate' => EditorController::IS_UPDATE_VALUE,
                     'programId' => $this->getLastInsertedRecord($loggedInUserId, $currentDatetime, $storedFileName)
                 );
-                Response::sendResponse(Constants::SUCCESS_RESPONSE, "Code Submitted", $detailArray);
+                Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_CODE_SUBMITTED, $detailArray);
             } else {
-                Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry!");
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_CODE_SUBMISSION_FAILED);
             }
         } else {
-            Response::sendResponse(Constants::FAILURE_RESPONSE, "Code Submission failed, Retry");
+            Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_CODE_SUBMISSION_FAILED);
         }
     }
 

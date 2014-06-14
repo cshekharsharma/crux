@@ -14,7 +14,7 @@ class UploadController extends AbstractController {
         parent::__construct();
         $this->model = new UploadModel();
         $this->allowedExts = array(
-            'c', 'cpp', 'java', 'py', 'php', 'cs', 'js', 'xml', 'json', 'rb', 'scala'
+            'c', 'cpp', 'java', 'py', 'php', 'cs', 'js', 'xml', 'json', 'rb', 'scala', 'go'
         );
     }
 
@@ -45,7 +45,8 @@ class UploadController extends AbstractController {
         $language = $formParams['language_id'];
         if (!empty($_FILES)) {
             if ($_FILES[self::FILE_UPLOAD_FILED_NAME]["error"] > 0) {
-                $this->logErrorAndRedirect($_FILES[self::FILE_UPLOAD_FILED_NAME]["error"]);
+                Logger::getLogger()->LogFatal('File upload failed, Errors found in $FILES array');
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_SOMETHING_WENT_WRONG);
             } else {
                 $originalFileName = $_FILES[self::FILE_UPLOAD_FILED_NAME]["name"];
                 $nameParts = explode(".", $originalFileName);
@@ -56,7 +57,8 @@ class UploadController extends AbstractController {
                     if ($this->checkAndCreateDir($uploadFileDir)) {
                         $uploadFileLocation = $uploadFileDir.'/'.$newFileName;
                         if (!move_uploaded_file($_FILES[self::FILE_UPLOAD_FILED_NAME]["tmp_name"], $uploadFileLocation)) {
-                            $this->logErrorAndRedirect("File could not be uploaded, retry", Error::ERR_TYPE_DISPLAY);
+                            Logger::getLogger()->LogFatal("File upload failed while trying move_uploaded_file()");
+                            Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_SOMETHING_WENT_WRONG);
                         } else {
                             $authUserData = Session::get(Session::SESS_USER_DETAILS);
                             $authUserId = $authUserData[Users_DBTable::USER_ID];
@@ -64,18 +66,18 @@ class UploadController extends AbstractController {
                             $formParams['stored_file_name'] = $newFileName;
                             $formParams['created_by'] = $authUserId;
                             if ($this->getModel()->insertProgramDescription($formParams)) {
-                                Response::sendResponse(Constants::SUCCESS_RESPONSE, 'Upload Successful');
+                                Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_UPDATE);
                             } else {
-                                Response::sendResponse(Constants::FAILURE_RESPONSE, 'Upload Failed');
+                                Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_OPERATION_FAILED);
                             }
                         }
                     } else {
                         Logger::getLogger()->LogError("Directory < $uploadFileDir > Doesn't Exist or Not Writable");
-                        Response::sendResponse(Constants::FAILURE_RESPONSE, 'Upload Failed');
+                        Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_OPERATION_FAILED);
                     }
                 } else {
                     Logger::getLogger()->LogError(Error::UPLOAD_INVALID_FILE_TYPE);
-                    Response::sendResponse(Constants::FAILURE_RESPONSE, Error::UPLOAD_INVALID_FILE_TYPE);
+                    Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::UPLOAD_INVALID_FILE_TYPE);
                 }
             }
         }

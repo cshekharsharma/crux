@@ -16,18 +16,21 @@ abstract class AbstractController {
 
     /**
      * Singleton instance of templating engine Smarty
-     * 
+     *
      * @var Smarty
      */
     protected $smarty;
 
+    /**
+     * Constructor
+     */
     public function __construct() {
         $this->smarty = Utils::getSmarty();
     }
-    
+
     /**
      * Returns model instance for the controller
-     * 
+     *
      * @return AbstractModel
      */
     public function getModel() {

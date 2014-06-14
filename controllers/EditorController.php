@@ -17,8 +17,8 @@ class EditorController extends AbstractController {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
         if (!$this->isAjaxRequest($formParams)) {
-            if (is_numeric($uriParams[Constants::INPUT_PARAM_PID])) {
-                $this->displayCodeEditor($uriParams[Constants::INPUT_PARAM_PID]);
+            if (is_numeric($uriParams[Constants::INPUT_PARAM_ACTION])) {
+                $this->displayCodeEditor($uriParams[Constants::INPUT_PARAM_ACTION]);
             } else {
                 $this->displayCodeEditor();
             }

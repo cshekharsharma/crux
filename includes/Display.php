@@ -1,6 +1,6 @@
 <?php
 /**
- * Class for maanaging views, template rendering and display
+ * Class for managing views, template rendering and display
  *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @since May 11, 2014

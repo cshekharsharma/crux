@@ -21,7 +21,8 @@
                         <input type="password" name="password" id="password" placeholder="Password"/>
                     </div>
                     <span style="margin-right:40px;">
-                        <input type="checkbox" name="remember" id="remember" value="remember" checked> Remember me
+                        <input type="checkbox" name="remember" id="remember" value="remember" checked>
+                        <label for="remember">Remember me</label>
                     </span>
                     <input type="button" class="btns" value="Login" onclick="doLogin('login-form');">
                 </div> 

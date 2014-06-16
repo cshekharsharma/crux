@@ -1,5 +1,5 @@
 var USER_PREF_CONSTANTS = {
-    saveUserPrefPath : 'userPreferences/save',
+    saveUserPrefPath : '/userPreferences/save',
     getUserPrefUIPath : '/content/userPreferences',
     userPrefPopupFlag : 'userPref'
 };

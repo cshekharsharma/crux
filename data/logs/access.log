@@ -4828,3 +4828,307 @@ LOGS
 2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
 2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
 2014-06-14 20:41:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:50:38 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-14 22:50:38 - DEBUG --> New DB Instance created 
+2014-06-14 22:50:38 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-14 22:50:38 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-14 22:50:38 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-14 22:50:38 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-14 22:50:38 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:50:38 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:51:30 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:51:30 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:51:30 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:54:48 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:54:48 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:54:48 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:55:10 - DEBUG --> Session Started / Resumed with ID : 77sqp1upgof97anv7p2hg4kc03 
+2014-06-14 22:55:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:55:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:55:10 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-14 22:55:10 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-14 22:55:10 - DEBUG --> New DB Instance created 
+2014-06-14 22:55:10 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-14 22:55:10 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-14 22:55:10 - DEBUG --> Executing Query: UPDATE users SET session_id='uk8vusbuvtdkm1je9kv3ufr341', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-14 22:55:10' WHERE id = '1' 
+2014-06-14 22:55:10 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-14 22:55:10 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 22:55:10 - INFO  --> Serving Index Controller 
+2014-06-14 22:55:10 - DEBUG --> New DB Instance created 
+2014-06-14 22:55:10 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-14 22:55:10 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-14 22:55:10 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 22:55:10 - DEBUG --> New DB Instance created 
+2014-06-14 22:55:10 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 22:57:31 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 22:57:31 - INFO  --> Serving Index Controller 
+2014-06-14 22:57:31 - DEBUG --> New DB Instance created 
+2014-06-14 22:57:31 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-14 22:57:31 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-14 23:16:14 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:16:14 - DEBUG --> New DB Instance created 
+2014-06-14 23:16:14 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:16:32 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:30:39 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:11 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:11 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:11 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:12 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:12 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:12 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:15 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:15 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:15 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:15 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:15 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:15 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:15 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:16 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:16 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:16 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:16 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:16 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:16 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:16 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:16 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:31:37 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:31:37 - DEBUG --> New DB Instance created 
+2014-06-14 23:31:37 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:32:46 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:32:46 - DEBUG --> New DB Instance created 
+2014-06-14 23:32:46 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:32:54 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:03 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:03 - DEBUG --> New DB Instance created 
+2014-06-14 23:33:03 - DEBUG --> Executing Query: DELETE FROM user_preferences WHERE user_id=? 
+2014-06-14 23:33:03 - DEBUG --> Executing Query: INSERT INTO user_preferences VALUES("", ?, ?, NOW(), NOW(), 0); 
+2014-06-14 23:33:24 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:24 - DEBUG --> New DB Instance created 
+2014-06-14 23:33:24 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:33:31 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:37 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:37 - DEBUG --> New DB Instance created 
+2014-06-14 23:33:37 - DEBUG --> Executing Query: DELETE FROM user_preferences WHERE user_id=? 
+2014-06-14 23:33:37 - DEBUG --> Executing Query: INSERT INTO user_preferences VALUES("", ?, ?, NOW(), NOW(), 0); 
+2014-06-14 23:33:40 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:40 - DEBUG --> New DB Instance created 
+2014-06-14 23:33:40 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:33:44 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:49 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:49 - DEBUG --> New DB Instance created 
+2014-06-14 23:33:49 - DEBUG --> Executing Query: DELETE FROM user_preferences WHERE user_id=? 
+2014-06-14 23:33:49 - DEBUG --> Executing Query: INSERT INTO user_preferences VALUES("", ?, ?, NOW(), NOW(), 0); 
+2014-06-14 23:33:51 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:33:51 - DEBUG --> New DB Instance created 
+2014-06-14 23:33:51 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-14 23:34:15 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-14 23:34:15 - DEBUG --> New DB Instance created 
+2014-06-14 23:34:15 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-14 23:34:15 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-14 23:34:15 - DEBUG --> Executing Query: SELECT * FROM program_details WHERE id='15' AND is_deleted= 0 
+2014-06-15 0:04:44 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:04:44 - INFO  --> Serving Index Controller 
+2014-06-15 0:04:44 - DEBUG --> New DB Instance created 
+2014-06-15 0:04:44 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-15 0:04:44 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-15 0:04:47 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:04:47 - DEBUG --> New DB Instance created 
+2014-06-15 0:04:47 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:06:11 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:06:11 - DEBUG --> New DB Instance created 
+2014-06-15 0:06:11 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:06:56 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:06:56 - DEBUG --> New DB Instance created 
+2014-06-15 0:06:56 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:07:05 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:07:05 - DEBUG --> New DB Instance created 
+2014-06-15 0:07:05 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:07:19 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:07:19 - DEBUG --> New DB Instance created 
+2014-06-15 0:07:19 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:07:30 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:07:30 - DEBUG --> New DB Instance created 
+2014-06-15 0:07:30 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:08:19 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:08:19 - DEBUG --> New DB Instance created 
+2014-06-15 0:08:19 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:08:37 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:08:37 - DEBUG --> New DB Instance created 
+2014-06-15 0:08:37 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:08:57 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:08:57 - DEBUG --> New DB Instance created 
+2014-06-15 0:08:57 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:09:09 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:09:09 - DEBUG --> New DB Instance created 
+2014-06-15 0:09:09 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:09:26 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:09:26 - DEBUG --> New DB Instance created 
+2014-06-15 0:09:26 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:10:51 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:10:51 - DEBUG --> New DB Instance created 
+2014-06-15 0:10:51 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:10:59 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:10:59 - DEBUG --> New DB Instance created 
+2014-06-15 0:10:59 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:12:18 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:12:18 - DEBUG --> New DB Instance created 
+2014-06-15 0:12:18 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:13:03 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:13:03 - DEBUG --> New DB Instance created 
+2014-06-15 0:13:03 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:14:42 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:14:42 - DEBUG --> New DB Instance created 
+2014-06-15 0:14:42 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:43:49 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-15 0:43:49 - DEBUG --> New DB Instance created 
+2014-06-15 0:43:49 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-15 0:43:49 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-15 0:43:49 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-15 0:43:49 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-15 0:43:49 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:49 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:55 - DEBUG --> Session Started / Resumed with ID : uk8vusbuvtdkm1je9kv3ufr341 
+2014-06-15 0:43:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:56 - WARN  --> Attempting to get invalid item from Session with key : codeMe_session_identifier 
+2014-06-15 0:43:56 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-15 0:43:56 - DEBUG --> New DB Instance created 
+2014-06-15 0:43:56 - DEBUG --> Executing Query: SELECT * FROM users WHERE user_name = ? AND is_deleted = 0 
+2014-06-15 0:43:56 - DEBUG --> Session ID regenerated, New Session ID: 1 
+2014-06-15 0:43:56 - DEBUG --> Executing Query: UPDATE users SET session_id='lpcds3hufu28h859i33to4vr63', ip_address='127.0.0.1', is_loggedin = '1', last_login = '2014-06-15 00:43:56' WHERE id = '1' 
+2014-06-15 0:43:56 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-15 0:43:56 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:43:56 - INFO  --> Serving Index Controller 
+2014-06-15 0:43:56 - DEBUG --> New DB Instance created 
+2014-06-15 0:43:56 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-15 0:43:56 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-15 0:51:53 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:51:53 - INFO  --> Serving Index Controller 
+2014-06-15 0:51:53 - DEBUG --> New DB Instance created 
+2014-06-15 0:51:53 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-15 0:51:53 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-15 0:52:01 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:52:01 - INFO  --> Serving Index Controller 
+2014-06-15 0:52:01 - DEBUG --> New DB Instance created 
+2014-06-15 0:52:01 - DEBUG --> Executing Query: SELECT * FROM user_preferences WHERE user_id =? AND is_deleted=0 
+2014-06-15 0:52:01 - DEBUG --> Executing Query: SELECT program_details.*,users.user_name AS created_by,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language INNER JOIN users ON users.id = fk_created_by WHERE program_details.is_deleted= '0' 
+2014-06-15 0:52:06 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:52:06 - DEBUG --> New DB Instance created 
+2014-06-15 0:52:06 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:52:58 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:52:58 - DEBUG --> New DB Instance created 
+2014-06-15 0:52:58 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:52:59 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:52:59 - DEBUG --> New DB Instance created 
+2014-06-15 0:52:59 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:52:59 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:52:59 - DEBUG --> New DB Instance created 
+2014-06-15 0:52:59 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:54:27 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:54:27 - DEBUG --> New DB Instance created 
+2014-06-15 0:54:27 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:55:03 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:55:03 - DEBUG --> New DB Instance created 
+2014-06-15 0:55:03 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:57:06 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:57:06 - DEBUG --> New DB Instance created 
+2014-06-15 0:57:06 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 0:57:13 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 0:57:13 - DEBUG --> New DB Instance created 
+2014-06-15 0:57:13 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:02:27 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:02:27 - DEBUG --> New DB Instance created 
+2014-06-15 1:02:27 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:04:17 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:04:17 - DEBUG --> New DB Instance created 
+2014-06-15 1:04:17 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:05:22 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:05:22 - DEBUG --> New DB Instance created 
+2014-06-15 1:05:22 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:05:53 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:05:53 - DEBUG --> New DB Instance created 
+2014-06-15 1:05:53 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:09:34 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:09:34 - DEBUG --> New DB Instance created 
+2014-06-15 1:09:34 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:11:23 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:11:23 - DEBUG --> New DB Instance created 
+2014-06-15 1:11:23 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:12:06 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:12:06 - DEBUG --> New DB Instance created 
+2014-06-15 1:12:06 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:12:17 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:12:17 - DEBUG --> New DB Instance created 
+2014-06-15 1:12:17 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:13:03 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:13:03 - DEBUG --> New DB Instance created 
+2014-06-15 1:13:03 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:13:36 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:13:36 - DEBUG --> New DB Instance created 
+2014-06-15 1:13:36 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:15:16 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:15:16 - DEBUG --> New DB Instance created 
+2014-06-15 1:15:16 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:15:33 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:15:33 - DEBUG --> New DB Instance created 
+2014-06-15 1:15:33 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:15:48 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:15:48 - DEBUG --> New DB Instance created 
+2014-06-15 1:15:48 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:16:13 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:16:13 - DEBUG --> New DB Instance created 
+2014-06-15 1:16:13 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:16:25 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:16:26 - DEBUG --> New DB Instance created 
+2014-06-15 1:16:26 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 
+2014-06-15 1:17:02 - DEBUG --> Session Started / Resumed with ID : lpcds3hufu28h859i33to4vr63 
+2014-06-15 1:17:02 - DEBUG --> New DB Instance created 
+2014-06-15 1:17:02 - DEBUG --> Executing Query: SELECT program_details.*,category.name AS category_name,language.name AS language_name FROM program_details INNER JOIN category ON category.id = program_details.fk_category INNER JOIN language ON language.id = program_details.fk_language WHERE program_details.id=? AND program_details.fk_language=? AND program_details.fk_category=? AND program_details.is_deleted= '0' 

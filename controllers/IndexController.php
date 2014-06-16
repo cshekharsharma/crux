@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * Index Controller<br>
+ * Used as default controller
+ * 
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ * @package controllers
+ * @since May 08, 2014
+ */
 class IndexController extends AbstractController {
 
     const MODULE_KEY = 'index';

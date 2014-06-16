@@ -5,7 +5,8 @@ APP_CONSTANTS = {
 
 var popupFlags = {
     chpwd : 0,
-    userPref : 0
+    userPref : 0,
+    execCode : 0
 };
 
 var errorObject = {

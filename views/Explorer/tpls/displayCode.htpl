@@ -15,13 +15,15 @@
             <span class="top-side-buttons file-download-link"><a onclick="deleteProgram('{$PROGRAM_DETAILS.id}')" href="#">Delete</a></span>
             <span class="top-side-buttons file-download-link"><a href="/download/{$PROGRAM_DETAILS.id}">Download</a></span>
             <span class="top-side-buttons file-download-link"><a href="/editor/{$PROGRAM_DETAILS.id}">Update</a></span>
+            <span class="top-side-buttons file-download-link"><a id="execute-code" href="#">Execute</a></span>
+           
+       </div>
+       <small>{$PROGRAM_DETAILS.description}</small>
+        <div class="program-stats">
             <span class="top-side-links">
                 <a href="/{$PROGRAM_DETAILS.fk_language}">{$PROGRAM_DETAILS.language_name}</a> / 
                 <a target="_blank" href="/{$PROGRAM_DETAILS.fk_language}/{$PROGRAM_DETAILS.fk_category}">{$PROGRAM_DETAILS.category_name}</a>
             </span>
-       </div>
-       <small>{$PROGRAM_DETAILS.description}</small>
-        <div class="program-stats">
             <span style="font-size:13px;float:right"> 
                 Size:{$SOURCE_STATS.fileSize} KBs |
                 Chars:{$SOURCE_STATS.charCount} |
@@ -31,6 +33,10 @@
         </div>
      </div>
    <pre id="code-editor">{$SOURCE_CODE}</pre>
+</div>
+<div id="execCode-container" class="popupDiv">
+    <div class="header">Execute your code</div>
+    <div class="editable terminal">></div>
 </div>
 <script>
     var editor = ace.edit("code-editor");

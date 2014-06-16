@@ -18,7 +18,8 @@
                     <span class="main-logo-text"><a href="/">{$APP_NAME}</a></span>
                 </td>
                 <td class="td2">
-                    <input type="text" class="searchbox txtbox ui-widget" autocomplete="off" id="searchbox" name="q" placeholder="Search" value="{$SEARCH_KEY}">
+                    <input type="text" class="searchbox txtbox ui-widget" 
+                    autocomplete="off" id="searchbox" name="q" placeholder="Search" value="{$SEARCH_KEY}">
                 </td>
                 <td class="td3">
                     <a id="editor-link" class="upper-action-link" href="/editor">Editor</a>

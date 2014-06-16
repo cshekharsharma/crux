@@ -1,6 +1,12 @@
 EXPLORER_CONSTANTS = {
     baseURI : '/explorer/',
-    isDeletekey : 'isdelete'
+    isDeletekey : 'isdelete',
+    execCodePopupFlag : 'execCode',
+    cssSelectors : {
+        popupBg : '.popup-opacity-background',
+        execContainer : '#execCode-container',
+        execLink : '#execute-code'
+    }
 };
 
 function deleteProgram(pid) {
@@ -30,3 +36,13 @@ function deleteProgram(pid) {
         }
     }
 }
+function sayHello() {
+    
+}
+$('#execute-code').click(
+        function() {
+            attachPopupEvents(EXPLORER_CONSTANTS.cssSelectors.popupBg,
+                    EXPLORER_CONSTANTS.cssSelectors.execContainer,
+                    EXPLORER_CONSTANTS.execCodePopupFlag, sayHello);
+        });
+

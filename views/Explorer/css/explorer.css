@@ -51,10 +51,8 @@
 	text-decoration: none;
 }
 
-.top-side-links {
-	float: right;
-	margin-right: 15px;
-	font-size: 15px;
+.top-side-links { /* margin-right: 15px; */
+	font-size: 13px;
 }
 
 .top-side-links a {
@@ -78,4 +76,18 @@
 	width: 100%;
 	height: 450px;
 	border: 1px solid #F0F0F0;
+}
+
+#execCode-container {
+	background: #000;
+	color: white;
+	padding: 5px;
+	width: 70%;
+	height: 70%;
+}
+
+#execCode-container .header {
+	background: #030803;
+	padding:5px;
+	border-bottom:1px solid #BBB;
 }

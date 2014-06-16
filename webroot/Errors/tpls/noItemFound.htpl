@@ -1,8 +1,8 @@
-{include file="templates/Index/tpls/header.htpl"}
+{include file="webroot/Index/tpls/header.htpl"}
 <head>
   <meta charset="utf-8">
   <title>Oops!</title>
-  <link rel="stylesheet" type="text/css" href="/templates/Errors/css/errors.css">
+  <link rel="stylesheet" type="text/css" href="/webroot/Errors/css/errors.css">
 </head>
 <body>
     <div class="error-msg-holder">
@@ -11,5 +11,5 @@
         <br/>Don't worry... it happens to the best of us.
         <br><a href="/">Go Home</a>
     </div>
-{include file="templates/Index/tpls/footer.htpl"}
+{include file="webroot/Index/tpls/footer.htpl"}
  </body>

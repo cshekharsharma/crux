@@ -1,8 +1,8 @@
-{include file="templates/Index/tpls/header.htpl"}
+{include file="webroot/Index/tpls/header.htpl"}
 <head>
   <title>Upload :: Code.Me</title>
-  <link rel="stylesheet" type="text/css" href="/templates/Upload/css/upload.css">
-  <script type="text/javascript" src="/templates/Upload/js/upload.js"></script>
+  <link rel="stylesheet" type="text/css" href="/webroot/Upload/css/upload.css">
+  <script type="text/javascript" src="/webroot/Upload/js/upload.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -51,6 +51,6 @@
             </div>   
         </form>
     </div>
-    {include file="templates/Index/tpls/footer.htpl"}
+    {include file="webroot/Index/tpls/footer.htpl"}
 </body>
 </html>

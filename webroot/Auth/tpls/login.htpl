@@ -1,8 +1,8 @@
-{include file="templates/Index/tpls/headerBeforeLogin.htpl"}<!DOCTYPE html>
+{include file="webroot/Index/tpls/headerBeforeLogin.htpl"}<!DOCTYPE html>
 <head>
   <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="/templates/Auth/css/auth.css">
-  <script type="text/javascript" src="/templates/Auth/js/auth.js"></script>
+  <link rel="stylesheet" type="text/css" href="/webroot/Auth/css/auth.css">
+  <script type="text/javascript" src="/webroot/Auth/js/auth.js"></script>
 </head>
     <div id="wrapper1">
         <div class="form-header-span">Please verify your identity</div>
@@ -29,6 +29,6 @@
             </div>   
         </form>
     </div>
-    {include file="templates/Index/tpls/footer.htpl"}
+    {include file="webroot/Index/tpls/footer.htpl"}
 </body>
 </html>

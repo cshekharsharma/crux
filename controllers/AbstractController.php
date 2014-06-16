@@ -5,7 +5,7 @@
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @since May 11, 2014
  */
-abstract class AbstractController {
+abstract class AbstractController extends Application {
 
     abstract protected function run(Resource $resource);
 

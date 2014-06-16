@@ -150,7 +150,7 @@ A lot of Smarty 3 core functionality lies in the sysplugins directory; you do
 not need to change any files here. The /libs/plugins/ folder is where Smarty
 plugins are located. You can add your own here, or create a separate plugin
 directory, just the same as Smarty 2. You will still need to create your own
-/cache/, /templates/, /templates_c/, /configs/ folders. Be sure /cache/ and
+/cache/, /webroot/, /templates_c/, /configs/ folders. Be sure /cache/ and
 /templates_c/ are writable.
 
 The typical way to use Smarty 3 should also look familiar:

@@ -31,6 +31,7 @@ class AutoLoader {
             'Messages' => Constants::INCLUDE_DIR.'Messages.php',
             'Constants' => Constants::INCLUDE_DIR.'Constants.php',
             'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
+            'Application' => Constants::INCLUDE_DIR.'Application.php',
             'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',
             'RequestManager' => Constants::INCLUDE_DIR.'RequestManager.php',
             'ResourceProvider' => Constants::INCLUDE_DIR.'ResourceProvider.php',
@@ -66,6 +67,7 @@ class AutoLoader {
             // View Classes
             'AbstractView' => Constants::VIEW_DIR.'AbstractView.php',
             'AuthView' => Constants::VIEW_DIR.'AuthView.php',
+            'IndexView' => Constants::VIEW_DIR.'IndexView.php',
             
             // DB tables
             'AbstractDBTable' => Constants::DB_TABLE_DIR.'AbstractDBTable.php',

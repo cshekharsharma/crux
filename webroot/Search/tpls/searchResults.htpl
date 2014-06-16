@@ -1,7 +1,7 @@
-{include file="templates/Index/tpls/header.htpl"}
+{include file="webroot/Index/tpls/header.htpl"}
 <head>
    <title>Search - {$SEARCH_KEY}</title>
-  <link rel="stylesheet" type="text/css" href="/templates/Search/css/search.css">
+  <link rel="stylesheet" type="text/css" href="/webroot/Search/css/search.css">
 </head>
 <body>
   <table cellspacing="0" class="listview-table">
@@ -46,6 +46,6 @@
            {/foreach}
            </tbody>
         </table>
-       {include file="templates/Index/tpls/footer.htpl"}
+       {include file="webroot/Index/tpls/footer.htpl"}
  </body>
  </html>

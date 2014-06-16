@@ -1,14 +1,14 @@
-{include file="templates/Index/tpls/header.htpl"}
+{include file="webroot/Index/tpls/header.htpl"}
 <head>
   <meta charset="utf-8">
   <title>Oops!</title>
-  <link rel="stylesheet" type="text/css" href="/templates/Errors/css/errors.css">
+  <link rel="stylesheet" type="text/css" href="/webroot/Errors/css/errors.css">
 </head>
 <body>
     <div class="error-msg-holder">
-       <span class="bigoops">Ahhh! </span><br>
+       <span class="bigoops">Ahhh!</span><br>
          Probably you haven't started yet with CODING !<br>
          Lets get our hands dirty <a href="/editor">HERE</a>...
     </div>
-      {include file="templates/Index/tpls/footer.htpl"}
+      {include file="webroot/Index/tpls/footer.htpl"}
  </body>

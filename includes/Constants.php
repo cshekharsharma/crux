@@ -20,9 +20,9 @@ final class Constants {
     const MODEL_DIR = 'models/';
     const HELPER_DIR = 'helpers/';
     const LIBRARY_DIR = 'library/';
+    const WEBROOT_DIR = 'webroot/';
     const INCLUDE_DIR = 'includes/';
     const DB_TABLE_DIR = 'dbtables/';
-    const TEMPLATE_DIR = 'templates/';
     const CONTROLLER_DIR = 'controllers/';
     const HELPER_CLASSES_DIR = 'helpers/classes/';
     const HELPER_SCRIPTS_DIR = 'helpers/scripts/';
@@ -53,5 +53,7 @@ final class Constants {
     const INPUT_PARAM_MODULE = '__module';
     const INPUT_PARAM_ACTION = '__action';
     const INPUT_PARAM_SUBACTION = '__subaction';
-
+    
+    const EMPTY_CODEBASE = 'EMPTY_CODEBASE';
+    const ERROR_RESOURCE_NOT_FOUND = 'NO_ITEM_FOUND';
 }

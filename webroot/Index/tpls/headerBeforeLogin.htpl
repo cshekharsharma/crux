@@ -3,7 +3,7 @@
 <script type="text/javascript" src="/library/jquery/js/jquery.js"></script>
 <script type="text/javascript" src="/library/jquery/js/jqueryui.js"></script>
 <link type="text/css" rel="stylesheet" href="/library/jquery/css/jqueryui.css">
-<link rel="stylesheet" type="text/css" href="/templates/Index/css/main.css">
+<link rel="stylesheet" type="text/css" href="/webroot/Index/css/main.css">
 
 <div class="header-div" >
     <div class="inner-header-div">
@@ -51,4 +51,4 @@
     });
     {/literal}
 </script>
-<script type="text/javascript" src="/templates/Index/js/header.js"></script>
+<script type="text/javascript" src="/webroot/Index/js/header.js"></script>

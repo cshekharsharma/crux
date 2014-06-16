@@ -1,14 +1,12 @@
 <?php
 
-abstract class AbstractView {
+abstract class AbstractView extends Application {
 
-    abstract public function displayForm();
+    abstract public function display();
     
-    /**
-     * Smarty instance
-     *
-     * @var Smarty
-     */
+  
+    protected $view = null;
+    
     protected $smarty = null;
 
     protected $currModule = null;
@@ -18,13 +16,20 @@ abstract class AbstractView {
     protected $htplDir = 'tpls/';
 
     protected $errorTemplateMap = array(
-        '404' => 'Errors/tpls/noItemFound.htpl'
+        'DEBUG_TRACE'    => 'debugTrace.htpl',
+        'NO_ITEM_FOUND'  => 'noItemFound.htpl',
+        'EMPTY_CODEBASE' => 'emptyCodebase.htpl'
     );
 
 
     public function __construct() {
         $this->smarty = Utils::getSmarty();
         $this->prepareDisplay();
+    }
+    
+    public function setView($view) {
+        $this->view = $view;
+        return $this;
     }
 
     public function getTemplateName($key) {
@@ -48,7 +53,7 @@ abstract class AbstractView {
         if ($this->isTemplateAvailable($templateKey)) {
             $content = $this->getTemplateMarkup($templateKey);
         } else {
-            $errorCode = Messages::ERROR_RESOURCE_NOT_FOUND;
+            $errorCode = Constants::ERROR_RESOURCE_NOT_FOUND;
             $content = $this->getErrorTemaplateMarkup($errorCode);
         }
         if ($echo) echo $content;
@@ -72,11 +77,11 @@ abstract class AbstractView {
     }
 
     private function getTemplateDir () {
-        return Constants::TEMPLATE_DIR . ucfirst($this->currModule) . '/' . $this->htplDir;
+        return Constants::WEBROOT_DIR . ucfirst($this->currModule) . '/' . $this->htplDir;
     }
 
     private function getErrorTemplateDir() {
-        return Constants::TEMPLATE_DIR . ucfirst('errors') . '/' . $this->htplDir;
+        return Constants::WEBROOT_DIR . ucfirst('errors') . '/' . $this->htplDir;
     }
 
     private function isTemplateAvailable ($templateKey) {

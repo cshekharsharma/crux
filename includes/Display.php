@@ -58,7 +58,7 @@ class Display {
             $templatePath = self::getTemplatePath($templateKey);
             return self::getTemplateMarkup($templatePath);
         } else {
-            $errorCode = Messages::ERROR_RESOURCE_NOT_FOUND;
+            $errorCode = Constants::ERROR_RESOURCE_NOT_FOUND;
             return self::getErrorTemaplateMarkup($errorCode);
         }
     }

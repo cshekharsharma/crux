@@ -6,13 +6,11 @@ class AuthView extends AbstractView {
         'AUTH_LOGIN' => 'login.htpl'
     );
 
-    protected $view = null;
-    
     protected $currModule = 'auth';
     
-    public function displayForm() {
+    public function display() {
         if (!empty($this->view)) {
-            if ($this->view === 'auth_login') {
+            if ($this->view === 'AUTH_LOGIN') {
                 $this->displayLoginForm();
             }
         } else {
@@ -30,9 +28,5 @@ class AuthView extends AbstractView {
         } else {
             RequestManager::redirect();
         }
-    }
-    
-    public function setView($view) {
-        $this->view = $view;
     }
 } 

@@ -5,6 +5,6 @@
  * @author Chandra Shekhar Sharma <shekharsharma705@gmail.com>
  * @since 21 May, 2014
  */
-abstract class AbstractModel {
+abstract class AbstractModel extends Application {
 
 }

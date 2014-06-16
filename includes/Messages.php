@@ -25,7 +25,6 @@ final class Messages {
     const ERROR_WRONG_PASSWORD = 'Wrong password provided';
     const ERROR_USER_NOT_LOGGED_IN = 'Please login before the action';
     const ERROR_SOMETHING_WRONG = 'Oops! Something went wrong! Please refresh the page and try again!';
-    const ERROR_RESOURCE_NOT_FOUND = 404;
     const ERROR_USERNAME_OR_PASSWORD_EMPTY = 'UserName & Password can\'t be empty!';
     const ERROR_FILE_DELETION = 'File could not be deleted, Retry!';
     const UPLOAD_INVALID_FILE_TYPE = 'File upload encountered an invalid file type.';

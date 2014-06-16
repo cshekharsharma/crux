@@ -1,7 +1,7 @@
 <?php
 /**
  * Authentication Controller
- * 
+ *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since May 14, 2014
@@ -9,7 +9,7 @@
 class AuthController extends AbstractController {
 
     const MODULE_KEY = 'auth';
-    
+
     const AUTH_ACTION = "AUTH_ACTION";
     const AUTH_LOGIN_KEY = "AUTH_LOGIN";
     const LOGIN_ACTION_NAME = "login-action-name";
@@ -25,6 +25,7 @@ class AuthController extends AbstractController {
     public function __construct() {
         parent::__construct();
         $this->model = new AuthModel();
+        $this->view = new AuthView();
     }
 
     public function run(Resource $resource) {
@@ -34,14 +35,17 @@ class AuthController extends AbstractController {
     }
 
     private function redirectAuthRequest ($uriParams, $formParams) {
+        $formKey = '';
         $authAction = $uriParams[Constants::INPUT_PARAM_ACTION];
         if (empty($authAction) || $authAction === Constants::AUTH_LOGIN_URI_KEY) {
-            $formKey = $formParams[self::LOGIN_ACTION_NAME];
+            if (!empty($formParams[self::LOGIN_ACTION_NAME])) {
+                $formKey = $formParams[self::LOGIN_ACTION_NAME];
+            }
             $isValidKey = ($formKey === self::LOGIN_ACTION_VALUE);
             if (!self::isLoggedIn() && $isValidKey && Utils::isAjaxRequest()) {
                 $this->authenticate($formParams);
             } else {
-                $this->displayLoginForm();
+                $this->getView()->displayLoginForm();
             }
         } elseif ($authAction === Constants::AUTH_CHANGE_PASSWORD_URI_KEY) {
             $formKey = $formParams[self::CHPWD_ACTION_NAME];
@@ -115,7 +119,7 @@ class AuthController extends AbstractController {
 
     /**
      * Action: User logout
-     * 
+     *
      * @param string $userId
      * @param string $redirect
      */
@@ -143,7 +147,7 @@ class AuthController extends AbstractController {
 
     /**
      * Checks if user is logged in or not
-     * 
+     *
      * @return boolean
      */
     public static function isLoggedIn() {
@@ -158,7 +162,7 @@ class AuthController extends AbstractController {
 
     /**
      * Action: Change password
-     * 
+     *
      * @param array $formInputs
      */
     public function changePassword(array $formInputs) {

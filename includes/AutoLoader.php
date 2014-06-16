@@ -63,6 +63,10 @@ class AutoLoader {
             'DownloadModel' => Constants::MODEL_DIR.'DownloadModel.php',
             'ExplorerModel' => Constants::MODEL_DIR.'ExplorerModel.php',
 
+            // View Classes
+            'AbstractView' => Constants::VIEW_DIR.'AbstractView.php',
+            'AuthView' => Constants::VIEW_DIR.'AuthView.php',
+            
             // DB tables
             'AbstractDBTable' => Constants::DB_TABLE_DIR.'AbstractDBTable.php',
             'Users_DBTable' => Constants::DB_TABLE_DIR.'Users_DBTable.php',

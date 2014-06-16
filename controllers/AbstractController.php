@@ -15,6 +15,11 @@ abstract class AbstractController {
     protected $model;
 
     /**
+     * Instance of View class
+     */
+    protected $view;
+    
+    /**
      * Singleton instance of templating engine Smarty
      *
      * @var Smarty
@@ -30,10 +35,15 @@ abstract class AbstractController {
 
     /**
      * Returns model instance for the controller
-     *
-     * @return AbstractModel
      */
     public function getModel() {
         return $this->model;
+    }
+    
+    /**
+     * Returns view instance for the controller
+     */
+    public function getView() {
+        return $this->view;
     }
 }

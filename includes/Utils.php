@@ -225,7 +225,7 @@ class Utils {
         if ($displayTrace) {
             $smarty->assign('STACK_TRACE', $debugTrace);
         }
-        $smarty->display('string:'. @file_get_contents('views/Errors/tpls/debugTrace.htpl'));
+        $smarty->display('string:'. @file_get_contents('templates/Errors/tpls/debugTrace.htpl'));
         if ($exit) {
             exit();
         }

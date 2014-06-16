@@ -1,0 +1,110 @@
+.body-main {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#code-editor {
+	margin: 0;
+	width: 100%;
+	height: 550px;
+}
+
+.selectbox-div {
+	font-size: 11px;
+	border: 1px solid #ccc;
+	width: 120px;
+	margin-right: 5px;
+	padding: 5px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #fafafa
+		url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==")
+		no-repeat 90% 50%;
+}
+
+.selectbox-div .selectbox {
+	padding: 5px 5px;
+	border: none;
+	outline: none;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+}
+
+.select-style .selectbox:focus {
+	outline: none;
+}
+
+input[type="text"],input[type="password"] {
+	padding: 8px 6px;
+	height: 22px;
+	width: 280px;
+}
+
+input[type="text"]:focus,input[type="password"]:focus {
+	text-indent: 0;
+	z-index: 1;
+	outline: 0 none;
+	-webkit-transition-duration: 400ms;
+	-webkit-transition-property: width, background;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-duration: 400ms;
+	-moz-transition-property: width, background;
+	-moz-transition-timing-function: ease;
+	-o-transition-duration: 400ms;
+	-o-transition-property: width, background;
+	-o-transition-timing-function: ease;
+	border: 1px solid #56b4ef;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 8px
+		rgba(82, 168, 236, 0.6);
+}
+
+.titlebox {
+	height: 16px !important;
+	width: 300px !important;
+	margin: 0 !important;
+}
+
+.form-table {
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+}
+
+.form-table .td1 {
+	width: 75%;
+}
+
+.form-table .td2 {
+	vertical-align: top;
+	margin-left: 10px;
+	border-left: 1px solid #CCC;
+}
+
+.form-table .inner-table {
+	width: 100%;
+	padding:10px;
+	padding-top:0px;
+}
+
+.form-table .inner-table #description {
+	height: 120px;
+	width:95%;
+}
+
+textarea {
+	padding: 3px;
+	width: 91%%;
+	height: 50px;
+}
+
+textarea:focus {
+	text-indent: 0;
+	outline: 0 none;
+	z-index: 1;
+	border: 1px solid #56b4ef;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 8px
+		rgba(82, 168, 236, 0.6);
+}

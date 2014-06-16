@@ -1,0 +1,29 @@
+<div id="wrapper2" class="popup-inner-div">
+    <div class="form-header-span">User Preferences</div>
+    <form name="userpref-form" id="userpref-form" class="auth-form" method="post">
+    <div class="innerdiv">
+        <input type="hidden" name="userpref-action-name" id="userpref-action-name" value="{$USER_PREF_ACTION_VALUE}">
+        <div id="auth-msg-container" class="msg-container">
+        </div><br>
+             <div class="fieldset">
+                <table>
+                    <tr>
+                        <td>Editor Theme</td>
+                        <td>
+                            <select name="code_editor_theme" id="code_editor_theme"> 
+                                {foreach from=$EDITOR_THEME_LIST key=themeId item=themeName}
+                                    <option value="{$themeId}">{$themeName}</option>
+                                {/foreach}
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                </table>   
+                <input type="button" class="btns" value="Submit" onclick="saveUserPreference('userpref-form');">
+            </div> 
+        </div>   
+    </form>
+</div>

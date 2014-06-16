@@ -1,6 +1,0 @@
-<div style="background:#fff5f4;border:1px solid #f98f8f;padding:5px;">
-    <center>Variable Dump</center>
-    <pre>{$DEBUG_VAR}</pre>
-    <hr>
-    Called from: Line <b>{$STACK_TRACE.line}</b> in file <b>{$STACK_TRACE.file}</b>. Function:{$STACK_TRACE.function}()
-</div>

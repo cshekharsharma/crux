@@ -22,6 +22,7 @@ final class Constants {
     const LIBRARY_DIR = 'library/';
     const INCLUDE_DIR = 'includes/';
     const DB_TABLE_DIR = 'dbtables/';
+    const TEMPLATE_DIR = 'templates/';
     const CONTROLLER_DIR = 'controllers/';
     const HELPER_CLASSES_DIR = 'helpers/classes/';
     const HELPER_SCRIPTS_DIR = 'helpers/scripts/';

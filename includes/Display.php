@@ -1,7 +1,7 @@
 <?php
 /**
  * Class for maanaging views, template rendering and display
- * 
+ *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @since May 11, 2014
  */
@@ -9,7 +9,7 @@ class Display {
 
     /**
      * Smarty instance
-     * 
+     *
      * @var Smarty
      */
     public static $smarty;
@@ -34,7 +34,7 @@ class Display {
     );
 
     private static function getTemplatePath ($key) {
-        return Constants::VIEW_DIR . self::$TEMPLATE_LIST[$key];
+        return Constants::TEMPLATE_DIR . self::$TEMPLATE_LIST[$key];
     }
 
     private static function getTemplateMarkup($templatePath) {
@@ -47,7 +47,7 @@ class Display {
 
     /**
      * Fetches appropriate template by given template key and returns its content
-     * 
+     *
      * @param string $templateKey
      * @return string
      */
@@ -64,7 +64,7 @@ class Display {
     }
 
     private static function getErrorTemaplateMarkup($errorCode) {
-        return file_get_contents(Constants::VIEW_DIR . self::$ERROR_TEMPLATE_LIST[$errorCode]);
+        return file_get_contents(Constants::TEMPLATE_DIR . self::$ERROR_TEMPLATE_LIST[$errorCode]);
     }
 
     /**

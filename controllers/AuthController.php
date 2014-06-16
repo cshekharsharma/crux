@@ -20,7 +20,7 @@ class AuthController extends AbstractController {
     const SESSION_COOKIE_LIFETIME = 1209600; // 2 Weeks
 
     private static $AUTH_USER_ID_IDENTIFIER = "auth_user_id";
-    private static $SESSION_SITE_IDENTIFIER = "codeMe_session_identifier";
+    private static $SESSION_SITE_IDENTIFIER = "cruX_session_identifier";
 
     public function __construct() {
         parent::__construct();

@@ -9,7 +9,7 @@
  */
 final class Constants {
 
-    const APP_NAME = 'code.me';
+    const APP_NAME = 'Crux';
     const APP_VERSION = '1.0.0';
 
     const DB_DATETIME_FORMAT = 'Y-m-d H:i:s';

@@ -1,4 +1,6 @@
-Crux is a free source code editor and code management tool, which is most appropriate for Algorithmic artists. This helps users in writing and maintaining their code with helpful interface.
+Crux is a free source code editor and code management tool, which is most appropriate for Algorithmic artists. 
+This helps users in writing and maintaining their code with helpful interface.
+----------------------------------------------------------------------------------
 
 Crux currently provies these features -
   
@@ -12,7 +14,7 @@ Crux currently provies these features -
   -- User can download their source code by one click.
   
   
-  Crux is written in PHP, and follows basic MVC architecture. It uses few opensource libraries as well -
-    -- jQuery (JavaScript library)
-    -- Smarty (PHP Templating engine)
-    -- Ace (A Web IDE)
+Crux is written in PHP, and follows basic MVC architecture. It uses few opensource libraries as well -
+  -- jQuery (JavaScript library)
+  -- Smarty (PHP Templating engine)
+  -- Ace (A Web IDE)

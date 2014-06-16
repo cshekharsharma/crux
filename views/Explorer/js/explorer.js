@@ -36,13 +36,3 @@ function deleteProgram(pid) {
         }
     }
 }
-function sayHello() {
-    
-}
-$('#execute-code').click(
-        function() {
-            attachPopupEvents(EXPLORER_CONSTANTS.cssSelectors.popupBg,
-                    EXPLORER_CONSTANTS.cssSelectors.execContainer,
-                    EXPLORER_CONSTANTS.execCodePopupFlag, sayHello);
-        });
-

@@ -5,7 +5,7 @@
  */
 
 // Including autoloader
-chdir('../');
+chdir('../../');
 require_once 'includes/AutoLoader.php';
 
 if (Utils::isRunningFromCLI()) {
@@ -36,7 +36,11 @@ if (Utils::isRunningFromCLI()) {
         unlink($schemaDumpPath);
         unlink($dataDumpPath);
         if (file_exists($finalDumpPath)) {
-            unlink($finalDumpPath);
+            if (unlink($finalDumpPath)) {
+                Utils::printCLIMessages('Previous dump successfully deleted!');
+            } else {
+                Utils::printCLIMessages('Previous dump deletion failed!! :O');
+            }
         }
         
         if (file_put_contents($finalDumpPath, $contents)) {

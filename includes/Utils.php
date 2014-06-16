@@ -163,7 +163,7 @@ class Utils {
             'vibrant_ink' => 'Vibrant Ink',
             'xcode' => 'XCode'
         );
-        
+
         return (empty($themeId)) ? $themes : $themes[$themeId];
     }
 
@@ -181,22 +181,26 @@ class Utils {
     public static function isRunningFromCLI() {
         return (php_sapi_name() === 'cli');
     }
-    
+
     /**
      * Prints formatted msg on CLI
-     * 
+     *
      * @param string $msg
      */
     public static function printCLIMessages($msg) {
-        $border = str_repeat("#", strlen($msg) + 3);
-        echo $border.PHP_EOL.'#'.PHP_EOL;
-        echo "#  ".$msg.PHP_EOL.'#'.PHP_EOL;
-        echo $border.PHP_EOL;
+        if (self::isRunningFromCLI()) {
+            $border = str_repeat("#", strlen($msg) + 3);
+            echo $border.PHP_EOL.'#'.PHP_EOL;
+            echo "#  ".$msg.PHP_EOL.'#'.PHP_EOL;
+            echo $border.PHP_EOL;
+        } else {
+            Logger::getLogger()->LogWarn('Trying to print CLI_Message while file not executing from CLI');
+        }
     }
-    
+
     /**
      * Get datatype of given variable
-     * 
+     *
      * @param mixed $object
      * @return string
      */
@@ -207,7 +211,7 @@ class Utils {
             return ucfirst(gettype($object));
         }
     }
-    
+
     /**
      * Prints variable formatted structure and value of variable
      *
@@ -221,7 +225,7 @@ class Utils {
         if ($displayTrace) {
             $smarty->assign('STACK_TRACE', $debugTrace);
         }
-        $smarty->display('string:'. file_get_contents('views/Errors/tpls/debugTrace.htpl'));
+        $smarty->display('string:'. @file_get_contents('views/Errors/tpls/debugTrace.htpl'));
         if ($exit) {
             exit();
         }

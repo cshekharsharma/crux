@@ -6,7 +6,7 @@
  */
 
 // Setup auto class loader
-chdir('../');
+chdir('../../');
 require_once 'includes/AutoLoader.php';
 
 if (Utils::isRunningFromCLI()) {

@@ -15,7 +15,6 @@
             <span class="top-side-buttons file-download-link"><a onclick="deleteProgram('{$PROGRAM_DETAILS.id}')" href="#">Delete</a></span>
             <span class="top-side-buttons file-download-link"><a href="/download/{$PROGRAM_DETAILS.id}">Download</a></span>
             <span class="top-side-buttons file-download-link"><a href="/editor/{$PROGRAM_DETAILS.id}">Update</a></span>
-            <span class="top-side-buttons file-download-link"><a id="execute-code" href="#">Execute</a></span>
            
        </div>
        <small>{$PROGRAM_DETAILS.description}</small>

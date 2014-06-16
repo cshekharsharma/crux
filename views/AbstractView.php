@@ -2,12 +2,13 @@
 
 abstract class AbstractView {
 
+    abstract public function displayForm();
+    
     /**
      * Smarty instance
      *
      * @var Smarty
      */
-
     protected $smarty = null;
 
     protected $currModule = null;

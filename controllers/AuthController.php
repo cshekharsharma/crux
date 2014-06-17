@@ -45,7 +45,7 @@ class AuthController extends AbstractController {
             if (!self::isLoggedIn() && $isValidKey && Utils::isAjaxRequest()) {
                 $this->authenticate($formParams);
             } else {
-                $this->getView()->setView(self::AUTH_LOGIN_KEY)->display();
+                $this->getView()->setViewName(self::AUTH_LOGIN_KEY)->display();
             }
         } elseif ($authAction === Constants::AUTH_CHANGE_PASSWORD_URI_KEY) {
             $formKey = $formParams[self::CHPWD_ACTION_NAME];

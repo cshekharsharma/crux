@@ -9,8 +9,8 @@ class EditorView extends AbstractView {
     protected $currModule = 'editor';
 
     public function display() {
-        if (!empty($this->view)) {
-            if (strtoupper($this->view) === strtoupper($this->currModule)) {
+        if (!empty($this->viewName)) {
+            if (strtoupper($this->viewName) === strtoupper($this->currModule)) {
                 $this->displayProgramList(self::getBean());
             }
         }

@@ -7,10 +7,10 @@ class AuthView extends AbstractView {
     );
 
     protected $currModule = 'auth';
-    
+
     public function display() {
-        if (!empty($this->view)) {
-            if ($this->view === 'AUTH_LOGIN') {
+        if (!empty($this->viewName)) {
+            if (strtoupper($this->viewName) === strtoupper('AUTH_LOGIN')) {
                 $this->displayLoginForm();
             }
         } else {
@@ -29,4 +29,4 @@ class AuthView extends AbstractView {
             RequestManager::redirect();
         }
     }
-} 
+}

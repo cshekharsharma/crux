@@ -34,7 +34,7 @@ class Display {
     );
 
     private static function getTemplatePath ($key) {
-        return Constants::TEMPLATE_DIR . self::$TEMPLATE_LIST[$key];
+        return Constants::WEBROOT_DIR . self::$TEMPLATE_LIST[$key];
     }
 
     private static function getTemplateMarkup($templatePath) {
@@ -64,7 +64,7 @@ class Display {
     }
 
     private static function getErrorTemaplateMarkup($errorCode) {
-        return file_get_contents(Constants::TEMPLATE_DIR . self::$ERROR_TEMPLATE_LIST[$errorCode]);
+        return file_get_contents(Constants::WEBROOT_DIR . self::$ERROR_TEMPLATE_LIST[$errorCode]);
     }
 
     /**

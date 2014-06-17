@@ -3,11 +3,10 @@
 abstract class AbstractView extends Application {
 
     abstract public function display();
-    
-  
-    protected $view = null;
-    
+
     protected $smarty = null;
+
+    protected $viewName = null;
 
     protected $currModule = null;
 
@@ -26,9 +25,9 @@ abstract class AbstractView extends Application {
         $this->smarty = Utils::getSmarty();
         $this->prepareDisplay();
     }
-    
-    public function setView($view) {
-        $this->view = $view;
+
+    public function setViewName($viewName) {
+        $this->viewName = $viewName;
         return $this;
     }
 
@@ -87,7 +86,7 @@ abstract class AbstractView extends Application {
     private function isTemplateAvailable ($templateKey) {
         return (!empty($this->templateMap[$templateKey]));
     }
-    
+
     private function getTemplateMarkup($templatePath) {
         $filePath = $this->getTemplateDir() . $this->templateMap[$templatePath];
         return @file_get_contents($filePath);

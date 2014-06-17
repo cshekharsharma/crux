@@ -4,18 +4,20 @@ class StatsController extends AbstractController {
 
     const MODULE_KEY = 'stats';
     const TOTAL = 'Total';
-    
+
     private $grandTotal = 0;
     private $translationMap = array();
 
     public function __construct() {
         parent::__construct();
         $this->model = new StatsModel();
+        $this->view = new StatsView();
     }
-    
+
     public function run(Resource $resource) {
         $filteredStats = $this->getFilteredStats();
-        $this->displayStats($filteredStats);
+        $this->createBean($filteredStats);
+        $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
 
     private function getFilteredStats() {
@@ -72,6 +74,17 @@ class StatsController extends AbstractController {
         }
         $matrix[self::TOTAL] = $temp;
         return $matrix;
+    }
+
+    private function createBean($filteredStats) {
+        $bean = array(
+            'localTotal'     => self::TOTAL,
+            'grandTotal'     => $this->grandTotal,
+            'filteredStats'  => $filteredStats,
+            'translationMap' => $this->translationMap,
+        );
+        
+        self::setBean($bean);
     }
 
     private function displayStats($filteredStats) {

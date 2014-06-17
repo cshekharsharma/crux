@@ -9,8 +9,8 @@ class IndexView extends AbstractView {
     protected $currModule = 'index';
 
     public function display() {
-        if (!empty($this->view)) {
-            if (strtoupper($this->view) === 'INDEX') {
+        if (!empty($this->viewName)) {
+            if (strtoupper($this->viewName) === 'INDEX') {
                 $this->displayProgramList(self::getBean());
             }
         }

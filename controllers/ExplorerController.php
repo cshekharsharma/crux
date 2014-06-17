@@ -10,6 +10,7 @@ class ExplorerController extends AbstractController {
     public function __construct() {
         parent::__construct();
         $this->model = new ExplorerModel();
+        $this->view = new ExplorerView();
     }
 
     public function run(Resource $resource) {

@@ -23,7 +23,6 @@ abstract class AbstractView extends Application {
 
     public function __construct() {
         $this->smarty = Utils::getSmarty();
-        $this->prepareDisplay();
     }
 
     public function setViewName($viewName) {
@@ -48,6 +47,7 @@ abstract class AbstractView extends Application {
      */
     public function render($templateKey, $echo = false) {
         $content = '';
+        $this->prepareDisplay();
         $templateKey = strtoupper($templateKey);
         if ($this->isTemplateAvailable($templateKey)) {
             $content = $this->getTemplateMarkup($templateKey);
@@ -55,8 +55,8 @@ abstract class AbstractView extends Application {
             $errorCode = Constants::ERROR_RESOURCE_NOT_FOUND;
             $content = $this->getErrorTemaplateMarkup($errorCode);
         }
-        if ($echo) echo $content;
-        return $content;
+        
+        $this->smarty->display('string: '. $content);
     }
 
     /**

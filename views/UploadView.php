@@ -24,7 +24,7 @@ class UploadView extends AbstractView {
         $this->smarty->assign("CATEGORY_LIST", $categoryList);
         $this->smarty->assign("LANGUAGE_LIST", $languageList);
         $this->smarty->assign("FILE_UPLOAD_ACTION_VALUE", UploadController::FILE_UPLOAD_ACTION_VALUE);
-        $this->smarty->display("string:".$this->render($this->currModule));
+        $this->render($this->currModule);
     }
 
 }

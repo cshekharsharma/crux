@@ -29,7 +29,7 @@ class SearchView extends AbstractView {
         }
         $this->smarty->assign("totalResults", $totalResults);
         $this->smarty->assign("SEARCH_KEY", htmlentities($query, ENT_QUOTES));
-        $this->smarty->display("string:" . $this->render($this->currModule));
+        $this->render($this->currModule);
     }
     
 }

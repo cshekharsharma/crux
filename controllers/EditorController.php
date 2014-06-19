@@ -11,17 +11,19 @@ class EditorController extends AbstractController {
     public function __construct() {
         parent::__construct();
         $this->model = new EditorModel();
+        $this->view = new EditorView();
     }
-    
+
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
         if (!$this->isAjaxRequest($formParams)) {
             if (is_numeric($uriParams[Constants::INPUT_PARAM_ACTION])) {
-                $this->displayCodeEditor($uriParams[Constants::INPUT_PARAM_ACTION]);
+                $this->setBean(array('pid' => $uriParams[Constants::INPUT_PARAM_ACTION]));
             } else {
-                $this->displayCodeEditor();
+                $this->setBean(array('pid' => null));
             }
+            $this->getView()->setViewName(self::MODULE_KEY)->display();
         } else {
             if (!$this->isUpdateRequest($formParams)) {
                 $this->getModel()->submitCode($formParams);

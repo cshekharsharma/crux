@@ -25,12 +25,12 @@ class IndexView extends AbstractView {
                 $programList[$key][$descKey] = $parsedDesc;
             }
             $this->smarty->assign("PROGRAM_LIST", $programList);
-            $this->smarty->display("string:". $this->render(IndexController::MODULE_KEY));
+            $this->render(IndexController::MODULE_KEY);
         } else {
             if (IndexController::$isHomePage) {
-                $this->smarty->display("string:". $this->render("EMPTY_CODEBASE"));
+                $this->render("EMPTY_CODEBASE");
             } else {
-                $this->smarty->display("string:". $this->render("NO_ITEM_FOUND"));
+                $this->render("NO_ITEM_FOUND");
             }
         }
     }

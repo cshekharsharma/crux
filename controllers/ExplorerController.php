@@ -25,19 +25,29 @@ class ExplorerController extends AbstractController {
             $pid = $uriParams[Constants::INPUT_PARAM_PID];
             $language = $uriParams[Constants::INPUT_PARAM_LANG];
             $category = $uriParams[Constants::INPUT_PARAM_CATE];
-            $this->displaySourceCode($language, $category, $pid);
+            $this->exploreCode($language, $category, $pid);
             Display::render(strtoupper($resource->getKey()));
         }
     }
 
-    public function displaySourceCode($lang, $category, $pid) {
+    public function exploreCode($lang, $category, $pid) {
         $programDetails = $this->getModel()->getSourceDetails($lang, $category, $pid);
         if (!empty($programDetails)) {
             $sourceCode = $this->getSourceCode($programDetails);
-            echo $this->getProcessedTemplate($programDetails, $sourceCode);
+            $this->prepareBean($sourceCode, $programDetails);
+            $this->getView()->setViewName(self::MODULE_KEY)->display();
         } else {
-            $this->smarty->display("string:".Display::render("ERROR_NO_ITEM"));
+            $this->getView()->setViewName(null)->display();
         }
+    }
+
+    private function prepareBean($sourceCode, $programDetails) {
+        $array = array(
+            'programDetails' => $programDetails,
+            'sourceCode'    => $sourceCode,
+            'sourceStats'   =>  $this->getSourceStats($sourceCode),
+        );
+        $this->setBean($array);
     }
 
     private function getSourceCode($programDetails) {
@@ -45,7 +55,7 @@ class ExplorerController extends AbstractController {
         $filePath .= $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID].'/';
         $filePath .= $programDetails[ProgramDetails_DBTable::FK_CATEGORY_ID].'/';
         $filePath .= $programDetails[ProgramDetails_DBTable::STORED_FILE_NAME];
-        $fileContents = file_get_contents($filePath);
+        $fileContents = @file_get_contents($filePath);
         return $fileContents;
     }
 

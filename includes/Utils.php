@@ -178,6 +178,11 @@ class Utils {
         return $loggedInUserId;
     }
 
+    /**
+     * Checks if current execution is from CLI or not?
+     * 
+     * @return boolean
+     */
     public static function isRunningFromCLI() {
         // STDIN isn't a CLI constant before 4.3.0
         $sapi = php_sapi_name();
@@ -214,7 +219,7 @@ class Utils {
      * @param mixed $object
      * @return string
      */
-    public function getObjectType($object) {
+    public function getDatatype($object) {
         if (strtolower(gettype($object)) == 'object') {
             return get_class($object);
         } else {
@@ -226,6 +231,8 @@ class Utils {
      * Prints variable formatted structure and value of variable
      *
      * @param mixed $var
+     * @param bool $exit
+     * @param bool $displayTrace
      */
     public static function debugVariable($var, $exit = false, $displayTrace = true) {
         $debugTrace = end(debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT));

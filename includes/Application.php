@@ -19,4 +19,8 @@ abstract class Application {
         self::$bean = $bean;
     }
     
+    public function resetBean() {
+        self::$bean = null;
+        return $this->getBean();
+    }
 }

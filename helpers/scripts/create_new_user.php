@@ -11,7 +11,7 @@ require_once 'includes/AutoLoader.php';
 
 if (Utils::isRunningFromCLI()) {
     $cmdArgs = $argv;
-
+    $userName = $password = '';
     foreach ($cmdArgs as $arg) {
         if (preg_match('/--username=(\w+)/', $arg, $result)) {
             $userName = $result[1];
@@ -23,8 +23,8 @@ if (Utils::isRunningFromCLI()) {
     }
 
     // input validations
-    if (empty($userName)) Utils::printCLIMessages('No UserName provided, Utils::printCLIMessagesing');
-    if (empty($password)) Utils::printCLIMessages('No Password provided, Utils::printCLIMessagesing');
+    if (empty($userName)) Utils::printCLIMessages('No UserName provided, Retry!');
+    if (empty($password)) Utils::printCLIMessages('No Password provided, Retry!');
     if (strlen($password) < 3) Utils::printCLIMessages('Password too short, Must have atleast 3 characters');
 
     $user = new UsersController();

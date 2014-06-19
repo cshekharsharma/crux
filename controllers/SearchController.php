@@ -12,13 +12,20 @@ class SearchController extends AbstractController {
     public function __construct() {
         parent::__construct();
         $this->model = new SearchModel();
+        $this->view = new SearchView();
     }
-    
+
     public function run(Resource $resource) {
         $searchQuery = RequestManager::getParam(self::SEARCH_QUERY_PARAM);
         if (!empty($searchQuery)) {
             $results = $this->search($searchQuery);
-            $this->displaySearchResults($searchQuery, $results);
+            $this->setBean(
+                array(
+                    'query' => $searchQuery,
+                    'resultSet' => $results
+                )
+            );
+            $this->getView()->setViewName(self::MODULE_KEY)->display();
         } else {
             RequestManager::redirect();
         }
@@ -118,20 +125,8 @@ class SearchController extends AbstractController {
         $methodName = 'get' . ucfirst($tag) . 'WiseMatchingDataset';
         if (method_exists($this->getModel(), $methodName)) {
             return $this->getModel()->$methodName($searchString);
-        } 
-        return false;
-    }
-
-    private function displaySearchResults($query, $resultSet) {
-        $totalResults = (!empty($resultSet)) ? count($resultSet) : 0;
-        if (!empty($resultSet)) {
-            $this->smarty->assign("RESULT_SET", $resultSet);
-        } else {
-            $this->smarty->assign(self::NO_RESULT_FOUND, self::NO_RESULT_FOUND);
         }
-        $this->smarty->assign("totalResults", $totalResults);
-        $this->smarty->assign("SEARCH_KEY", htmlentities($query, ENT_QUOTES));
-        $this->smarty->display("string:" . Display::render(self::MODULE_KEY));
+        return false;
     }
 
     public function getSearchSuggestions() {

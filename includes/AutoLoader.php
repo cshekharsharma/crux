@@ -69,6 +69,7 @@ class AutoLoader {
             'AuthView' => Constants::VIEW_DIR.'AuthView.php',
             'IndexView' => Constants::VIEW_DIR.'IndexView.php',
             'StatsView' => Constants::VIEW_DIR.'StatsView.php',
+            'SearchView' => Constants::VIEW_DIR.'SearchView.php',
             
             // DB tables
             'AbstractDBTable' => Constants::DB_TABLE_DIR.'AbstractDBTable.php',

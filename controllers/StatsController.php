@@ -84,7 +84,7 @@ class StatsController extends AbstractController {
             'translationMap' => $this->translationMap,
         );
         
-        self::setBean($bean);
+        $this->setBean($bean);
     }
 
     private function displayStats($filteredStats) {

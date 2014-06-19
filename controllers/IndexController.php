@@ -25,7 +25,7 @@ class IndexController extends AbstractController {
         $uc=new UserPreferencesController();
         $uc->getUserPreference(1);
         $programs = $this->getProgramList($uriParams);
-        self::setBean($programs);
+        $this->setBean($programs);
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
 

@@ -11,7 +11,7 @@ class IndexView extends AbstractView {
     public function display() {
         if (!empty($this->viewName)) {
             if (strtoupper($this->viewName) === 'INDEX') {
-                $this->displayProgramList(self::getBean());
+                $this->displayProgramList($this->getBean());
             }
         }
     }

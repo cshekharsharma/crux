@@ -13,8 +13,10 @@ class UploadController extends AbstractController {
     public function __construct() {
         parent::__construct();
         $this->model = new UploadModel();
+        $this->view  = new UploadView();
         $this->allowedExts = array(
-            'c', 'cpp', 'java', 'py', 'php', 'cs', 'js', 'xml', 'json', 'rb', 'scala', 'go'
+            'c', 'cpp', 'java', 'py', 'php', 'cs', 'js',
+            'xml', 'json', 'rb', 'scala', 'go'
         );
     }
 
@@ -22,22 +24,11 @@ class UploadController extends AbstractController {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
         if (!empty($formParams[self::FILE_UPLOAD_ACTION_NAME]) &&
-            $formParams[self::FILE_UPLOAD_ACTION_NAME] == self::FILE_UPLOAD_ACTION_VALUE) {
+        $formParams[self::FILE_UPLOAD_ACTION_NAME] == self::FILE_UPLOAD_ACTION_VALUE) {
             $this->uploadFile($formParams);
         } else {
-            $this->displayUploadInterface();
+            $this->getView()->setViewName(self::MODULE_KEY)->display();
         }
-    }
-
-    public function displayUploadInterface() {
-        $categoryObj = new CategoryController();
-        $languageObj = new LanguageController();
-        $categoryList = $categoryObj->getCategoryList();
-        $languageList = $languageObj->getLanguageList();
-        $this->smarty->assign("CATEGORY_LIST", $categoryList);
-        $this->smarty->assign("LANGUAGE_LIST", $languageList);
-        $this->smarty->assign("FILE_UPLOAD_ACTION_VALUE", self::FILE_UPLOAD_ACTION_VALUE);
-        echo $this->smarty->fetch("string:".Display::render(self::MODULE_KEY));
     }
 
     public function uploadFile($formParams) {

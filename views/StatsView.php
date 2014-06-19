@@ -9,7 +9,7 @@ class StatsView extends AbstractView {
     protected $currModule = 'stats';
 
     public function display() {
-        $bean = self::getBean();
+        $bean = $this->getBean();
         if (!empty($this->viewName)) {
             if (strtoupper($this->viewName) === strtoupper($this->currModule)) {
                 $this->displayStatsSummary($bean);

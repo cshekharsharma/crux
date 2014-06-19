@@ -1,17 +1,17 @@
 <?php
 
-class EditorView extends AbstractView {
+class ExplorerView extends AbstractView {
 
     protected $templateMap = array(
-        'EDITOR' => 'editor.htpl'
+        'EXPLORER' => 'displayCode.htpl'
     );
 
-    protected $currModule = 'editor';
+    protected $currModule = 'explorer';
 
     public function display() {
         if (!empty($this->viewName)) {
             if (strtoupper($this->viewName) === strtoupper($this->currModule)) {
-                $this->displayProgramList(self::getBean());
+                $this->displayProgramList($this->getBean());
             }
         }
     }

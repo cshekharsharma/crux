@@ -51,7 +51,7 @@ abstract class AbstractView extends Application {
      * @param string $templateKey
      * @return string
      */
-    public function render($templateKey, $echo = false) {
+    public function render($templateKey, $return = false) {
         $content = '';
         $this->prepareDisplay();
         $templateKey = strtoupper($templateKey);
@@ -62,7 +62,12 @@ abstract class AbstractView extends Application {
             $content = $this->getErrorTemaplateMarkup($errorCode);
         }
         
-        $this->smarty->display('string: '. $content);
+        if ($return) {
+            return $this->smarty->fetch('string: ' . $content);
+        } else {
+            $this->smarty->display('string: '. $content);
+            return null;
+        }
     }
 
     /**

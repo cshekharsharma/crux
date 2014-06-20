@@ -35,7 +35,6 @@ class ExplorerController extends AbstractController {
             $language = $uriParams[Constants::INPUT_PARAM_LANG];
             $category = $uriParams[Constants::INPUT_PARAM_CATE];
             $this->exploreCode($language, $category, $pid);
-            Display::render(strtoupper($resource->getKey()));
         }
     }
 

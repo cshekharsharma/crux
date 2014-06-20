@@ -72,8 +72,9 @@ class AutoLoader {
             'SearchView' => Constants::VIEW_DIR.'SearchView.php',
             'UploadView' => Constants::VIEW_DIR.'UploadView.php',
             'EditorView' => Constants::VIEW_DIR.'EditorView.php',
+            'ContentView' => Constants::VIEW_DIR.'ContentView.php',
             'ExplorerView' => Constants::VIEW_DIR.'ExplorerView.php',
-            
+
             // DB tables
             'AbstractDBTable' => Constants::DB_TABLE_DIR.'AbstractDBTable.php',
             'Users_DBTable' => Constants::DB_TABLE_DIR.'Users_DBTable.php',
@@ -91,7 +92,7 @@ class AutoLoader {
 
     /**
      * Finds all library class paths, which are not registered with autoloader
-     * 
+     *
      * @param string $className
      * @return string|boolean
      */
@@ -104,7 +105,7 @@ class AutoLoader {
 
     /**
      * Get class path for given smarty class
-     * 
+     *
      * @param unknown $className
      * @return string|boolean
      */

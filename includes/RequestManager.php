@@ -127,7 +127,6 @@ class RequestManager {
      * Load all essential application core files into memory
      */
     public static function requireCoreFiles() {
-        require_once 'includes/AutoLoader.php';
         require_once 'library/smarty/libs/Smarty.class.php';
     }
     

@@ -11,8 +11,6 @@ class ContentController extends AbstractController {
 
     const MODULE_KEY = "content";
 
-    const CMS_CHPWD = 'CMS_CHPWD';
-
     private $actionMapping = array(
         'changePassword' => 'getChangePasswordUI',
         'userPreferences' => 'getUserPreferenceUI'

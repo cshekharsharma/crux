@@ -6,8 +6,8 @@
  * @example sudo php create_new_user.php --username=johnsmith --password=secret@123
  */
 
-// Setup auto class loader
 chdir('../../');
+// include auto class loader
 require_once 'includes/AutoLoader.php';
 
 if (Utils::isRunningFromCLI()) {

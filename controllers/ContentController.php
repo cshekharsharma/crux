@@ -3,7 +3,7 @@
  * Controller class for Content module.
  * This modules provide dynamic markup content when requested from client
  *
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since Jun 20, 2014
  */

@@ -2,7 +2,7 @@
 /**
  * Controller class for Category module
  *
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since May 20, 2014
  */

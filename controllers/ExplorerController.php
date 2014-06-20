@@ -2,7 +2,7 @@
 /**
  * Controller class for Explorer module
  * 
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since Jun 20, 2014
  */

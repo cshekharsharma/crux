@@ -2,7 +2,7 @@
 /**
  * Controller class for file download module
  * 
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @since Jun 20, 2014
  */
 class DownloadController extends AbstractController {

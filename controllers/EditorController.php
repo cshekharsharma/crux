@@ -2,7 +2,7 @@
 /**
  * Controller class for Editor module
  * 
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package 
  * @since Jun 20, 2014
  */

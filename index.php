@@ -2,7 +2,7 @@
 
 /**
  * Application initialization!<br>
- * Every single fucking reqeust goes from here,
+ * Every single fucking request goes from here,
  * and then gets routed to appropriate controller
  */
 try {

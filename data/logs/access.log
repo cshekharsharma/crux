@@ -1,0 +1,21 @@
+2014-06-20 18:37:58 - DEBUG --> Session Started / Resumed with ID : s141f2da9t906gnk11fsrv60e6 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : cruX_session_identifier 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : cruX_session_identifier 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : cruX_session_identifier 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : search_suggestions 
+2014-06-20 18:37:58 - DEBUG --> New DB Instance created 
+2014-06-20 18:37:58 - DEBUG --> Executing Query: SELECT id, user_name FROM users WHERE is_deleted= 0 ORDER BY user_name 
+2014-06-20 18:37:58 - DEBUG --> Executing Query: SELECT id, name FROM language WHERE is_deleted= 0 ORDER BY name 
+2014-06-20 18:37:58 - DEBUG --> Executing Query: SELECT id, name FROM category WHERE is_deleted= 0 ORDER BY name 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : loggedin_user_details 
+2014-06-20 18:37:58 - DEBUG --> Executing Query: SELECT title AS name FROM program_details WHERE is_deleted = 0 
+2014-06-20 18:37:58 - DEBUG --> Session Started / Resumed with ID : s141f2da9t906gnk11fsrv60e6 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : cruX_session_identifier 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : cruX_session_identifier 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : cruX_session_identifier 
+2014-06-20 18:37:58 - WARN  --> Attempting to get invalid item from Session with key : auth_user_id 

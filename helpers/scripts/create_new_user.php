@@ -1,8 +1,9 @@
 <?php
 /**
  * Creating new user in database
+ *
  * @access Command Line
- * @example sudo php CreateNewUser.php --username=johnsmith --password=secret@123
+ * @example sudo php create_new_user.php --username=johnsmith --password=secret@123
  */
 
 // Setup auto class loader

@@ -7,9 +7,8 @@
  */
 try {
     ini_set("display_errors", 0);
-    require_once 'includes/AutoLoader.php';
-    Session::start();
     RequestManager::initRequest();
+    Session::start();
     RequestManager::serveRequest();
 } catch(Exception $e) {
     RequestManager::handleException($e);

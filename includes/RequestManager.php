@@ -29,6 +29,7 @@ class RequestManager {
             $key = '__q'.($i + 1).'__';
             $_GET[$key] = $_REQUEST[$key] = $uriParts[$i];
         }
+        self::requireCoreFiles();
     }
 
     /**
@@ -79,7 +80,6 @@ class RequestManager {
      * @throws Exception
      */
     public static function serveRequest() {
-        self::requireCoreFiles();
         $resource = ResourceProvider::getResource();
         $controller = ResourceProvider::getControllerByResourceKey($resource->getKey());
         if (!empty($controller) && $controller instanceof AbstractController) {
@@ -127,6 +127,7 @@ class RequestManager {
      * Load all essential application core files into memory
      */
     public static function requireCoreFiles() {
+        require_once 'includes/AutoLoader.php';
         require_once 'library/smarty/libs/Smarty.class.php';
     }
     

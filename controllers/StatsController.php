@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Controller class for Stats module
+ *
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class StatsController extends AbstractController {
 
     const MODULE_KEY = 'stats';
@@ -14,12 +20,20 @@ class StatsController extends AbstractController {
         $this->view = new StatsView();
     }
 
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
         $filteredStats = $this->getFilteredStats();
         $this->createBean($filteredStats);
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
 
+    /**
+     * Get category and language based filtered results
+     *
+     * @return Ambigous <mixed, NULL, unknown, multitype:number >
+     */
     private function getFilteredStats() {
         $matrix = Session::get(Session::SESS_EMPTY_STATS_MATRIX);
         $this->translationMap = Session::get(Session::SESS_ID_NAME_TRANSLATION_MAP);
@@ -43,6 +57,11 @@ class StatsController extends AbstractController {
         return $matrix;
     }
 
+    /**
+     * Get empty container map for stats
+     *
+     * @return array
+     */
     private function getEmptyStatsMatrix() {
         $queries = array();
         $output = array();
@@ -76,6 +95,11 @@ class StatsController extends AbstractController {
         return $matrix;
     }
 
+    /**
+     * Create bean to be assigned for views
+     *
+     * @param array $filteredStats
+     */
     private function createBean($filteredStats) {
         $bean = array(
             'localTotal'     => self::TOTAL,
@@ -85,14 +109,5 @@ class StatsController extends AbstractController {
         );
 
         $this->setBean($bean);
-    }
-
-    private function displayStats($filteredStats) {
-        $this->smarty->assign('STATS', $filteredStats);
-        $this->smarty->assign('TOTAL_STR', self::TOTAL);
-        $this->smarty->assign('GRAND_TOTAL', $this->grandTotal);
-        $this->smarty->assign('LANG_MAP', $this->translationMap[Language_DBTable::DB_TABLE_NAME]);
-        $this->smarty->assign('CATE_MAP', $this->translationMap[Category_DBTable::DB_TABLE_NAME]);
-        $this->smarty->display('string:'.Display::render(self::MODULE_KEY));
     }
 }

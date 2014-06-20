@@ -1,13 +1,26 @@
 <?php
-
+/**
+ * Controller class for Category module
+ *
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since May 20, 2014
+ */
 class CategoryController extends AbstractController {
-    
+
     const MODULE_KEY = 'category';
-    
+
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
-        
     }
-    
+
+    /**
+     * Get list of all active categories in database
+     * 
+     * @return boolean $resultSet
+     */
     public function getCategoryList() {
         $categoryList = array();
         $query = "SELECT id, name FROM ";

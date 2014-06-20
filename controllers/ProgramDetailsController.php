@@ -1,13 +1,24 @@
 <?php
-
+/**
+ * Controller class for ProgramDetails module
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class ProgramDetailsController extends AbstractController {
 
     const MODULE_KEY = 'programDetails';
 
     public function run(Resource $resource) {
-
     }
 
+    /**
+     * Get program info for given PID
+     * 
+     * @param int  $pid
+     * @return array
+     */
     public function getProgramListById($pid) {
         $query = "SELECT * FROM ".ProgramDetails_DBTable::DB_TABLE_NAME." WHERE ";
         $query .= ProgramDetails_DBTable::PROGRAM_ID."='".$pid."' AND ";
@@ -16,6 +27,12 @@ class ProgramDetailsController extends AbstractController {
         return current($resultSet);
     }
 
+    /**
+     * Delete given program from system
+     * 
+     * @param int $pid
+     * @return boolean
+     */
     public function deleteProgram($pid) {
         $programInfo = $this->getProgramListById($pid);
         $query = "UPDATE ".ProgramDetails_DBTable::DB_TABLE_NAME." SET ";

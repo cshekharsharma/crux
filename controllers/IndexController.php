@@ -19,6 +19,9 @@ class IndexController extends AbstractController {
         $this->view = new IndexView();
     }
     
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
         Logger::getLogger()->LogInfo("Serving Index Controller");
         $uriParams = $resource->getParams();
@@ -29,7 +32,13 @@ class IndexController extends AbstractController {
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
 
-    public function getProgramList($inputParams) {
+    /**
+     * Get list of all active programs in system
+     * 
+     * @param array $inputParams
+     * @return boolean
+     */
+    public function getProgramList(array $inputParams) {
         $programs = array();
         $lang = $inputParams[Constants::INPUT_PARAM_LANG];
         $category = $inputParams[Constants::INPUT_PARAM_CATE];

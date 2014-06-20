@@ -1,13 +1,27 @@
 <?php
-
+/**
+ * Controller class for Language module
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class LanguageController extends AbstractController {
     
     const MODULE_KEY = 'language';
     
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
         
     }
-    
+
+    /**
+     * Returns list of all active languages in system
+     * 
+     * @return array
+     */
     public function getLanguageList() {
         $languageList = array();
         $query = "SELECT id, name FROM ";

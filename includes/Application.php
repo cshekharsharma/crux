@@ -14,13 +14,13 @@ abstract class Application {
     public function getBean() {
         return self::$bean;
     }
-    
+
     public function setBean($bean) {
         self::$bean = $bean;
     }
-    
+
     public function resetBean() {
         self::$bean = null;
-        return $this->getBean();
+        return $this;
     }
 }

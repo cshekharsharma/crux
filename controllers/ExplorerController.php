@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Controller class for Explorer module
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class ExplorerController extends AbstractController {
 
     const MODULE_KEY = 'explorer';
@@ -13,6 +19,9 @@ class ExplorerController extends AbstractController {
         $this->view = new ExplorerView();
     }
 
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
@@ -30,6 +39,13 @@ class ExplorerController extends AbstractController {
         }
     }
 
+    /**
+     * Prepare readonly source code explore UI
+     * 
+     * @param string $lang
+     * @param string $category
+     * @param int    $pid
+     */
     public function exploreCode($lang, $category, $pid) {
         $programDetails = $this->getModel()->getSourceDetails($lang, $category, $pid);
         if (!empty($programDetails)) {
@@ -41,6 +57,12 @@ class ExplorerController extends AbstractController {
         }
     }
 
+    /**
+     * Prepare bean to be passed in ExplorerView
+     * 
+     * @param string $sourceCode
+     * @param string $programDetails
+     */
     private function prepareBean($sourceCode, $programDetails) {
         $array = array(
             'programDetails' => $programDetails,
@@ -50,7 +72,13 @@ class ExplorerController extends AbstractController {
         $this->setBean($array);
     }
 
-    private function getSourceCode($programDetails) {
+    /**
+     * Get source code of requested PID
+     * 
+     * @param array $programDetails
+     * @return string $fileContents
+     */
+    private function getSourceCode(array $programDetails) {
         $filePath = Configuration::get(Configuration::CODE_BASE_DIR);
         $filePath .= $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID].'/';
         $filePath .= $programDetails[ProgramDetails_DBTable::FK_CATEGORY_ID].'/';
@@ -59,18 +87,12 @@ class ExplorerController extends AbstractController {
         return $fileContents;
     }
 
-    private function getProcessedTemplate($programDetails, $sourceCode) {
-        $rawContents = Display::render(self::MODULE_KEY);
-        $this->smarty->assign("PROGRAM_DETAILS", $programDetails);
-        $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode($programDetails));
-        $this->smarty->assign("EDITOR_THEME", Utils::getCodeEditorTheme());
-        $this->smarty->assign("SOURCE_CODE", htmlentities($sourceCode));
-        $this->smarty->assign("SOURCE_STATS", $this->getSourceStats($sourceCode));
-        $this->smarty->assign("DELETE_REQ_KEY", self::DELETE_REQ_KEY);
-        $this->smarty->assign("DELETE_REQ_VAL", self::DELETE_REQ_VAL);
-        return $this->smarty->fetch('string:'.$rawContents);
-    }
-
+    /**
+     * Provides additional stats about given program
+     * 
+     * @param string $sourceCode
+     * @return array
+     */
     private function getSourceStats($sourceCode) {
         return array(
             'lineCount' => substr_count($sourceCode, PHP_EOL) + 1,
@@ -80,13 +102,25 @@ class ExplorerController extends AbstractController {
         );
     }
 
-    private function isDeleteRequest ($uriParams, $formParams) {
+    /**
+     * Checks if its a delete request for program
+     * 
+     * @param array $uriParams
+     * @param array $formParams
+     * @return boolean
+     */
+    private function isDeleteRequest (array $uriParams, array $formParams) {
         if ($formParams[self::DELETE_REQ_KEY] == self::DELETE_REQ_VAL) {
             return ($uriParams[Constants::INPUT_PARAM_CATE] === 'delete');
         }
         return false;
     }
 
+    /**
+     * Delete program from system for given PID
+     * 
+     * @param int $pid
+     */
     private function deleteSource($pid) {
         $isDeleted = false;
         $programController = new ProgramDetailsController();

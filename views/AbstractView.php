@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Base view class for all the modules
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package views
+ * @since Jun 11, 2014
+ */
 abstract class AbstractView extends Application {
 
     abstract public function display();

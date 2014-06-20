@@ -7,6 +7,11 @@
  */
 abstract class AbstractController extends Application {
 
+    /**
+     * Init method for all the controllers
+     * 
+     * @param Resource $resource
+     */
     abstract protected function run(Resource $resource);
 
     /**

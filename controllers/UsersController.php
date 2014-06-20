@@ -1,13 +1,27 @@
 <?php
-
+/**
+ * Controller class for users module
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class UsersController extends AbstractController {
 
     const MODULE_KEY = "users";
 
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
 
     }
 
+    /**
+     * Get list of all active users in system
+     * 
+     * @return boolean
+     */
     public function getUserList() {
         $userList = array();
         $query = "SELECT ".Users_DBTable::USER_ID.", ";

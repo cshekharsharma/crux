@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class UploadController extends AbstractController {
 
     const MODULE_KEY = "upload";
@@ -31,7 +36,12 @@ class UploadController extends AbstractController {
         }
     }
 
-    public function uploadFile($formParams) {
+    /**
+     * Upload file on system
+     * 
+     * @param array $formParams
+     */
+    public function uploadFile(array $formParams) {
         $category = $formParams['category_id'];
         $language = $formParams['language_id'];
         if (!empty($_FILES)) {
@@ -74,6 +84,13 @@ class UploadController extends AbstractController {
         }
     }
 
+    /**
+     * Check if directory exists.
+     * If not then create new
+     * 
+     * @param string $dirPath
+     * @return boolean
+     */
     private function checkAndCreateDir($dirPath) {
         if (!is_dir($dirPath)) {
             try {
@@ -87,6 +104,12 @@ class UploadController extends AbstractController {
         return true;
     }
 
+    /**
+     * Log error in main log file and redirect to home page
+     * 
+     * @param string $msg
+     * @param string $type
+     */
     private function logErrorAndRedirect($msg, $type) {
         Logger::getLogger()->LogFatal($msg);
 

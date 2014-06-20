@@ -28,13 +28,22 @@ class AuthController extends AbstractController {
         $this->view = new AuthView();
     }
 
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
         $formParams = RequestManager::getAllParams();
         $this->redirectAuthRequest($uriParams, $formParams);
     }
 
-    private function redirectAuthRequest ($uriParams, $formParams) {
+    /**
+     * Identifies inputs and accordingly routes request to various actions
+     * 
+     * @param array $uriParams
+     * @param array $formParams
+     */
+    private function redirectAuthRequest (array $uriParams, array $formParams) {
         $formKey = '';
         $authAction = $uriParams[Constants::INPUT_PARAM_ACTION];
         if (empty($authAction) || $authAction === Constants::AUTH_LOGIN_URI_KEY) {
@@ -61,12 +70,21 @@ class AuthController extends AbstractController {
         }
     }
 
+    /**
+     * Returns site identifier for session, which is used for authentication
+     * 
+     * @return string
+     */
     private static function getEncryptedSiteIdentifier() {
         return md5(self::$SESSION_SITE_IDENTIFIER);
     }
 
-    private function authenticate($formParams) {
-        $nextURL = '';
+    /**
+     * Authenticate user login request
+     * 
+     * @param array $formParams
+     */
+    private function authenticate(array $formParams) {
         $userDetail = $this->getModel()->getUserDetailsByName($formParams['username']);
         if (!empty($userDetail)) {
             if ($userDetail[Users_DBTable::IS_ACTIVE] == '1') {
@@ -74,7 +92,7 @@ class AuthController extends AbstractController {
                 $passwordHash = $this->getPasswordHash($formParams['password']);
                 if ($passwordInDB === $passwordHash) {
                     if ($this->createUserSession($userDetail, $formParams['remember'])) {
-                        Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_LOGIN, $nextURL);
+                        Response::sendResponse(Constants::SUCCESS_RESPONSE, Messages::SUCCESS_LOGIN);
                         Logger::getLogger()->LogInfo("Auth Success for userid: ".$formParams['username']);
                     }
                 } else {
@@ -95,7 +113,14 @@ class AuthController extends AbstractController {
         return hash("sha256", $password);
     }
 
-    private function createUserSession($userDetails, $shouldRememeber) {
+    /**
+     * Create session and put essential data in session
+     * 
+     * @param array $userDetails
+     * @param bool  $shouldRememeber
+     * @return bool
+     */
+    private function createUserSession(array $userDetails, $shouldRememeber) {
         if ($shouldRememeber) {
             Session::setCookieParams(self::SESSION_COOKIE_LIFETIME, '/');
         }
@@ -129,18 +154,6 @@ class AuthController extends AbstractController {
         }
 
         if ($redirect) {
-            RequestManager::redirect();
-        }
-    }
-
-    /**
-     * Display login form
-     */
-    private function displayLoginForm() {
-        if (!self::isLoggedIn()) {
-            $this->smarty->assign('LOGIN_ACTION_VALUE', self::LOGIN_ACTION_VALUE);
-            $this->smarty->display("string:".Display::render(self::AUTH_LOGIN_KEY));
-        } else {
             RequestManager::redirect();
         }
     }

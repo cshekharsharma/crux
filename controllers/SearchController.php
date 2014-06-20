@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 
+ * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @package controllers
+ * @since Jun 20, 2014
+ */
 class SearchController extends AbstractController {
 
     const MODULE_KEY = 'search';
@@ -15,6 +20,9 @@ class SearchController extends AbstractController {
         $this->view = new SearchView();
     }
 
+    /**
+     * @see AbstractController::run()
+     */
     public function run(Resource $resource) {
         $searchQuery = RequestManager::getParam(self::SEARCH_QUERY_PARAM);
         if (!empty($searchQuery)) {
@@ -31,6 +39,12 @@ class SearchController extends AbstractController {
         }
     }
 
+    /**
+     * Generic method for performing all search actions
+     * 
+     * @param string $searchStr
+     * @return Ambigous <boolean, mixed>
+     */
     private function search($searchStr) {
         $returnSet = array();
         $searchStr = trim($searchStr);
@@ -42,11 +56,23 @@ class SearchController extends AbstractController {
         return $sortedResults;
     }
 
+    /**
+     * Checks if its a tag based search request
+     * 
+     * @param string $searchString
+     * @return boolean
+     */
     private function isTagBasedSearch($searchString) {
         $searchParts = explode(":", $searchString);
         return (count($searchParts) > 1 && in_array(strtolower($searchParts[0]), self::$SEARCH_TAGS));
     }
 
+    /**
+     * Perform natural language search in database for given search query
+     * 
+     * @param string $searchStr
+     * @return array $searchResults
+     */
     private function performSimpleSearch($searchStr) {
         $keywords = explode(" ", $searchStr);
         $keywords = array_unique($keywords);
@@ -70,6 +96,13 @@ class SearchController extends AbstractController {
         return $sortedResults;
     }
 
+    /**
+     * Perform tag based search resutls for selected keywords, i.e. Users, 
+     * language, category
+     * 
+     * @param string $searchString
+     * @return boolean|Ambigous <multitype:, mixed>
+     */
     private function performTagBasedSearch($searchString) {
         $searchParts = explode(":", $searchString);
         if (count($searchParts) > 1 && in_array(strtolower($searchParts[0]), self::$SEARCH_TAGS)) {
@@ -85,7 +118,13 @@ class SearchController extends AbstractController {
         return $this->performSimpleSearch($searchString);
     }
 
-    private function getSortedSearchResults($resultSet) {
+    /**
+     * Sort all search results on the basis of their relevence score to search key
+     * 
+     * @param array $resultSet
+     * @return array
+     */
+    private function getSortedSearchResults(array $resultSet) {
         uasort($resultSet, function($a, $b) {
             if ($a['relevenceScore'] == $b['relevenceScore']) {
                 $aLength = strlen($a['title']) + strlen($a['description']);
@@ -100,7 +139,14 @@ class SearchController extends AbstractController {
         return $resultSet;
     }
 
-    private function formatSearchResults($results, $keywords) {
+    /**
+     * Provides returnable search result format
+     * 
+     * @param array $results
+     * @param array $keywords
+     * @return mixed
+     */
+    private function formatSearchResults(array $results, $keywords) {
         foreach ($results as $key => $row) {
             $titleCol = ProgramDetails_DBTable::TITLE;
             $descCol = ProgramDetails_DBTable::DESCRIPTION;
@@ -111,7 +157,14 @@ class SearchController extends AbstractController {
         return $results;
     }
 
-    private function highlightMatchingText($haystack, $keywords) {
+    /**
+     * Return highlighted search results
+     * 
+     * @param string $haystack
+     * @param array $keywords
+     * @return array
+     */
+    private function highlightMatchingText($haystack, array $keywords) {
         $pre = '<span class="search-highlight">';
         $post = '</span>';
         foreach ($keywords as $keyword) {
@@ -121,6 +174,13 @@ class SearchController extends AbstractController {
         return $haystack;
     }
 
+    /**
+     * Get tag based search results
+     * 
+     * @param unknown $tag
+     * @param unknown $searchString
+     * @return boolean
+     */
     private function getTagBasedSearchResult($tag, $searchString) {
         $methodName = 'get' . ucfirst($tag) . 'WiseMatchingDataset';
         if (method_exists($this->getModel(), $methodName)) {
@@ -129,6 +189,11 @@ class SearchController extends AbstractController {
         return false;
     }
 
+    /**
+     * Get autocomplete search suggestions for search box
+     * 
+     * @return string
+     */
     public function getSearchSuggestions() {
         $searchSuggestions = array();
         $userList = ResourceProvider::getControllerByResourceKey(UsersController::MODULE_KEY)->getUserList();

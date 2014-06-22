@@ -10,14 +10,19 @@ body {
 }
 
 .main-logo-text a {
-	margin-left: 15px;
+	margin-left: 35px;
 	vertical-align: middle;
 	color: #F9F9F9;
 	font-weight: bold;
 	font-family: "courier", "Trebuchet MS", Verdana, Arial, Helvetica,
 		sans-serif;
-	font-size: 28px;
+	font-size: 30px;
 	text-decoration: none;
+}
+
+.main-logo-img {
+	height:40px;
+	width:19px;
 }
 
 .side-main-link {

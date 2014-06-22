@@ -1,3 +1,9 @@
+/**
+ * Generic javascript file for all modules
+ * 
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
+ */
+
 APP_CONSTANTS = {
     SUCCESS_CODE : 'success',
     FAILURE_CODE : 'error',
@@ -9,7 +15,8 @@ APP_CONSTANTS = {
 var popupFlags = {
     chpwd : 0,
     userPref : 0,
-    execCode : 0
+    execCode : 0,
+    about : 0
 };
 
 var errorObject = {
@@ -143,6 +150,3 @@ function getLoadingPopup() {
     attachPopupEvents($(APP_CONSTANTS.cssSelectors.popupBg)[0], container);
 }
 
-function removeLoadingPopup() {
-
-}

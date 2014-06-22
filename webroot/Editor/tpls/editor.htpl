@@ -1,6 +1,6 @@
 {include file="webroot/Index/tpls/header.htpl"}
   <head>
-    <title>Editor :: Code Me</title>
+    <title>Code Editor</title>
     <link rel="stylesheet" href="/webroot/Editor/css/editor.css" type="text/css">
     <script type="text/javascript" src="/library/ace/noconflict-min/ace.js"></script> 
   </head>

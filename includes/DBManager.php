@@ -7,11 +7,17 @@
  * @package includes
  * @uses PDO
  */
-class DBManager {
+final class DBManager {
 
-    private function __construct() {}
+    private function __construct() {
+    }
 
-    private static $instance;
+    /**
+     * Instance of PDO
+     *
+     * @var PDO
+     */
+    private static $instance = null;
 
     /**
      * Gives PDO database instance. Singleton implementation
@@ -37,19 +43,19 @@ class DBManager {
         }
         return self::$instance;
     }
-    
+
     /**
      * Database connection string provider
-     * 
+     *
      * @return string
      */
     private static function getMysqlDSN() {
         $DSN = 'mysql:host='.
-        Configuration::get(Configuration::DB_HOST) . ';dbname=' .
-        Configuration::get(Configuration::DB_NAME);
+            Configuration::get(Configuration::DB_HOST) . ';dbname=' .
+            Configuration::get(Configuration::DB_NAME);
         return $DSN;
     }
-    
+
 
     /**
      * Executes given query using PDO prepared statements.
@@ -58,7 +64,7 @@ class DBManager {
      * @param string $query
      * @param array|false $bindParams
      * @param boolean $shouldReturn
-     * @return boolean
+     * @return bool|array
      */
     public static function executeQuery($query, $bindParams = false, $shouldReturn = false) {
         try {
@@ -96,6 +102,42 @@ class DBManager {
     }
 
     /**
+     * Wrapper method for DB Select operation
+     *
+     * @param string $table
+     * @param array $columns
+     * @param array $bindParams
+     * @param array $where [Optional]
+     * @param string $whereOpr [Optional]
+     * @return bool|array
+     */
+    public static function select($table, array $columns, array $where = array(),
+        array $bindParams, array $options = array()) {
+
+        $set = array();
+        if (empty($columns)) {
+            $columns = ' * ';
+        } else{
+            $columns = implode(",", $columns);
+        }
+        $query = 'SELECT '.$columns. ' FROM ' . $table . ' ';
+        if (!empty($where)) {
+            $query .= ' WHERE ';
+            foreach ($where as $name => $value) {
+                $set[] = "$name = '$value'";
+            }
+            $whereOpr = (!empty($options['whereOpr'])) ? $options['whereOpr'] : 'AND';
+            $query .= implode(' '.strtoupper($whereOpr).' ', $set);
+        }
+
+        if (!empty($options['groupBy'])) $query .= ' ORDER BY '.$options['groupBy'];
+        if (!empty($options['orderBy'])) $query .= ' ORDER BY '.$options['orderBy'];
+        if (!empty($options['limit'])) $query .= ' LIMIT '.$$options['limit'];
+
+        return self::executeQuery($query, $bindParams, true);
+    }
+
+    /**
      * Wrapper method for DB update operation
      *
      * @param string $table
@@ -120,7 +162,7 @@ class DBManager {
         }
         return DBManager::executeQuery($query, $bind);
     }
-    
+
     /**
      * Wrapper method for DB insert operation
      *
@@ -132,7 +174,7 @@ class DBManager {
     public static function insert($table, array $columns, array $bind = array()) {
         $keyStr = implode(',', array_keys($columns));
         $valStr = implode("','", $columns);
-        $query = "INSERT INTO `$table` ($keyStr) VALUE($valStr);";
+        $query = "INSERT INTO `$table` ($keyStr) VALUE('$valStr');";
         return DBManager::executeQuery($query, $bind);
     }
 }

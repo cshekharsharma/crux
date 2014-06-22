@@ -1,8 +1,7 @@
-{include file="webroot/Index/tpls/headerBeforeLogin.htpl"}<!DOCTYPE html>
+{include file="webroot/Index/tpls/headerBeforeLogin.htpl"}
 <head>
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="/webroot/Auth/css/auth.css">
-  <script type="text/javascript" src="/webroot/Auth/js/auth.js"></script>
 </head>
     <div id="wrapper1">
         <div class="form-header-span">Please verify your identity</div>
@@ -13,22 +12,23 @@
                 
             </div><br>
                  <div class="fieldset">   
-                    <div>
+                    <div class="input-holder">
                         <input type="text" name="username" id="username" placeholder="User Name"/>
                     </div>
 
-                    <div>
+                    <div class="input-holder">
                         <input type="password" name="password" id="password" placeholder="Password"/>
                     </div>
                     <span style="margin-right:40px;">
-                        <input type="checkbox" name="remember" id="remember" value="remember" checked>
-                        <label for="remember">Remember me</label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember" id="remember" value="remember" checked>
+                            Remember me
+                        </label>
                     </span>
-                    <input type="button" class="btns" value="Login" onclick="doLogin('login-form');">
+                    <input id="do-login" type="button" class="css-button" value="  Sign In  ">
                 </div> 
             </div>   
         </form>
     </div>
     {include file="webroot/Index/tpls/footer.htpl"}
-</body>
-</html>
+<script type="text/javascript" src="/webroot/Auth/js/auth.js"></script>

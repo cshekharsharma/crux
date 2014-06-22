@@ -1,6 +1,9 @@
 APP_CONSTANTS = {
     SUCCESS_CODE : 'success',
-    FAILURE_CODE : 'error'
+    FAILURE_CODE : 'error',
+    cssSelectors : {
+        popupBg : '.popup-opacity-background'
+    }
 };
 
 var popupFlags = {
@@ -78,16 +81,20 @@ function attachPopupEvents(bg, container, flagKey, callback) {
         popupFlags[flagKey] = 1;
     }
 
-    addEvent(window, 'keydown', function(e) {
-        if (e.keyCode === 27 && popupFlags[flagKey] === 1) {
-            e.preventDefault();
-            $(bg).fadeOut("slow");
-            $(container).fadeOut("slow");
-            popupFlags[flagKey] = 0;
-        }
-    });
+    if (typeof flagKey != 'undefined') {
+        addEvent(window, 'keydown', function(e) {
+            if (e.keyCode === 27 && popupFlags[flagKey] === 1) {
+                e.preventDefault();
+                $(bg).fadeOut("slow");
+                $(container).fadeOut("slow");
+                popupFlags[flagKey] = 0;
+            }
+        });
+    }
 
-    callback();
+    if (typeof callback != 'undefined') {
+        callback();
+    }
 }
 
 // Close Them
@@ -109,21 +116,33 @@ function getAccountDropdown() {
 
 // Initialize search suggestions
 var searchSuggestions = [];
-searchSuggestions = JSON.parse(searchDataSource);
-searchSuggestions.sort();
-$("#searchbox").autocomplete({
-    source : searchSuggestions,
-    appendTo : '#jquery-autocomplete-results',
-    position : {
-        my : 'right top',
-        at : 'center'
-    },
-    select : function(event, ui) {
-        $('.searchform').submit();
-    }
-});
+if (typeof searchDataSource != 'undefined') {
+    searchSuggestions = JSON.parse(searchDataSource);
+    searchSuggestions.sort();
+    $("#searchbox").autocomplete({
+        source : searchSuggestions,
+        appendTo : '#jquery-autocomplete-results',
+        position : {
+            my : 'right top',
+            at : 'center'
+        },
+        select : function(event, ui) {
+            $('.searchform').submit();
+        }
+    });
+}
 
 function removeClass(el, className) {
     className = " " + className.trim(); // must keep a space before class name
     el.className = el.className.replace(className, "");
+}
+
+function getLoadingPopup() {
+    var container = document.createElement('span');
+    container.innerHTML = 'Loading...';
+    attachPopupEvents($(APP_CONSTANTS.cssSelectors.popupBg)[0], container);
+}
+
+function removeLoadingPopup() {
+
 }

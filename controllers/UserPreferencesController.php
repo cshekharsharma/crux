@@ -34,11 +34,19 @@ class UserPreferencesController extends AbstractController {
         $preferenceArr = array();
         $userID = Utils::getLoggedInUserId();
         $preferenceArr[PreferenceKeys::CODE_EDITOR_THEME] = $formParams[PreferenceKeys::CODE_EDITOR_THEME];
+        $preferenceArr[PreferenceKeys::CODE_EDITOR_SHOW_INVISIBLE] = $formParams[PreferenceKeys::CODE_EDITOR_SHOW_INVISIBLE];
         $content = $this->encodeContents($preferenceArr);
         $this->flushAll($userID);
-        $query = 'INSERT INTO '.UserPreferences_DBTable::DB_TABLE_NAME;
-        $query .= ' VALUES("", ?, ?, NOW(), NOW(), 0);';
-        if (DBManager::executeQuery($query, array($userID, $content))) {
+        $insertArr = array(
+            UserPreferences_DBTable::RECORD_ID   => '',
+            UserPreferences_DBTable::USER_ID     => '?',
+            UserPreferences_DBTable::CONTENTS    => '?',
+            UserPreferences_DBTable::CREATED_ON  => Utils::getCurrentDatetime(),
+            UserPreferences_DBTable::MODIFIED_ON => Utils::getCurrentDatetime(),
+            UserPreferences_DBTable::IS_DELETED  => '0'
+        );
+        $tableName = UserPreferences_DBTable::DB_TABLE_NAME;
+        if (DBManager::insert($tableName, $insertArr, array($userID, $content))) {
             Session::set(Session::SESS_USER_PREF_KEY, $preferenceArr);
             return true;
         }

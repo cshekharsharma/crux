@@ -6,6 +6,7 @@ var EDITOR_CONSTANTS = {
 var editor = ace.edit("code-editor");
 editor.setTheme("ace/theme/" + defaultEditorTheme);
 editor.getSession().setMode("ace/mode/" + defaultEditorMode);
+editor.setShowInvisibles(true);
 EDITOR_CONSTANTS.editor = editor;
 
 //Enabling ctl+S to be used for Save action

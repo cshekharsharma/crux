@@ -1,36 +1,44 @@
 <?php
 /**
  * Controller class for users module
- * 
+ *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since Jun 20, 2014
  */
 class UsersController extends AbstractController {
 
-    const MODULE_KEY = "users";
+    const MODULE_KEY = 'users';
 
     /**
      * @see AbstractController::run()
      */
     public function run(Resource $resource) {
-
+        return null;
     }
 
-    /**
-     * Get list of all active users in system
-     * 
-     * @return boolean
-     */
+   /**
+    * Get list of all active users in system
+    * 
+    * @return array|bool
+    */
     public function getUserList() {
         $userList = array();
-        $query = "SELECT ".Users_DBTable::USER_ID.", ";
-        $query .= Users_DBTable::USER_NAME." FROM ";
-        $query .= Users_DBTable::DB_TABLE_NAME . " WHERE ";
-        $query .= Users_DBTable::IS_DELETED . "= 0 ORDER BY ";
-        $query .= Users_DBTable::USER_NAME;
-        $resultSet = DBManager::executeQuery($query, array(), true);
-        return $resultSet;
+        $table = Users_DBTable::DB_TABLE_NAME;
+        $cols = array(
+            Users_DBTable::USER_ID,
+            Users_DBTable::USER_NAME
+        );
+
+        $where = array(
+            Users_DBTable::IS_DELETED => 0
+        );
+
+        $options = array(
+            'orderBy' => Users_DBTable::USER_NAME
+        );
+
+        return DBManager::select($table, $cols, $where, array(), $options);
     }
 
     /**

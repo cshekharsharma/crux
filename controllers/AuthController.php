@@ -39,7 +39,7 @@ class AuthController extends AbstractController {
 
     /**
      * Identifies inputs and accordingly routes request to various actions
-     * 
+     *
      * @param array $uriParams
      * @param array $formParams
      */
@@ -54,7 +54,11 @@ class AuthController extends AbstractController {
             if (!self::isLoggedIn() && $isValidKey && Utils::isAjaxRequest()) {
                 $this->authenticate($formParams);
             } else {
-                $this->getView()->setViewName(self::AUTH_LOGIN_KEY)->display();
+                if (Utils::isAjaxRequest()) {
+                    Response::sendResponse(Constants::ERROR_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
+                } else {
+                    $this->getView()->setViewName(self::AUTH_LOGIN_KEY)->display();
+                }
             }
         } elseif ($authAction === Constants::AUTH_CHANGE_PASSWORD_URI_KEY) {
             $formKey = $formParams[self::CHPWD_ACTION_NAME];
@@ -66,13 +70,18 @@ class AuthController extends AbstractController {
         } elseif (self::isLoggedIn() && $authAction === Constants::AUTH_LOGOUT_URI_KEY) {
             $this->logout();
         } else {
-            RequestManager::redirect(Constants::AUTH_URI_KEY);
+            Logger::getLogger()->LogFatal('CUSTOM MESSAGE!!!!');
+            if (Utils::isAjaxRequest()) {
+                Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
+            } else {
+                RequestManager::redirect(Constants::AUTH_URI_KEY);
+            }
         }
     }
 
     /**
      * Returns site identifier for session, which is used for authentication
-     * 
+     *
      * @return string
      */
     private static function getEncryptedSiteIdentifier() {
@@ -81,7 +90,7 @@ class AuthController extends AbstractController {
 
     /**
      * Authenticate user login request
-     * 
+     *
      * @param array $formParams
      */
     private function authenticate(array $formParams) {
@@ -115,7 +124,7 @@ class AuthController extends AbstractController {
 
     /**
      * Create session and put essential data in session
-     * 
+     *
      * @param array $userDetails
      * @param bool  $shouldRememeber
      * @return bool

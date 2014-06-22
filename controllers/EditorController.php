@@ -3,7 +3,7 @@
  * Controller class for Editor module
  * 
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
- * @package 
+ * @package controllers
  * @since Jun 20, 2014
  */
 class EditorController extends AbstractController {

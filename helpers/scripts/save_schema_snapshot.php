@@ -29,9 +29,9 @@ if (Utils::isRunningFromCLI()) {
     $dataDumpCmd = $dumpCommand.' '.implode(' ', $dataNschema).' > '.$dataDumpPath;
     shell_exec($dataDumpCmd);
 
-    $contents = file_get_contents($schemaDumpPath);
+    $contents = @file_get_contents($schemaDumpPath);
     $contents .= '';
-    $contents .= file_get_contents($dataDumpPath);
+    $contents .= @file_get_contents($dataDumpPath);
     if (!empty($contents)) {
         unlink($schemaDumpPath);
         unlink($dataDumpPath);

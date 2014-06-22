@@ -30,7 +30,7 @@ class Session {
         if (!empty($_SESSION[$key])) {
             $sessionValue = $_SESSION[$key];
         } else {
-            Logger::getLogger()->LogWarn("Attempting to get invalid item from Session with key : ".$key);
+            Logger::getLogger()->LogDebug("Attempting to get invalid item from Session with key : ".$key);
         }
         return $sessionValue;
     }

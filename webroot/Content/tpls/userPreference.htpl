@@ -8,8 +8,8 @@
              <div class="fieldset">
                 <table>
                     <tr>
-                        <td>Editor Theme</td>
-                        <td>
+                        <td class="td-1">Editor Theme</td>
+                        <td class="td-2">
                             <select name="code_editor_theme" id="code_editor_theme"> 
                                 {foreach from=$EDITOR_THEME_LIST key=themeId item=themeName}
                                     <option value="{$themeId}">{$themeName}</option>
@@ -18,10 +18,11 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><br></td>
-                        <td><br></td>
+                        <td class="td-1">Show invisibles</td>
+                        <td class="td-2"><input type="checkbox" id="show_invisibles" name="show_invisibles"></td>
                     </tr>
-                </table>   
+                </table>
+                <br><br> 
                 <input type="button" class="btns" value="Submit" onclick="saveUserPreference('userpref-form');">
             </div> 
         </div>   

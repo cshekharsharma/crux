@@ -34,7 +34,7 @@ class EditorView extends AbstractView {
             $category = $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID];
             $language = $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID];
             $srcFile = Configuration::get(Configuration::CODE_BASE_DIR).$language.'/'.$category.'/'.$storedFileName;
-            $srcCode = file_get_contents($srcFile);
+            $srcCode = @file_get_contents($srcFile);
             $this->smarty->assign("SELECTED_CATEGORY", $programInfo[ProgramDetails_DBTable::FK_CATEGORY_ID]);
             $this->smarty->assign("SELECTED_LANGUAGE", $programInfo[ProgramDetails_DBTable::FK_LANGUAGE_ID]);
             $this->smarty->assign("SELECTED_LEVEL", $programInfo[ProgramDetails_DBTable::LEVEL]);

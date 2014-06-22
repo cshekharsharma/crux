@@ -137,6 +137,10 @@ function resetErrors(credential) {
     }
 }
 
+$('#do-login').click(function() {
+    doLogin(AUTH_CONSTANTS.loginFormId);
+});
+
 $(cssSelectors.chpwdLink).click(
         function() {
             attachPopupEvents(cssSelectors.popupBg,

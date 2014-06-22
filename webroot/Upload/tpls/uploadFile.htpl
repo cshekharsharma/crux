@@ -45,7 +45,7 @@
                     <div>
                         <textarea name="program_description" id="program_description" placeholder="Write description here..."></textarea>
                     </div>    
-                    <input type="button" class="btns" value="Upload" onclick="upload('file-upload-form')">&nbsp;
+                    <input type="button" class="css-button" value="   Upload   " onclick="upload('file-upload-form')">&nbsp;
                     <input type="checkbox" value="is_verified" name="is_verified" id="is_verified" ><label for="is_verified">Is Verified</label>
                 </div> 
             </div>   

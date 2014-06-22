@@ -54,5 +54,5 @@
 <div id="userpref-container" class="popupDiv"></div>
 
 <script type="text/javascript" src="/webroot/Index/js/header.js"></script>
-<script type="text/javascript" async src="/webroot/Auth/js/auth.js"></script>
+<script type="text/javascript" src="/webroot/Auth/js/auth.js"></script>
 <script type="text/javascript" async src="/webroot/UserPreferences/js/userpref.js"></script>

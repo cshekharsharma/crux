@@ -3,6 +3,7 @@ var EDITOR_CONSTANTS = {
     msgContainerId : 'msg-container'
 };
 
+// show invisibles setting for editor
 if (typeof showInvisibleChars != 'undefined') {
     if (false.toString() === showInvisibleChars) {
         showInvisibleChars = false;

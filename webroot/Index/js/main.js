@@ -7,6 +7,7 @@
 APP_CONSTANTS = {
     SUCCESS_CODE : 'success',
     FAILURE_CODE : 'error',
+    MAX_SEARCH_SUGGEST : 15,
     cssSelectors : {
         popupBg : '.popup-opacity-background'
     }
@@ -127,7 +128,7 @@ if (typeof searchDataSource != 'undefined') {
     searchSuggestions = JSON.parse(searchDataSource);
     searchSuggestions.sort();
     $("#searchbox").autocomplete({
-        source : searchSuggestions,
+        source : searchSuggestions.slice(0, APP_CONSTANTS.MAX_SEARCH_SUGGEST),
         appendTo : '#jquery-autocomplete-results',
         position : {
             my : 'right top',

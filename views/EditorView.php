@@ -20,6 +20,7 @@ class EditorView extends AbstractView {
     private function displayCodeEditor($pid = false) {
         $categoryList = (new CategoryController())->getCategoryList();
         $languageList = (new LanguageController())->getLanguageList();
+        $showInvisibles = UserPreferencesController::get(PreferenceKeys::CODE_EDITOR_SHOW_INVISIBLE);
         $this->smarty->assign("CATEGORY_LIST", $categoryList);
         $this->smarty->assign("LANGUAGE_LIST", $languageList);
         $this->smarty->assign("LEVEL_LIST", array('Easy', 'Average', 'Difficult'));
@@ -27,6 +28,7 @@ class EditorView extends AbstractView {
         $this->smarty->assign("EDIT_ACTION_VALUE", EditorController::EDIT_ACTION_VALUE);
         $this->smarty->assign("EDITOR_THEME", Utils::getCodeEditorTheme());
         $this->smarty->assign("EDITOR_MODE", Utils::getCodeEditorMode());
+        $this->smarty->assign("SHOW_INVISIBLES", $showInvisibles);
         if (!empty($pid)) {
             $programController = new ProgramDetailsController();
             $programInfo = $programController->getProgramListById($pid);

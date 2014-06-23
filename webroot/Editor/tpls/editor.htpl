@@ -112,6 +112,7 @@
     <script>
         var defaultEditorTheme = '{$EDITOR_THEME.id}';
         var defaultEditorMode = '{$EDITOR_MODE}';
+        var showInvisibleChars = '{$SHOW_INVISIBLES}';
     </script>
     <script type="text/javascript" src="/webroot/Editor/js/editor.js"></script>
     {include file="webroot/Index/tpls/footer.htpl"}

@@ -21,8 +21,8 @@ body {
 }
 
 .main-logo-img {
-	height:40px;
-	width:19px;
+	height: 40px;
+	width: 19px;
 }
 
 .side-main-link {
@@ -164,6 +164,7 @@ body {
 	top: 48px;
 	left: 262px;
 	width: 50%;
+	max-height: 200px !important;
 }
 
 #jquery-autocomplete-results ul {
@@ -284,7 +285,7 @@ input,textarea {
 	color: #333;
 	font-size: 14px;
 	line-height: 1.2em;
-/* 	margin-bottom: 15px; */
+	/* 	margin-bottom: 15px; */
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
@@ -317,7 +318,8 @@ input[type="text"]:focus,input[type="password"]:focus {
 }
 
 .btns {
-	background: #3276b1; border: none;
+	background: #3276b1;
+	border: none;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 	text-transform: uppercase;
 	color: #eee;
@@ -403,5 +405,5 @@ input[type="text"]:focus,input[type="password"]:focus {
 }
 
 .input-holder {
-	margin:10px;
+	margin: 10px;
 }

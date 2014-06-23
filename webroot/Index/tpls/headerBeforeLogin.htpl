@@ -9,7 +9,7 @@
     <div class="inner-header-div">
         <form name="searchform" class="searchform" action="/search" method="get">
             <span class="header-left-div">
-                <span class="main-logo-text"><a href="/">{$APP_NAME}</a></span>
+                <span class="main-logo-text"><a href="/">&lt; {$APP_NAME} /&gt;</a></span>
             </span>
         </form>
     </div>

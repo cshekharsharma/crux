@@ -3,10 +3,20 @@ var EDITOR_CONSTANTS = {
     msgContainerId : 'msg-container'
 };
 
+if (typeof showInvisibleChars != 'undefined') {
+    if (false.toString() === showInvisibleChars) {
+        showInvisibleChars = false;
+    } else { 
+        showInvisibleChars = true;
+    }
+} else {
+    showInvisibleChars = false;
+}
+
 var editor = ace.edit("code-editor");
 editor.setTheme("ace/theme/" + defaultEditorTheme);
 editor.getSession().setMode("ace/mode/" + defaultEditorMode);
-editor.setShowInvisibles(true);
+editor.setShowInvisibles(showInvisibleChars);
 EDITOR_CONSTANTS.editor = editor;
 
 //Enabling ctl+S to be used for Save action

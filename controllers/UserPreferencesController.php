@@ -39,14 +39,14 @@ class UserPreferencesController extends AbstractController {
         $this->flushAll($userID);
         $insertArr = array(
             UserPreferences_DBTable::RECORD_ID   => '',
-            UserPreferences_DBTable::USER_ID     => '?',
-            UserPreferences_DBTable::CONTENTS    => '?',
+            UserPreferences_DBTable::USER_ID     => $userID,
+            UserPreferences_DBTable::CONTENTS    => $content,
             UserPreferences_DBTable::CREATED_ON  => Utils::getCurrentDatetime(),
             UserPreferences_DBTable::MODIFIED_ON => Utils::getCurrentDatetime(),
             UserPreferences_DBTable::IS_DELETED  => '0'
         );
         $tableName = UserPreferences_DBTable::DB_TABLE_NAME;
-        if (DBManager::insert($tableName, $insertArr, array($userID, $content))) {
+        if (DBManager::insert($tableName, $insertArr, array())) {
             Session::set(Session::SESS_USER_PREF_KEY, $preferenceArr);
             return true;
         }
@@ -56,11 +56,19 @@ class UserPreferencesController extends AbstractController {
     /**
      * Get user preference value for given key
      * 
-     * @param unknown $key
-     * @return Ambigous <>|NULL
+     * @param string $key
+     * @return string|NULL
      */
     public static function get($key) {
+        $userId = Session::get(Session::SESS_USER_DETAILS)[Users_DBTable::USER_ID];
         $allPreferences = Session::get(Session::SESS_USER_PREF_KEY);
+        if (!empty($allPreferences)) {
+            $userPrefRow = (new UserPreferencesController())->getUserPreferenceFromDB($userId);
+            $allPreferences = $userPrefRow[UserPreferences_DBTable::CONTENTS];
+            $allPreferences = (new UserPreferencesController())->decodeContents($allPreferences);
+            Session::set(Session::SESS_USER_PREF_KEY, $allPreferences);
+        }
+        Logger::getLogger()->LogFatal(print_r($allPreferences, true));
         if (!empty($allPreferences[$key])) {
             return $allPreferences[$key];
         } else {
@@ -111,7 +119,7 @@ class UserPreferencesController extends AbstractController {
      * @param array $contentArray
      * @return string
      */
-    private function encodeContents(array $contentArray) {
+    public function encodeContents(array $contentArray) {
         return base64_encode(json_encode($contentArray));
     }
     
@@ -121,7 +129,7 @@ class UserPreferencesController extends AbstractController {
      * @param string $content
      * @return array
      */
-    private function decodeContents($content) {
+    public function decodeContents($content) {
         return json_decode(base64_decode($content), true);
     }
 }

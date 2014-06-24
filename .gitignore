@@ -4,4 +4,4 @@ data/logs/*
 .settings
 .buildpath
 .project
-data/test_codes/
+data/test_codes

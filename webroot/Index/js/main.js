@@ -135,6 +135,7 @@ if (typeof searchDataSource != 'undefined') {
             at : 'center'
         },
         select : function(event, ui) {
+            $('#searchbox').val(ui.item.value);
             $('.searchform').submit();
         }
     });

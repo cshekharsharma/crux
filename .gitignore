@@ -1,6 +1,7 @@
-/cache/template_c/*
-/data/codes/*
-/data/logs/*
+cache/template_c/*
+data/codes/*
+data/logs/*
 .settings
 .buildpath
 .project
+data/test_codes/

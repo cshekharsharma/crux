@@ -70,7 +70,6 @@ class AuthController extends AbstractController {
         } elseif (self::isLoggedIn() && $authAction === Constants::AUTH_LOGOUT_URI_KEY) {
             $this->logout();
         } else {
-            Logger::getLogger()->LogFatal('CUSTOM MESSAGE!!!!');
             if (Utils::isAjaxRequest()) {
                 Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
             } else {

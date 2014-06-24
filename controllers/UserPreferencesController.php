@@ -68,7 +68,6 @@ class UserPreferencesController extends AbstractController {
             $allPreferences = (new UserPreferencesController())->decodeContents($allPreferences);
             Session::set(Session::SESS_USER_PREF_KEY, $allPreferences);
         }
-        Logger::getLogger()->LogFatal(print_r($allPreferences, true));
         if (!empty($allPreferences[$key])) {
             return $allPreferences[$key];
         } else {

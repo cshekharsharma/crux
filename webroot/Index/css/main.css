@@ -407,3 +407,9 @@ input[type="text"]:focus,input[type="password"]:focus {
 .input-holder {
 	margin: 10px;
 }
+
+.hidden-tooltip {
+	background: #FFF;
+	padding:8px;
+	border:1px solid 
+}

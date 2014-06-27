@@ -91,7 +91,7 @@ function changePassword(formId) {
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authChangePwdPath);
-        AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+        AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     }
 }
@@ -162,6 +162,6 @@ function getChangePasswordUI() {
         }
     };
     AJAX.open("POST", AUTH_CONSTANTS.chpwdContentPath);
-    AJAX.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+    AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
     AJAX.send(formData);
 }

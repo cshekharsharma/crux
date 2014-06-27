@@ -1,12 +1,12 @@
 <div class="footer-div">
-    &copy; 2014 v{$APP_VERSION} | <a class="about-link" href="#">About</a>
+    &copy; 2014 v{$APP_VERSION} | <a class="about-link" href="#"
+        title="">About</a>
 </div>
-<div id="aboutpopup" class="popupDiv">Hello</div>
-<script>
-    $('.about-link').click(
-            function() {
-                console.log(APP_CONSTANTS.cssSelectors.popupBg);
-                attachPopupEvents(APP_CONSTANTS.cssSelectors.popupBg,
-                        '#aboutpopup', popupFlags.about);
-            });
+<!--  <div class='hidden-tooltip footer-tooltip'>Code management tool for programmers<br>
+    See: http://github.com/cshekharsharma/crux
+</div> -->
+<script type="text/javascript">
+<!--
+    
+//-->
 </script>

@@ -55,7 +55,7 @@ class AuthController extends AbstractController {
                 $this->authenticate($formParams);
             } else {
                 if (Utils::isAjaxRequest()) {
-                    Response::sendResponse(Constants::ERROR_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
+                    Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
                 } else {
                     $this->getView()->setViewName(self::AUTH_LOGIN_KEY)->display();
                 }

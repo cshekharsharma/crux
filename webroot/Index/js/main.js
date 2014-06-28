@@ -9,8 +9,10 @@ APP_CONSTANTS = {
     FAILURE_CODE : 'error',
     MAX_SEARCH_SUGGEST : 15,
     cssSelectors : {
-        popupBg : '.popup-opacity-background'
-    }
+        popupBg : '.popup-opacity-background',
+        accountDD : '.account-dropdown',
+        AboutBlock : '#about-me-block'
+     }
 };
 
 var popupFlags = {
@@ -46,7 +48,7 @@ function addEvent(element, event, fn) {
 addEvent(window, 'keydown', function(e) {
     if (e.ctrlKey && e.keyCode === 70) {
         e.preventDefault();
-        document.getElementById('searchbox').focus();
+        $('#searchbox').focus();
     }
 });
 
@@ -54,10 +56,17 @@ addEvent(window, 'keydown', function(e) {
     if (e.keyCode === 27) {
         e.preventDefault();
         if (!$('.account-dropdown').is(':hidden')) {
-            $('.account-dropdown').slideToggle();
+            $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
+            $('.account-dropdown').toggle();
         }
     }
 });
+
+$('#username-link').click(function(){
+    var selector = APP_CONSTANTS.cssSelectors.accountDD;
+    getPartialPopup(selector); 
+});
+
 
 AJAX = getAjaxConnection();
 
@@ -82,7 +91,8 @@ function attachPopupEvents(bg, container, flagKey, callback) {
     // Pop up the div and Bg
     if (popupFlags[flagKey] == 0) {
         $(bg).css({
-            "opacity" : "0.7"
+            "opacity" : "0.7",
+            "z-index" : "107"
         });
         $(bg).fadeIn("slow");
         $(container).fadeIn("slow");
@@ -93,8 +103,8 @@ function attachPopupEvents(bg, container, flagKey, callback) {
         addEvent(window, 'keydown', function(e) {
             if (e.keyCode === 27 && popupFlags[flagKey] === 1) {
                 e.preventDefault();
+                $(container).fadeOut("fast");
                 $(bg).fadeOut("slow");
-                $(container).fadeOut("slow");
                 popupFlags[flagKey] = 0;
             }
         });
@@ -118,8 +128,14 @@ function closePopup(bg, container) {
     }
 }
 
-function getAccountDropdown() {
-    $('.account-dropdown').slideToggle();
+function getPartialPopup(visibleBlock) {
+    $(APP_CONSTANTS.cssSelectors.popupBg).css({
+        'opacity' : '0.7',
+        'z-index' : '105'
+    });
+    $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
+    $(visibleBlock).zIndex(106);
+    $(visibleBlock).slideToggle();
 }
 
 // Initialize search suggestions
@@ -151,4 +167,3 @@ function getLoadingPopup() {
     container.innerHTML = 'Loading...';
     attachPopupEvents($(APP_CONSTANTS.cssSelectors.popupBg)[0], container);
 }
-

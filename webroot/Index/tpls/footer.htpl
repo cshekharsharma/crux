@@ -1,12 +1,29 @@
 <div class="footer-div">
     &copy; 2014 v{$APP_VERSION} | <a class="about-link" href="#"
-        title="">About</a>
+        title=""
+    >About</a>
 </div>
-<!--  <div class='hidden-tooltip footer-tooltip'>Code management tool for programmers<br>
-    See: http://github.com/cshekharsharma/crux
-</div> -->
-<script type="text/javascript">
-<!--
+<div id="about-me-block" class="hidden-elems">
+    <i><b>Crux</b></i> is a code snippet management tool with well featured source code editor,
+    which supports all major languages. You can write new snippets, manage, search and filter old snippets.<br>
+    <br>
+    Crux is free software, <a href="http://github.com/cshekharsharma/crux">See source code here.</a><br>
+    Please contribute if you find it worth.<br>
+    Chandra Shekhar <a href="mailto:shekharsharma705@gmail.com">&lt;shekharsharma705@gmail.com&gt</a>;
+</div>
+<script>
+    $('.about-link').click(function() {
+        var selector = '#about-me-block';
+        getPartialPopup(selector);
+    });
     
-//-->
+    addEvent(window, 'keydown', function(e) {
+        if (e.keyCode === 27) {
+            e.preventDefault();
+            if (!$('#about-me-block').is(':hidden')) {
+                $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
+                $('#about-me-block').toggle();
+            }
+        }
+    });
 </script>

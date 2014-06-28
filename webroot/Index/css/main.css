@@ -1,5 +1,10 @@
 @CHARSET "UTF-8";
 
+* {
+	outline: none !important;
+}
+
+
 body {
 	font-size: 11px;
 	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
@@ -7,6 +12,7 @@ body {
 	margin: 0px;
 	background: #FFF !important;
 	margin-bottom: 25px;
+	color:#222 !important;
 }
 
 .main-logo-text a {
@@ -169,6 +175,13 @@ body {
 
 #jquery-autocomplete-results ul {
 	width: 100%;
+}
+
+#jquery-autocomplete-results ul .ui-state-hover {
+	background: #3276b1 !important;
+	color:white;
+	border:0px;
+    border-radius: 0px;	
 }
 
 .popup-opacity-background {
@@ -408,8 +421,17 @@ input[type="text"]:focus,input[type="password"]:focus {
 	margin: 10px;
 }
 
-.hidden-tooltip {
-	background: #FFF;
-	padding:8px;
-	border:1px solid 
+.hidden-elems {
+	display:none; 
+}
+
+#about-me-block {
+    position: absolute;
+    left:400px;
+    right: 400px;
+    bottom:25px;
+    text-align:center;
+    padding:12px;
+    background: white;
+    border: 1px solid #AAA;
 }

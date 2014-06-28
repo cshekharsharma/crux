@@ -118,6 +118,7 @@ class Utils {
      * @return boolean
      */
     public static function isAjaxRequest() {
+        //self::debugVariable(($_SERVER);
         $hasHeader = isset($_SERVER['HTTP_X_REQUESTED_WITH']);
         $isAjaxHeader = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
         return $hasHeader && $isAjaxHeader;

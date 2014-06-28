@@ -1,5 +1,6 @@
 <?php
 /**
+ * Controller for impl site search
  * 
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers

@@ -3,14 +3,15 @@
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="/webroot/Auth/css/auth.css">
 </head>
+
+    <br><br><br>
     <div id="wrapper1">
         <div class="form-header-span">Please verify your identity</div>
         <form name="login-form" id="login-form" class="auth-form" method="post">
         <div class="innerdiv">
             <input type="hidden" name="login-action-name" id="login-action-name" value="{$LOGIN_ACTION_VALUE}">
             <div id="auth-msg-container">
-                
-            </div><br>
+            </div>
                  <div class="fieldset">   
                     <div class="input-holder">
                         <input type="text" name="username" id="username" placeholder="User Name"/>

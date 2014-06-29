@@ -23,7 +23,6 @@ class IndexController extends AbstractController {
      * @see AbstractController::run()
      */
     public function run(Resource $resource) {
-        Logger::getLogger()->LogInfo("Serving Index Controller");
         $uriParams = $resource->getParams();
         $uc=new UserPreferencesController();
         $uc->getUserPreference(1);

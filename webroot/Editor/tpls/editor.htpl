@@ -29,12 +29,12 @@
                                 </td>
                             </tr>
                                 <td>
-                                    <input type="text" placeholder="Program Title" class="titlebox apply-validation" value="{$SELECTED_TITLE}" id="programtitle" name="programtitle">
+                                    <input type="text" placeholder="Program Title" class="input textboxes titlebox apply-validation" value="{$SELECTED_TITLE}" id="programtitle" name="programtitle">
                                 </td>
                            </tr>
                            <tr>
                                 <td>
-                                    <input type="text" placeholder="File Name" class="titlebox apply-validation" value="{$SELECTED_FILENAME}" id="filename" name="filename">
+                                    <input type="text" placeholder="File Name" class="input textboxes titlebox apply-validation" value="{$SELECTED_FILENAME}" id="filename" name="filename">
                                 </td>
                              </tr>
                             <tr>
@@ -84,7 +84,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea placeholder="Description" class="apply-validation" id="description">{$SELECTED_DESCRIPTION}</textarea>
+                                    <textarea placeholder="Description" class="textarea apply-validation" id="description">{$SELECTED_DESCRIPTION}</textarea>
                                 </td>
                             </tr>
                             <tr>

@@ -81,6 +81,7 @@ abstract class AbstractView extends Application {
             Session::set(Session::SESS_SEARCH_SUGGESTIONS, $searchSuggestions);
         }
         $this->smarty->assign('APP_NAME', Constants::APP_NAME);
+        $this->smarty->assign('APP_LOGO', Constants::APP_LOGO);
         $this->smarty->assign('APP_VERSION', Constants::APP_VERSION);
         $this->smarty->assign('SEARCH_SUGGESTIONS', $searchSuggestions);
         $this->smarty->assign('CHPWD_ACTION_VALUE', AuthController::CHPWD_ACTION_VALUE);

@@ -17,7 +17,7 @@
                 <td class="td1">
                     <span class="main-logo-text">
                         <a href="/">
-                            &lt; {$APP_NAME} /&gt;
+                            {$APP_LOGO}
                         </a>
                     </span>
                 </td>
@@ -37,9 +37,7 @@
         </span>
     </form>
 </div>
-<div id="jquery-autocomplete-results">
-    
-</div>
+<div id="jquery-autocomplete-results"></div>
 <script>
     {literal}
     var searchDataSource = '{/literal}{$SEARCH_SUGGESTIONS}{literal}';
@@ -60,3 +58,4 @@
 <script type="text/javascript" src="/webroot/Index/js/main.js"></script>
 <script type="text/javascript" src="/webroot/Auth/js/auth.js"></script>
 <script type="text/javascript" async src="/webroot/UserPreferences/js/userpref.js"></script>
+<div id="middleware">

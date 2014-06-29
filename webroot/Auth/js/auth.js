@@ -146,6 +146,7 @@ $(cssSelectors.chpwdLink).click(
             attachPopupEvents(cssSelectors.popupBg,
                     cssSelectors.chpwdContainer,
                     AUTH_CONSTANTS.changePwdPopupFlag, getChangePasswordUI);
+            $(APP_CONSTANTS.cssSelectors.accountDD).slideToggle();
         });
 
 function getChangePasswordUI() {

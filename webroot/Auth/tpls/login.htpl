@@ -3,22 +3,21 @@
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="/webroot/Auth/css/auth.css">
 </head>
-
-    <br><br><br>
-    <div id="wrapper1">
+    <br><br><br><br><br><br>
+    <div id="wrapper1" class="embossed-div">
         <div class="form-header-span">Please verify your identity</div>
         <form name="login-form" id="login-form" class="auth-form" method="post">
         <div class="innerdiv">
             <input type="hidden" name="login-action-name" id="login-action-name" value="{$LOGIN_ACTION_VALUE}">
             <div id="auth-msg-container">
             </div>
-                 <div class="fieldset">   
+                 <div class="fieldset">
                     <div class="input-holder">
-                        <input type="text" name="username" id="username" placeholder="User Name"/>
+                        <input class="textboxes input" type="text" name="username" id="username" placeholder="User Name"/>
                     </div>
 
                     <div class="input-holder">
-                        <input type="password" name="password" id="password" placeholder="Password"/>
+                        <input class="textboxes input" type="password" name="password" id="password" placeholder="Password"/>
                     </div>
                     <span style="margin-right:40px;">
                         <label class="checkbox">

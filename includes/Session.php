@@ -30,7 +30,8 @@ class Session {
         if (!empty($_SESSION[$key])) {
             $sessionValue = $_SESSION[$key];
         } else {
-            Logger::getLogger()->LogDebug("Attempting to get invalid item from Session with key : ".$key);
+            Logger::getLogger()->LogDebug("Attempting to get invalid item 
+                from Session with key : ".$key);
         }
         return $sessionValue;
     }
@@ -84,7 +85,8 @@ class Session {
         $isSessionStart = session_start();
         if ($isSessionStart) {
             self::$_isSessionRunning = true;
-            Logger::getLogger()->LogDebug("Session Started / Resumed with ID : " . Session::getSessionId());
+            Logger::getLogger()->LogDebug("Session Started/Resumed with ID: " .
+            Session::getSessionId());
         }
         return $isSessionStart;
     }

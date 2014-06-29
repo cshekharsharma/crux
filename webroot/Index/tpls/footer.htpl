@@ -1,13 +1,14 @@
+</div> <!--  closing middleware div -->
 <div class="footer-div">
     &copy; 2014 v{$APP_VERSION} | <a class="about-link" href="#"
         title=""
     >About</a>
 </div>
 <div id="about-me-block" class="hidden-elems">
-    <i><b>Crux</b></i> is a code snippet management tool with well featured source code editor,
+    <i><b>{$APP_NAME}</b></i> is a code snippet management tool with well featured source code editor,
     which supports all major languages. You can write new snippets, manage, search and filter old snippets.<br>
     <br>
-    Crux is free software, <a href="http://github.com/cshekharsharma/crux">See source code here.</a><br>
+    Crux is free software, <a target="_blank" href="http://github.com/cshekharsharma/crux">See source code here.</a><br>
     Please contribute if you find it worth.<br>
     Chandra Shekhar <a href="mailto:shekharsharma705@gmail.com">&lt;shekharsharma705@gmail.com&gt</a>;
 </div>
@@ -21,8 +22,8 @@
         if (e.keyCode === 27) {
             e.preventDefault();
             if (!$('#about-me-block').is(':hidden')) {
-                $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
-                $('#about-me-block').toggle();
+                $(APP_CONSTANTS.cssSelectors.popupBg).hide();
+                $('#about-me-block').hide();
             }
         }
     });

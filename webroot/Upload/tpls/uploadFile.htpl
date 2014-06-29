@@ -6,20 +6,20 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="form-header-span">Upload Your Code</div>
         <form name="file-upload-form" id="file-upload-form" method="post" enctype="multipart/form-data">
         <div class="innerdiv">
+            <div class="form-header-span">Upload Your Code</div>
             <input type="hidden" name="file-upload-action-name" id="file-upload-action-name" value="{$FILE_UPLOAD_ACTION_VALUE}">
             <div id="upload-msg-container">
             </div>
                  <div class="fieldset">   
-                    <div>
+                    <div class="element-holder-div">
                         <input class="uploadfile" name="uploadfile" type="file" />
                     </div>
-                    <div>
-                        <input type="text" name="program_title" id="program_id" placeholder="Write program title here..."/>
+                    <div class="element-holder-div">
+                        <input class="textboxes input" type="text" name="program_title" id="program_id" placeholder="Write program title here..."/>
                     </div>
-                    <div style="padding-bottom:15px;">
+                    <div class="element-holder-div">
                         <span class="selectbox-div">
                              <select class="selectbox" name="language_id" id="language_id">
                             {foreach from=$LANGUAGE_LIST item=language}
@@ -42,8 +42,8 @@
                             </select>
                         </span>
                     </div>
-                    <div>
-                        <textarea name="program_description" id="program_description" placeholder="Write description here..."></textarea>
+                    <div class="element-holder-div">
+                        <textarea class="textarea" name="program_description" id="program_description" placeholder="Write description here..."></textarea>
                     </div>    
                     <input type="button" class="css-button" value="   Upload   " onclick="upload('file-upload-form')">&nbsp;
                     <input type="checkbox" value="is_verified" name="is_verified" id="is_verified" ><label for="is_verified">Is Verified</label>

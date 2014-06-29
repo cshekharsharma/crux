@@ -12,15 +12,18 @@ APP_CONSTANTS = {
         popupBg : '.popup-opacity-background',
         accountDD : '.account-dropdown',
         AboutBlock : '#about-me-block'
-     }
+    }
 };
 
 var popupFlags = {
     chpwd : 0,
     userPref : 0,
     execCode : 0,
-    about : 0
+    about : 0,
+    account : 0
 };
+
+var lastPopupBlockSelector = null;
 
 var errorObject = {
     isError : false,
@@ -56,17 +59,16 @@ addEvent(window, 'keydown', function(e) {
     if (e.keyCode === 27) {
         e.preventDefault();
         if (!$('.account-dropdown').is(':hidden')) {
-            $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
-            $('.account-dropdown').toggle();
+            $(APP_CONSTANTS.cssSelectors.popupBg).hide();
+            $('.account-dropdown').hide();
         }
     }
 });
 
-$('#username-link').click(function(){
+$('#username-link').click(function() {
     var selector = APP_CONSTANTS.cssSelectors.accountDD;
-    getPartialPopup(selector); 
+    getPartialPopup(selector);
 });
-
 
 AJAX = getAjaxConnection();
 
@@ -87,7 +89,7 @@ function attachPopupEvents(bg, container, flagKey, callback) {
     $(bg).css({
         "height" : windowHeight
     });
-
+    lastPopupBlockSelector = container;
     // Pop up the div and Bg
     if (popupFlags[flagKey] == 0) {
         $(bg).css({
@@ -136,6 +138,12 @@ function getPartialPopup(visibleBlock) {
     $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
     $(visibleBlock).zIndex(106);
     $(visibleBlock).slideToggle();
+    lastPopupBlockSelector = visibleBlock;
+}
+
+function closePartialPopup(visibleBlock) {
+    $(APP_CONSTANTS.cssSelectors.popupBg).fadeOut("fast");
+    $(visibleBlock).slideToggle();
 }
 
 // Initialize search suggestions
@@ -146,16 +154,43 @@ if (typeof searchDataSource != 'undefined') {
     $("#searchbox").autocomplete({
         source : searchSuggestions.slice(0, APP_CONSTANTS.MAX_SEARCH_SUGGEST),
         appendTo : '#jquery-autocomplete-results',
-        position : {
-            my : 'right top',
-            at : 'center'
-        },
+        // position : {
+        // my : 'right top',
+        // at : 'center'
+        // },
         select : function(event, ui) {
             $('#searchbox').val(ui.item.value);
             $('.searchform').submit();
         }
     });
+    searchB = $('#searchbox')[0];
+    $('#jquery-autocomplete-results').css({
+        'position' : 'absolute',
+        'top' : searchB.getClientRects()[0].top + searchB.clientHeight + 5,
+        'left' : searchB.getClientRects()[0].left,
+        'width' : searchB.clientWidth * 2
+    });
 }
+
+$('#searchbox').focus(function() {
+    $('#middleware').css({
+        'opacity' : 0.5,
+    });
+});
+
+$('#searchbox').blur(function() {
+    $('#middleware').css({
+        'opacity' : 1,
+    });
+});
+
+/**
+ * Commenting because of bad-syncing of toggle events
+ */
+//$(APP_CONSTANTS.cssSelectors.popupBg).click(function(){
+//    $(APP_CONSTANTS.cssSelectors.popupBg).fadeOut('slow');
+//    $(lastPopupBlockSelector).slideToggle();
+//});
 
 function removeClass(el, className) {
     className = " " + className.trim(); // must keep a space before class name

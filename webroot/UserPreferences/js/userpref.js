@@ -37,6 +37,7 @@ $(UpCssSelectors.userprefLink)
                             UpCssSelectors.userPrefContainer,
                             USER_PREF_CONSTANTS.userPrefPopupFlag,
                             getUserPreferenceUI);
+                    $(APP_CONSTANTS.cssSelectors.accountDD).slideToggle();
                 });
 
 function getUserPreferenceUI() {

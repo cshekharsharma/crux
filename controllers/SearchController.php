@@ -152,7 +152,7 @@ class SearchController extends AbstractController {
             $titleCol = ProgramDetails_DBTable::TITLE;
             $descCol = ProgramDetails_DBTable::DESCRIPTION;
             $row[$titleCol] = $this->highlightMatchingText($row[$titleCol], $keywords);
-            $row[$descCol] = $this->highlightMatchingText($row[$descCol], $keywords);
+            //$row[$descCol] = $this->highlightMatchingText($row[$descCol], $keywords);
             $results[$key] = $row;
         }
         return $results;
@@ -168,9 +168,10 @@ class SearchController extends AbstractController {
     private function highlightMatchingText($haystack, array $keywords) {
         $pre = '<span class="search-highlight">';
         $post = '</span>';
+        $tempHaystack = $haystack;
         foreach ($keywords as $keyword) {
             $keyword = preg_quote(trim($keyword));
-            $haystack = preg_replace("/($keyword)/i", "$pre$1$post", $haystack);
+            $haystack = preg_replace("/($keyword)/i", "$pre$1$post", $tempHaystack);
         }
         return $haystack;
     }

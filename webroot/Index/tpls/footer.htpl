@@ -5,6 +5,7 @@
     >About</a>
 </div>
 <div id="about-me-block" class="hidden-elems">
+    <img id="abt-close-btn" class="popup-close-btn" src="/webroot/Index/imgs/x-btn.png">
     <i><b>{$APP_NAME}</b></i> is a code snippet management tool with well featured source code editor,
     which supports all major languages. You can write new snippets, manage, search and filter old snippets.<br>
     <br>
@@ -26,5 +27,10 @@
                 $('#about-me-block').hide();
             }
         }
+    });
+   
+    $('#abt-close-btn').click(function() {
+        $(APP_CONSTANTS.cssSelectors.popupBg).hide();
+        $('#about-me-block').hide();
     });
 </script>

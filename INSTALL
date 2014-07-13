@@ -4,12 +4,12 @@
 ##################################################
 <VirtualHost *:80>
         # The name to respond to
-        ServerName code.me
+        ServerName crux.com
         # Folder where the files live
-        DocumentRoot "</path/to/apache/document/root>/code.me"
+        DocumentRoot "</path/to/apache/document/root>/crux.com"
 
         # A few helpful settings...
-        <Directory "</path/to/apache/document/root>/code.me">
+        <Directory "</path/to/apache/document/root>/crux.com">
                 #FallbackResource index.php
                 Options +FollowSymLinks
                 Options -Indexes
@@ -29,7 +29,7 @@
 # 2: Register that virtual host on system
 # Append these lines to /etc/hosts file
 ###################################################
-127.0.0.1 code.me
+127.0.0.1 crux.com
 
 
 ##################################################
@@ -38,12 +38,12 @@
 
         # method 1 : From tar archive, Extract code files in apache document root 
         cd /path/to/apache/document/root/
-        tar -xvzf code-me.tar.gz
+        tar -xvzf crux.tar.gz
         cd <code-me-base-dir>
         sudo chmod 777 -R .
 
         # method 2 : Clone the project from GitHub
-        git clone http://github.com/cshekharsharma/codeme.git
+        git clone http://github.com/cshekharsharma/crux.git
 
 
 

@@ -1,6 +1,6 @@
 {include file="webroot/Index/tpls/header.htpl"}
 <head>
-  <title>Upload :: Code.Me</title>
+  <title>Upload</title>
   <link rel="stylesheet" type="text/css" href="/webroot/Upload/css/upload.css">
   <script type="text/javascript" src="/webroot/Upload/js/upload.js"></script>
 </head>

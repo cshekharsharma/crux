@@ -166,9 +166,10 @@ if (typeof searchDataSource != 'undefined') {
     searchB = $('#searchbox')[0];
     $('#jquery-autocomplete-results').css({
         'position' : 'absolute',
-        'top' : searchB.getClientRects()[0].top + searchB.clientHeight + 5,
+        'top' : searchB.getClientRects()[0].top + searchB.clientHeight + 2,
         'left' : searchB.getClientRects()[0].left,
-        'width' : searchB.clientWidth * 2
+        'width' : searchB.clientWidth,
+        'min-width' : searchB.clientWidth
     });
 }
 

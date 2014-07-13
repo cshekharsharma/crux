@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="icon" href="/webroot/Index/imgs/code1.png" type="image/png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="/library/jquery/js/jquery.js"></script>
     <script type="text/javascript" src="/library/jquery/js/jqueryui.js"></script>
     <link type="text/css" rel="stylesheet" href="/library/jquery/css/jqueryui.css">
@@ -16,9 +16,7 @@
             <tr>
                 <td class="td1">
                     <span class="main-logo-text">
-                        <a href="/">
-                            {$APP_LOGO}
-                        </a>
+                        <a href="/">{$APP_LOGO}</a>
                     </span>
                 </td>
                 <td class="td2">

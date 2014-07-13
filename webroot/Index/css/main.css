@@ -12,6 +12,8 @@ body {
 	background: #FFF !important;
 	margin-bottom: 25px;
 	color: #222 !important;
+	overflow-y: scroll;
+	
 }
 
 .main-logo-text a {
@@ -175,7 +177,7 @@ body {
 }
 
 #jquery-autocomplete-results ul {
-	width: 50%;
+	width: 100%;
 }
 
 #jquery-autocomplete-results ul .ui-state-hover {
@@ -263,9 +265,8 @@ body {
 	text-align: center;
 	padding: 40px;
 	position: absolute;
-	width: 43;
-	left: 25%;
-	right: 25%;
+	left: 32%;
+	right: 32%;
 	background: #F9F9F9;
 }
 

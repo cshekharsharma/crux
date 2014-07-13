@@ -8,11 +8,12 @@
 try {
     ini_set("display_errors", 0);
     require_once 'includes/AutoLoader.php';
+    Session::start();
     Profiler::startProfiler('main');
     RequestManager::initRequest();
-    Session::start();
     RequestManager::serveRequest();
     Profiler::endProfiler('main');
 } catch(Exception $e) {
     RequestManager::handleException($e);
+    Profiler::endProfiler('main');
 }

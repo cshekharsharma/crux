@@ -112,6 +112,6 @@ class UploadController extends AbstractController {
      */
     private function logErrorAndRedirect($msg, $type) {
         Logger::getLogger()->LogFatal($msg);
-
+        RequestManager::redirect();
     }
 }

@@ -94,3 +94,9 @@ caption {
 .listview-table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
 background-color: #8dbdd8;
 }
+
+.paginator-div {
+    padding:10px;
+    text-align:center;
+    height:40px;
+}

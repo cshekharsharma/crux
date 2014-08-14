@@ -248,4 +248,22 @@ class Utils {
             exit();
         }
     }
+    
+    /**
+     * Strip slashes from given string or each element of array
+     *
+     * @param array|string $data
+     * @return string
+     */
+    public static function stripSlashes($data) {
+        if (is_array($data)) {
+            foreach ($data as $key => $val) {
+                $data[$key] = stripslashes($val);
+            }
+        } else {
+            $data = stripslashes($data);
+        }
+        return $data;
+    }
+    
 }

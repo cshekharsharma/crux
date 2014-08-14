@@ -26,7 +26,14 @@ class Response {
         exit();
     }
 
-
+    public static function sendSuccessResponse($msg, $detail = '') {
+        self::sendResponse(Constants::SUCCESS_RESPONSE, $msg, $detail);
+    }
+    
+    public static function sendFailureResponse($msg, $detail = '') {
+        self::sendResponse(Constants::FAILURE_RESPONSE, $msg, $detail);
+    }
+    
     /**
      * Creates generic JSON response from provided data
      *

@@ -2,7 +2,7 @@
 
 class IndexModel extends AbstractModel {
     
-    public function getProgramList($lang = false, $category = false) {
+    public function getProgramList($lang = false, $category = false, $offset = false) {
         $programList = array();
         $bindParams = array();
         if (empty($lang) && empty($category)) {
@@ -31,6 +31,11 @@ class IndexModel extends AbstractModel {
             }
         }
         $query .= ProgramDetails_DBTable::DB_TABLE_NAME.'.'.ProgramDetails_DBTable::IS_DELETED."= '0'";
+        if (!empty($offset) && is_numeric($offset)) {
+            $query .= ' LIMIT '.$offset. ', '. Constants::PAGINATOR_LIMIT;
+        } else {
+            $query .= ' LIMIT '. Constants::PAGINATOR_LIMIT;
+        }
         $resultSet = DBManager::executeQuery($query, $bindParams, true);
         return $resultSet;
     }

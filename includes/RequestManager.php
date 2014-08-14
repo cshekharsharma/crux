@@ -30,11 +30,12 @@ class RequestManager {
             $_GET[$key] = $_REQUEST[$key] = $uriParts[$i];
         }
         self::requireCoreFiles();
+        self::normalizeRequest();
     }
 
     /**
      * Get http request param for given key
-     * 
+     *
      * @param unknown $key
      * @param string $includeCookie
      * @return Ambigous <NULL, unknown>
@@ -45,7 +46,7 @@ class RequestManager {
 
     /**
      * Get parameter from primitive request data containers, i.e. $_GET, $_POST etc
-     * 
+     *
      * @param unknown $key
      * @param unknown $includeCookie
      * @return unknown|NULL
@@ -67,7 +68,7 @@ class RequestManager {
 
     /**
      * Get all request parameters
-     * 
+     *
      * @return unknown
      */
     public static function getAllParams() {
@@ -75,8 +76,23 @@ class RequestManager {
     }
 
     /**
+     * remove slashes from all http input containers to avoid injection and attacks
+     */
+    public static function normalizeRequest() {
+        if(isset($_GET))
+            $_GET = Utils::stripSlashes($_GET);
+        if(isset($_POST))
+            $_POST = Utils::stripSlashes($_POST);
+        if(isset($_COOKIE))
+            $_COOKIE = Utils::stripSlashes($_COOKIE);
+        if(isset($_REQUEST))
+            $_REQUEST = Utils::stripSlashes($_REQUEST);
+    }
+
+
+    /**
      * Generic method for serving all http requests
-     * 
+     *
      * @throws Exception
      */
     public static function serveRequest() {
@@ -92,7 +108,7 @@ class RequestManager {
     /**
      * HTTP Redirect to certain module.
      * If no module key is given, redirects to index module
-     * 
+     *
      * @param string $key
      * @param number $statusCode
      */
@@ -103,7 +119,7 @@ class RequestManager {
     /**
      * Get pending urls to be shown just after login
      * @todo: implement using URL params
-     * 
+     *
      * @return Ambigous <Ambigous, unknown, NULL, unknown>
      */
     public static function getPendingRequestURI() {
@@ -122,17 +138,17 @@ class RequestManager {
             setcookie(Session::SESS_PENDING_REQ_URI, $uri);
         }
     }
-    
+
     /**
      * Load all essential application core files into memory
      */
     public static function requireCoreFiles() {
         require_once 'library/smarty/libs/Smarty.class.php';
     }
-    
+
     /**
      * handle excpetions and write them to Log file
-     * 
+     *
      * @param Exception $e
      */
     public static function handleException(Exception $e) {

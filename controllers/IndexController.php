@@ -24,9 +24,10 @@ class IndexController extends AbstractController {
      */
     public function run(Resource $resource) {
         $uriParams = $resource->getParams();
-        $uc=new UserPreferencesController();
-        $uc->getUserPreference(1);
-        $programs = $this->getProgramList($uriParams);
+        $formParams = RequestManager::getAllParams();
+        $uc = new UserPreferencesController();
+        $uc->getUserPreference(Utils::getLoggedInUserId());
+        $programs = $this->getProgramList($uriParams, $formParams);
         $this->setBean($programs);
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
@@ -37,11 +38,12 @@ class IndexController extends AbstractController {
      * @param array $inputParams
      * @return boolean
      */
-    public function getProgramList(array $inputParams) {
+    public function getProgramList(array $inputParams, $formParams) {
         $programs = array();
         $lang = $inputParams[Constants::INPUT_PARAM_LANG];
         $category = $inputParams[Constants::INPUT_PARAM_CATE];
-        $programs = $this->getModel()->getProgramList($lang, $category);
+        $offset = $formParams['offset'];
+        $programs = $this->getModel()->getProgramList($lang, $category, $offset);
         return $programs;
     }
 }

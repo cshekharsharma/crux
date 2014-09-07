@@ -43,6 +43,8 @@ $('#submit_code').click(function() {
 function submitCode(formElem) {
     errObj = validateForm(formElem);
     if (!errObj.isError) {
+        $('#submit_code').addClass('disabled');
+        $('#submit_code').val('Submitting...');
         formData = populateFormData(formElem);
         AJAX.onreadystatechange = function() {
             if (AJAX.readyState == 4 && AJAX.status == 200) {
@@ -60,13 +62,14 @@ function submitCode(formElem) {
                 }
                 $('#' + EDITOR_CONSTANTS.msgContainerId).show();
                 $('#' + EDITOR_CONSTANTS.msgContainerId).html(response.msg);
+                $('#submit_code').removeClass('disabled');
+                $('#submit_code').val('Submit');
                 setIntervalObject = setInterval(function() {
                     $('#' + EDITOR_CONSTANTS.msgContainerId).hide('drop', {
                         direction: 'up',
                     }, 'slow');
                     clearInterval(setIntervalObject);
                 }, 3000);
-
             }
         };
 

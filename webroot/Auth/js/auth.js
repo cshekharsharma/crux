@@ -41,6 +41,8 @@ addEvent(window, 'load', function() {
 });
 
 function doLogin(formId) {
+    $('#do-login').addClass('disabled');
+    $('#do-login').val(' Signing In... ');
     var formElem = document.getElementById(formId);
     var formInputFields = [ formElem.username, formElem.password ];
     if (validate(formElem, formInputFields, AUTH_CONSTANTS.emptyCredentials)) {
@@ -59,6 +61,8 @@ function doLogin(formId) {
                 }
                 msgContainer.innerHTML = response.msg;
                 msgContainer.style.display = "block";
+                $('#do-login').removeClass('disabled');
+                $('#do-login').val(' Sign In ');
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authLoginPath);

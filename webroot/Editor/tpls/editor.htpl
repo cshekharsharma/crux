@@ -95,7 +95,7 @@
                                         {assign var=isChecked value=''}
                                     {/if}
                                     <input class="apply-validation" name="verified" id="verified" value="is_verified" type="checkbox" {$isChecked}>
-                                    &nbsp;Verified
+                                    <label for="verified">Verified</label>
                                 </td>
     `                        </tr>
                             <tr>

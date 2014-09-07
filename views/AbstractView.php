@@ -61,7 +61,6 @@ abstract class AbstractView extends Application {
             $errorCode = Constants::ERROR_RESOURCE_NOT_FOUND;
             $content = $this->getErrorTemaplateMarkup($errorCode);
         }
-        
         if ($return) {
             return $this->smarty->fetch('string: ' . $content);
         } else {

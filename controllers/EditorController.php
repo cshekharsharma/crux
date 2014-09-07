@@ -39,7 +39,6 @@ class EditorController extends AbstractController {
             } else {
                 $this->getModel()->updateCode($formParams);
             }
-             
         }
     }
 

@@ -46,6 +46,7 @@ class AutoLoader {
             'SearchController' => Constants::CONTROLLER_DIR.'SearchController.php',
             'UploadController' => Constants::CONTROLLER_DIR.'UploadController.php',
             'EditorController' => Constants::CONTROLLER_DIR.'EditorController.php',
+            'ExecuteController' => Constants::CONTROLLER_DIR.'ExecuteController.php',
             'ContentController' => Constants::CONTROLLER_DIR.'ContentController.php',
             'CategoryController' => Constants::CONTROLLER_DIR.'CategoryController.php',
             'LanguageController' => Constants::CONTROLLER_DIR.'LanguageController.php',
@@ -73,6 +74,7 @@ class AutoLoader {
             'SearchView' => Constants::VIEW_DIR.'SearchView.php',
             'UploadView' => Constants::VIEW_DIR.'UploadView.php',
             'EditorView' => Constants::VIEW_DIR.'EditorView.php',
+            'ExecuteView' => Constants::VIEW_DIR.'ExecuteView.php',
             'ContentView' => Constants::VIEW_DIR.'ContentView.php',
             'ExplorerView' => Constants::VIEW_DIR.'ExplorerView.php',
 

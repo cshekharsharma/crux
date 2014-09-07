@@ -43,7 +43,7 @@
                         {/if}
                    </td>
                    <td class="alt">{$program.created_by}</td>
-                   <td class="alt">{$program.created_on|date_format:"%d %b %Y"}</td>
+                   <td class="alt" title="{$program.created_on|date_format:"%d %b %Y %H:%M"}">{$program.created_on|date_format:"%Y-%m-%d %H:%M"}</td>
                 </tr>
            {/foreach}
            </tbody>

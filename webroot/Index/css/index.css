@@ -1,21 +1,22 @@
 @CHARSET "UTF-8";
 
 body {
-    font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica,
+        sans-serif;
     background: #E6EAE9;
 }
 
 .listview-table a {
     color: #2A5DB0;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .listview-table a:hover {
-	text-decoration:underline;
+    text-decoration: underline;
 }
 
 .listview-table {
-	font-size:13px;
+    font-size: 13px;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -23,15 +24,15 @@ body {
 
 caption {
     padding: 0 0 5px 0;
-    width: 700px;    
+    width: 700px;
     font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
     text-align: right;
 }
 
 .listview-table th {
-	cursor:pointer;
+    cursor: pointer;
     font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    color: #4f6b72;
+    color: #111;
     border-right: 1px solid #C1DAD7;
     border-bottom: 1px solid #C1DAD7;
     border-top: 1px solid #C1DAD7;
@@ -39,13 +40,7 @@ caption {
     text-transform: uppercase;
     text-align: left;
     padding: 6px 6px 6px 12px;
-    background: #CAE8EA url(images/bg_header.jpg) no-repeat;
-}
-
-.listview-table th.nobg {
-    border-top: 0;
-    border-left: 0;
-    border-right: 1px solid #C1DAD7;
+    background: transparent;
 }
 
 .listview-table td {
@@ -56,10 +51,9 @@ caption {
     color: #4f6b72;
 }
 
-
 .listview-table td.alt {
-    background: #F9F9F9;
-    color:#444;
+    background: #FFF;
+    color: #444;
 }
 
 .listview-table th.spec {
@@ -77,26 +71,54 @@ caption {
     color: #797268;
 }
 
+.listview-table.tablesorter thead tr {
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
+        255, 1) ), color-stop(47%, rgba(246, 246, 246, 1) ),
+        color-stop(100%, rgba(237, 237, 237, 1) ) );
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
+        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
+        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ffffff',
+        endColorstr='#ededed', GradientType=0 );
+}
+
 .listview-table.tablesorter thead tr .header {
-	padding-right:20px;
-    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+    padding-right: 20px;
+    background-image:
+        url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
 }
 
 .listview-table.tablesorter thead tr .headerSortUp {
-    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+    background-image:
+        url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
 }
+
 .listview-table.tablesorter thead tr .headerSortDown {
-    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+    background-image:
+        url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
 }
-.listview-table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
-background-color: #8dbdd8;
+
+.listview-table.tablesorter thead tr .headerSortDown,table.tablesorter thead tr .headerSortUp
+    {
+    background-color: #DDD;
+}
+.listview-table.tablesorter tbody tr:hover {
+    background: #F9F9F9;
 }
 
 .paginator-div {
-    padding:10px;
-    text-align:center;
-    height:40px;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
 }

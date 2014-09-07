@@ -113,9 +113,6 @@ caption {
     {
     background-color: #DDD;
 }
-.listview-table.tablesorter tbody tr:hover {
-    background: #F9F9F9;
-}
 
 .paginator-div {
     padding: 10px;

@@ -9,7 +9,7 @@ class EditorModel extends AbstractModel {
         $lang = $formParams[ProgramDetails_DBTable::FK_LANGUAGE_ID];
         $cate = $formParams[ProgramDetails_DBTable::FK_CATEGORY_ID];
         $fileDir = Configuration::get(Configuration::CODE_BASE_DIR).$lang."/".$cate;;
-        $fileContents = $formParams['editorContents'];
+        $fileContents = base64_decode($formParams['editorContents']);
         $currentDatetime = Utils::getCurrentDatetime();
         $pid = $formParams['programid'];
         $programController = new ProgramDetailsController();

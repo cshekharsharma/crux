@@ -117,7 +117,7 @@ function validateForm(formElem) {
 
 function populateFormData(formElem) {
     var formData = new FormData();
-    formData.append('editorContents', EDITOR_CONSTANTS.editor.getValue());
+    formData.append('editorContents', btoa(EDITOR_CONSTANTS.editor.getValue()));
     formData.append('isupdate', formElem.isupdate.value);
     formData.append('programid', formElem.programid.value);
     formData.append('title', formElem.programtitle.value);

@@ -12,7 +12,8 @@ var UpCssSelectors = {
 function saveUserPreference(formId) {
     var formData = new FormData();
     formData.append('code_editor_theme', $('#code_editor_theme').val());
-    formData.append('show_invisible_chars', $('#show_invisibles').is(':checked'));
+    formData.append('show_invisible_chars', $('#show_invisibles')
+            .is(':checked'));
     formData.append('paginator_limit', $('#paginator_limit').val());
     AJAX.onreadystatechange = function() {
         if (AJAX.readyState == 4 && AJAX.status == 200) {

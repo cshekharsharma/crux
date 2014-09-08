@@ -12,19 +12,28 @@
                         <td class="td-2">
                             <select name="code_editor_theme" id="code_editor_theme"> 
                                 {foreach from=$EDITOR_THEME_LIST key=themeId item=themeName}
-                                    <option value="{$themeId}">{$themeName}</option>
+                                    {if $PREF_EDITOR_THEME eq $themeId}
+                                        <option value="{$themeId}" selected>{$themeName}</option>
+                                     {else}
+                                        <option value="{$themeId}">{$themeName}</option>
+                                     {/if}
                                 {/foreach}
                             </select>
                         </td>
                     </tr>
                     <tr>
                         <td class="td-1">Show invisibles</td>
-                        <td class="td-2"><input type="checkbox" id="show_invisibles" name="show_invisibles"></td>
+                        {if $PREF_SHOW_INVISIBLE eq 'true'}
+                            {assign var="isChecked" value="checked"}
+                        {else}
+                            {assign var="isChecked" value=""}
+                        {/if}
+                        <td class="td-2"><input type="checkbox" id="show_invisibles" name="show_invisibles" {$isChecked}></td>
                     </tr>
                     
                     <tr>
                         <td class="td-1">Paginator limit</td>
-                        <td class="td-2"><input type="text" class="input small-textbox" id="paginator_limit" name="paginator_limit"></td>
+                        <td class="td-2"><input type="text" class="input small-textbox" id="paginator_limit" name="paginator_limit" value="{$PREF_PAGINATOR_VALUE}"></td>
                     </tr>
                 </table>
                 <br><br> 

@@ -58,6 +58,9 @@ class ContentView extends AbstractView {
      */
     public function getUserPreferenceUI() {
         $this->smarty->assign('EDITOR_THEME_LIST', Utils::getAceEditorThemes());
+        $this->smarty->assign('PREF_EDITOR_THEME', UserPreferencesController::get(PreferenceKeys::CODE_EDITOR_THEME));
+        $this->smarty->assign('PREF_PAGINATOR_VALUE', UserPreferencesController::get(PreferenceKeys::PAGINATOR_LIMIT));
+        $this->smarty->assign('PREF_SHOW_INVISIBLE', UserPreferencesController::get(PreferenceKeys::CODE_EDITOR_SHOW_INVISIBLE));
         $content = $this->render('USERPREF', true);
         Response::sendResponse(Constants::SUCCESS_RESPONSE, '', $content);
     }

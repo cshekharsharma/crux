@@ -1,8 +1,8 @@
 <?php
 
 class IndexModel extends AbstractModel {
-    
-    public function getProgramList($lang = false, $category = false, $offset = false) {
+
+    public function getProgramList($lang = false, $category = false, $offset = 0) {
         $programList = array();
         $bindParams = array();
         if (empty($lang) && empty($category)) {
@@ -11,6 +11,10 @@ class IndexModel extends AbstractModel {
         $pidCol = ProgramDetails_DBTable::PROGRAM_ID;
         $langCol = ProgramDetails_DBTable::FK_LANGUAGE_ID;
         $cateCol = ProgramDetails_DBTable::FK_CATEGORY_ID;
+        $limit = UserPreferencesController::get(PreferenceKeys::PAGINATOR_LIMIT);
+        $limit = empty($limit) ? Constants::PAGINATOR_LIMIT : $limit;
+        $totalRecordCount = (new ProgramDetailsController())->getAllRecordCount();
+        $this->processPaginator($offset, $limit, $totalRecordCount);
         $query = 'SELECT '.ProgramDetails_DBTable::DB_TABLE_NAME.'.*,'.
             Users_DBTable::DB_TABLE_NAME.'.'.Users_DBTable::USER_NAME.' AS created_by,'.
             Category_DBTable::DB_TABLE_NAME.'.'.Category_DBTable::CATEGORY_NAME.' AS category_name,'.
@@ -32,12 +36,27 @@ class IndexModel extends AbstractModel {
         }
         $query .= ProgramDetails_DBTable::DB_TABLE_NAME.'.'.ProgramDetails_DBTable::IS_DELETED."= '0'";
         if (!empty($offset) && is_numeric($offset)) {
-            $query .= ' LIMIT '.$offset. ', '. Constants::PAGINATOR_LIMIT;
+            $query .= ' LIMIT '.$offset. ', '. $limit;
         } else {
-            $query .= ' LIMIT '. Constants::PAGINATOR_LIMIT;
+            $query .= ' LIMIT '. $limit;
         }
         $resultSet = DBManager::executeQuery($query, $bindParams, true);
         return $resultSet;
     }
-    
+
+    public function processPaginator($offset, $limit, $total) {
+        if (($offset + $limit) < $total) {
+            $paginatorInfo = array(
+                'hasPaginator' => true,
+                'nextOffset'   => ($offset + $limit)
+            );
+        } else {
+            $paginatorInfo = array(
+                'hasPaginator' => false,
+                'nextOffset'   => 0
+            );
+        }
+        Session::set('PAGINATOR_INFO', $paginatorInfo);
+    }
+
 }

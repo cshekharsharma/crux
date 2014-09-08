@@ -26,6 +26,13 @@ class ProgramDetailsController extends AbstractController {
         $resultSet = DBManager::executeQuery($query, array(), true);
         return current($resultSet);
     }
+    
+    public function getAllRecordCount() {
+        $query = 'SELECT COUNT(*) AS count FROM '.ProgramDetails_DBTable::DB_TABLE_NAME
+            . ' WHERE '.ProgramDetails_DBTable::IS_DELETED.'=0';
+        $result = DBManager::executeQuery($query, array(), true);
+        return $result[0]['count'];
+    }
 
     /**
      * Delete given program from system

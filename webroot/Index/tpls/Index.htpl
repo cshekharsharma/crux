@@ -48,8 +48,10 @@
            {/foreach}
            </tbody>
         </table>
-        <div class="paginator-div">
-            <input type="button" value=" Next >> " class="btns" onclick="window.location.href=window.location.origin+window.location.pathname+'?offset={$PAGINATOR_OFFSET}'">
-        </div>
+        {if $HAS_PAGINATOR}
+            <div class="paginator-div">
+                <input type="button" value=" Next >> " class="btns" onclick="window.location.href=window.location.origin+window.location.pathname+'?offset={$PAGINATOR_OFFSET}'">
+            </div>
+        {/if}
     {include file="webroot/Index/tpls/footer.htpl"}
  </body>

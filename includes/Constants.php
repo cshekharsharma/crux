@@ -55,7 +55,7 @@ final class Constants {
     const INPUT_PARAM_ACTION = '__action';
     const INPUT_PARAM_SUBACTION = '__subaction';
     
-    const PAGINATOR_LIMIT = 13;
+    const PAGINATOR_LIMIT = 10;
     
     const EMPTY_CODEBASE = 'EMPTY_CODEBASE';
     const ERROR_RESOURCE_NOT_FOUND = 'NO_ITEM_FOUND';

@@ -472,3 +472,7 @@ legend {
     cursor: not-allowed;
     pointer-events: none;
 }
+
+.small-textbox {
+    padding:3px !important;
+}

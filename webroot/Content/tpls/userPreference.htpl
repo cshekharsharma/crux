@@ -21,6 +21,11 @@
                         <td class="td-1">Show invisibles</td>
                         <td class="td-2"><input type="checkbox" id="show_invisibles" name="show_invisibles"></td>
                     </tr>
+                    
+                    <tr>
+                        <td class="td-1">Paginator limit</td>
+                        <td class="td-2"><input type="text" class="input small-textbox" id="paginator_limit" name="paginator_limit"></td>
+                    </tr>
                 </table>
                 <br><br> 
                 <input type="button" class="btns" value="Submit" onclick="saveUserPreference('userpref-form');">

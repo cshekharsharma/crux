@@ -2,7 +2,7 @@
 /**
  * Index Controller<br>
  * Used as default controller
- * 
+ *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since May 08, 2014
@@ -18,7 +18,7 @@ class IndexController extends AbstractController {
         $this->model = new IndexModel();
         $this->view = new IndexView();
     }
-    
+
     /**
      * @see AbstractController::run()
      */
@@ -34,7 +34,7 @@ class IndexController extends AbstractController {
 
     /**
      * Get list of all active programs in system
-     * 
+     *
      * @param array $inputParams
      * @return boolean
      */
@@ -42,7 +42,7 @@ class IndexController extends AbstractController {
         $programs = array();
         $lang = $inputParams[Constants::INPUT_PARAM_LANG];
         $category = $inputParams[Constants::INPUT_PARAM_CATE];
-        $offset = $formParams['offset'];
+        $offset = empty($formParams['offset']) ? 0 : $formParams['offset'];
         $programs = $this->getModel()->getProgramList($lang, $category, $offset);
         return $programs;
     }

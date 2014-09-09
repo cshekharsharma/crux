@@ -8,6 +8,10 @@
  */
 class Display {
 
+    const EMPTY_CODEBASE_KEY = 'EMPTY_CODEBASE';
+    const NO_ITEM_FOUND_KEY  = 'NO_ITEM_FOUND';
+    const DEBUG_TRACE_KEY    = 'DEBUG_TRACE_KEY';
+    
     /**
      * Smarty instance
      *

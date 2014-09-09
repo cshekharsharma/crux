@@ -9,6 +9,7 @@ body {
 	font-size: 14px;
 	width: 100%;
     text-align: center;
+    color:#333;
 }
 
 .stats-main-table a  {
@@ -37,7 +38,7 @@ caption {
 .stats-main-table th {
     cursor:pointer;
     font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-    color: #4f6b72;
+    color: #444;
     border-right: 1px solid #C1DAD7;
     border-bottom: 1px solid #C1DAD7;
     border-top: 1px solid #C1DAD7;

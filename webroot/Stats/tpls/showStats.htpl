@@ -28,7 +28,11 @@
                      {elseif $LANG_MAP[$lang] eq '' OR $CATE_MAP[$cate] eq ''}
                         <td class="total-block" title="{$TOTAL_STR}">{$column}</td>
                      {else}
-                        <td title="{$CATE_MAP[$cate]} ({$LANG_MAP[$lang]})"><a href="/{$lang}/{$cate}" target="_blank">{$column}</a></td>
+                        <td title="{$CATE_MAP[$cate]} ({$LANG_MAP[$lang]})">
+                            <div onclick="window.location.href='/{$lang}/{$cate}'">
+                                <a href="/{$lang}/{$cate}" target="_blank">{$column}</a>
+                            </div>
+                        </td>
                      {/if}
                 {/foreach}
             </tr>

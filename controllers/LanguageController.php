@@ -34,4 +34,18 @@ class LanguageController extends AbstractController {
         }
         return $resultSet;
     }
+    
+    /**
+     * Checks in database if given language exists and is active?
+     * 
+     * @param string $lang
+     * @return boolean
+     */
+    public function languageExists($lang) {
+        $query = 'SELECT * FROM ' . Language_DBTable::DB_TABLE_NAME
+            . ' WHERE ' . Language_DBTable::LANGUAGE_ID . " = '" . $lang
+            . "' AND " . Language_DBTable::IS_DELETED . '=0';
+        $result = DBManager::executeQuery($query, array(), true);
+        return (is_array($result) && count($result) > 0);
+    }
 }

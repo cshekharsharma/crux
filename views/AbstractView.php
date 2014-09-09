@@ -57,6 +57,8 @@ abstract class AbstractView extends Application {
         $templateKey = strtoupper($templateKey);
         if ($this->isTemplateAvailable($templateKey)) {
             $content = $this->getTemplateMarkup($templateKey);
+        } elseif ($this->isErrorTemplate($templateKey)) {
+            $content = $this->getErrorTemaplateMarkup($templateKey);
         } else {
             $errorCode = Constants::ERROR_RESOURCE_NOT_FOUND;
             $content = $this->getErrorTemaplateMarkup($errorCode);
@@ -97,6 +99,10 @@ abstract class AbstractView extends Application {
         return Constants::WEBROOT_DIR . ucfirst('errors') . '/' . $this->htplDir;
     }
 
+    private function isErrorTemplate($key) {
+        return !empty($this->errorTemplateMap[$key]);
+    }
+    
     private function isTemplateAvailable ($templateKey) {
         return (!empty($this->templateMap[$templateKey]));
     }

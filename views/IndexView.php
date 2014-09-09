@@ -10,13 +10,14 @@ class IndexView extends AbstractView {
 
     public function display() {
         if (!empty($this->viewName)) {
+            $bean = $this->getBean();
             if (strtoupper($this->viewName) === 'INDEX') {
-                $this->displayProgramList($this->getBean());
+                $this->displayProgramList($bean['programList'], $bean['isValidRequest']);
             }
         }
     }
 
-    private function displayProgramList($programList) {
+    private function displayProgramList($programList, $isValidRequest) {
         if (!empty($programList)) {
             foreach ($programList as $key => $programData) {
                 $descKey = ProgramDetails_DBTable::DESCRIPTION;
@@ -36,10 +37,10 @@ class IndexView extends AbstractView {
             $this->smarty->assign("PROGRAM_LIST", $programList);
             $this->render(IndexController::MODULE_KEY);
         } else {
-            if (IndexController::$isHomePage) {
-                $this->render("EMPTY_CODEBASE");
+            if ($isValidRequest) {
+                $this->render(Display::EMPTY_CODEBASE_KEY);
             } else {
-                $this->render("NO_ITEM_FOUND");
+                $this->render(Display::NO_ITEM_FOUND_KEY);
             }
         }
     }

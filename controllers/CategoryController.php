@@ -33,4 +33,18 @@ class CategoryController extends AbstractController {
         }
         return $resultSet;
     }
+    
+    /**
+     * Checks in database if given category exists and is active?
+     *
+     * @param string $category
+     * @return boolean
+     */
+    public function categoryExists($category) {
+        $query = 'SELECT * FROM ' . Category_DBTable::DB_TABLE_NAME
+        . ' WHERE ' . Category_DBTable::CATEGORY_ID . " = '" . $category
+        . "' AND " . Category_DBTable::IS_DELETED . '=0';
+        $result = DBManager::executeQuery($query, array(), true);
+        return (is_array($result) && count($result) > 0);
+    }
 }

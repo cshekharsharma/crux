@@ -27,8 +27,7 @@ class IndexController extends AbstractController {
         $formParams = RequestManager::getAllParams();
         $uc = new UserPreferencesController();
         $uc->getUserPreference(Utils::getLoggedInUserId());
-        $programs = $this->getProgramList($uriParams, $formParams);
-        $this->setBean($programs);
+        $this->populateProgramData($uriParams, $formParams);
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
 
@@ -36,14 +35,35 @@ class IndexController extends AbstractController {
      * Get list of all active programs in system
      *
      * @param array $inputParams
-     * @return boolean
      */
-    public function getProgramList(array $inputParams, $formParams) {
+    public function populateProgramData(array $inputParams, $formParams) {
         $programs = array();
-        $lang = $inputParams[Constants::INPUT_PARAM_LANG];
+        $language = $inputParams[Constants::INPUT_PARAM_LANG];
         $category = $inputParams[Constants::INPUT_PARAM_CATE];
+        $isValidRequest = $this->isValidProgramRequest($language, $category);
         $offset = empty($formParams['offset']) ? 0 : $formParams['offset'];
-        $programs = $this->getModel()->getProgramList($lang, $category, $offset);
-        return $programs;
+        $programs = $this->getModel()->getProgramList($language, $category, $offset);
+        $this->setBean(
+            array(
+                'programList' => $programs,
+                'isValidRequest' => $isValidRequest
+            )
+        );
+    }
+    
+    public function isValidProgramRequest($language, $category) {
+        $isValid = false;
+        if (empty($language) && empty($category)) {
+            $isValid = true;
+        } elseif (!empty($language) && !empty($category)) {
+            $hasLanguage = (new LanguageController())->languageExists($language);
+            $hasCategory = (new CategoryController())->categoryExists($category);
+            $isValid = $hasCategory && $hasLanguage;
+        } elseif (!empty($language) && empty($category)) {
+            $isValid = (new LanguageController())->languageExists($language);
+        } else {
+            $isValid = false;
+        }
+        return $isValid;
     }
 }

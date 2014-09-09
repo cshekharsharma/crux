@@ -29,7 +29,6 @@ class RequestManager {
             $key = '__q'.($i + 1).'__';
             $_GET[$key] = $_REQUEST[$key] = $uriParts[$i];
         }
-        self::requireCoreFiles();
         self::normalizeRequest();
     }
 
@@ -215,13 +214,6 @@ class RequestManager {
         if (!empty($uri) && strtolower($uri) != 'favicon.ico') {
             setcookie(Session::SESS_PENDING_REQ_URI, $uri);
         }
-    }
-
-    /**
-     * Load all essential application core files into memory
-     */
-    public static function requireCoreFiles() {
-        require_once 'library/smarty/libs/Smarty.class.php';
     }
 
     /**

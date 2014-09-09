@@ -10,8 +10,8 @@ try {
     require_once 'includes/AutoLoader.php';
     Session::start();
     Profiler::startProfiler('main');
-    RequestManager::initRequest();
-    RequestManager::serveRequest();
+    $bootstrap = new Bootstrap();
+    $bootstrap->init();
     Profiler::endProfiler('main');
 } catch(Exception $e) {
     RequestManager::handleException($e);

@@ -31,6 +31,7 @@ class AutoLoader {
             'Profiler' => Constants::INCLUDE_DIR.'Profiler.php',
             'Messages' => Constants::INCLUDE_DIR.'Messages.php',
             'Constants' => Constants::INCLUDE_DIR.'Constants.php',
+            'Bootstrap' => Constants::INCLUDE_DIR.'Bootstrap.php',
             'DBManager' => Constants::INCLUDE_DIR.'DBManager.php',
             'Application' => Constants::INCLUDE_DIR.'Application.php',
             'Configuration' => Constants::INCLUDE_DIR.'Configuration.php',

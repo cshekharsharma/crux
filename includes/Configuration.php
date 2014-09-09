@@ -29,7 +29,7 @@ final class Configuration {
         self::DB_HOST => 'localhost',
         self::DB_USER => 'root',
         self::DB_PASS => 'cvbert',
-        self::DB_NAME => 'codeme',
+        self::DB_NAME => 'crux',
         self::LOG_FILE => 'data/logs/access.log',
         self::LOG_LEVEL => Logger::WARN,
         self::CODE_BASE_DIR => 'data/codes/',

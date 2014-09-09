@@ -12,6 +12,7 @@ final class Constants {
     const APP_NAME = 'Crux';
     const APP_LOGO = '&lt; Crux /&gt;';
     const APP_VERSION = '1.0.0';
+    const SITE_URL = 'crux.io';
 
     const DB_DATETIME_FORMAT = 'Y-m-d H:i:s';
 

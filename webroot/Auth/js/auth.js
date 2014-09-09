@@ -41,11 +41,11 @@ addEvent(window, 'load', function() {
 });
 
 function doLogin(formId) {
-    $('#do-login').addClass('disabled');
-    $('#do-login').val(' Signing In... ');
     var formElem = document.getElementById(formId);
     var formInputFields = [ formElem.username, formElem.password ];
     if (validate(formElem, formInputFields, AUTH_CONSTANTS.emptyCredentials)) {
+        $('#do-login').addClass('disabled');
+        $('#do-login').val(' Signing In... ');
         var formData = populateLoginFormData(formElem);
         AJAX.onreadystatechange = function() {
             if (AJAX.readyState == 4 && AJAX.status == 200) {

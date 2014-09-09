@@ -450,6 +450,7 @@ legend {
     padding: 12px;
     background: white;
     border: 1px solid #AAA;
+    font-size:13px;
 }
 
 #auth-msg-container { /* 	margin-left:25%; */

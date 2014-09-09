@@ -35,7 +35,7 @@ abstract class AbstractController extends Application {
      * Constructor
      */
     public function __construct() {
-        $this->smarty = Utils::getSmarty();
+        $this->smarty = Display::getSmarty();
     }
 
     /**

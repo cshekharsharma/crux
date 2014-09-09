@@ -104,6 +104,7 @@ function populateLoginFormData(formElem) {
     var formData = new FormData();
     formData.append('username', formElem.username.value);
     formData.append('password', formElem.password.value);
+    formData.append(APP_CONSTANTS.CSRF_TOKEN_NAME, formElem[APP_CONSTANTS.CSRF_TOKEN_NAME].value);
     formData.append('remember', formElem.remember.checked);
     formData.append('login-action-name', document
             .getElementById('login-action-name').value);
@@ -114,6 +115,8 @@ function populateChpwdFormData(formElem) {
     var formData = new FormData();
     formData.append('currentpassword', formElem.currentpassword.value);
     formData.append('newpassword', formElem.newpassword.value);
+    formData.append(APP_CONSTANTS.CSRF_TOKEN_NAME,
+            formElem[APP_CONSTANTS.CSRF_TOKEN_NAME].value);
     formData.append('chpwd-action-name', document
             .getElementById('chpwd-action-name').value);
     return formData;
@@ -166,7 +169,7 @@ function getChangePasswordUI() {
             }
         }
     };
-    AJAX.open("POST", AUTH_CONSTANTS.chpwdContentPath);
+    AJAX.open("GET", AUTH_CONSTANTS.chpwdContentPath);
     AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
     AJAX.send(formData);
 }

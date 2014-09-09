@@ -8,19 +8,6 @@
 class Utils {
 
     /**
-     * Get smarty object for templating. Uses Singleton pattern
-     *
-     * @return Smarty
-     */
-    public static function getSmarty() {
-        if (!Display::$smarty instanceof Smarty) {
-            Display::$smarty = new Smarty();
-        }
-
-        return Display::$smarty;
-    }
-
-    /**
      * Get hashed file name which is stored on disk
      *
      * @param string $actualFileName
@@ -54,6 +41,15 @@ class Utils {
             $string = preg_replace($urlPattern, "<a target=\"_blank\" href=".$url[0].">".$url[0]."</a> ", $string);
         }
         return $string;
+    }
+
+    /**
+     * Wrapper function for inbuild empty()
+     *
+     * @param boolean
+     */
+    public static function isEmpty($var) {
+        return empty($var);
     }
 
     /**
@@ -95,6 +91,21 @@ class Utils {
     }
 
     /**
+     * Generate random string of given length
+     *
+     * @param number $length
+     * @return string
+     */
+    public static function getRandomString($length = 16) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, strlen($characters) - 1)];
+        }
+        return $randomString;
+    }
+
+    /**
      * Returns appropriate editor theme for logged in user.
      * Try to get theme from user preferences, if not found then returns default.
      *
@@ -110,18 +121,6 @@ class Utils {
         }
         $themeInfo['name'] = self::getAceEditorThemes($themeInfo['id']);
         return $themeInfo;
-    }
-
-    /**
-     * Tells if request is an AJAX request, by checking appropriate header
-     *
-     * @return boolean
-     */
-    public static function isAjaxRequest() {
-        //self::debugVariable(($_SERVER);
-        $hasHeader = isset($_SERVER['HTTP_X_REQUESTED_WITH']);
-        $isAjaxHeader = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
-        return $hasHeader && $isAjaxHeader;
     }
 
     /**
@@ -181,7 +180,7 @@ class Utils {
 
     /**
      * Checks if current execution is from CLI or not?
-     * 
+     *
      * @return boolean
      */
     public static function isRunningFromCLI() {
@@ -248,7 +247,7 @@ class Utils {
             exit();
         }
     }
-    
+
     /**
      * Strip slashes from given string or each element of array
      *
@@ -265,5 +264,5 @@ class Utils {
         }
         return $data;
     }
-    
+
 }

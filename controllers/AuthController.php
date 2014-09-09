@@ -51,10 +51,10 @@ class AuthController extends AbstractController {
                 $formKey = $formParams[self::LOGIN_ACTION_NAME];
             }
             $isValidKey = ($formKey === self::LOGIN_ACTION_VALUE);
-            if (!self::isLoggedIn() && $isValidKey && Utils::isAjaxRequest()) {
+            if (!self::isLoggedIn() && $isValidKey && RequestManager::isAjaxRequest()) {
                 $this->authenticate($formParams);
             } else {
-                if (Utils::isAjaxRequest()) {
+                if (RequestManager::isAjaxRequest()) {
                     Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
                 } else {
                     $this->getView()->setViewName(self::AUTH_LOGIN_KEY)->display();
@@ -70,7 +70,7 @@ class AuthController extends AbstractController {
         } elseif (self::isLoggedIn() && $authAction === Constants::AUTH_LOGOUT_URI_KEY) {
             $this->logout();
         } else {
-            if (Utils::isAjaxRequest()) {
+            if (RequestManager::isAjaxRequest()) {
                 Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_USER_NOT_LOGGED_IN);
             } else {
                 RequestManager::redirect(Constants::AUTH_URI_KEY);

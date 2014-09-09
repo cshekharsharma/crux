@@ -60,6 +60,8 @@ function populateFormData(formId) {
     formData.append('level', formElem.level.value);
     formData.append('program_title', formElem.program_title.value);
     formData.append('program_description', formElem.program_description.value);
+    formData.append(APP_CONSTANTS.CSRF_TOKEN_NAME,
+            formElem[APP_CONSTANTS.CSRF_TOKEN_NAME].value);
     formData.append('is_verified', (formElem.is_verified.checked == true) ? 1
             : 0);
     return formData;

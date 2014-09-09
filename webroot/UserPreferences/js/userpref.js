@@ -15,6 +15,8 @@ function saveUserPreference(formId) {
     formData.append('show_invisible_chars', $('#show_invisibles')
             .is(':checked'));
     formData.append('paginator_limit', $('#paginator_limit').val());
+    formData.append(APP_CONSTANTS.CSRF_TOKEN_NAME,
+            $('#'+APP_CONSTANTS.CSRF_TOKEN_NAME).val());
     AJAX.onreadystatechange = function() {
         if (AJAX.readyState == 4 && AJAX.status == 200) {
             var msgContainer = $('.msg-container');
@@ -55,7 +57,7 @@ function getUserPreferenceUI() {
             }
         }
     };
-    AJAX.open("POST", USER_PREF_CONSTANTS.getUserPrefUIPath);
+    AJAX.open("GET", USER_PREF_CONSTANTS.getUserPrefUIPath);
     AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
     AJAX.send(formData);
 }

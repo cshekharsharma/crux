@@ -5,6 +5,7 @@
  */
 
 APP_CONSTANTS = {
+    CSRF_TOKEN_NAME : 'csrf_token',
     SUCCESS_CODE : 'success',
     FAILURE_CODE : 'error',
     MAX_SEARCH_SUGGEST : 15,

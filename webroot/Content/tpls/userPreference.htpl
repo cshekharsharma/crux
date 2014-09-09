@@ -10,6 +10,7 @@
                     <tr>
                         <td class="td-1">Editor Theme</td>
                         <td class="td-2">
+                            <input type="hidden" name="{$CSRF_TOKEN_NAME}" id="{$CSRF_TOKEN_NAME}" value="{$CSRF_TOKEN_VALUE}">
                             <select name="code_editor_theme" id="code_editor_theme"> 
                                 {foreach from=$EDITOR_THEME_LIST key=themeId item=themeName}
                                     {if $PREF_EDITOR_THEME eq $themeId}

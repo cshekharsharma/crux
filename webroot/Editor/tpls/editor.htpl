@@ -12,6 +12,7 @@
                 <tr>
                     <td  style="padding:2px;" colspan="2">
                         <span class="faded-text italic">Editor Theme: {$EDITOR_THEME.name}</span>
+                        <input type="hidden" name="{$CSRF_TOKEN_NAME}" id="{$CSRF_TOKEN_NAME}" value="{$CSRF_TOKEN_VALUE}">
                         <input type="hidden" id="isupdate" name="isupdate" value="{$IS_UPDATE_REQ}">
                         <input type="hidden" id="programid" name="programid" value="{$PROGRAM_CURRENT_ID}">
                         <input type="hidden" id="{$EDIT_ACTION_NAME}" name="{$EDIT_ACTION_NAME}" value="{$EDIT_ACTION_VALUE}">

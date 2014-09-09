@@ -14,5 +14,19 @@ class Display {
      * @var Smarty
      */
     public static $smarty;
+    
+    /**
+     * Get smarty object for templating. Uses Singleton pattern
+     *
+     * @return Smarty
+     */
+    public static function getSmarty() {
+        if (!self::$smarty instanceof Smarty) {
+            self::$smarty = new Smarty();
+        }
+    
+        return self::$smarty;
+    }
+    
 
 }

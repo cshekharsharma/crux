@@ -17,6 +17,7 @@
                         <input class="uploadfile" name="uploadfile" type="file" />
                     </div>
                     <div class="element-holder-div">
+                    <input type="hidden" name="{$CSRF_TOKEN_NAME}" id="{$CSRF_TOKEN_NAME}" value="{$CSRF_TOKEN_VALUE}">
                         <input class="textboxes input" type="text" name="program_title" id="program_id" placeholder="Write program title here..."/>
                     </div>
                     <div class="element-holder-div">

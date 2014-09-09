@@ -28,7 +28,7 @@ abstract class AbstractView extends Application {
 
 
     public function __construct() {
-        $this->smarty = Utils::getSmarty();
+        $this->smarty = Display::getSmarty();
     }
 
     public function setViewName($viewName) {
@@ -83,6 +83,8 @@ abstract class AbstractView extends Application {
         $this->smarty->assign('APP_NAME', Constants::APP_NAME);
         $this->smarty->assign('APP_LOGO', Constants::APP_LOGO);
         $this->smarty->assign('APP_VERSION', Constants::APP_VERSION);
+        $this->smarty->assign('CSRF_TOKEN_NAME', Constants::CSRF_TOKEN_NAME);
+        $this->smarty->assign('CSRF_TOKEN_VALUE', RequestManager::getCsrfToken());
         $this->smarty->assign('SEARCH_SUGGESTIONS', $searchSuggestions);
         $this->smarty->assign('CHPWD_ACTION_VALUE', AuthController::CHPWD_ACTION_VALUE);
     }

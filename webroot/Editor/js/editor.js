@@ -128,5 +128,6 @@ function populateFormData(formElem) {
     formData.append('description', formElem.description.value);
     formData.append('is_verified', (formElem.verified.checked) ? 1 : 0);
     formData.append('edit_action_name', $('#edit_action_name').val());
+    formData.append(APP_CONSTANTS.CSRF_TOKEN_NAME, formElem[APP_CONSTANTS.CSRF_TOKEN_NAME].value);
     return formData;
 };

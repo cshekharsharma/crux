@@ -13,6 +13,7 @@
             </div>
                  <div class="fieldset">
                     <div class="input-holder">
+                        <input type="hidden" name="{$CSRF_TOKEN_NAME}" id="{$CSRF_TOKEN_NAME}" value="{$CSRF_TOKEN_VALUE}">
                         <input class="textboxes input" type="text" name="username" id="username" placeholder="User Name"/>
                     </div>
 

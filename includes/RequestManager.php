@@ -36,9 +36,9 @@ class RequestManager {
     /**
      * Get http request param for given key
      *
-     * @param unknown $key
-     * @param string $includeCookie
-     * @return Ambigous <NULL, unknown>
+     * @param string $key
+     * @param boolean $includeCookie
+     * @return array|null
      */
     public static function getParam($key, $includeCookie = false) {
         return self::getNativeParam($key, $includeCookie);
@@ -47,9 +47,9 @@ class RequestManager {
     /**
      * Get parameter from primitive request data containers, i.e. $_GET, $_POST etc
      *
-     * @param unknown $key
-     * @param unknown $includeCookie
-     * @return unknown|NULL
+     * @param string $key
+     * @param boolean $includeCookie
+     * @return array|NULL
      */
     private static function getNativeParam($key, $includeCookie) {
 
@@ -69,10 +69,28 @@ class RequestManager {
     /**
      * Get all request parameters
      *
-     * @return unknown
+     * @return array
      */
     public static function getAllParams() {
         return $_REQUEST;
+    }
+
+    /**
+     * Returns all <b>POST</b> parameters
+     * 
+     * @return array
+     */
+    public static function getGetParams() {
+        return $_GET;
+    }
+
+    /**
+     * Returns all <b>GET</b> parameters 
+     * 
+     * @return array
+     */
+    public static function getPostParams() {
+        return $_POST;
     }
 
     /**
@@ -89,6 +107,30 @@ class RequestManager {
             $_REQUEST = Utils::stripSlashes($_REQUEST);
     }
 
+    /**
+     * Tells if request is an AJAX request, by checking appropriate header
+     *
+     * @return boolean
+     */
+    public static function isAjaxRequest() {
+        $hasHeader = isset($_SERVER['HTTP_X_REQUESTED_WITH']);
+        $isAjaxHeader = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
+        return $hasHeader && $isAjaxHeader;
+    }
+
+    public static function isValidRequest() {
+        if (!Utils::isEmpty(self::getPostParams())) {
+            if (!Utils::isEmpty(self::getParam(Constants::CSRF_TOKEN_NAME))) {
+                $formToken = self::getParam(Constants::CSRF_TOKEN_NAME);
+                $sessToken = self::getCsrfToken();
+                if ($sessToken === $formToken) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        return true;
+    }
 
     /**
      * Generic method for serving all http requests
@@ -96,12 +138,48 @@ class RequestManager {
      * @throws Exception
      */
     public static function serveRequest() {
-        $resource = ResourceProvider::getResource();
-        $controller = ResourceProvider::getControllerByResourceKey($resource->getKey());
-        if (!empty($controller) && $controller instanceof AbstractController) {
-            $controller->run($resource);
+        self::regenerateCsrfToken();
+        if (self::isValidRequest()) {
+            $resource = ResourceProvider::getResource();
+            $controller = ResourceProvider::getControllerByResourceKey($resource->getKey());
+            if (!empty($controller) && $controller instanceof AbstractController) {
+                $controller->run($resource);
+            } else {
+                throw new Exception("Invalid controller requested, Exiting");
+            }
         } else {
-            throw new Exception("Invalid controller requested, Exiting");
+            Logger::getLogger()->logWarn('No CSRF token found. IP:' . print_r($_SERVER['REMOTE_ADDR'], true));
+            if (self::isAjaxRequest()) {
+                Response::sendFailureResponse('Something went wrong!');
+            } else {
+
+            }
+        }
+    }
+
+    /**
+     * If csrf token not present in session create a new and save in session
+     * 
+     * @param string $forceful
+     */
+    public static function regenerateCsrfToken($forceful = false) {
+        $tokenName = Constants::CSRF_TOKEN_NAME;
+        if (Utils::isEmpty(self::getCsrfToken()) || $forceful) {
+            $token = Utils::getRandomString();
+            Session::set($tokenName, $token);
+        }
+    }
+
+    /**
+     * Get valid csrf token for current session
+     * 
+     * @return string|NULL
+     */
+    public static function getCsrfToken() {
+        if (!Utils::isEmpty(Session::get(Constants::CSRF_TOKEN_NAME))) {
+            return Session::get(Constants::CSRF_TOKEN_NAME);
+        } else {
+            return null;
         }
     }
 
@@ -146,6 +224,17 @@ class RequestManager {
         require_once 'library/smarty/libs/Smarty.class.php';
     }
 
+    /**
+     * Terminate current request processing, And redirects to home page
+     * 
+     * @param string $msg
+     */
+    public static function exitRequest($msg) {
+        Logger::getLogger()->logError('Exiting Request: ' . $msg);
+        RequestManager::redirect();
+    }
+    
+    
     /**
      * handle excpetions and write them to Log file
      *

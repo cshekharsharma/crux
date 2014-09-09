@@ -77,7 +77,7 @@ class UploadController extends AbstractController {
                         Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_OPERATION_FAILED);
                     }
                 } else {
-                    Logger::getLogger()->LogError(Error::UPLOAD_INVALID_FILE_TYPE);
+                    Logger::getLogger()->LogError(Messages::UPLOAD_INVALID_FILE_TYPE);
                     Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::UPLOAD_INVALID_FILE_TYPE);
                 }
             }

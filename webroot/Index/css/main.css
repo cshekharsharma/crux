@@ -120,7 +120,7 @@ body {
 }
 
 .footer-div {
-    z-index: 999;
+    z-index: 998;
     text-align: center;
     vertical-align: middle;
     position: fixed;
@@ -196,7 +196,7 @@ body {
     left: 0;
     background: #000000;
     border: 1px solid #cecece;
-    z-index: 105;
+    z-index: 999;
 }
 
 .popupDiv {
@@ -209,7 +209,7 @@ body {
     left: 50%;
     background: #FFFFFF;
     border: 2px solid #cecece;
-    z-index: 110;
+    z-index: 1000;
     font-size: 13px;
     border-radius: 8px;
     -moz-border-radius: 8px;
@@ -217,7 +217,7 @@ body {
 }
 
 .account-dropdown {
-    z-index: 101;
+    z-index: 1000;
     display: none;
     position: absolute;
     top: 57px;
@@ -475,4 +475,7 @@ legend {
 
 .small-textbox {
     padding:3px !important;
+}
+#userpref-close-btn, #chpwd-close-btn {
+    margin:-38px;
 }

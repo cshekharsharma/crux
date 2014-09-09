@@ -1,6 +1,6 @@
 {include file="webroot/Index/tpls/headerBeforeLogin.htpl"}
 <head>
-  <title>Login :: Crux</title>
+  <title>Login :: {$APP_NAME}</title>
   <link rel="stylesheet" type="text/css" href="/webroot/Auth/css/auth.css">
 </head>
     <br><br><br><br><br><br>

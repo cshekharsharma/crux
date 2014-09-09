@@ -45,16 +45,20 @@ class IndexModel extends AbstractModel {
     }
 
     public function processPaginator($offset, $limit, $total) {
+        $paginatorInfo = array(
+            'hasNextPage'    => false,
+            'nextPageOffset' => 0,
+            'hasPrevPage'    => false,
+            'prevPageOffset' => 0
+        );
         if (($offset + $limit) < $total) {
-            $paginatorInfo = array(
-                'hasPaginator' => true,
-                'nextOffset'   => ($offset + $limit)
-            );
-        } else {
-            $paginatorInfo = array(
-                'hasPaginator' => false,
-                'nextOffset'   => 0
-            );
+            $paginatorInfo['nextPageOffset'] = ($offset + $limit);
+            $paginatorInfo['hasNextPage'] = true;
+        }
+
+        if ($offset > 0) {
+            $paginatorInfo['prevPageOffset'] = ($offset - $limit);
+            $paginatorInfo['hasPrevPage'] = true;
         }
         Session::set('PAGINATOR_INFO', $paginatorInfo);
     }

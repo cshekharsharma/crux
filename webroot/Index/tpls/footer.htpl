@@ -9,7 +9,7 @@
     <i><b>{$APP_NAME}</b></i> is a code snippet management tool with well featured source code editor,
     which supports all major languages. You can write new snippets, manage, search and filter old snippets.<br>
     <br>
-    Crux is free software, <a target="_blank" href="http://github.com/cshekharsharma/crux">See source code here.</a><br>
+    {$APP_NAME} is free software, <a target="_blank" href="http://github.com/cshekharsharma/crux">See source code here.</a><br>
     Please contribute if you find it worth.<br>
     Chandra Shekhar <a href="mailto:shekharsharma705@gmail.com">&lt;shekharsharma705@gmail.com&gt</a>;
 </div>
@@ -18,7 +18,7 @@
         var selector = '#about-me-block';
         getPartialPopup(selector);
     });
-    
+
     addEvent(window, 'keydown', function(e) {
         if (e.keyCode === 27) {
             e.preventDefault();

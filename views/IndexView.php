@@ -25,10 +25,14 @@ class IndexView extends AbstractView {
                 $programList[$key][$descKey] = $parsedDesc;
             }
             $paginatorInfo = Session::get('PAGINATOR_INFO');
-            if ($paginatorInfo['hasPaginator']) {
-                $this->smarty->assign('PAGINATOR_OFFSET', $paginatorInfo['nextOffset']);
+            if ($paginatorInfo['hasNextPage']) {
+                $this->smarty->assign('NEXT_PAGE_OFFSET', $paginatorInfo['nextPageOffset']);
             }
-            $this->smarty->assign('HAS_PAGINATOR', $paginatorInfo['hasPaginator']);
+            if ($paginatorInfo['hasPrevPage']) {
+                $this->smarty->assign('PREV_PAGE_OFFSET', $paginatorInfo['prevPageOffset']);
+            }
+            $this->smarty->assign('HAS_NEXT_PAGE', $paginatorInfo['hasNextPage']);
+            $this->smarty->assign('HAS_PREV_PAGE', $paginatorInfo['hasPrevPage']);
             $this->smarty->assign("PROGRAM_LIST", $programList);
             $this->render(IndexController::MODULE_KEY);
         } else {

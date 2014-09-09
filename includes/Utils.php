@@ -235,9 +235,10 @@ class Utils {
      * @param bool $displayTrace
      */
     public static function debugVariable($var, $exit = false, $displayTrace = true) {
-        $debugTrace = end(debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT));
+        $debugTraceArray = debug_backtrace(DEBUG_BACKTRACE_PROVIDE_OBJECT);
+        $debugTrace = $debugTraceArray[1];
         $debugVar = print_r($var, true);
-        $smarty = self::getSmarty();
+        $smarty = Display::getSmarty();
         $smarty->assign('DEBUG_VAR', $debugVar);
         if ($displayTrace) {
             $smarty->assign('STACK_TRACE', $debugTrace);

@@ -1,7 +1,7 @@
 {include file="webroot/Index/tpls/header.htpl"}
 <head>
   <meta charset="utf-8">
-  <title>Crux :: Your preparation helper</title>
+  <title>{$APP_NAME} :: Your preparation helper</title>
   <link rel="stylesheet" type="text/css" href="/webroot/Index/css/index.css">
   <script src="/library/jquery/js/jquery.tablesorter.min.js" type="text/javascript"></script>
   {literal}
@@ -48,10 +48,13 @@
            {/foreach}
            </tbody>
         </table>
-        {if $HAS_PAGINATOR}
-            <div class="paginator-div">
-                <input type="button" value=" Next >> " class="btns" onclick="window.location.href=window.location.origin+window.location.pathname+'?offset={$PAGINATOR_OFFSET}'">
-            </div>
-        {/if}
+        <div class="paginator-div">
+            {if $HAS_PREV_PAGE}
+                <input type="button" value="<<" class="btns paginator-btns" onclick="window.location.href=window.location.origin+window.location.pathname+'?offset={$PREV_PAGE_OFFSET}'">
+             {/if}
+             {if $HAS_NEXT_PAGE}
+                <input type="button" value=">>" class="btns paginator-btns" onclick="window.location.href=window.location.origin+window.location.pathname+'?offset={$NEXT_PAGE_OFFSET}'">
+             {/if}
+        </div>
     {include file="webroot/Index/tpls/footer.htpl"}
  </body>

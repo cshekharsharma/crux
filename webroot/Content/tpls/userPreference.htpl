@@ -1,4 +1,5 @@
 <div id="wrapper2" class="popup-inner-div">
+    <img id="userpref-close-btn" class="popup-close-btn" src="/webroot/Index/imgs/x-btn.png" onclick="hideBgPopups1('userPref');">
     <div class="form-header-span">User Preferences</div>
     <form name="userpref-form" id="userpref-form" class="auth-form" method="post">
     <div class="innerdiv">

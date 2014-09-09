@@ -101,6 +101,7 @@ caption {
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
+    text-align:center;
 }
 
 .listview-table.tablesorter thead tr .headerSortUp {
@@ -122,4 +123,7 @@ caption {
     padding: 10px;
     text-align: center;
     height: 40px;
+}
+..paginator-btns {
+    font-weight:bold;
 }

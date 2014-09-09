@@ -59,12 +59,22 @@ addEvent(window, 'keydown', function(e) {
 addEvent(window, 'keydown', function(e) {
     if (e.keyCode === 27) {
         e.preventDefault();
-        if (!$('.account-dropdown').is(':hidden')) {
-            $(APP_CONSTANTS.cssSelectors.popupBg).hide();
-            $('.account-dropdown').hide();
-        }
+        hideBgPopups();
     }
 });
+
+function hideBgPopups() {
+    if (!$('.account-dropdown').is(':hidden')) {
+        $(APP_CONSTANTS.cssSelectors.popupBg).hide();
+        $('.account-dropdown').hide();
+    }
+}
+
+function hideBgPopups1(flagKey) {
+    $(APP_CONSTANTS.cssSelectors.popupBg).hide();
+    $('.popupDiv').hide();
+    popupFlags[flagKey] = 0;
+}
 
 $('#username-link').click(function() {
     var selector = APP_CONSTANTS.cssSelectors.accountDD;
@@ -95,7 +105,7 @@ function attachPopupEvents(bg, container, flagKey, callback) {
     if (popupFlags[flagKey] == 0) {
         $(bg).css({
             "opacity" : "0.7",
-            "z-index" : "107"
+            "z-index" : "999"
         });
         $(bg).fadeIn("slow");
         $(container).fadeIn("slow");
@@ -134,10 +144,10 @@ function closePopup(bg, container) {
 function getPartialPopup(visibleBlock) {
     $(APP_CONSTANTS.cssSelectors.popupBg).css({
         'opacity' : '0.7',
-        'z-index' : '105'
+        'z-index' : '999'
     });
     $(APP_CONSTANTS.cssSelectors.popupBg).toggle();
-    $(visibleBlock).zIndex(106);
+    $(visibleBlock).zIndex(1000);
     $(visibleBlock).slideToggle();
     lastPopupBlockSelector = visibleBlock;
 }
@@ -189,11 +199,10 @@ $('#searchbox').blur(function() {
 /**
  * Commenting because of bad-syncing of toggle events
  */
-//$(APP_CONSTANTS.cssSelectors.popupBg).click(function(){
-//    $(APP_CONSTANTS.cssSelectors.popupBg).fadeOut('slow');
-//    $(lastPopupBlockSelector).slideToggle();
-//});
-
+// $(APP_CONSTANTS.cssSelectors.popupBg).click(function(){
+// $(APP_CONSTANTS.cssSelectors.popupBg).fadeOut('slow');
+// $(lastPopupBlockSelector).slideToggle();
+// });
 function removeClass(el, className) {
     className = " " + className.trim(); // must keep a space before class name
     el.className = el.className.replace(className, "");

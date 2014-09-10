@@ -12,9 +12,21 @@ class ExecuteController extends AbstractController {
     const ERROR_FILE = '/tmp/errors';
     const SH_SCRIPT  = '/tmp/code_exec_script.sh';
 
+    protected $executionResponse;
+
     public function __construct() {
         parent::__construct();
         $this->view = new ExecuteView();
+        $this->executionResult = array(
+            'code' => '',
+            'msg'  => ''
+        );
+    }
+
+    protected function getExecResponse($code, $msg) {
+        $this->executionResponse['code'] = $code;
+        $this->executionResponse['msg']  = $msg;
+        return $this->executionResponse;
     }
     
     /**
@@ -46,20 +58,17 @@ class ExecuteController extends AbstractController {
         $cmd = '`gcc ' . $fileName . ' &> '.self::ERROR_FILE.'`';
         file_put_contents(self::SH_SCRIPT, $cmd);
         shell_exec('bash ' . self::SH_SCRIPT);
-        $err = file_get_contents(self::ERROR_FILE);
-        if (empty($err)) {
+        $errors = file_get_contents(self::ERROR_FILE);
+        if (empty($errors)) {
             if (is_file('a.out')) {
                 $output = shell_exec('./a.out');
-                $this->setBean(array('message' => $output));
+                $this->setBean($this->getExecResponse(Constants::SUCCESS_RESPONSE, $output));
             } else {
-                $this->setBean(
-                    array(
-                        'message' => '<h2>Executable could not be located! Exiting!</h2>'
-                    )
-                );
+                $msg = 'a.out: No such file or directory';
+                $this->setBean($this->getExecResponse(Constants::SUCCESS_RESPONSE, $msg));
             }
         } else {
-            $this->setBean(array('message' => $err));
+            $this->setBean($this->getExecResponse(Constants::FAILURE_RESPONSE, $errors));
         }
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }

@@ -1,7 +1,10 @@
-.exec-console {
-    background:#000;
+body {
+    margin:0px;
+    border:0px;
+    background: #000;
     color:#FFF;
+}
+
+.exec-console {
     padding:10px;
-    min-width:100%;
-    min-height:100%;
 }

@@ -1,5 +1,2 @@
 <link rel="stylesheet" type="text/css" href="webroot/Execute/css/execute.css">
-<pre class="exec-console">
-<h2><u>Program Execution</u></h2>
-{$MSG}
-</pre>
+<pre class="exec-console">root@ubuntu:/tmp$:{$CMD_MSG}<br>{$MSG}</pre>

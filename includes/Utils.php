@@ -163,7 +163,6 @@ class Utils {
             'vibrant_ink' => 'Vibrant Ink',
             'xcode' => 'XCode'
         );
-
         return (empty($themeId)) ? $themes : $themes[$themeId];
     }
 

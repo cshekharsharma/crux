@@ -151,7 +151,6 @@ class RequestManager {
             if (self::isAjaxRequest()) {
                 Response::sendFailureResponse('Something went wrong!');
             } else {
-
             }
         }
     }

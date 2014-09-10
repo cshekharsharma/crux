@@ -16,7 +16,6 @@
             <span class="top-side-buttons file-download-link"><a href="/download/{$PROGRAM_DETAILS.id}">Download</a></span>
             <span class="top-side-buttons file-download-link"><a href="/editor/{$PROGRAM_DETAILS.id}">Update</a></span>
             <span class="top-side-buttons file-download-link" id="execute-code"><a href="#">Execute</a></span>
-           
        </div>
        <small>{$PROGRAM_DETAILS.description}</small>
         <div class="program-stats">
@@ -44,6 +43,7 @@
     editor.getSession().setMode("ace/mode/{$EDITOR_MODE}");
     editor.setReadOnly(true);
     var SOURCE_PID={$PROGRAM_DETAILS.id};
+    var GLOBAL_CSRF_TOKEN = '{$CSRF_TOKEN_VALUE}';
 </script>
 <script src="/webroot/Explorer/js/explorer.js" type="text/javascript"></script>
 {include file="webroot/Index/tpls/footer.htpl"}

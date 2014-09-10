@@ -47,7 +47,7 @@ final class Configuration {
         if (!empty(self::$config[$key])) {
             return self::$config[$key];
         } else {
-            Logger::getLogger()->LogWarn("Trying to get undefined configuration <$key>");
+            Logger::getLogger()->LogDebug("Trying to get undefined configuration <$key>");
             return false;
         }
     }

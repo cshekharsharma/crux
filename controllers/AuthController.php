@@ -104,15 +104,15 @@ class AuthController extends AbstractController {
                         Logger::getLogger()->LogInfo("Auth Success for userid: ".$formParams['username']);
                     }
                 } else {
-                    Logger::getLogger()->LogWarn("Auth Failed [Invalid password] for userid: ".$formParams['username']);
+                    Logger::getLogger()->LogDebug("Auth Failed [Invalid password] for userid: ".$formParams['username']);
                     Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_AUTH_INVALID_PASSWORD);
                 }
             } else {
-                Logger::getLogger()->LogWarn("Auth Failed [User Inactive] for userid: ".$formParams['username']);
+                Logger::getLogger()->LogDebug("Auth Failed [User Inactive] for userid: ".$formParams['username']);
                 Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_AUTH_USER_INACTIVE);
             }
         } else {
-            Logger::getLogger()->LogWarn("Auth Failed [Invalid Username] for userid: ".$formParams['username']);
+            Logger::getLogger()->LogDebug("Auth Failed [Invalid Username] for userid: ".$formParams['username']);
             Response::sendResponse(Constants::FAILURE_RESPONSE, Messages::ERROR_AUTH_INVALID_USER_NAME);
         }
     }

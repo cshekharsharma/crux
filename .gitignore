@@ -1,4 +1,4 @@
-data/logs/access.log
+data/logs/*
 cache/templates_c/*
 data/codes/*
 data/logs/*

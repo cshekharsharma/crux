@@ -9,17 +9,20 @@ EXPLORER_CONSTANTS = {
     }
 };
 
-$('#execute-code').click(function() {
-    window.open('/execute?id='+SOURCE_PID,'Execute Code','height=300,width=500');
-});
+$('#execute-code').click(
+        function() {
+            window.open('/execute?id=' + SOURCE_PID, 'Execute Code',
+                    'height=300,width=500');
+        });
 
 function deleteProgram(pid) {
     if (pid == '') {
-        alert('No FileId mentiond');
+        alert('No FileId mentioned');
         return false;
     } else {
         if (confirm('File deletion is not recoverable, Are you sure?')) {
             var formData = new FormData();
+            formData.append(APP_CONSTANTS.CSRF_TOKEN_NAME, GLOBAL_CSRF_TOKEN);
             formData.append(EXPLORER_CONSTANTS.isDeletekey, $(
                     '#' + EXPLORER_CONSTANTS.isDeletekey).val());
             AJAX.onreadystatechange = function() {

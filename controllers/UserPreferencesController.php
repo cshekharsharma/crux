@@ -35,7 +35,7 @@ class UserPreferencesController extends AbstractController {
         $userID = Utils::getLoggedInUserId();
         $preferenceArr[PreferenceKeys::CODE_EDITOR_THEME] = $formParams[PreferenceKeys::CODE_EDITOR_THEME];
         $preferenceArr[PreferenceKeys::CODE_EDITOR_SHOW_INVISIBLE] = $formParams[PreferenceKeys::CODE_EDITOR_SHOW_INVISIBLE];
-        $preferenceArr[PreferenceKeys::PAGINATOR_LIMIT] = $formParams[PreferenceKeys::PAGINATOR_LIMIT];
+        $preferenceArr[PreferenceKeys::PAGINATOR_LIMIT] = (int)$formParams[PreferenceKeys::PAGINATOR_LIMIT];
         $content = $this->encodeContents($preferenceArr);
         $this->flushAll($userID);
         $insertArr = array(

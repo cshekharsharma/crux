@@ -49,6 +49,7 @@ class SearchController extends AbstractController {
     private function search($searchStr) {
         $returnSet = array();
         $searchStr = trim($searchStr);
+        $searchStr = preg_replace('!\s+!', ' ', $searchStr);
         if (!$this->isTagBasedSearch($searchStr)) {
             $sortedResults = $this->performSimpleSearch($searchStr);
         } else {
@@ -173,6 +174,7 @@ class SearchController extends AbstractController {
             $keyword = preg_quote(trim($keyword));
             $haystack = preg_replace("/($keyword)/i", "@$1#", $haystack);
         }
+        $haystack = str_replace('# @', ' ', $haystack);
         $haystack = str_replace("@", $pre, $haystack);
         $haystack = str_replace("#", $post, $haystack);
         return $haystack;

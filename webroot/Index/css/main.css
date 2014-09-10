@@ -86,31 +86,32 @@ body {
 
 .searchbox {
     background: #2d3236;
-    width: 70% !important;
+    background: #121212; width : 70% !important;
     margin: 0 !important;
     padding: 8px 6px;
     height: 17px !important;
-    border: 1px solid #666;
+    border: 1px solid #101010;
     color: #BBB;
     font-size: 13px;
+    width: 70% !important;
 }
 
 .searchbox:focus {
     color: #333;
-    background: #FFF;
+    background: #FFFFFF;
     text-indent: 0;
     z-index: 1;
     outline: 0 none;
-    -webkit-transition-duration: 400ms;
+    -webkit-transition-duration: 300ms;
     -webkit-transition-property: width, background;
     -webkit-transition-timing-function: ease;
-    -moz-transition-duration: 400ms;
+    -moz-transition-duration: 300ms;
     -moz-transition-property: width, background;
     -moz-transition-timing-function: ease;
-    -o-transition-duration: 400ms;
+    -o-transition-duration: 300ms;
     -o-transition-property: width, background;
     -o-transition-timing-function: ease;
-    /* 	border: 1px solid #56b4ef; */
+    border: 1px solid #CCC;
     /* 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 8px */
     /* 		rgba(82, 168, 236, 0.6); */
 }
@@ -450,7 +451,7 @@ legend {
     padding: 12px;
     background: white;
     border: 1px solid #AAA;
-    font-size:13px;
+    font-size: 13px;
 }
 
 #auth-msg-container { /* 	margin-left:25%; */
@@ -475,8 +476,9 @@ legend {
 }
 
 .small-textbox {
-    padding:3px !important;
+    padding: 3px !important;
 }
-#userpref-close-btn, #chpwd-close-btn {
-    margin:-38px;
+
+#userpref-close-btn,#chpwd-close-btn {
+    margin: -38px;
 }

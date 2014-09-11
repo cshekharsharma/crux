@@ -21,7 +21,7 @@ class CategoryController extends AbstractController {
      * 
      * @return boolean $resultSet
      */
-    public function getCategoryList() {
+    public function getCategoryList($asMap = true) {
         $categoryList = array();
         $query = "SELECT id, name FROM ";
         $query .= Category_DBTable::DB_TABLE_NAME . " WHERE ";
@@ -29,9 +29,9 @@ class CategoryController extends AbstractController {
         $query .= Category_DBTable::CATEGORY_NAME;
         $resultSet = DBManager::executeQuery($query, array(), true);
         foreach ($resultSet as $row) {
-            $categoryList[$row[Category_DBTable::CATEGORY_ID]] = $row;
+            $categoryList[$row[Category_DBTable::CATEGORY_ID]] = $row[Category_DBTable::CATEGORY_NAME];
         }
-        return $resultSet;
+        return ($asMap) ? $categoryList : $resultSet;
     }
     
     /**

@@ -38,6 +38,16 @@
             </tr>
             {/foreach}
        </table>
+       <script src="/library/highcharts/highcharts.js" type="text/javascript"></script>
+            <script type="text/javascript">
+$(function () {
+    var chartJson = {$LINE_CHART_JSON};
+    $('#container').highcharts(chartJson);
+});
+        </script>
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+    </body>
        {include file="webroot/Index/tpls/footer.htpl"}
  </body>
  </html>    

@@ -20,6 +20,7 @@ class AutoLoader {
             // Helper classes
             'Resource' => Constants::HELPER_CLASSES_DIR.'Resource.php',
             'Response' => Constants::HELPER_CLASSES_DIR.'Response.php',
+            'ChartHelper' => Constants::HELPER_CLASSES_DIR.'ChartHelper.php',
             'PreferenceKeys' => Constants::HELPER_CLASSES_DIR.'PreferenceKeys.php',
 
             // Include classes

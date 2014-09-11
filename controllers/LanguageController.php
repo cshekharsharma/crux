@@ -22,7 +22,7 @@ class LanguageController extends AbstractController {
      * 
      * @return array
      */
-    public function getLanguageList() {
+    public function getLanguageList($asMap = false) {
         $languageList = array();
         $query = "SELECT id, name FROM ";
         $query .= Language_DBTable::DB_TABLE_NAME . " WHERE ";
@@ -30,9 +30,9 @@ class LanguageController extends AbstractController {
         $query .= Language_DBTable::LANGUAGE_NAME;
         $resultSet = DBManager::executeQuery($query, array(), true);
         foreach ($resultSet as $row) {
-            $languageList[$row[Language_DBTable::LANGUAGE_ID]] = $row;
+            $languageList[$row[Language_DBTable::LANGUAGE_ID]] = $row[Language_DBTable::LANGUAGE_NAME];
         }
-        return $resultSet;
+        return ($isMap) ? $languageList : $resultSet;
     }
     
     /**

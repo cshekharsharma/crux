@@ -23,6 +23,7 @@ class StatsView extends AbstractView {
         $this->smarty->assign('GRAND_TOTAL', $bean['grandTotal']);
         $this->smarty->assign('LANG_MAP', $bean['translationMap'][Language_DBTable::DB_TABLE_NAME]);
         $this->smarty->assign('CATE_MAP', $bean['translationMap'][Category_DBTable::DB_TABLE_NAME]);
+        $this->smarty->assign('LINE_CHART_JSON', $bean['summeryLineChart']);
         $this->render($this->currModule);
     }
 }

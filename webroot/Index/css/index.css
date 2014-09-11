@@ -49,16 +49,18 @@ caption {
     padding: 6px 6px 6px 12px;
 }
 
-.listview-table td.alt {}
+.listview-table td.alt {
+    
+}
 
 .listview-table tbody tr {
-    background:#FFF;
-    color:#333;
-}
-.listview-table tbody tr:hover {
-    background:#e5f3f5;
+    background: #FFF;
+    color: #333;
 }
 
+.listview-table tbody tr:hover {
+    background: #e5f3f5;
+}
 
 .listview-table th.spec {
     border-left: 1px solid #DDD;
@@ -76,22 +78,21 @@ caption {
 }
 
 .listview-table.tablesorter thead tr {
-    background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
-        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255,
-        255, 1) ), color-stop(47%, rgba(246, 246, 246, 1) ),
-        color-stop(100%, rgba(237, 237, 237, 1) ) );
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
-        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
-        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%,
-        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%,
-        rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100% );
-    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ffffff',
-        endColorstr='#ededed', GradientType=0 );
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 33%, #cccccc 79%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #eeeeee),
+        color-stop(79%, #cccccc) ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 33%, #cccccc 79%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 33%, #cccccc 79%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 33%, #cccccc 79%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 33%, #cccccc 79%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#eeeeee',
+        endColorstr='#cccccc', GradientType=0 ); /* IE6-9 */
 }
 
 .listview-table.tablesorter thead tr .header {
@@ -101,7 +102,8 @@ caption {
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
-    text-align:center;
+    text-align: center;
+    border-bottom:1px solid #AAA;
 }
 
 .listview-table.tablesorter thead tr .headerSortUp {
@@ -116,7 +118,7 @@ caption {
 
 .listview-table.tablesorter thead tr .headerSortDown,table.tablesorter thead tr .headerSortUp
     {
-    background-color: #DDD;
+    background-color: #CCC;
 }
 
 .paginator-div {
@@ -124,6 +126,8 @@ caption {
     text-align: center;
     height: 40px;
 }
-..paginator-btns {
-    font-weight:bold;
+
+.
+.paginator-btns {
+    font-weight: bold;
 }

@@ -85,8 +85,8 @@ body {
 }
 
 .searchbox {
-    background: #2d3236;
-    background: #121212; width : 70% !important;
+    background: #101010;
+    width: 70% !important;
     margin: 0 !important;
     padding: 8px 6px;
     height: 17px !important;
@@ -94,6 +94,8 @@ body {
     color: #BBB;
     font-size: 13px;
     width: 70% !important;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.1) inset, 1px 1px 0
+        rgba(255, 255, 255, 0.2);
 }
 
 .searchbox:focus {

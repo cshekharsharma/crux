@@ -88,3 +88,7 @@ caption {
 	background: #CAE8EA !important;
 	font-size:16px;
 }
+
+.chart-div-holder {
+    padding-top:20px;
+}

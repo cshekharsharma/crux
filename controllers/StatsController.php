@@ -102,15 +102,30 @@ class StatsController extends AbstractController {
         return $matrix;
     }
 
-    protected function getSummeryChartJson($filteredStats) {
+    protected function getCategoryProgressJson($filteredStats) {
+        $axis = array();
         $xAxis = (new CategoryController())->getCategoryList(true);
-        $xAxis = array_values($xAxis);
-        $yAxis = array('title' => 'Summery Chart');
+        $axis['xAxis'] = array_values($xAxis);
+        $axis['yAxis'] = array('title' => 'Problem Count');
         $series = $this->getChartFriendlySeries($filteredStats);
         $config = array(
-            'title'=> 'Summery Line Chart'
+            'title'=> 'Category wise progress'
         );
-        return $this->chartHelper->getLineChartJson($series, $xAxis, $yAxis, $config);
+        return $this->chartHelper->getLineChartJson($config, $series, $axis);
+    }
+
+    protected function getCodeAccuracyJson($filteredStats) {
+        $stats = $this->getModel()->getCodeVerificationStats();
+        $series = array(
+            array('Verified', (int)$stats['verified_count']),
+            array('Not Verified', (int)($stats['total'] - $stats['verified_count']))
+        );
+        
+        $config = array(
+            'main_title'  => 'Code Accuracy Plot',
+            'series_name' => 'Contribution'
+        );
+        return $this->chartHelper->getPieChartJson($config, $series);
     }
 
     protected function getChartFriendlySeries($filteredStats) {
@@ -141,7 +156,9 @@ class StatsController extends AbstractController {
             'grandTotal'     => $this->grandTotal,
             'filteredStats'  => $filteredStats,
             'translationMap' => $this->translationMap,
-            'summeryLineChart' => $this->getSummeryChartJson($filteredStats)
+            'codeAccuracyJson' => $this->getCodeAccuracyJson($filteredStats),
+            'categoryProgressJson' => $this->getCategoryProgressJson($filteredStats)
+
         );
         $this->setBean($bean);
     }

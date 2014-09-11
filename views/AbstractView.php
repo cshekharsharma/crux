@@ -2,7 +2,7 @@
 /**
  * Base view class for all the modules
  * 
- * @author Chandra Shekhar <chandra.sharma@jabong.com>
+ * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package views
  * @since Jun 11, 2014
  */

@@ -9,7 +9,7 @@ Crux currently provies these features -
   -- Code can further be updated and viewed in read-only mode.
   -- Source files can be directly uploaded to crux as well.
   -- General search and category/language based search is there for viewing old codes.
-  -- Separate Stats view for consolidated summary.
+  -- Separate stats view for tracking progress with interactive charts and summery tables.
   -- User authentication for preventing unautorized access.
   -- User can download their source code by one click.
   

@@ -27,6 +27,11 @@ class ProgramDetailsController extends AbstractController {
         return current($resultSet);
     }
     
+    /**
+     * Get all active record count from program details table
+     * 
+     * @return int
+     */
     public function getAllRecordCount() {
         $query = 'SELECT COUNT(*) AS count FROM '.ProgramDetails_DBTable::DB_TABLE_NAME
             . ' WHERE '.ProgramDetails_DBTable::IS_DELETED.'=0';

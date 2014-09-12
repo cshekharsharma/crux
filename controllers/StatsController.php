@@ -11,6 +11,10 @@ class StatsController extends AbstractController {
     const MODULE_KEY = 'stats';
     const TOTAL = 'Total';
 
+    const CODE_FREQUENCY_PLOT = 'Code frequency plot';
+    const CODE_ACCURACY_PLOT = 'Code accuracy plot';
+    const CATEGORY_PROGRESS_PLOT = 'Category progress plot';
+    
     private $grandTotal = 0;
     private $allStats = array();
     private $translationMap = array();
@@ -19,6 +23,12 @@ class StatsController extends AbstractController {
      * @var ChartHelper
     */
     protected $chartHelper;
+    
+    /**
+     * 
+     * @var ProgramDetailsController
+     */
+    protected $dataProvider;
 
     public function __construct() {
         parent::__construct();
@@ -107,14 +117,14 @@ class StatsController extends AbstractController {
         $xAxis = (new CategoryController())->getCategoryList(true);
         $axis['xAxis'] = array_values($xAxis);
         $axis['yAxis'] = array('title' => 'Problem Count');
-        $series = $this->getChartFriendlySeries($filteredStats);
+        $series = $this->getSeriesForCategoryProgress($filteredStats);
         $config = array(
-            'title'=> 'Category wise progress'
+            'title'=> self::CATEGORY_PROGRESS_PLOT
         );
         return $this->chartHelper->getLineChartJson($config, $series, $axis);
     }
 
-    protected function getCodeAccuracyJson($filteredStats) {
+    protected function getCodeAccuracyJson() {
         $stats = $this->getModel()->getCodeVerificationStats();
         $series = array(
             array('Verified', (int)$stats['verified_count']),
@@ -122,13 +132,26 @@ class StatsController extends AbstractController {
         );
         
         $config = array(
-            'main_title'  => 'Code Accuracy Plot',
+            'main_title'  => self::CODE_ACCURACY_PLOT,
             'series_name' => 'Contribution'
         );
         return $this->chartHelper->getPieChartJson($config, $series);
     }
 
-    protected function getChartFriendlySeries($filteredStats) {
+    protected function getCodeFrequencyJson() {
+        $frequencyInfo = $this->getModel()->getCodeFrequency();
+        $axis['xAxis'] = array_keys($frequencyInfo);
+        $axis['yAxis'] = array('title' => 'Problem Count');
+        $series = array(
+            'Frequency' => array_values($frequencyInfo)
+        );
+        $config = array(
+            'title' => self::CODE_FREQUENCY_PLOT
+        );
+        return $this->chartHelper->getLineChartJson($config, $series, $axis);
+    }
+    
+    protected function getSeriesForCategoryProgress($filteredStats) {
         $stats = array();
         foreach ($filteredStats as $category => $data) {
             $array = array();
@@ -161,7 +184,8 @@ class StatsController extends AbstractController {
             'grandTotal'     => $this->grandTotal,
             'filteredStats'  => $filteredStats,
             'translationMap' => $this->translationMap,
-            'codeAccuracyJson' => $this->getCodeAccuracyJson($filteredStats),
+            'codeFrequencyJson' => $this->getCodeFrequencyJson(),
+            'codeAccuracyJson' => $this->getCodeAccuracyJson(),
             'categoryProgressJson' => $this->getCategoryProgressJson($filteredStats)
 
         );

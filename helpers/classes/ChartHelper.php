@@ -75,6 +75,13 @@ class ChartHelper {
                     )
                 )
             ),
+            'plotOptions' => array(
+                'line' => array(
+                    'dataLabels' => array(
+                        'enabled' => false
+                    )
+                )
+            ),
             'tooltip'   => array('valueSuffix' => ''),
             'legend'    => array(
                 'layout' => 'vertical',

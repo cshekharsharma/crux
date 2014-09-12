@@ -25,6 +25,7 @@ class StatsView extends AbstractView {
         $this->smarty->assign('CATE_MAP', $bean['translationMap'][Category_DBTable::DB_TABLE_NAME]);
         $this->smarty->assign('CATEGORY_PROGRESS', $bean['categoryProgressJson']);
         $this->smarty->assign('CODE_ACCURACY', $bean['codeAccuracyJson']);
+        $this->smarty->assign('CODE_FREQUENCY', $bean['codeFrequencyJson']);
         $this->render($this->currModule);
     }
 }

@@ -42,16 +42,20 @@
        <script src="/library/highcharts/highcharts-3d.js" type="text/javascript"></script>
             <script type="text/javascript">
             $(function () {
-                var chartJson1 = {$CATEGORY_PROGRESS};
+                var chartJson1 = {$CODE_FREQUENCY};
                 $('#container1').highcharts(chartJson1);
            
-                var chartJson2 = {$CODE_ACCURACY};
+                var chartJson2 = {$CATEGORY_PROGRESS};
                 $('#container2').highcharts(chartJson2);
+                
+                var chartJson3 = {$CODE_ACCURACY};
+                $('#container3').highcharts(chartJson3);
             });
         </script>
         <div class="chart-div-holder">
-            <div id="container1" style="margin: 0 auto"></div>
-            <div id="container2" style="margin: 0 auto"></div>
+            <div id="container1" style="margin: 0 auto"></div><hr>
+            <div id="container2" style="margin: 0 auto"></div><hr>
+            <div id="container3" style="margin: 0 auto"></div><hr>
         </div>
     </body>
        {include file="webroot/Index/tpls/footer.htpl"}

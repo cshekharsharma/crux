@@ -116,7 +116,7 @@ class ChartHelper {
                 'pie' => array(
                     'allowPointSelect' => true,
                     'cursor' => 'pointer',
-                    'depth'  => 35,
+                    'depth'  => 40,
                     'dataLabels' => array(
                         'enabled' => true,
                         'format'  => '<b>{point.name}</b>: {point.percentage:.1f} %',

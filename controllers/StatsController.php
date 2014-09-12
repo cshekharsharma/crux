@@ -14,7 +14,8 @@ class StatsController extends AbstractController {
     const CODE_FREQUENCY_PLOT = 'Code frequency plot';
     const CODE_ACCURACY_PLOT = 'Code accuracy plot';
     const CATEGORY_PROGRESS_PLOT = 'Category progress plot';
-    
+    const CATEGORY_PIE_PLOT = 'Category pie plot';
+
     private $grandTotal = 0;
     private $allStats = array();
     private $translationMap = array();
@@ -23,9 +24,9 @@ class StatsController extends AbstractController {
      * @var ChartHelper
     */
     protected $chartHelper;
-    
+
     /**
-     * 
+     *
      * @var ProgramDetailsController
      */
     protected $dataProvider;
@@ -130,7 +131,7 @@ class StatsController extends AbstractController {
             array('Verified', (int)$stats['verified_count']),
             array('Not Verified', (int)($stats['total'] - $stats['verified_count']))
         );
-        
+
         $config = array(
             'main_title'  => self::CODE_ACCURACY_PLOT,
             'series_name' => 'Contribution'
@@ -150,7 +151,7 @@ class StatsController extends AbstractController {
         );
         return $this->chartHelper->getLineChartJson($config, $series, $axis);
     }
-    
+
     protected function getSeriesForCategoryProgress($filteredStats) {
         $stats = array();
         foreach ($filteredStats as $category => $data) {
@@ -174,6 +175,26 @@ class StatsController extends AbstractController {
     }
 
     /**
+     * Get pie chart json for category-pie chart
+     * 
+     * @return string
+     */
+    protected function getCategoryPieJson() {
+        $stats = $this->getModel()->getCategoryPieStats();
+        $series = array();
+        $trTable = Category_DBTable::DB_TABLE_NAME;
+        foreach ($stats as $key => $value) {
+            $series[] = array($this->translationMap[$trTable][$value['category']], (int)$value['count']);
+        }
+        
+        $config = array(
+            'main_title'  => self::CATEGORY_PIE_PLOT,
+            'series_name' => 'Contribution'
+        );
+        return $this->chartHelper->getPieChartJson($config, $series);
+    }
+    
+    /**
      * Create bean to be assigned for views
      *
      * @param array $filteredStats
@@ -186,8 +207,8 @@ class StatsController extends AbstractController {
             'translationMap' => $this->translationMap,
             'codeFrequencyJson' => $this->getCodeFrequencyJson(),
             'codeAccuracyJson' => $this->getCodeAccuracyJson(),
-            'categoryProgressJson' => $this->getCategoryProgressJson($filteredStats)
-
+            'categoryProgressJson' => $this->getCategoryProgressJson($filteredStats),
+            'categoryPieJson' => $this->getCategoryPieJson()
         );
         $this->setBean($bean);
     }

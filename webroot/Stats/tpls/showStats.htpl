@@ -42,22 +42,27 @@
        <script src="/library/highcharts/highcharts-3d.js" type="text/javascript"></script>
             <script type="text/javascript">
             $(function () {
-                var chartJson1 = {$CODE_FREQUENCY};
-                $('#container1').highcharts(chartJson1);
+                var chartJson1 = '{$CODE_FREQUENCY}';
+                $('#container1').highcharts(JSON.parse(chartJson1));
            
-                var chartJson2 = {$CATEGORY_PROGRESS};
-                $('#container2').highcharts(chartJson2);
+                var chartJson2 = '{$CATEGORY_PROGRESS}';
+                $('#container2').highcharts(JSON.parse(chartJson2));
                 
-                var chartJson3 = {$CODE_ACCURACY};
-                $('#container3').highcharts(chartJson3);
+                var chartJson3 = '{$CODE_ACCURACY}';
+                $('#container3').highcharts(JSON.parse(chartJson3));
+                
+                var chartJson4 = '{$CATEGORY_PIE}';
+                $('#container4').highcharts(JSON.parse(chartJson4));
             });
         </script>
         <div class="chart-div-holder">
+            <div id="container3" style="margin: 0 auto;display:inline-block"></div>
+            <div id="container4" style="margin: 0 auto;display:inline-block"></div><hr>
             <div id="container1" style="margin: 0 auto"></div><hr>
-            <div id="container2" style="margin: 0 auto"></div><hr>
-            <div id="container3" style="margin: 0 auto"></div><hr>
+            <div id="container2" style="margin: 0 auto"></div>
+            <br><br>
         </div>
     </body>
        {include file="webroot/Index/tpls/footer.htpl"}
  </body>
- </html>    
+ </html>

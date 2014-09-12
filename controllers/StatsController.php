@@ -132,15 +132,20 @@ class StatsController extends AbstractController {
         $stats = array();
         foreach ($filteredStats as $category => $data) {
             $array = array();
-            foreach ($data as $key => $value) {
-                $stats[$key][$category] += $value;
-                unset($stats[$key][self::TOTAL]);
+            foreach ($data as $lang => $value) {
+                $stats[$lang][$category] += $value;
+                unset($stats[$lang][self::TOTAL]);
             }
         }
 
         foreach ($stats as $lang => $data) {
             $arr = array_values($data);
-            $stats[$lang] = $arr;
+            if (!empty($this->translationMap[Language_DBTable::DB_TABLE_NAME][$lang])) {
+                $stats[$this->translationMap[Language_DBTable::DB_TABLE_NAME][$lang]] = $arr;
+                unset($stats[$lang]);
+            } else {
+                $stats[$lang] = $arr;
+            }
         }
         return $stats;
     }

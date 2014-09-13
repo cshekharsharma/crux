@@ -21,7 +21,7 @@ class CategoryController extends AbstractController {
      * 
      * @return boolean $resultSet
      */
-    public function getCategoryList($asMap = true) {
+    public function getCategoryList($asMap = false) {
         $categoryList = array();
         $query = "SELECT id, name FROM ";
         $query .= Category_DBTable::DB_TABLE_NAME . " WHERE ";

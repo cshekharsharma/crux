@@ -48,9 +48,9 @@ pre {
     padding-top: 0px;
 }
 
-.form-table .inner-table #description {
-    height: 120px;
-    width: 95%;
+textarea#description {
+    height: 100px !important;
+    width: 300px !important;
 }
 
 .textarea {

@@ -70,6 +70,10 @@ body {
     width: 25%;
 }
 
+.header-navbar li {
+    list-style: none;
+ }
+
 .txtbox {
     background: #fff;
     border: 1px solid #CCCCCC;

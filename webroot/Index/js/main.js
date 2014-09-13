@@ -91,7 +91,7 @@ function attachPopupEvents(bg, container, flagKey, callback) {
     var popupWidth = $(container).width();
     // centering
     $(container).css({
-        "position" : "absolute",
+        "position" : "fixed",
         "top" : windowHeight / 2 - popupHeight / 2,
         "left" : windowWidth / 2 - popupWidth / 2
     });

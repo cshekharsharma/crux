@@ -11,10 +11,10 @@ class StatsController extends AbstractController {
     const MODULE_KEY = 'stats';
     const TOTAL = 'Total';
 
-    const CODE_FREQUENCY_PLOT = 'Code frequency plot';
-    const CODE_ACCURACY_PLOT = 'Code accuracy plot';
-    const CATEGORY_PROGRESS_PLOT = 'Category progress plot';
-    const CATEGORY_PIE_PLOT = 'Category pie plot';
+    const CODE_FREQUENCY_PLOT = 'Code Frequency Plot';
+    const CODE_ACCURACY_PLOT = 'Code Accuracy Plot';
+    const CATEGORY_PROGRESS_PLOT = 'Category Progress Plot';
+    const CATEGORY_CONTRIB_PLOT = 'Category Contribution Plot';
 
     private $grandTotal = 0;
     private $allStats = array();
@@ -179,8 +179,8 @@ class StatsController extends AbstractController {
      * 
      * @return string
      */
-    protected function getCategoryPieJson() {
-        $stats = $this->getModel()->getCategoryPieStats();
+    protected function getCategoryContribJson() {
+        $stats = $this->getModel()->getCategoryContributionStats();
         $series = array();
         $trTable = Category_DBTable::DB_TABLE_NAME;
         foreach ($stats as $key => $value) {
@@ -188,7 +188,7 @@ class StatsController extends AbstractController {
         }
         
         $config = array(
-            'main_title'  => self::CATEGORY_PIE_PLOT,
+            'main_title'  => self::CATEGORY_CONTRIB_PLOT,
             'series_name' => 'Contribution'
         );
         return $this->chartHelper->getPieChartJson($config, $series);
@@ -208,7 +208,7 @@ class StatsController extends AbstractController {
             'codeFrequencyJson' => $this->getCodeFrequencyJson(),
             'codeAccuracyJson' => $this->getCodeAccuracyJson(),
             'categoryProgressJson' => $this->getCategoryProgressJson($filteredStats),
-            'categoryPieJson' => $this->getCategoryPieJson()
+            'categoryContribJson' => $this->getCategoryContribJson()
         );
         $this->setBean($bean);
     }

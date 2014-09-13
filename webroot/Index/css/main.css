@@ -304,7 +304,7 @@ legend {
 
 .input,.textarea {
     background: #fff;
-    border: 1px solid #BBB;
+    border: 1px solid #AAA;
     color: #333;
     font-size: 14px;
     line-height: 1.2em;
@@ -483,4 +483,33 @@ legend {
 
 #userpref-close-btn,#chpwd-close-btn {
     margin: -38px;
+}
+
+.selectbox-div {
+    font-size: 11px;
+    border: 1px solid #aaa;
+    width: 120px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa
+        url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==")
+        no-repeat 90% 50%;
+}
+
+.selectbox-div .selectbox {
+    padding: 5px 2px;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style .selectbox:focus {
+    outline: none;
 }

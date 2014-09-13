@@ -76,31 +76,6 @@ legend {
 	margin-bottom:10px;]
 }
 
-.selectbox-div {
-    border: 1px solid #ccc;
-    width: 120px;
-    margin-right:5px;
-    padding:5px;
-    border-radius: 3px;
-    overflow: hidden;
-    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 90% 50%;
-}
-
-.selectbox-div .selectbox {
-    padding: 5px 5px;
-    border: none;
-    outline:none;
-    margin-bottom:0px;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
-}
-
-.select-style .selectbox:focus {
-    outline: none;
-}
-
 #file-upload-form .innerdiv {
 	margin-top:60px;
 	-webkit-border-radius: 8px;

@@ -9,35 +9,6 @@
 	height: 550px;
 }
 
-.selectbox-div {
-	font-size: 11px;
-	border: 1px solid #ccc;
-	width: 120px;
-	margin-right: 5px;
-	padding: 5px;
-	border-radius: 3px;
-	overflow: hidden;
-	background: #fafafa
-		url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==")
-		no-repeat 90% 50%;
-}
-
-.selectbox-div .selectbox {
-	padding: 5px 5px;
-	border: none;
-	outline: none;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	box-shadow: none;
-	background: transparent;
-	background-image: none;
-	-webkit-appearance: none;
-}
-
-.select-style .selectbox:focus {
-	outline: none;
-}
-
 .titlebox {
 	height: 16px !important;
 	width: 300px !important;

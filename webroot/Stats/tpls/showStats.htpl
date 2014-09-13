@@ -51,7 +51,7 @@
                 var chartJson3 = '{$CODE_ACCURACY}';
                 $('#container3').highcharts(JSON.parse(chartJson3));
                 
-                var chartJson4 = '{$CATEGORY_PIE}';
+                var chartJson4 = '{$CATEGORY_CONTRIBUTION}';
                 $('#container4').highcharts(JSON.parse(chartJson4));
             });
         </script>

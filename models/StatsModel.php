@@ -81,7 +81,7 @@ class StatsModel extends AbstractModel {
         return $weeks;
     }
     
-    public function getCategoryPieStats() {
+    public function getCategoryContributionStats() {
         $sql = "SELECT COUNT(*) as count, ".ProgramDetails_DBTable::FK_CATEGORY_ID
         . " AS category FROM ".ProgramDetails_DBTable::DB_TABLE_NAME
         . ' WHERE '.ProgramDetails_DBTable::IS_DELETED.'=0 GROUP BY '

@@ -1,48 +1,75 @@
+pre {
+    margin:0px;
+}
+
 .body-main {
-	font-size: 12px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    height: 100%;
+    padding: 0px;
+    border: 0px !important;
+}
+
+#code-editor-container {
+    position: absolute;
+    top: 20px;
+    left:5px;
+    bottom: 10px;
+    right: 350px;
+    border: 1px solid #BBB;
+    border-left: 1px solid #F0F0F0;
 }
 
 #code-editor {
-	margin: 0;
-	width: 100%;
-	height: 550px;
+    width:100%;
+    height:100%;
 }
 
 .titlebox {
-	height: 16px !important;
-	width: 300px !important;
-	margin: 0 !important;
+    height: 16px !important;
+    width: 300px !important;
+    margin: 0 !important;
 }
 
 .form-table {
-	width: 100%;
-	border-bottom: 1px solid #DDD;
-}
-
-.form-table .td1 {
-	width: 75%;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
 }
 
 .form-table .td2 {
-	vertical-align: top;
-	margin-left: 10px;
-	border-left: 1px solid #CCC;
+    vertical-align: top;
+    margin-left: 10px;
+    border-left: 1px solid #CCC;
 }
 
 .form-table .inner-table {
-	width: 100%;
-	padding:10px;
-	padding-top:0px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 0px;
 }
 
 .form-table .inner-table #description {
-	height: 120px;
-	width:95%;
+    height: 120px;
+    width: 95%;
 }
 
 .textarea {
-	padding: 3px;
-	width: 91%%;
-	height: 50px;
+    padding: 3px;
+    width: 91%%;
+    height: 50px;
+}
+
+#middleware {
+    position: absolute;
+    top: 56px;
+    bottom: 25px;
+    left: 0px;
+    right: 0px;
+}
+
+.inner-table-div {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 340px;
 }

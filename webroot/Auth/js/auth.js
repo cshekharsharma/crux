@@ -53,16 +53,14 @@ function doLogin(formId) {
                 var msgContainerId = AUTH_CONSTANTS.msgContaineId;
                 var msgContainer = document.getElementById(msgContainerId);
                 if (response.code == AUTH_CONSTANTS.SUCCESS_CODE) {
-                    msgContainer.className = "success-msg-div";
-                    document.getElementById(formId).reset();
                     window.location.reload();
                 } else if (response.code == AUTH_CONSTANTS.ERROR_CODE) {
                     msgContainer.className = "error-msg-div";
+                    msgContainer.innerHTML = response.msg;
+                    msgContainer.style.display = "block";
+                    $('#do-login').removeClass('disabled');
+                    $('#do-login').val(' Sign In ');
                 }
-                msgContainer.innerHTML = response.msg;
-                msgContainer.style.display = "block";
-                $('#do-login').removeClass('disabled');
-                $('#do-login').val(' Sign In ');
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authLoginPath);

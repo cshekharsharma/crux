@@ -6,7 +6,7 @@
     <br><br><br><br><br><br>
     <div id="wrapper1" class="embossed-div">
         <div class="form-header-span">Please verify your identity</div>
-        <form name="login-form" id="login-form" class="auth-form" method="post">
+        <form name="login-form" id="login-form" class="auth-form" method="post" onsubmit="do">
         <div class="innerdiv">
             <input type="hidden" name="login-action-name" id="login-action-name" value="{$LOGIN_ACTION_VALUE}">
             <div id="auth-msg-container">

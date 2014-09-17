@@ -72,7 +72,7 @@ body {
 
 .header-navbar li {
     list-style: none;
- }
+}
 
 .txtbox {
     background: #fff;
@@ -269,11 +269,26 @@ body {
 /* Auth.css */
 #wrapper1 {
     text-align: center;
-    padding: 40px;
+    padding: 25px;
     position: absolute;
-    left: 32%;
-    right: 32%;
-    background: #F9F9F9;
+    left: 35%;
+    right: 35%;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff
+        100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff),
+        color-stop(50%, #f3f3f3), color-stop(51%, #ededed),
+        color-stop(100%, #ffffff) ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%,
+        #ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff
+        100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff
+        100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff
+        100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#ffffff',
+        endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
 
 #wrapper2 {
@@ -467,6 +482,10 @@ legend {
 
 .embossed-div {
     box-shadow: 0px 0px 10px #999;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .popup-close-btn {
@@ -495,6 +514,9 @@ legend {
     width: 120px;
     margin-right: 5px;
     padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
     border-radius: 3px;
     overflow: hidden;
     background: #fafafa
@@ -516,4 +538,7 @@ legend {
 
 .select-style .selectbox:focus {
     outline: none;
+}
+.center-aligned {
+    text-align: center;
 }

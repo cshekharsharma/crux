@@ -3,7 +3,7 @@
 class UploadView extends AbstractView {
 
     protected $templateMap = array(
-        'UPLOAD' => 'uploadFile.htpl'
+        'UPLOAD' => 'upload.htpl'
     );
 
     protected $currModule = 'upload';

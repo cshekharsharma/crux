@@ -1,5 +1,15 @@
 @CHARSET "UTF-8";
 
+@font-face {
+    font-family: "Trebuchet MS";
+    src: url(../fonts/trebuchet_ms.ttf);
+}
+
+@font-face {
+    font-family:"courier";
+    src: url(../fonts/cour.ttf); 
+}
+
 * {
     outline: none !important;
 }

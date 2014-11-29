@@ -1,7 +1,7 @@
 <?php
 /**
  * Base view class for all the modules
- * 
+ *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package views
  * @since Jun 11, 2014
@@ -81,7 +81,6 @@ abstract class AbstractView extends Application {
             $searchSuggestions = $search->getSearchSuggestions();
             Session::set(Session::SESS_SEARCH_SUGGESTIONS, $searchSuggestions);
         }
-        
         $this->smarty->assign('APP_NAME', Constants::APP_NAME);
         $this->smarty->assign('APP_LOGO', Constants::APP_LOGO);
         $this->smarty->assign('APP_VERSION', Constants::APP_VERSION);
@@ -102,7 +101,7 @@ abstract class AbstractView extends Application {
     private function isErrorTemplate($key) {
         return !empty($this->errorTemplateMap[$key]);
     }
-    
+
     private function isTemplateAvailable ($templateKey) {
         return (!empty($this->templateMap[$templateKey]));
     }

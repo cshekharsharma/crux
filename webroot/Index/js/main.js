@@ -163,7 +163,10 @@ if (typeof searchDataSource != 'undefined') {
     searchSuggestions = JSON.parse(searchDataSource);
     searchSuggestions.sort();
     $("#searchbox").autocomplete({
-        source : searchSuggestions.slice(0, APP_CONSTANTS.MAX_SEARCH_SUGGEST),
+        source : function(request, response) {
+            var results = $.ui.autocomplete.filter(searchSuggestions, request.term);
+            response(results.slice(0, APP_CONSTANTS.MAX_SEARCH_SUGGEST));
+        },
         appendTo : '#jquery-autocomplete-results',
         // position : {
         // my : 'right top',

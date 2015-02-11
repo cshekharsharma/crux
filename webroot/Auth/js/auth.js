@@ -64,7 +64,7 @@ function doLogin(formId) {
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authLoginPath);
-        AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+        AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     }
 }
@@ -93,7 +93,7 @@ function changePassword(formId) {
             }
         };
         AJAX.open("POST", AUTH_CONSTANTS.authChangePwdPath);
-        AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+        AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     }
 }
@@ -168,6 +168,6 @@ function getChangePasswordUI() {
         }
     };
     AJAX.open("GET", AUTH_CONSTANTS.chpwdContentPath);
-    AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+    AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
     AJAX.send(formData);
 }

@@ -112,9 +112,8 @@ class RequestManager {
      * @return boolean
      */
     public static function isAjaxRequest() {
-        $hasHeader = isset($_SERVER['HTTP_X_REQUESTED_WITH']);
-        $isAjaxHeader = ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
-        return $hasHeader && $isAjaxHeader;
+        return (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+            $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
     }
 
     public static function isValidRequest() {

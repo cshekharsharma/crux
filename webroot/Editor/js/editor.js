@@ -74,7 +74,7 @@ function submitCode(formElem) {
         };
 
         AJAX.open("POST", EDITOR_CONSTANTS.requestPath);
-        AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+        AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
         AJAX.send(formData);
     } else {
         $('#' + EDITOR_CONSTANTS.msgContainerId).addClass('error-field');

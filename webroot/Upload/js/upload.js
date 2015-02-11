@@ -36,7 +36,7 @@ function upload(formId) {
             }
         }
         AJAX.open("POST", UPLOAD_GLOBALS.uploadPath);
-        AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+        AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
         AJAX.send(formData);
 
     } else {

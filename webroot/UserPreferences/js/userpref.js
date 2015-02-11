@@ -30,7 +30,7 @@ function saveUserPreference(formId) {
         }
     };
     AJAX.open("POST", USER_PREF_CONSTANTS.saveUserPrefPath);
-    AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+    AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
     AJAX.send(formData);
 }
 
@@ -58,6 +58,6 @@ function getUserPreferenceUI() {
         }
     };
     AJAX.open("GET", USER_PREF_CONSTANTS.getUserPrefUIPath);
-    AJAX.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+    AJAX.setRequestHeader('X-REQUESTED-WITH', 'XMLHttpRequest');
     AJAX.send(formData);
 }

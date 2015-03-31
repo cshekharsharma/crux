@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Class containing utility methods
  *
@@ -37,8 +38,9 @@ class Utils {
      */
     public static function createLinks($string) {
         $urlPattern = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-        if(preg_match($urlPattern, $string, $url)) {
-            $string = preg_replace($urlPattern, "<a target=\"_blank\" href=".$url[0].">".$url[0]."</a> ", $string);
+        if (preg_match($urlPattern, $string, $url)) {
+            $string = preg_replace($urlPattern, "<a target=\"_blank\" href=" . $url[0] . ">" . $url[0] . "</a> ",
+                $string);
         }
         return $string;
     }
@@ -46,7 +48,8 @@ class Utils {
     /**
      * Wrapper function for inbuild empty()
      *
-     * @param boolean
+     * @param
+     *            boolean
      */
     public static function isEmpty($var) {
         return empty($var);
@@ -67,14 +70,15 @@ class Utils {
             fclose($fp);
             return true;
         } else {
-            Logger::getLogger()->LogFatal("Could not open file ".$filePath);
+            Logger::getLogger()->LogFatal("Could not open file " . $filePath);
             return false;
         }
     }
 
     /**
      * Returns appropriate editor mode for code syntax highlighting according to
-     * language name. Returns default editor for C/C++ if no details provided
+     * language name.
+     * Returns default editor for C/C++ if no details provided
      *
      * @param array|false $programDetails
      * @return string $editorMode
@@ -82,7 +86,10 @@ class Utils {
     public static function getCodeEditorMode($programDetails = false) {
         $editorMode = 'c_cpp';
         if (!empty($programDetails)) {
-            $cppArray = array('c', 'cpp');
+            $cppArray = array (
+                'c',
+                'cpp'
+            );
             if (!in_array($programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID], $cppArray)) {
                 $editorMode = $programDetails[ProgramDetails_DBTable::FK_LANGUAGE_ID];
             }
@@ -99,7 +106,7 @@ class Utils {
     public static function getRandomString($length = 16) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $randomString = '';
-        for ($i = 0; $i < $length; $i++) {
+        for($i = 0; $i < $length; $i++) {
             $randomString .= $characters[rand(0, strlen($characters) - 1)];
         }
         return $randomString;
@@ -112,7 +119,7 @@ class Utils {
      * @return string $themeInfo
      */
     public static function getCodeEditorTheme() {
-        $themeInfo = array();
+        $themeInfo = array ();
         $userPref = Session::get(Session::SESS_USER_PREF_KEY);
         if (!empty($userPref[PreferenceKeys::CODE_EDITOR_THEME])) {
             $themeInfo['id'] = $userPref[PreferenceKeys::CODE_EDITOR_THEME];
@@ -129,7 +136,7 @@ class Utils {
      * @return array
      */
     public static function getAceEditorThemes($themeId = false) {
-        $themes = array(
+        $themes = array (
             'ambiance' => 'Ambiance',
             'chaos' => 'Chaos',
             'chrome' => 'Chrome',
@@ -192,7 +199,10 @@ class Utils {
                 return @is_resource(STDIN);
             }
         } else {
-            return in_array($sapi, array('cli', 'cgi')) && empty($_SERVER['REMOTE_ADDR']);
+            return in_array($sapi, array (
+                'cli',
+                'cgi'
+            )) && empty($_SERVER['REMOTE_ADDR']);
         }
     }
 
@@ -204,9 +214,9 @@ class Utils {
     public static function printCLIMessages($msg) {
         if (self::isRunningFromCLI()) {
             $border = str_repeat("#", strlen($msg) + 3);
-            echo $border.PHP_EOL.'#'.PHP_EOL;
-            echo "#  ".$msg.PHP_EOL.'#'.PHP_EOL;
-            echo $border.PHP_EOL;
+            echo $border . PHP_EOL . '#' . PHP_EOL;
+            echo "#  " . $msg . PHP_EOL . '#' . PHP_EOL;
+            echo $border . PHP_EOL;
         } else {
             Logger::getLogger()->LogWarn('Trying to print CLI_Message while file not executing from CLI');
         }
@@ -242,7 +252,7 @@ class Utils {
         if ($displayTrace) {
             $smarty->assign('STACK_TRACE', $debugTrace);
         }
-        $smarty->display('string:'. @file_get_contents('webroot/Errors/tpls/debugTrace.htpl'));
+        $smarty->display('string:' . @file_get_contents('webroot/Errors/tpls/debugTrace.htpl'));
         if ($exit) {
             exit();
         }
@@ -265,4 +275,6 @@ class Utils {
         return $data;
     }
 
+    public function none() {
+    }
 }

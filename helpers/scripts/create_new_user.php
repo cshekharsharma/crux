@@ -24,10 +24,18 @@ if (Utils::isRunningFromCLI()) {
     }
 
     // input validations
-    if (empty($userName)) Utils::printCLIMessages('No UserName provided, Retry!');
-    if (empty($password)) Utils::printCLIMessages('No Password provided, Retry!');
-    if (strlen($password) < 3) Utils::printCLIMessages('Password too short, Must have atleast 3 characters');
-
+    if (empty($userName)) { 
+        Utils::printCLIMessages('No UserName provided, Retry!');
+        exit;
+    }
+    if (empty($password)) {
+        Utils::printCLIMessages('No Password provided, Retry!');
+        exit;
+    }
+    if (strlen($password) < 3) {
+        Utils::printCLIMessages('Password too short, Must have atleast 3 characters');
+        exit;
+    }
     $user = new UsersController();
     $response = json_decode($user->createUser($userName, $password), true);
     Utils::printCLIMessages(ucfirst($response['code']).'!! '.$response['msg']);

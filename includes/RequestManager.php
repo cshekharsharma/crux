@@ -76,7 +76,7 @@ class RequestManager {
 
     /**
      * Returns all <b>POST</b> parameters
-     * 
+     *
      * @return array
      */
     public static function getGetParams() {
@@ -84,8 +84,8 @@ class RequestManager {
     }
 
     /**
-     * Returns all <b>GET</b> parameters 
-     * 
+     * Returns all <b>GET</b> parameters
+     *
      * @return array
      */
     public static function getPostParams() {
@@ -112,7 +112,7 @@ class RequestManager {
      * @return boolean
      */
     public static function isAjaxRequest() {
-        return (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+        return (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
             $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest');
     }
 
@@ -156,7 +156,7 @@ class RequestManager {
 
     /**
      * If csrf token not present in session create a new and save in session
-     * 
+     *
      * @param string $forceful
      */
     public static function regenerateCsrfToken($forceful = false) {
@@ -169,7 +169,7 @@ class RequestManager {
 
     /**
      * Get valid csrf token for current session
-     * 
+     *
      * @return string|NULL
      */
     public static function getCsrfToken() {
@@ -216,15 +216,15 @@ class RequestManager {
 
     /**
      * Terminate current request processing, And redirects to home page
-     * 
+     *
      * @param string $msg
      */
     public static function exitRequest($msg) {
         Logger::getLogger()->logError('Exiting Request: ' . $msg);
         RequestManager::redirect();
     }
-    
-    
+
+
     /**
      * handle excpetions and write them to Log file
      *
@@ -233,6 +233,6 @@ class RequestManager {
     public static function handleException(Exception $e) {
         Logger::getLogger()->LogError('Exception: '.$e->getMessage());
         Logger::getLogger()->LogError('Exception: '.$e->getTraceAsString());
-        self::redirect();
+        die("Something went wrong! try again after some time!");
     }
 }

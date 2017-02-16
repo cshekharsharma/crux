@@ -32,7 +32,7 @@ class LanguageController extends AbstractController {
         foreach ($resultSet as $row) {
             $languageList[$row[Language_DBTable::LANGUAGE_ID]] = $row[Language_DBTable::LANGUAGE_NAME];
         }
-        return ($isMap) ? $languageList : $resultSet;
+        return ($asMap) ? $languageList : $resultSet;
     }
     
     /**

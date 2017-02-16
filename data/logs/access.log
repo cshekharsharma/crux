@@ -16,3 +16,4 @@
 2015-09-05 18:27:40 - FATAL --> SQLSTATE[42000]: Syntax error or access violation: 1286 Unknown storage engine 'InnoDB' 
 2015-09-08 14:59:58 - FATAL --> could not find driver 
 2015-09-08 15:01:48 - FATAL --> could not find driver 
+2017-02-16 10:11:21 - WARN  --> No CSRF token found. IP:127.0.0.1 

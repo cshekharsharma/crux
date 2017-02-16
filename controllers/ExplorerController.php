@@ -1,7 +1,7 @@
 <?php
 /**
  * Controller class for Explorer module
- * 
+ *
  * @author Chandra Shekhar <shekharsharma705@gmail.com>
  * @package controllers
  * @since Jun 20, 2014
@@ -40,7 +40,7 @@ class ExplorerController extends AbstractController {
 
     /**
      * Prepare readonly source code explore UI
-     * 
+     *
      * @param string $lang
      * @param string $category
      * @param int    $pid
@@ -58,7 +58,7 @@ class ExplorerController extends AbstractController {
 
     /**
      * Prepare bean to be passed in ExplorerView
-     * 
+     *
      * @param string $sourceCode
      * @param string $programDetails
      */
@@ -73,7 +73,7 @@ class ExplorerController extends AbstractController {
 
     /**
      * Get source code of requested PID
-     * 
+     *
      * @param array $programDetails
      * @return string $fileContents
      */
@@ -88,7 +88,7 @@ class ExplorerController extends AbstractController {
 
     /**
      * Provides additional stats about given program
-     * 
+     *
      * @param string $sourceCode
      * @return array
      */
@@ -103,7 +103,7 @@ class ExplorerController extends AbstractController {
 
     /**
      * Checks if its a delete request for program
-     * 
+     *
      * @param array $uriParams
      * @param array $formParams
      * @return boolean
@@ -117,7 +117,7 @@ class ExplorerController extends AbstractController {
 
     /**
      * Delete program from system for given PID
-     * 
+     *
      * @param int $pid
      */
     private function deleteSource($pid) {

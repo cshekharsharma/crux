@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Controller for automated source code execution
  *
@@ -9,8 +10,10 @@
 class ExecuteController extends AbstractController {
 
     const MODULE_KEY = 'execute';
-    const ERROR_FILE = '/tmp/errors';
-    const SH_SCRIPT  = '/tmp/code_exec_script.sh';
+
+    const METADATA_FILE = '/tmp/metadata';
+
+    const SH_SCRIPT = '/tmp/code_exec_script.sh';
 
     protected $executionResponse;
 
@@ -19,17 +22,18 @@ class ExecuteController extends AbstractController {
         $this->view = new ExecuteView();
         $this->executionResult = array(
             'code' => '',
-            'msg'  => ''
+            'msg' => ''
         );
     }
 
     protected function getExecResponse($code, $msg) {
         $this->executionResponse['code'] = $code;
-        $this->executionResponse['msg']  = $msg;
+        $this->executionResponse['msg'] = $msg;
         return $this->executionResponse;
     }
-    
+
     /**
+     *
      * @see AbstractController::run()
      */
     public function run(Resource $resource) {
@@ -41,24 +45,26 @@ class ExecuteController extends AbstractController {
         $details = (new ProgramDetailsController())->getProgramListById($pid);
         $language = $details[ProgramDetails_DBTable::FK_LANGUAGE_ID];
         $category = $details[ProgramDetails_DBTable::FK_CATEGORY_ID];
-        $fileDir = Configuration::get(Configuration::CODE_BASE_DIR)
-        . $language . '/' . $category;
+        $fileDir = Configuration::get(Configuration::CODE_BASE_DIR) . $language . '/' . $category;
         $fileName = $details[ProgramDetails_DBTable::STORED_FILE_NAME];
         switch ($language) {
-            case 'c':
-                $this->cLang($fileDir, $fileName);
+            case 'c' :
+                $this->executeCLang($fileDir, $fileName);
                 break;
-            default:
+            case 'php' :
+                $this->executePhp($fileDir, $fileName);
+                break;
+            default :
                 echo 'This feature currently support only C Language programs!';
         }
     }
 
-    protected function cLang($fileDir, $fileName) {
+    protected function executeCLang($fileDir, $fileName) {
         chdir($fileDir);
-        $cmd = '`gcc ' . $fileName . ' &> '.self::ERROR_FILE.'`';
+        $cmd = '`gcc ' . $fileName . ' &> ' . self::METADATA_FILE . '`';
         file_put_contents(self::SH_SCRIPT, $cmd);
         shell_exec('bash ' . self::SH_SCRIPT);
-        $errors = file_get_contents(self::ERROR_FILE);
+        $errors = @file_get_contents(self::METADATA_FILE);
         if (empty($errors)) {
             if (is_file('a.out')) {
                 $output = shell_exec('./a.out');
@@ -70,6 +76,17 @@ class ExecuteController extends AbstractController {
         } else {
             $this->setBean($this->getExecResponse(Constants::FAILURE_RESPONSE, $errors));
         }
+        $this->getView()->setViewName(self::MODULE_KEY)->display();
+    }
+
+    protected function executePhp($fileDir, $fileName) {
+        $executable = getcwd() . DIRECTORY_SEPARATOR . $fileDir . DIRECTORY_SEPARATOR . $fileName;
+        $cmd = 'php ' . $executable . ' > ' . self::METADATA_FILE;
+        $output = shell_exec($cmd);
+        if (empty($cmdOutput)) {
+            $output = @file_get_contents(self::METADATA_FILE);
+        }
+        $this->setBean($this->getExecResponse(Constants::SUCCESS_RESPONSE, $output));
         $this->getView()->setViewName(self::MODULE_KEY)->display();
     }
 }

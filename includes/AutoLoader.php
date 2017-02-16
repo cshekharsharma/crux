@@ -89,9 +89,10 @@ class AutoLoader {
             'UserPreferences_DBTable' => Constants::DB_TABLE_DIR.'UserPreferences_DBTable.php',
         );
 
+        $smartyVersion=(version_compare(PHP_VERSION, '7.0.0') < 0) ? '3.1.16' : '3.1.29';
         $this->libraryClassPaths = array(
-            'smartyBase' => Constants::LIBRARY_DIR.'smarty/libs/',
-            'smartySysplugins' => Constants::LIBRARY_DIR.'smarty/libs/sysplugins/',
+            'smartyBase' => Constants::LIBRARY_DIR.'smarty-'.$smartyVersion.'/libs/',
+            'smartySysplugins' => Constants::LIBRARY_DIR.'smarty-'.$smartyVersion.'/libs/sysplugins/',
         );
     }
 

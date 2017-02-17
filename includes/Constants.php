@@ -10,7 +10,7 @@
 final class Constants {
 
     const APP_NAME = 'Crux';
-    const APP_LOGO = '&lt; Crux /&gt;';
+    const APP_LOGO = '&lt;Crux/&gt;';
     const APP_VERSION = '1.0.0';
     const SITE_URL = 'crux.io';
 
@@ -55,10 +55,14 @@ final class Constants {
     const INPUT_PARAM_MODULE = '__module';
     const INPUT_PARAM_ACTION = '__action';
     const INPUT_PARAM_SUBACTION = '__subaction';
-    
+
     const PAGINATOR_LIMIT = 10;
     const CSRF_TOKEN_NAME = 'csrf_token';
-    
+
     const EMPTY_CODEBASE = 'EMPTY_CODEBASE';
     const ERROR_RESOURCE_NOT_FOUND = 'NO_ITEM_FOUND';
+
+    const PROG_LANG_C = 'c';
+    const PROG_LANG_JAVA = 'java';
+    const PROG_LANG_PHP = 'php';
 }

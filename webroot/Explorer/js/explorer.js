@@ -12,7 +12,7 @@ EXPLORER_CONSTANTS = {
 $('#execute-code').click(
         function() {
             window.open('/execute?id=' + SOURCE_PID, 'Execute Code',
-                    'height=300,width=500');
+                    'height=400,width=700');
         });
 
 function deleteProgram(pid) {
